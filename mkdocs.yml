@@ -1,0 +1,52 @@
+site_name: pyravelry
+repo_url: https://github.com/theuerc/pyravelry
+site_url: https://theuerc.github.io/pyravelry
+site_description: This is python wrapper for the Ravelry API, which is a database of knitting / crocheting patterns.
+site_author: Coulton Theuer
+edit_uri: edit/main/docs/
+repo_name: theuerc/pyravelry
+copyright: Maintained by <a href="https://theuerc.com">theuerc</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["src/pyravelry"]
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/theuerc/pyravelry
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/pyravelry
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
