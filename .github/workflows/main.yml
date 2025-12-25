@@ -45,6 +45,9 @@ jobs:
 
       - name: Run tests
         run: uv run python -m pytest tests --cov --cov-config=pyproject.toml --cov-report=xml --record-mode=none
+        env:
+          RAVELRY_USERNAME: ${{ secrets.RAVELRY_USERNAME }}
+          RAVELRY_API_KEY: ${{ secrets.RAVELRY_API_KEY }}
 
       - name: Check typing
         run: uv run mypy
