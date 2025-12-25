@@ -1,4 +1,3 @@
-import pytest
 from pyravelry.settings import RavelrySettings
 
 

@@ -1,0 +1,67 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - api.ravelry.com
+      User-Agent:
+      - python-httpx/0.28.1
+      authorization:
+      - Basic <REDACTED>
+    method: GET
+    uri: https://api.ravelry.com/color_families.json
+  response:
+    body:
+      string: '{"color_families": [{"color":null,"id":1,"name":"Yellow","permalink":"Yellow","spectrum_order":1},{"color":null,"id":2,"name":"Yellow-orange","permalink":"Yellow-orange","spectrum_order":2},{"color":null,"id":3,"name":"Orange","permalink":"Orange","spectrum_order":3},{"color":null,"id":4,"name":"Red-orange","permalink":"Red-orange","spectrum_order":4},{"color":null,"id":5,"name":"Red","permalink":"Red","spectrum_order":5},{"color":null,"id":6,"name":"Red-purple","permalink":"Red-purple","spectrum_order":0},{"color":null,"id":7,"name":"Purple","permalink":"Purple","spectrum_order":8},{"color":null,"id":8,"name":"Blue-purple","permalink":"Blue-purple","spectrum_order":9},{"color":null,"id":9,"name":"Blue","permalink":"Blue","spectrum_order":10},{"color":null,"id":10,"name":"Blue-green","permalink":"Blue-green","spectrum_order":11},{"color":null,"id":11,"name":"Green","permalink":"Green","spectrum_order":12},{"color":null,"id":12,"name":"Yellow-green","permalink":"Yellow-green","spectrum_order":13},{"color":null,"id":13,"name":"Black","permalink":"Black","spectrum_order":14},{"color":null,"id":14,"name":"White","permalink":"White","spectrum_order":15},{"color":null,"id":15,"name":"Gray","permalink":"Gray","spectrum_order":16},{"color":null,"id":16,"name":"Brown","permalink":"Brown","spectrum_order":17},{"color":null,"id":17,"name":"Pink","permalink":"Pink","spectrum_order":18},{"color":null,"id":18,"name":"Natural/Undyed","permalink":"Natural/Undyed","spectrum_order":19},{"color":null,"id":19,"name":"Multicolored","permalink":"Multicolored","spectrum_order":21},{"color":null,"id":20,"name":"Rainbow\t","permalink":"Rainbow","spectrum_order":20}]}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,PUT,DELETE,PATCH
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 25 Dec 2025 17:43:52 GMT
+      ETag:
+      - W/"7a60c38f8a1072d30a2280a6bc8dee25"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-API:
+      - '1'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Handled-By:
+      - yearling
+      X-Ruby:
+      - '2'
+      X-Runtime:
+      - '19'
+      X-Up-Location:
+      - https://api.ravelry.com/color_families.json
+      X-Up-Method:
+      - get
+      content-length:
+      - '1670'
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -4,7 +4,9 @@ https://www.ravelry.com/api#ColorFamily_result
 """
 
 from typing import Optional
+
 from pydantic import Field
+
 from .base import BaseRavelryModel
 
 
@@ -22,9 +24,7 @@ class ColorFamilyModel(BaseRavelryModel):
     # Using Optional because the docs say "Nullable: Yes"
     color: Optional[str] = Field(None, description="HTML color code (e.g., #FFFFFF)")
 
-    spectrum_order: int = Field(
-        ..., description="Sort order, (mostly) based on the spectrum"
-    )
+    spectrum_order: int = Field(..., description="Sort order, (mostly) based on the spectrum")
 
 
 class ColorFamiliesModel(BaseRavelryModel):

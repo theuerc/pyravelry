@@ -1,8 +1,10 @@
 """Defines the base subclass endpoint"""
 
-import httpx
-
 from abc import ABC, abstractmethod
+from functools import cache
+from typing import Any
+
+import httpx
 
 
 class BaseEndpoint(ABC):
@@ -18,6 +20,22 @@ class BaseEndpoint(ABC):
         """Initializes the base endpoint for Ravelry.
 
         Args:
-            http_client (httpx.Client): _description_
+            http_client (httpx.Client): httpx Client used for requests.
         """
         self._http = http_client
+
+    @staticmethod
+    @cache
+    def _fetch(http_client: httpx.Client, endpoint: str) -> Any:
+        """Fetches all data from the API or the cache.
+
+        Args:
+            http_client (httpx.Client): httpx Client to use.
+            endpoint (str): endpoint to hit for the request.
+
+        Returns:
+            Any: JSON object with the requested data.
+        """
+        response = http_client.get(endpoint)
+        response.raise_for_status()
+        return response.json()
