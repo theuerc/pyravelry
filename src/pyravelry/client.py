@@ -1,10 +1,13 @@
 """Httpx client for getting data."""
 
 from types import TracebackType
-from typing import Optional, Type, Self
+from typing import Optional, Self
+
 import httpx
-from .settings import RavelrySettings
+
 from pyravelry.endpoints import ColorFamiliesResource
+
+from .settings import RavelrySettings
 
 
 class RavelryClient:
@@ -35,7 +38,7 @@ class RavelryClient:
 
     def __exit__(
         self,
-        exc_type: Optional[Type[BaseException]],
+        exc_type: Optional[type[BaseException]],
         exc_val: Optional[BaseException],
         exc_tb: Optional[TracebackType],
     ) -> None:

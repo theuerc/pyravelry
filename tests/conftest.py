@@ -1,6 +1,8 @@
-from typing import TypedDict, Any
-import pytest
+from typing import Any, TypedDict
+
 import httpx
+import pytest
+
 from pyravelry.settings import RavelrySettings
 
 
@@ -11,7 +13,7 @@ class APIInfo(TypedDict):
     client: httpx.Client
 
 
-@pytest.fixture
+@pytest.fixture(scope="session")
 def api_info() -> APIInfo:
     """Gets the basic info required for an API call.
 
@@ -25,3 +27,11 @@ def api_info() -> APIInfo:
         timeout=10.0,
     )
     return {"settings": settings, "client": client}
+
+
+@pytest.fixture(scope="module")
+def vcr_config() -> dict[str, Any]:
+    return {
+        "filter_headers": [("authorization", "Basic <REDACTED>")],
+        "decode_compressed_response": True,
+    }

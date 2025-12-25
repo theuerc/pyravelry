@@ -1,7 +1,7 @@
 [project]
 name = "pyravelry"
 version = "0.0.1"
-description = "This is python wrapper for the Ravelry API, which is a database of knitting / crocheting patterns."
+description = "Python wrapper for the Ravelry API, which is a database of knitting / crocheting patterns."
 authors = [{ name = "Coulton Theuer", email = "theuerc@umich.edu" }]
 readme = "README.md"
 keywords = ['python']
@@ -19,12 +19,8 @@ classifiers = [
 ]
 dependencies = [
     "httpx>=0.28.1",
-    "pandas>=2.3.3",
-    "polars>=1.36.1",
     "pydantic>=2.12.5",
     "pydantic-settings>=2.12.0",
-    "pytest-mock>=3.15.1",
-    "pytest-recording>=0.13.4",
 ]
 
 [project.urls]
@@ -35,6 +31,10 @@ Documentation = "https://theuerc.github.io/pyravelry/"
 [dependency-groups]
 dev = [
     "pytest>=9.0.2",
+    "pandas>=2.3.3",
+    "polars>=1.36.1",
+    "pytest-mock>=3.15.1",
+    "pytest-recording>=0.13.4",
     "pre-commit>=4.5.0",
     "tox-uv>=1.29.0",
     "deptry>=0.24.0",

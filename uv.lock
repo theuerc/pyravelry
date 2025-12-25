@@ -1308,12 +1308,8 @@ version = "0.0.1"
 source = { editable = "." }
 dependencies = [
     { name = "httpx" },
-    { name = "pandas" },
-    { name = "polars" },
     { name = "pydantic" },
     { name = "pydantic-settings" },
-    { name = "pytest-mock" },
-    { name = "pytest-recording" },
 ]
 
 [package.dev-dependencies]
@@ -1323,9 +1319,13 @@ dev = [
     { name = "mkdocs-material" },
     { name = "mkdocstrings", extra = ["python"] },
     { name = "mypy" },
+    { name = "pandas" },
+    { name = "polars" },
     { name = "pre-commit" },
     { name = "pytest" },
     { name = "pytest-cov" },
+    { name = "pytest-mock" },
+    { name = "pytest-recording" },
     { name = "ruff" },
     { name = "tox-uv" },
 ]
@@ -1333,12 +1333,8 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "httpx", specifier = ">=0.28.1" },
-    { name = "pandas", specifier = ">=2.3.3" },
-    { name = "polars", specifier = ">=1.36.1" },
     { name = "pydantic", specifier = ">=2.12.5" },
     { name = "pydantic-settings", specifier = ">=2.12.0" },
-    { name = "pytest-mock", specifier = ">=3.15.1" },
-    { name = "pytest-recording", specifier = ">=0.13.4" },
 ]
 
 [package.metadata.requires-dev]
@@ -1348,9 +1344,13 @@ dev = [
     { name = "mkdocs-material", specifier = ">=9.7.0" },
     { name = "mkdocstrings", extras = ["python"], specifier = ">=1.0.0" },
     { name = "mypy", specifier = ">=1.19.0" },
+    { name = "pandas", specifier = ">=2.3.3" },
+    { name = "polars", specifier = ">=1.36.1" },
     { name = "pre-commit", specifier = ">=4.5.0" },
     { name = "pytest", specifier = ">=9.0.2" },
     { name = "pytest-cov", specifier = ">=7.0.0" },
+    { name = "pytest-mock", specifier = ">=3.15.1" },
+    { name = "pytest-recording", specifier = ">=0.13.4" },
     { name = "ruff", specifier = ">=0.14.8" },
     { name = "tox-uv", specifier = ">=1.29.0" },
 ]

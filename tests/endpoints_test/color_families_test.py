@@ -1,12 +1,24 @@
 from typing import Any
+
 import pytest
+
 from pyravelry.endpoints import ColorFamiliesResource
+from pyravelry.models import ColorFamilyModel
 
 
+@pytest.mark.vcr
 class TestColorFamiliesResource:
-    def test_initialization(self, api_info: Any) -> Any:
-        settings = api_info["settings"]
-        client = api_info["client"]
+    @pytest.fixture(autouse=True)
+    def setup(self, api_info: Any) -> None:
+        """Automatically sets up the resource for every test in this class."""
+        self.cfr = ColorFamiliesResource(api_info["client"])
 
-        cfr = ColorFamiliesResource(client)
-        breakpoint()
+    def test_initialization(self) -> None:
+        assert self.cfr is not None
+
+    def test_list(self) -> None:
+        list_of_color_families = self.cfr.list()
+
+        assert isinstance(list_of_color_families, list)
+        assert len(list_of_color_families) > 0
+        assert isinstance(list_of_color_families[0], ColorFamilyModel)

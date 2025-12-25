@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from pydantic import SecretStr, Field, HttpUrl
+from pydantic import Field, HttpUrl, SecretStr
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 

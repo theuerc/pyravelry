@@ -1,12 +1,11 @@
 from . import base, colorfamily
-
-from .colorfamily import ColorFamilyModel, ColorFamiliesModel
 from .base import BaseRavelryModel
+from .colorfamily import ColorFamiliesModel, ColorFamilyModel
 
 __all__ = [
-    "base",
-    "colorfamily",
-    "ColorFamilyModel",
     "BaseRavelryModel",
     "ColorFamiliesModel",
+    "ColorFamilyModel",
+    "base",
+    "colorfamily",
 ]

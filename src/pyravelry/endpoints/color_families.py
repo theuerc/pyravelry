@@ -3,12 +3,8 @@
 https://www.ravelry.com/api#/_color_families
 """
 
-from functools import cache
-
-from pydantic import HttpUrl
-
-from pyravelry.models import ColorFamiliesModel, ColorFamilyModel
 from pyravelry.endpoints.base import BaseEndpoint
+from pyravelry.models import ColorFamiliesModel, ColorFamilyModel
 
 
 class ColorFamiliesResource(BaseEndpoint):
@@ -26,7 +22,6 @@ class ColorFamiliesResource(BaseEndpoint):
 
     endpoint: str = "/color_families.json"
 
-    @cache
     def list(self) -> list[ColorFamilyModel]:
         """
         Retrieves all color families from Ravelry.
@@ -35,7 +30,6 @@ class ColorFamiliesResource(BaseEndpoint):
         Defined at:
             https://www.ravelry.com/api#/_color_families
         """
-        response = self._http.get(ColorFamiliesResource.endpoint)
-        response.raise_for_status()
-        data = ColorFamiliesModel.model_validate(response.json())
+        response_dict = self._fetch(http_client=self._http, endpoint=ColorFamiliesResource.endpoint)
+        data = ColorFamiliesModel.model_validate(response_dict)
         return data.color_families
