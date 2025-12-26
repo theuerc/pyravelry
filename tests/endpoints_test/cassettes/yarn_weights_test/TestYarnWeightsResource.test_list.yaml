@@ -1,0 +1,70 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - api.ravelry.com
+      User-Agent:
+      - python-httpx/0.28.1
+      authorization:
+      - Basic <REDACTED>
+    method: GET
+    uri: https://api.ravelry.com/yarn_weights.json
+  response:
+    body:
+      string: '{"yarn_weights": [{"crochet_gauge":"","id":1,"knit_gauge":"18","max_gauge":null,"min_gauge":null,"name":"Aran","ply":"10","wpi":"8"},{"crochet_gauge":"","id":4,"knit_gauge":"14-15","max_gauge":null,"min_gauge":null,"name":"Bulky","ply":"12","wpi":"7"},{"crochet_gauge":"","id":5,"knit_gauge":"28","max_gauge":null,"min_gauge":null,"name":"Fingering","ply":"4","wpi":"14"},{"crochet_gauge":"","id":6,"knit_gauge":"7-12","max_gauge":null,"min_gauge":null,"name":"Super
+        Bulky","ply":null,"wpi":"5-6"},{"crochet_gauge":"","id":7,"knit_gauge":"32-34","max_gauge":null,"min_gauge":null,"name":"Lace","ply":"2","wpi":null},{"crochet_gauge":null,"id":8,"knit_gauge":null,"max_gauge":null,"min_gauge":null,"name":"Cobweb","ply":"1","wpi":null},{"crochet_gauge":null,"id":9,"knit_gauge":null,"max_gauge":null,"min_gauge":null,"name":"Thread","ply":null,"wpi":null},{"crochet_gauge":null,"id":10,"knit_gauge":"24-26","max_gauge":null,"min_gauge":null,"name":"Sport","ply":"5","wpi":"12"},{"crochet_gauge":null,"id":11,"knit_gauge":"22","max_gauge":null,"min_gauge":null,"name":"DK","ply":"8","wpi":"11"},{"crochet_gauge":null,"id":12,"knit_gauge":"20","max_gauge":null,"min_gauge":null,"name":"Worsted","ply":"10","wpi":"9"},{"crochet_gauge":null,"id":13,"knit_gauge":"32","max_gauge":null,"min_gauge":null,"name":"Light
+        Fingering","ply":"3","wpi":null},{"crochet_gauge":null,"id":15,"knit_gauge":null,"max_gauge":null,"min_gauge":null,"name":"Any
+        gauge","ply":null,"wpi":null},{"crochet_gauge":null,"id":16,"knit_gauge":"0-6","max_gauge":null,"min_gauge":null,"name":"Jumbo","ply":null,"wpi":"0-4"}]}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,PUT,DELETE,PATCH
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 26 Dec 2025 03:07:30 GMT
+      ETag:
+      - W/"d811ec3168e7925192436669790a08da"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-API:
+      - '1'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Handled-By:
+      - shaun
+      X-Ruby:
+      - '2'
+      X-Runtime:
+      - '9'
+      X-Up-Location:
+      - https://api.ravelry.com/yarn_weights.json
+      X-Up-Method:
+      - get
+      content-length:
+      - '1590'
+    status:
+      code: 200
+      message: OK
+version: 1

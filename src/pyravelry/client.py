@@ -5,7 +5,11 @@ from typing import Optional, Self
 
 import httpx
 
-from pyravelry.endpoints import ColorFamiliesResource
+from pyravelry.endpoints import (
+    ColorFamiliesResource,
+    FiberCategoriesResource,
+    YarnWeightsResource,
+)
 
 from .settings import RavelrySettings
 
@@ -14,10 +18,10 @@ class RavelryClient:
     """Client to get data from the revelry api."""
 
     def __init__(self, settings: RavelrySettings) -> None:
-        """_summary_
+        """Instantiates a revelry httpx client.
 
         Args:
-            settings (RavelrySettings): _description_
+            settings (RavelrySettings): Authentication and other settings.
         """
         self.settings = settings
         # Initialize the persistent httpx client with auth
@@ -27,6 +31,8 @@ class RavelryClient:
             timeout=10.0,
         )
         self.color_families = ColorFamiliesResource(self._http)
+        self.fiber_categories = FiberCategoriesResource(self._http)
+        self.yarn_weights = YarnWeightsResource(self._http)
 
     def close(self) -> None:
         """Closes the httpx client."""
