@@ -11,12 +11,13 @@ from .custom_models.search import (
     SearchResultModel,
 )
 from .custom_models.yarncompany import (
+    YarnCompanyModel,
     YarnCompanySearchParams,
     YarnCompanySearchResponseModel,
 )
 from .fiberattribute import FiberAttributeModel, FiberAttributesModel
 from .fibercategory import FiberCategoriesModel, FiberCategoryModel
-from .yarncompany import YarnCompaniesModel, YarnCompanyModel
+from .yarncompany import YarnCompaniesModel
 from .yarnweight import YarnWeightModel, YarnWeightsModel
 
 __all__ = [
