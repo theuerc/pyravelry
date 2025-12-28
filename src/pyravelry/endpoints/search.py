@@ -54,7 +54,8 @@ class SearchResource(BaseEndpoint):
         Usage:
             search.query(query="merino", limit=10, types=["Yarn"])
         """
-        params_obj = SearchParams(query=query, limit=limit, types=types)
+        cls = SearchResource
+        params_obj = cls.input_model(query=query, limit=limit, types=types)
 
         # Flatten the 'types' list into a space-delimited string
         params_dict = params_obj.model_dump(exclude_none=True)
@@ -63,9 +64,9 @@ class SearchResource(BaseEndpoint):
 
         response_dict = self._fetch(
             http_client=self._http,
-            endpoint=self.endpoint,
+            endpoint=cls.endpoint,
             params=params_dict,
         )
 
-        data = GlobalSearchResponseModel.model_validate(response_dict)
+        data = cls.output_model.model_validate(response_dict)
         return data.results

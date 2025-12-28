@@ -25,6 +25,7 @@ class FiberAttributesResource(BaseEndpoint):
         List the current fiber attributes
         Endpoint: GET /fiber_attributes.json
         """
-        response_dict = self._fetch(http_client=self._http, endpoint=FiberAttributesResource.endpoint)
-        data = FiberAttributesModel.model_validate(response_dict)
+        cls = FiberAttributesResource
+        response_dict = self._fetch(http_client=self._http, endpoint=cls.endpoint)
+        data = cls.output_model.model_validate(response_dict)
         return data.fiber_attributes

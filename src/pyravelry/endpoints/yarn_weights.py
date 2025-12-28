@@ -25,6 +25,7 @@ class YarnWeightsResource(BaseEndpoint):
         List the current yarn weights.
         Endpoint: GET /yarn_weights.json
         """
-        response_dict = self._fetch(http_client=self._http, endpoint=YarnWeightsResource.endpoint)
-        data = YarnWeightsModel.model_validate(response_dict)
+        cls = YarnWeightsResource
+        response_dict = self._fetch(http_client=self._http, endpoint=cls.endpoint)
+        data = cls.output_model.model_validate(response_dict)
         return data.yarn_weights

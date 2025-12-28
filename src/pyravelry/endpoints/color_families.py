@@ -31,6 +31,7 @@ class ColorFamiliesResource(BaseEndpoint):
         Defined at:
             https://www.ravelry.com/api#/_color_families
         """
-        response_dict = self._fetch(http_client=self._http, endpoint=ColorFamiliesResource.endpoint)
-        data = ColorFamiliesModel.model_validate(response_dict)
+        cls = ColorFamiliesResource
+        response_dict = self._fetch(http_client=self._http, endpoint=cls.endpoint)
+        data = cls.output_model.model_validate(response_dict)
         return data.color_families
