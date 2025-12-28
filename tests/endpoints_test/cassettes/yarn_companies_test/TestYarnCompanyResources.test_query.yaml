@@ -1,0 +1,73 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - api.ravelry.com
+      User-Agent:
+      - python-httpx/0.28.1
+      authorization:
+      - Basic <REDACTED>
+    method: GET
+    uri: https://api.ravelry.com/yarn_companies//search.json?query=Lion&page=1&page_size=10&sort=best_
+  response:
+    body:
+      string: '{"yarn_companies": [{"id":99,"name":"Lion Brand","permalink":"lion-brand","url":"http://www.lionbrand.com","yarns_count":489},{"id":28146,"name":"Lion
+        Color","permalink":"lion-color","url":"","yarns_count":1},{"id":16901,"name":"The
+        Woolly Lion","permalink":"the-woolly-lion","url":null,"yarns_count":1},{"id":28157,"name":"Ferme
+        du Lion Vert","permalink":"ferme-du-lion-vert","url":null,"yarns_count":1},{"id":14131,"name":"Cottage
+        Folk Yarns","permalink":"cottage-folk-yarns","url":"","yarns_count":11},{"id":305,"name":"Silk
+        City Fibers","permalink":"silk-city-fibers","url":"http://www.silkcityfibers.com/","yarns_count":76}],
+        "paginator": {"page_count":1,"page":1,"page_size":10,"results":6,"last_page":1}}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,PUT,DELETE,PATCH
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 28 Dec 2025 18:10:38 GMT
+      ETag:
+      - W/"c6e66c7cc4eeadd3f03689aaadae6d5e"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-API:
+      - '1'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Handled-By:
+      - yearling
+      X-Ruby:
+      - '2'
+      X-Runtime:
+      - '31'
+      X-Up-Location:
+      - https://api.ravelry.com/yarn_companies/search.json?query=Lion&page=1&page_size=10&sort=best_
+      X-Up-Method:
+      - get
+      content-length:
+      - '711'
+    status:
+      code: 200
+      message: OK
+version: 1
