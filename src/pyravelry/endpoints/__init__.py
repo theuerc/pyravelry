@@ -1,6 +1,17 @@
 """Endpoints for Ravelry"""
 
-from . import base, color_families
+from . import base
 from .color_families import ColorFamiliesResource
+from .fiber_attributes import FiberAttributesResource
+from .fiber_categories import FiberCategoriesResource
+from .search import SearchResource
+from .yarn_weights import YarnWeightsResource
 
-__all__ = ["ColorFamiliesResource", "base", "color_families"]
+__all__ = [
+    "ColorFamiliesResource",
+    "FiberAttributesResource",
+    "FiberCategoriesResource",
+    "SearchResource",
+    "YarnWeightsResource",
+    "base",
+]

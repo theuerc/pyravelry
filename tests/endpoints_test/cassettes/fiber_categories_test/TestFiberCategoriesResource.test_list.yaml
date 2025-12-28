@@ -1,0 +1,163 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - api.ravelry.com
+      User-Agent:
+      - python-httpx/0.28.1
+      authorization:
+      - Basic <REDACTED>
+    method: GET
+    uri: https://api.ravelry.com/fiber_categories.json
+  response:
+    body:
+      string: "{\"fiber_categories\": [{\"id\":173,\"name\":\"Angora\",\"permalink\":\"angora\",\"short_name\":\"Angora\",\"children\":[{\"id\":174,\"name\":\"English\",\"permalink\":\"english\",\"short_name\":\"English\",\"children\":[]},{\"id\":175,\"name\":\"French\",\"permalink\":\"french\",\"short_name\":\"French\",\"children\":[]},{\"id\":176,\"name\":\"German\",\"permalink\":\"german\",\"short_name\":\"German\",\"children\":[]},{\"id\":177,\"name\":\"Giant\",\"permalink\":\"giant\",\"short_name\":\"Giant\",\"children\":[]},{\"id\":178,\"name\":\"Satin\",\"permalink\":\"satin\",\"short_name\":\"Satin\",\"children\":[]}]},{\"id\":132,\"name\":\"Camelid\",\"permalink\":\"camelid\",\"short_name\":\"Camelid\",\"children\":[{\"id\":136,\"name\":\"Alpaca\",\"permalink\":\"alpaca\",\"short_name\":\"Alpaca\",\"children\":[]},{\"id\":137,\"name\":\"Alpaca
+        - Huacaya\",\"permalink\":\"alpaca-huacaya\",\"short_name\":\"Alpaca\",\"children\":[]},{\"id\":138,\"name\":\"Alpaca
+        - Suri\",\"permalink\":\"alpaca-suri\",\"short_name\":\"Suri\",\"children\":[]},{\"id\":139,\"name\":\"Camel\",\"permalink\":\"camel\",\"short_name\":\"Camel\",\"children\":[]},{\"id\":140,\"name\":\"Guanaco\",\"permalink\":\"guanaco\",\"short_name\":\"Guanaco\",\"children\":[]},{\"id\":141,\"name\":\"Llama\",\"permalink\":\"llama\",\"short_name\":\"Llama\",\"children\":[]},{\"id\":142,\"name\":\"Vicu\xF1a\",\"permalink\":\"vicuna\",\"short_name\":\"Vicu\xF1a\",\"children\":[]},{\"id\":146,\"name\":\"Royal
+        Baby \",\"permalink\":\"royal-baby\",\"short_name\":\"Royal Baby \",\"children\":[]},{\"id\":147,\"name\":\"Paco-vicuna\",\"permalink\":\"paco-vicuna\",\"short_name\":\"Paco-vicuna\",\"children\":[]}]},{\"id\":201,\"name\":\"Cellulose\",\"permalink\":\"cellulose\",\"short_name\":\"Cellulose\",\"children\":[{\"id\":202,\"name\":\"Bast
+        Bamboo\",\"permalink\":\"bamboo\",\"short_name\":\"Bamboo\",\"children\":[]},{\"id\":203,\"name\":\"Flax\",\"permalink\":\"flax\",\"short_name\":\"Flax\",\"children\":[]},{\"id\":204,\"name\":\"Hemp\",\"permalink\":\"hemp\",\"short_name\":\"Hemp\",\"children\":[]},{\"id\":205,\"name\":\"Ramie\",\"permalink\":\"ramie\",\"short_name\":\"Ramie\",\"children\":[]}]},{\"id\":149,\"name\":\"Cotton\",\"permalink\":\"cotton\",\"short_name\":\"Cotton\",\"children\":[{\"id\":150,\"name\":\"Acala
+        / Upland\",\"permalink\":\"acala\",\"short_name\":\"Acala\",\"children\":[]},{\"id\":151,\"name\":\"Egyptian\",\"permalink\":\"egyptian\",\"short_name\":\"Egyptian\",\"children\":[]},{\"id\":152,\"name\":\"Pima\",\"permalink\":\"pima\",\"short_name\":\"Pima\",\"children\":[]},{\"id\":153,\"name\":\"Naturally
+        Colored Cotton\",\"permalink\":\"naturally-colored-cotton\",\"short_name\":\"Natural
+        Cotton\",\"children\":[]}]},{\"id\":157,\"name\":\"Goat\",\"permalink\":\"goat\",\"short_name\":\"Goat\",\"children\":[{\"id\":158,\"name\":\"Cashgora\",\"permalink\":\"cashgora\",\"short_name\":\"Cashgora\",\"children\":[]},{\"id\":159,\"name\":\"Cashmere
+        goat\",\"permalink\":\"cashmere-goat\",\"short_name\":\"Cashmere goat\",\"children\":[]},{\"id\":160,\"name\":\"Mohair\",\"permalink\":\"mohair\",\"short_name\":\"Mohair\",\"children\":[]},{\"id\":161,\"name\":\"Nigora\",\"permalink\":\"nigora\",\"short_name\":\"Nigora\",\"children\":[]},{\"id\":162,\"name\":\"PCA\",\"permalink\":\"pca\",\"short_name\":\"PCA\",\"children\":[]},{\"id\":163,\"name\":\"Pycazz\",\"permalink\":\"pycazz\",\"short_name\":\"Pycazz\",\"children\":[]},{\"id\":164,\"name\":\"Pygora\",\"permalink\":\"pygora\",\"short_name\":\"Pygora\",\"children\":[]}]},{\"id\":207,\"name\":\"Manufactured
+        Fibers\",\"permalink\":\"manufactured-fibers\",\"short_name\":\"Manufactured\",\"children\":[{\"id\":208,\"name\":\"Acrylic\",\"permalink\":\"acrylic\",\"short_name\":\"Acrylic\",\"children\":[]},{\"id\":209,\"name\":\"Angelina\",\"permalink\":\"angelina\",\"short_name\":\"Angelina\",\"children\":[]},{\"id\":210,\"name\":\"Corn
+        (Ingeo)\",\"permalink\":\"corn\",\"short_name\":\"Corn (Ingeo)\",\"children\":[]},{\"id\":211,\"name\":\"Firestar\",\"permalink\":\"firestar\",\"short_name\":\"Firestar\",\"children\":[]},{\"id\":212,\"name\":\"Icicle\",\"permalink\":\"icicle\",\"short_name\":\"Icicle\",\"children\":[]},{\"id\":213,\"name\":\"Metallic\",\"permalink\":\"metallic\",\"short_name\":\"Metallic\",\"children\":[]},{\"id\":214,\"name\":\"Microfiber\",\"permalink\":\"microfiber\",\"short_name\":\"Microfiber\",\"children\":[]},{\"id\":215,\"name\":\"Milk
+        (Casein)\",\"permalink\":\"milk\",\"short_name\":\"Milk\",\"children\":[]},{\"id\":216,\"name\":\"Nylon
+        / Polyamide\",\"permalink\":\"nylon\",\"short_name\":\"Nylon\",\"children\":[]},{\"id\":217,\"name\":\"Polyester\",\"permalink\":\"polyester\",\"short_name\":\"Polyester\",\"children\":[]},{\"id\":218,\"name\":\"Rayon
+        / Viscose\",\"permalink\":\"viscose\",\"short_name\":\"Rayon\",\"children\":[]},{\"id\":219,\"name\":\"Rayon
+        from Bamboo\",\"permalink\":\"bamboo-rayon\",\"short_name\":\"Rayon from Bamboo\",\"children\":[]},{\"id\":220,\"name\":\"Rayon
+        from Banana\",\"permalink\":\"banana-rayon\",\"short_name\":\"Rayon from Banana\",\"children\":[]},{\"id\":221,\"name\":\"SeaCell\",\"permalink\":\"seacell\",\"short_name\":\"SeaCell\",\"children\":[]},{\"id\":222,\"name\":\"Silver\",\"permalink\":\"silver\",\"short_name\":\"Silver\",\"children\":[]},{\"id\":223,\"name\":\"Soy
+        Silk\",\"permalink\":\"soy-silk\",\"short_name\":\"Soy Silk\",\"children\":[]},{\"id\":224,\"name\":\"Stainless
+        Steel\",\"permalink\":\"stainless-steel\",\"short_name\":\"Stainless Steel\",\"children\":[]},{\"id\":227,\"name\":\"Tencel
+        / Lyocell\",\"permalink\":\"tencel\",\"short_name\":\"Tencel\",\"children\":[]},{\"id\":231,\"name\":\"Carbonized
+        Bamboo\",\"permalink\":\"carbonized-bamboo\",\"short_name\":\"Carbonized Bamboo\",\"children\":[]},{\"id\":232,\"name\":\"Ecospun\",\"permalink\":\"ecospun\",\"short_name\":\"Ecospun\",\"children\":[]},{\"id\":233,\"name\":\"Glow
+        in the Dark Polyester\",\"permalink\":\"glow-polyester\",\"short_name\":\"Glow
+        in the Dark Polyester\",\"children\":[]},{\"id\":234,\"name\":\"Rose\",\"permalink\":\"rose\",\"short_name\":\"Rose\",\"children\":[]},{\"id\":235,\"name\":\"Sugar
+        Cane\",\"permalink\":\"sugar-cane\",\"short_name\":\"Sugar Cane\",\"children\":[]},{\"id\":236,\"name\":\"Trilobal
+        Nylon\",\"permalink\":\"trilobal-nylon\",\"short_name\":\"Trilobal Nylon\",\"children\":[]},{\"id\":241,\"name\":\"Stellina\",\"permalink\":\"stellina\",\"short_name\":\"Stellina\",\"children\":[]}]},{\"id\":239,\"name\":\"Other\",\"permalink\":\"other\",\"short_name\":\"Other\",\"children\":[]},{\"id\":182,\"name\":\"Other
+        Animal\",\"permalink\":\"other-animal\",\"short_name\":\"Other Animal\",\"children\":[{\"id\":183,\"name\":\"Bison\",\"permalink\":\"bison\",\"short_name\":\"Bison\",\"children\":[]},{\"id\":184,\"name\":\"Cat\",\"permalink\":\"cat\",\"short_name\":\"Cat\",\"children\":[]},{\"id\":185,\"name\":\"Dog\",\"permalink\":\"dog\",\"short_name\":\"Dog\",\"children\":[]},{\"id\":186,\"name\":\"Mink\",\"permalink\":\"mink\",\"short_name\":\"Mink\",\"children\":[]},{\"id\":187,\"name\":\"Musk
+        Ox / Qiviut\",\"permalink\":\"qiviut\",\"short_name\":\"Qiviut\",\"children\":[]},{\"id\":188,\"name\":\"Possum\",\"permalink\":\"possum\",\"short_name\":\"Possum\",\"children\":[]},{\"id\":189,\"name\":\"Wolf\",\"permalink\":\"wolf\",\"short_name\":\"Wolf\",\"children\":[]},{\"id\":190,\"name\":\"Yak\",\"permalink\":\"yak\",\"short_name\":\"Yak\",\"children\":[]},{\"id\":194,\"name\":\"Arctic
+        Fox\",\"permalink\":\"arctic-fox\",\"short_name\":\"Arctic Fox\",\"children\":[]},{\"id\":195,\"name\":\"Chinchilla\",\"permalink\":\"chinchilla\",\"short_name\":\"Chinchilla\",\"children\":[]},{\"id\":196,\"name\":\"Highland
+        Cattle\",\"permalink\":\"highland-cattle\",\"short_name\":\"Highland Cattle\",\"children\":[]},{\"id\":197,\"name\":\"Horse\",\"permalink\":\"horse\",\"short_name\":\"Horse\",\"children\":[]},{\"id\":198,\"name\":\"Reindeer\",\"permalink\":\"reindeer\",\"short_name\":\"Reindeer\",\"children\":[]}]},{\"id\":167,\"name\":\"Silk\",\"permalink\":\"silk\",\"short_name\":\"Silk\",\"children\":[{\"id\":168,\"name\":\"Bombyx
+        / Cultivated / Mulberry\",\"permalink\":\"bombyx\",\"short_name\":\"Bombyx\",\"children\":[]},{\"id\":169,\"name\":\"Eri
+        (Peace Silk)\",\"permalink\":\"peace-silk\",\"short_name\":\"Eri\",\"children\":[]},{\"id\":170,\"name\":\"Muga\",\"permalink\":\"muga\",\"short_name\":\"Muga\",\"children\":[]},{\"id\":171,\"name\":\"Tussah\",\"permalink\":\"tussah\",\"short_name\":\"Tussah\",\"children\":[]}]},{\"id\":1,\"name\":\"Wool\",\"permalink\":\"wool\",\"short_name\":\"Wool\",\"children\":[{\"id\":2,\"name\":\"Bluefaced
+        Leicester (BFL)\",\"permalink\":\"bfl\",\"short_name\":\"Bluefaced Leicester\",\"children\":[]},{\"id\":3,\"name\":\"Bond\",\"permalink\":\"bond\",\"short_name\":\"Bond\",\"children\":[]},{\"id\":4,\"name\":\"Border
+        Leicester\",\"permalink\":\"border-leicester\",\"short_name\":\"Border Leicester\",\"children\":[]},{\"id\":5,\"name\":\"California
+        Variegated Mutant (CVM)\",\"permalink\":\"cvm\",\"short_name\":\"CVM\",\"children\":[]},{\"id\":6,\"name\":\"Cheviot\",\"permalink\":\"cheviot\",\"short_name\":\"Cheviot\",\"children\":[]},{\"id\":7,\"name\":\"Clun
+        Forest\",\"permalink\":\"clun-forest\",\"short_name\":\"Clun Forest\",\"children\":[]},{\"id\":8,\"name\":\"Columbia\",\"permalink\":\"columbia\",\"short_name\":\"Columbia\",\"children\":[]},{\"id\":9,\"name\":\"Coopworth\",\"permalink\":\"coopworth\",\"short_name\":\"Coopworth\",\"children\":[]},{\"id\":10,\"name\":\"Cormo\",\"permalink\":\"cormo\",\"short_name\":\"Cormo\",\"children\":[]},{\"id\":11,\"name\":\"Corriedale\",\"permalink\":\"corriedale\",\"short_name\":\"Corriedale\",\"children\":[]},{\"id\":12,\"name\":\"Cotswold\",\"permalink\":\"cotswold\",\"short_name\":\"Cotswold\",\"children\":[]},{\"id\":13,\"name\":\"Dorset
+        Down\",\"permalink\":\"dorset-down\",\"short_name\":\"Dorset Down\",\"children\":[]},{\"id\":14,\"name\":\"Dorset
+        Horn and Poll Dorset\",\"permalink\":\"dorset-horn-and-poll\",\"short_name\":\"Horn
+        and Poll Dorset\",\"children\":[]},{\"id\":15,\"name\":\"Falkland\",\"permalink\":\"falkland\",\"short_name\":\"Falkland\",\"children\":[]},{\"id\":16,\"name\":\"Finnish
+        Landrace (Finn)\",\"permalink\":\"finn\",\"short_name\":\"Finn\",\"children\":[]},{\"id\":17,\"name\":\"Icelandic\",\"permalink\":\"icelandic\",\"short_name\":\"Icelandic\",\"children\":[]},{\"id\":18,\"name\":\"Jacob\",\"permalink\":\"jacob\",\"short_name\":\"Jacob\",\"children\":[]},{\"id\":19,\"name\":\"Leicester
+        Longwool\",\"permalink\":\"leicester-longwool\",\"short_name\":\"Leicester
+        Longwool\",\"children\":[]},{\"id\":20,\"name\":\"Lincoln\",\"permalink\":\"lincoln\",\"short_name\":\"Lincoln\",\"children\":[]},{\"id\":21,\"name\":\"Manx
+        Loaghtan\",\"permalink\":\"manx-loaghtan\",\"short_name\":\"Manx Loaghtan\",\"children\":[]},{\"id\":22,\"name\":\"Merino\",\"permalink\":\"merino\",\"short_name\":\"Merino\",\"children\":[]},{\"id\":23,\"name\":\"Norwegian\",\"permalink\":\"norwegian\",\"short_name\":\"Norwegian\",\"children\":[]},{\"id\":24,\"name\":\"Navajo-Churro\",\"permalink\":\"navajo-churro\",\"short_name\":\"Navajo-Churro\",\"children\":[]},{\"id\":25,\"name\":\"Perendale\",\"permalink\":\"perendale\",\"short_name\":\"Perendale\",\"children\":[]},{\"id\":26,\"name\":\"Polwarth\",\"permalink\":\"polwarth\",\"short_name\":\"Polwarth\",\"children\":[]},{\"id\":27,\"name\":\"Rambouillet\",\"permalink\":\"rambouillet\",\"short_name\":\"Rambouillet\",\"children\":[]},{\"id\":28,\"name\":\"Romeldale\",\"permalink\":\"romeldale\",\"short_name\":\"Romeldale\",\"children\":[]},{\"id\":29,\"name\":\"Romney\",\"permalink\":\"romney\",\"short_name\":\"Romney\",\"children\":[]},{\"id\":30,\"name\":\"Ryeland\",\"permalink\":\"ryeland\",\"short_name\":\"Ryeland\",\"children\":[]},{\"id\":31,\"name\":\"Shetland\",\"permalink\":\"shetland\",\"short_name\":\"Shetland\",\"children\":[]},{\"id\":32,\"name\":\"Shropshire\",\"permalink\":\"shropshire\",\"short_name\":\"Shropshire\",\"children\":[]},{\"id\":33,\"name\":\"Southdown\",\"permalink\":\"southdown\",\"short_name\":\"Southdown\",\"children\":[]},{\"id\":34,\"name\":\"Suffolk\",\"permalink\":\"suffolk\",\"short_name\":\"Suffolk\",\"children\":[]},{\"id\":35,\"name\":\"Targhee\",\"permalink\":\"targhee\",\"short_name\":\"Targhee\",\"children\":[]},{\"id\":36,\"name\":\"Teeswater\",\"permalink\":\"teeswater\",\"short_name\":\"Teeswater\",\"children\":[]},{\"id\":37,\"name\":\"Texel\",\"permalink\":\"texel\",\"short_name\":\"Texel\",\"children\":[]},{\"id\":38,\"name\":\"Tunis\",\"permalink\":\"tunis\",\"short_name\":\"Tunis\",\"children\":[]},{\"id\":39,\"name\":\"Wensleydale\",\"permalink\":\"wensleydale\",\"short_name\":\"Wensleydale\",\"children\":[]},{\"id\":43,\"name\":\"\xC5land
+        sheep\",\"permalink\":\"aland-sheep\",\"short_name\":\"\xC5land sheep\",\"children\":[]},{\"id\":44,\"name\":\"Arapawa\",\"permalink\":\"arapawa\",\"short_name\":\"Arapawa\",\"children\":[]},{\"id\":45,\"name\":\"\xC5sen\",\"permalink\":\"asen\",\"short_name\":\"\xC5sen\",\"children\":[]},{\"id\":46,\"name\":\"Babydoll
+        Southdown \",\"permalink\":\"babydoll-southdown\",\"short_name\":\"Babydoll
+        Southdown \",\"children\":[]},{\"id\":47,\"name\":\"Badger Face Welsh Mountain\",\"permalink\":\"badger-face-welsh-mountain\",\"short_name\":\"Badger
+        Face Welsh\",\"children\":[]},{\"id\":48,\"name\":\"Balwen Welsh Mountain\",\"permalink\":\"balwen-welsh-mountain\",\"short_name\":\"Balwen
+        Welsh\",\"children\":[]},{\"id\":49,\"name\":\"Beulah Speckled Face\",\"permalink\":\"beulah-speckled-face\",\"short_name\":\"Beulah
+        Speckled Face\",\"children\":[]},{\"id\":50,\"name\":\"Black Welsh Mountain\",\"permalink\":\"black-welsh-mountain\",\"short_name\":\"Black
+        Welsh Mountain\",\"children\":[]},{\"id\":51,\"name\":\"Blackface\",\"permalink\":\"blackface\",\"short_name\":\"Blackface\",\"children\":[]},{\"id\":52,\"name\":\"Boreray\",\"permalink\":\"boreray\",\"short_name\":\"Boreray\",\"children\":[]},{\"id\":53,\"name\":\"Bowmont\",\"permalink\":\"bowmont\",\"short_name\":\"Bowmont\",\"children\":[]},{\"id\":54,\"name\":\"California
+        Red\",\"permalink\":\"california-red\",\"short_name\":\"California Red\",\"children\":[]},{\"id\":55,\"name\":\"Cambridge\",\"permalink\":\"cambridge\",\"short_name\":\"Cambridge\",\"children\":[]},{\"id\":56,\"name\":\"Castlemilk
+        Moorit\",\"permalink\":\"castlemilk-moorit\",\"short_name\":\"Castlemilk Moorit\",\"children\":[]},{\"id\":57,\"name\":\"Charmoise\",\"permalink\":\"charmoise\",\"short_name\":\"Charmoise\",\"children\":[]},{\"id\":58,\"name\":\"Charollais\",\"permalink\":\"charollais\",\"short_name\":\"Charollais\",\"children\":[]},{\"id\":59,\"name\":\"Coburger
+        Fuchsschaf\",\"permalink\":\"coburger-fuchsschaf\",\"short_name\":\"Coburger
+        Fuchsschaf\",\"children\":[]},{\"id\":60,\"name\":\"Comeback\",\"permalink\":\"comeback\",\"short_name\":\"Comeback\",\"children\":[]},{\"id\":61,\"name\":\"Cornwall
+        Longwool\",\"permalink\":\"cornwall-longwool\",\"short_name\":\"Cornwall Longwool\",\"children\":[]},{\"id\":62,\"name\":\"Dala\",\"permalink\":\"dala\",\"short_name\":\"Dala\",\"children\":[]},{\"id\":63,\"name\":\"Dalesbred\",\"permalink\":\"dalesbred\",\"short_name\":\"Dalesbred\",\"children\":[]},{\"id\":64,\"name\":\"Dartmoor
+        (Greyface and Whiteface)\",\"permalink\":\"dartmoor\",\"short_name\":\"Dartmoor\",\"children\":[]},{\"id\":65,\"name\":\"Deboulliet\",\"permalink\":\"deboulliet\",\"short_name\":\"Deboulliet\",\"children\":[]},{\"id\":66,\"name\":\"Delaine
+        Merino\",\"permalink\":\"delaine-merino\",\"short_name\":\"Delaine Merino\",\"children\":[]},{\"id\":67,\"name\":\"Derbyshire
+        Gritstone\",\"permalink\":\"derbyshire-gritstone\",\"short_name\":\"Derbyshire
+        Gritstone\",\"children\":[]},{\"id\":68,\"name\":\"Devon Closewool\",\"permalink\":\"devon-closewool\",\"short_name\":\"Devon
+        Closewool\",\"children\":[]},{\"id\":69,\"name\":\"Drents Heideschaap\",\"permalink\":\"drents-heideschaap\",\"short_name\":\"Drents
+        Heideschaap\",\"children\":[]},{\"id\":70,\"name\":\"East Friesian\",\"permalink\":\"east-friesian\",\"short_name\":\"East
+        Friesian\",\"children\":[]},{\"id\":71,\"name\":\"Estonian Landrace (Eesti
+        maalammas)\",\"permalink\":\"estonian-landrace\",\"short_name\":\"Estonian
+        Landrace\",\"children\":[]},{\"id\":72,\"name\":\"Exmoor Horn\",\"permalink\":\"exmoor-horn\",\"short_name\":\"Exmoor
+        Horn\",\"children\":[]},{\"id\":73,\"name\":\"Faroese\",\"permalink\":\"faroese\",\"short_name\":\"Faroese\",\"children\":[]},{\"id\":74,\"name\":\"Finnish
+        Landrace (Finnsheep)\",\"permalink\":\"finnsheep\",\"short_name\":\"Finnish
+        Landrace\",\"children\":[]},{\"id\":75,\"name\":\"Friesland\",\"permalink\":\"friesland\",\"short_name\":\"Friesland\",\"children\":[]},{\"id\":76,\"name\":\"Galway\",\"permalink\":\"galway\",\"short_name\":\"Galway\",\"children\":[]},{\"id\":77,\"name\":\"Gammelnorsk
+        sau (Old Norwegian Sheep)\",\"permalink\":\"gammelnorsk-sau\",\"short_name\":\"Gammelnorsk
+        sau\",\"children\":[]},{\"id\":78,\"name\":\"Gammelnorsk Sp\xE6lsau (Old Norwegian
+        Sp\xE6l Sheep)\",\"permalink\":\"gammelnorsk-splsau\",\"short_name\":\"Gammelnorsk
+        Sp\xE6lsau\",\"children\":[]},{\"id\":79,\"name\":\"Gestrike\",\"permalink\":\"gestrike\",\"short_name\":\"Gestrike\",\"children\":[]},{\"id\":80,\"name\":\"Gotland\",\"permalink\":\"gotland\",\"short_name\":\"Gotland\",\"children\":[]},{\"id\":81,\"name\":\"Gromark\",\"permalink\":\"gromark\",\"short_name\":\"Gromark\",\"children\":[]},{\"id\":82,\"name\":\"Gr\xE5
+        Tr\xF8ndersau (Gray Tr\xF8nder Sheep)\",\"permalink\":\"gra-trndersau\",\"short_name\":\"Gr\xE5
+        Tr\xF8ndersau\",\"children\":[]},{\"id\":83,\"name\":\"Gulf Coast Native\",\"permalink\":\"gulf-coast-native\",\"short_name\":\"Gulf
+        Coast Native\",\"children\":[]},{\"id\":84,\"name\":\"Gute\",\"permalink\":\"gute\",\"short_name\":\"Gute\",\"children\":[]},{\"id\":85,\"name\":\"Hampshire
+        Down\",\"permalink\":\"hampshire-down\",\"short_name\":\"Hampshire Down\",\"children\":[]},{\"id\":86,\"name\":\"Hebridean\",\"permalink\":\"hebridean\",\"short_name\":\"Hebridean\",\"children\":[]},{\"id\":87,\"name\":\"Helsinge\",\"permalink\":\"helsinge\",\"short_name\":\"Helsinge\",\"children\":[]},{\"id\":88,\"name\":\"Herdwick\",\"permalink\":\"herdwick\",\"short_name\":\"Herdwick\",\"children\":[]},{\"id\":89,\"name\":\"Hog
+        Island\",\"permalink\":\"hog-island\",\"short_name\":\"Hog Island\",\"children\":[]},{\"id\":90,\"name\":\"Hollands
+        Bont\",\"permalink\":\"hollands-bont\",\"short_name\":\"Hollands Bont\",\"children\":[]},{\"id\":91,\"name\":\"\xCEle-de-France\",\"permalink\":\"ile-de-france\",\"short_name\":\"\xCEle-de-France\",\"children\":[]},{\"id\":92,\"name\":\"Kainuun
+        Harmas\",\"permalink\":\"kainuun-harmas\",\"short_name\":\"Kainuun Harmas\",\"children\":[]},{\"id\":93,\"name\":\"Karakul\",\"permalink\":\"karakul\",\"short_name\":\"Karakul\",\"children\":[]},{\"id\":94,\"name\":\"Kerry
+        Hill\",\"permalink\":\"kerry-hill\",\"short_name\":\"Kerry Hill\",\"children\":[]},{\"id\":95,\"name\":\"Kl\xF6vsj\xF6\",\"permalink\":\"klovsjo\",\"short_name\":\"Kl\xF6vsj\xF6\",\"children\":[]},{\"id\":96,\"name\":\"Llanwenog\",\"permalink\":\"llanwenog\",\"short_name\":\"Llanwenog\",\"children\":[]},{\"id\":97,\"name\":\"Lleyn\",\"permalink\":\"lleyn\",\"short_name\":\"Lleyn\",\"children\":[]},{\"id\":98,\"name\":\"Lonk\",\"permalink\":\"lonk\",\"short_name\":\"Lonk\",\"children\":[]},{\"id\":100,\"name\":\"Masham
+        / Massam\",\"permalink\":\"masham\",\"short_name\":\"Masham\",\"children\":[]},{\"id\":101,\"name\":\"Montadale\",\"permalink\":\"montadale\",\"short_name\":\"Montadale\",\"children\":[]},{\"id\":102,\"name\":\"Norfolk
+        Horn\",\"permalink\":\"norfolk-horn\",\"short_name\":\"Norfolk Horn\",\"children\":[]},{\"id\":103,\"name\":\"North
+        Ronaldsay\",\"permalink\":\"north-ronaldsay\",\"short_name\":\"North Ronaldsay\",\"children\":[]},{\"id\":104,\"name\":\"Other
+        Longwool\",\"permalink\":\"other-longwool\",\"short_name\":\"Other Longwool\",\"children\":[]},{\"id\":105,\"name\":\"Other
+        Shortwool\",\"permalink\":\"other-shortwool\",\"short_name\":\"Other Shortwool\",\"children\":[]},{\"id\":106,\"name\":\"Ouessant\",\"permalink\":\"ouessant\",\"short_name\":\"Ouessant\",\"children\":[]},{\"id\":107,\"name\":\"Oxford
+        Down\",\"permalink\":\"oxford-down\",\"short_name\":\"Oxford Down\",\"children\":[]},{\"id\":108,\"name\":\"Polypay\",\"permalink\":\"polypay\",\"short_name\":\"Polypay\",\"children\":[]},{\"id\":109,\"name\":\"Pommersches
+        Landschaf\",\"permalink\":\"pommersches-landschaf\",\"short_name\":\"Pommersches
+        Landschaf\",\"children\":[]},{\"id\":110,\"name\":\"Portland\",\"permalink\":\"portland\",\"short_name\":\"Portland\",\"children\":[]},{\"id\":111,\"name\":\"Punta\",\"permalink\":\"punta\",\"short_name\":\"Punta\",\"children\":[]},{\"id\":112,\"name\":\"Roslag\",\"permalink\":\"roslag\",\"short_name\":\"Roslag\",\"children\":[]},{\"id\":113,\"name\":\"Rouge
+        de l'Ouest\",\"permalink\":\"rouge-de-louest\",\"short_name\":\"Rouge de l'Ouest\",\"children\":[]},{\"id\":114,\"name\":\"Rough
+        Fell\",\"permalink\":\"rough-fell\",\"short_name\":\"Rough Fell\",\"children\":[]},{\"id\":115,\"name\":\"Roussin\",\"permalink\":\"roussin\",\"short_name\":\"Roussin\",\"children\":[]},{\"id\":116,\"name\":\"Rya\",\"permalink\":\"rya\",\"short_name\":\"Rya\",\"children\":[]},{\"id\":117,\"name\":\"Rygja\",\"permalink\":\"rygja\",\"short_name\":\"Rygja\",\"children\":[]},{\"id\":118,\"name\":\"Santa
+        Cruz\",\"permalink\":\"santa-cruz\",\"short_name\":\"Santa Cruz\",\"children\":[]},{\"id\":119,\"name\":\"Saxon
+        Merino\",\"permalink\":\"saxon-merino\",\"short_name\":\"Saxon Merino\",\"children\":[]},{\"id\":120,\"name\":\"Schoonebeker\",\"permalink\":\"schoonebeker\",\"short_name\":\"Schoonebeker\",\"children\":[]},{\"id\":121,\"name\":\"Scottish
+        Blackface\",\"permalink\":\"scottish-blackface\",\"short_name\":\"Scottish
+        Blackface \",\"children\":[]},{\"id\":122,\"name\":\"Soay\",\"permalink\":\"soay\",\"short_name\":\"Soay\",\"children\":[]},{\"id\":123,\"name\":\"Spelsau
+        (modern)\",\"permalink\":\"spelsau\",\"short_name\":\"Spelsau\",\"children\":[]},{\"id\":124,\"name\":\"Steigar\",\"permalink\":\"steigar\",\"short_name\":\"Steigar\",\"children\":[]},{\"id\":125,\"name\":\"Sv\xE4rdsj\xF6\",\"permalink\":\"svardsjo\",\"short_name\":\"Sv\xE4rdsj\xF6\",\"children\":[]},{\"id\":126,\"name\":\"Swaledale\",\"permalink\":\"swaledale\",\"short_name\":\"Swaledale\",\"children\":[]},{\"id\":127,\"name\":\"V\xE4rmland\",\"permalink\":\"varmland\",\"short_name\":\"V\xE4rmland\",\"children\":[]},{\"id\":128,\"name\":\"Vendeen
+        \",\"permalink\":\"vendeen\",\"short_name\":\"Vendeen \",\"children\":[]},{\"id\":129,\"name\":\"Whitefaced
+        Woodland\",\"permalink\":\"whitefaced-woodland\",\"short_name\":\"Whitefaced
+        Woodland\",\"children\":[]},{\"id\":130,\"name\":\"Wiltshire Horn\",\"permalink\":\"wiltshire-horn\",\"short_name\":\"Wiltshire
+        Horn\",\"children\":[]},{\"id\":131,\"name\":\"Zwartbles\",\"permalink\":\"zwartbles\",\"short_name\":\"Zwartbles\",\"children\":[]},{\"id\":238,\"name\":\"Hill
+        Radnor\",\"permalink\":\"hill-radnor\",\"short_name\":\"Hill Radnor\",\"children\":[]},{\"id\":240,\"name\":\"Targhee-Columbia\",\"permalink\":\"targhee-columbia\",\"short_name\":\"Targhee-Columbia\",\"children\":[]}]}]}"
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,PUT,DELETE,PATCH
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 26 Dec 2025 01:19:44 GMT
+      ETag:
+      - W/"c304dd28d2cd7eec2343edc7cdecb76e"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-API:
+      - '1'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Handled-By:
+      - shaun
+      X-Ruby:
+      - '2'
+      X-Runtime:
+      - '25'
+      X-Up-Location:
+      - https://api.ravelry.com/fiber_categories.json
+      X-Up-Method:
+      - get
+      content-length:
+      - '19886'
+    status:
+      code: 200
+      message: OK
+version: 1
