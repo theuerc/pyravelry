@@ -11,6 +11,7 @@ from pyravelry.endpoints import (
     FiberCategoriesResource,
     SearchResource,
     YarnWeightsResource,
+    YarnCompaniesResource,
 )
 
 from .settings import RavelrySettings
@@ -37,6 +38,7 @@ class RavelryClient:
         self.yarn_weights = YarnWeightsResource(self._http)
         self.search = SearchResource(self._http)
         self.fiber_attributes = FiberAttributesResource(self._http)
+        self.yarn_companies = YarnCompaniesResource(self._http)
 
     def close(self) -> None:
         """Closes the httpx client."""

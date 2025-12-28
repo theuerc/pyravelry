@@ -23,8 +23,11 @@ class TestRavelryClient:
             "yarn_weights",
             "search",
             "fiber_attributes",
+            "yarn_companies",
         ],
     )
     def test_attributes__with_context_manager(self, attribute: str) -> None:
         with RavelryClient(self.settings) as client:
-            assert hasattr(client, attribute), f"Client is missing the '{attribute}' attribute"
+            assert hasattr(
+                client, attribute
+            ), f"Client is missing the '{attribute}' attribute"

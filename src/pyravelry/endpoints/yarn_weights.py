@@ -1,7 +1,4 @@
-"""Endpoint for yarn weights.
-
-https://www.ravelry.com/api#/_yarn_weights
-"""
+"""Endpoint for yarn weights."""
 
 from pyravelry.endpoints.base import BaseEndpoint
 from pyravelry.models import YarnWeightModel, YarnWeightsModel
@@ -15,6 +12,8 @@ class YarnWeightsResource(BaseEndpoint):
 
     Methods:
         list (list[YarnWeightModel]): returns all yarn weights.
+
+    https://www.ravelry.com/api#/_yarn_weights
     """
 
     endpoint: str = "/yarn_weights.json"
