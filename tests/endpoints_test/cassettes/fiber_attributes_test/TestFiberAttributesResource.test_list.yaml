@@ -1,0 +1,78 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - api.ravelry.com
+      User-Agent:
+      - python-httpx/0.28.1
+      authorization:
+      - Basic <REDACTED>
+    method: GET
+    uri: https://api.ravelry.com/fiber_attributes.json
+  response:
+    body:
+      string: '{"fiber_attributes": [{"fiber_attribute_group_id":1,"id":1,"name":"Commercially
+        dyed","permalink":"commercially-dyed"},{"fiber_attribute_group_id":1,"id":2,"name":"Handdyed","permalink":"handdyed"},{"fiber_attribute_group_id":1,"id":3,"name":"Handpainted","permalink":"handpainted"},{"fiber_attribute_group_id":1,"id":4,"name":"Kettle-dyed","permalink":"kettle-dyed"},{"fiber_attribute_group_id":1,"id":5,"name":"Natural
+        / Undyed","permalink":"natural---undyed"},{"fiber_attribute_group_id":1,"id":6,"name":"Naturally
+        Dyed","permalink":"naturally-dyed"},{"fiber_attribute_group_id":2,"id":7,"name":"Crossed","permalink":"crossed"},{"fiber_attribute_group_id":2,"id":8,"name":"Organic","permalink":"organic"},{"fiber_attribute_group_id":2,"id":9,"name":"Recycled","permalink":"recycled"},{"fiber_attribute_group_id":2,"id":10,"name":"Superwash","permalink":"superwash"},{"fiber_attribute_group_id":3,"id":11,"name":"Batts","permalink":"batts"},{"fiber_attribute_group_id":3,"id":12,"name":"Carded
+        Roving","permalink":"carded-roving"},{"fiber_attribute_group_id":3,"id":13,"name":"Cloud","permalink":"cloud"},{"fiber_attribute_group_id":3,"id":14,"name":"Dizzed","permalink":"dizzed"},{"fiber_attribute_group_id":3,"id":15,"name":"Drum-Carded","permalink":"drum-carded"},{"fiber_attribute_group_id":3,"id":16,"name":"Fauxlags","permalink":"fauxlags"},{"fiber_attribute_group_id":3,"id":17,"name":"Fleece","permalink":"fleece"},{"fiber_attribute_group_id":3,"id":18,"name":"Hand-Carded","permalink":"hand-carded"},{"fiber_attribute_group_id":3,"id":19,"name":"In
+        the Grease","permalink":"in-the-grease"},{"fiber_attribute_group_id":3,"id":20,"name":"Locks","permalink":"locks"},{"fiber_attribute_group_id":3,"id":21,"name":"Pin-Drafted
+        Roving","permalink":"pin-drafted-roving"},{"fiber_attribute_group_id":3,"id":22,"name":"Rolags","permalink":"rolags"},{"fiber_attribute_group_id":3,"id":23,"name":"Sliver","permalink":"sliver"},{"fiber_attribute_group_id":3,"id":24,"name":"Top
+        (Hand-Combed)","permalink":"top-hand-combed"},{"fiber_attribute_group_id":3,"id":25,"name":"Top
+        (Commercial)","permalink":"top-commercial"},{"fiber_attribute_group_id":3,"id":26,"name":"Z-stripped","permalink":"z-stripped"},{"fiber_attribute_group_id":4,"id":27,"name":"Line","permalink":"line"},{"fiber_attribute_group_id":4,"id":28,"name":"Strick","permalink":"strick"},{"fiber_attribute_group_id":5,"id":29,"name":"Bells","permalink":"bells"},{"fiber_attribute_group_id":5,"id":30,"name":"Cocoons","permalink":"cocoons"},{"fiber_attribute_group_id":5,"id":31,"name":"Mawata
+        / Hankies","permalink":"mawata---hankies"},{"fiber_attribute_group_id":5,"id":32,"name":"Noil","permalink":"noil"},{"fiber_attribute_group_id":5,"id":33,"name":"Tasar","permalink":"tasar"},{"fiber_attribute_group_id":5,"id":34,"name":"Thrower
+        / Throwster","permalink":"thrower---throwster"},{"fiber_attribute_group_id":3,"id":41,"name":"Punis","permalink":"punis-prep"},{"fiber_attribute_group_id":3,"id":50,"name":"Flicked","permalink":"flicked"},{"fiber_attribute_group_id":3,"id":51,"name":"Hackled","permalink":"hackled"},{"fiber_attribute_group_id":3,"id":53,"name":"Pencil
+        Roving","permalink":"pencil-roving"},{"fiber_attribute_group_id":4,"id":66,"name":"Dew-Retted","permalink":"dew-retted"},{"fiber_attribute_group_id":4,"id":67,"name":"Water-Retted","permalink":"water-retted"},{"fiber_attribute_group_id":6,"id":68,"name":"Ginned","permalink":"ginned"},{"fiber_attribute_group_id":6,"id":69,"name":"Punis","permalink":"punis"},{"fiber_attribute_group_id":6,"id":70,"name":"Seed","permalink":"seed"},{"fiber_attribute_group_id":4,"id":71,"name":"Tow","permalink":"tow"}]}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,PUT,DELETE,PATCH
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 28 Dec 2025 02:33:08 GMT
+      ETag:
+      - W/"7ccc57fb01f44d9b806d3dd9dfa7cea3"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-API:
+      - '1'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Handled-By:
+      - yearling
+      X-Ruby:
+      - '2'
+      X-Runtime:
+      - '38'
+      X-Up-Location:
+      - https://api.ravelry.com/fiber_attributes.json
+      X-Up-Method:
+      - get
+      content-length:
+      - '3635'
+    status:
+      code: 200
+      message: OK
+version: 1

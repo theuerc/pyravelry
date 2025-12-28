@@ -1,7 +1,4 @@
-"""Model for YarnWeight type.
-
-https://www.ravelry.com/api#YarnWeight_result
-"""
+"""Model for YarnWeight type."""
 
 from typing import Optional
 
@@ -13,8 +10,7 @@ from .base import BaseRavelryModel
 class YarnWeightModel(BaseRavelryModel):
     """Represents a Ravelry YarnWeight results object.
 
-    Defined at:
-        https://www.ravelry.com/api#YarnWeight_result
+    https://www.ravelry.com/api#YarnWeight_result
     """
 
     id: int
@@ -32,6 +28,9 @@ class YarnWeightModel(BaseRavelryModel):
 
 
 class YarnWeightsModel(BaseRavelryModel):
-    """Wrapper for the yarn_weights.json response."""
+    """Wrapper for the yarn_weights.json response.
+
+    https://www.ravelry.com/api#YarnWeight_result
+    """
 
     yarn_weights: list[YarnWeightModel]

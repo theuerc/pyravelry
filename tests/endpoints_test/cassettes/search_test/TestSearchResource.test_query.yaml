@@ -1,0 +1,67 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - api.ravelry.com
+      User-Agent:
+      - python-httpx/0.28.1
+      authorization:
+      - Basic <REDACTED>
+    method: GET
+    uri: https://api.ravelry.com/search.json?query=merino&limit=10&types=Yarn
+  response:
+    body:
+      string: '{"results": [{"title":"MerinoSeide","caption":"","type_name":"yarn","tiny_image_url":"https://images4-f.ravelrycache.com/uploads/Sidi/259628281/IMG_2445_square.JPG","image_url":"https://images4-g.ravelrycache.com/uploads/Sidi/259628281/IMG_2445_medium.JPG","record":{"type":"Yarn","id":123711,"permalink":"sidispinnt-merinoseide","uri":"/yarns/library/sidispinnt-merinoseide.json"}},{"title":"Merinosukka","caption":"","type_name":"yarn","tiny_image_url":"https://images4-g.ravelrycache.com/uploads/ellipet/896512834/7DFC8AFF-BFB1-4468-A6F3-FA94151EFB72_square.jpeg","image_url":"https://images4-g.ravelrycache.com/uploads/ellipet/896512834/7DFC8AFF-BFB1-4468-A6F3-FA94151EFB72_medium.jpeg","record":{"type":"Yarn","id":186156,"permalink":"silmukka-merinosukka","uri":"/yarns/library/silmukka-merinosukka.json"}},{"title":"MERINO100","caption":"","type_name":"yarn","tiny_image_url":"https://images4-g.ravelrycache.com/uploads/VickeviraYarns/768730067/4BD54884-3B6E-426D-B7AC-6F994F5043CA_square.jpeg","image_url":"https://images4-g.ravelrycache.com/uploads/VickeviraYarns/768730067/4BD54884-3B6E-426D-B7AC-6F994F5043CA_medium.jpeg","record":{"type":"Yarn","id":201437,"permalink":"vickevira-merino100","uri":"/yarns/library/vickevira-merino100.json"}},{"title":"Merino-Tussah","caption":"","type_name":"yarn","tiny_image_url":"https://images4-g.ravelrycache.com/uploads/annettcordes/996825673/P5290028_square.JPG","image_url":"https://images4-f.ravelrycache.com/uploads/annettcordes/996825673/P5290028_medium.JPG","record":{"type":"Yarn","id":234648,"permalink":"bunte-wolle-merino-tussah","uri":"/yarns/library/bunte-wolle-merino-tussah.json"}},{"title":"Merinosilke","caption":"","type_name":"yarn","tiny_image_url":"https://images4-g.ravelrycache.com/uploads/evaistaket/26360493/003_square.JPG","image_url":"https://images4-f.ravelrycache.com/uploads/evaistaket/26360493/003_medium.JPG","record":{"type":"Yarn","id":60840,"permalink":"stakets-hantverk--design-merinosilke","uri":"/yarns/library/stakets-hantverk--design-merinosilke.json"}},{"title":"Merinowol","caption":"","type_name":"yarn","tiny_image_url":"https://images4-g.ravelrycache.com/uploads/knitbybart/78398959/merinowol-naturel_square.jpg","image_url":"https://images4-f.ravelrycache.com/uploads/knitbybart/78398959/merinowol-naturel_medium.jpg","record":{"type":"Yarn","id":83298,"permalink":"knitbybart-merinowol","uri":"/yarns/library/knitbybart-merinowol.json"}},{"title":"Merinosweet","caption":"","type_name":"yarn","tiny_image_url":"https://images4-g.ravelrycache.com/uploads/Jardindesfibres/834216503/20210412_115040_square.jpg","image_url":"https://images4-f.ravelrycache.com/uploads/Jardindesfibres/834216503/20210412_115040_medium.jpg","record":{"type":"Yarn","id":106519,"permalink":"le-jardin-des-fibres-merinosweet","uri":"/yarns/library/le-jardin-des-fibres-merinosweet.json"}},{"title":"Merino-Soft","caption":"","type_name":"yarn","tiny_image_url":"https://images4-f.ravelrycache.com/uploads/ickstrick/184224221/CIMG2343_square.JPG","image_url":"https://images4-g.ravelrycache.com/uploads/ickstrick/184224221/CIMG2343_medium.JPG","record":{"type":"Yarn","id":110331,"permalink":"lana-alzetta-merino-soft","uri":"/yarns/library/lana-alzetta-merino-soft.json"}},{"title":"MerinoSilk","caption":"","type_name":"yarn","tiny_image_url":"https://images4-f.ravelrycache.com/uploads/emilou4u/640918283/CMS_Melany_square.JPG","image_url":"https://images4-g.ravelrycache.com/uploads/emilou4u/640918283/CMS_Melany_medium.JPG","record":{"type":"Yarn","id":182721,"permalink":"emilou-merinosilk","uri":"/yarns/library/emilou-merinosilk.json"}},{"title":"MerinoCottonSilk","caption":"","type_name":"yarn","tiny_image_url":"https://images4-f.ravelrycache.com/uploads/Metalheadknitting/831488223/IMG_20220114_183155_square.jpg","image_url":"https://images4-g.ravelrycache.com/uploads/Metalheadknitting/831488223/IMG_20220114_183155_medium.jpg","record":{"type":"Yarn","id":211262,"permalink":"pottwolle-merinocottonsilk","uri":"/yarns/library/pottwolle-merinocottonsilk.json"}}]}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,PUT,DELETE,PATCH
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 27 Dec 2025 23:33:03 GMT
+      ETag:
+      - W/"bafafef47a1f4464e585bb72f0dfc81d"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-API:
+      - '1'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Handled-By:
+      - yearling
+      X-Ruby:
+      - '2'
+      X-Runtime:
+      - '51'
+      X-Up-Location:
+      - https://api.ravelry.com/search.json?query=merino&limit=10&types=Yarn
+      X-Up-Method:
+      - get
+      content-length:
+      - '4048'
+    status:
+      code: 200
+      message: OK
+version: 1

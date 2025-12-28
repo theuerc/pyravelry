@@ -1,6 +1,4 @@
-"""Photo models.
-
-Defined at: https://www.ravelry.com/api#Photo_result"""
+"""Photo models"""
 
 from typing import Optional
 
@@ -13,7 +11,8 @@ class PhotoModel(BaseRavelryModel):
     """Represents a Ravelry Photo object.
 
     Covers 'Photo' and 'Photo (small)' variants.
-    Defined at: https://www.ravelry.com/api#Photo_result
+
+    https://www.ravelry.com/api#Photo_result
     """
 
     id: int
@@ -39,7 +38,10 @@ class PhotoModel(BaseRavelryModel):
 
 
 class PhotoFullModel(PhotoModel):
-    """Represents the 'Photo (full)' variant with additional fields."""
+    """Represents the 'Photo (full)' variant with additional fields.
+
+    https://www.ravelry.com/api#Photo_result
+    """
 
     flickr_url: Optional[str] = None
     shelved_url: Optional[str] = Field(None, description="A book cover image, 150 pixels wide")

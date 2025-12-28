@@ -1,7 +1,4 @@
-"""Yarn provenance models.
-
-https://www.ravelry.com/api#YarnProvenance_result
-"""
+"""Yarn provenance models."""
 
 from typing import Optional
 
@@ -14,6 +11,8 @@ class YarnProvenanceModel(BaseRavelryModel):
     """Represents a Ravelry YarnProvenance object.
 
     This model tracks the origin and processing phases of a yarn.
+
+    https://www.ravelry.com/api#YarnProvenance_result
     """
 
     id: int = Field(..., description="Unique identifier for the provenance record")
@@ -31,6 +30,9 @@ class YarnProvenanceModel(BaseRavelryModel):
 
 
 class YarnProvenancesModel(BaseRavelryModel):
-    """Wrapper for responses containing multiple yarn provenance records."""
+    """Wrapper for responses containing multiple yarn provenance records.
+
+    https://www.ravelry.com/api#YarnProvenance_result
+    """
 
     yarn_provenances: list[YarnProvenanceModel]

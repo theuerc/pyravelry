@@ -1,8 +1,4 @@
-"""Yarn country models
-
-Defined at:
-    https://www.ravelry.com/api#YarnCountry_result
-"""
+"""Yarn country models"""
 
 from typing import Optional
 
@@ -15,6 +11,8 @@ class YarnCountryModel(BaseRavelryModel):
     """Represents a Ravelry YarnCountry object.
 
     Attributes based on the YarnCountry (basic) specification.
+
+    https://www.ravelry.com/api#YarnCountry_result
     """
 
     id: int
@@ -32,6 +30,8 @@ class YarnCountryFullModel(YarnCountryModel):
     """Represents the YarnCountry (full) object.
 
     Inherits all fields from YarnCountryModel and adds the country name.
+
+    https://www.ravelry.com/api#YarnCountry_result
     """
 
     # The documentation didn't specify a type, but country_name is expected to be a string.

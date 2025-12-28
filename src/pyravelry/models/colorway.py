@@ -1,8 +1,4 @@
-"""Models for colorway.
-
-Defined at:
-    https://www.ravelry.com/api#Colorway_result
-"""
+"""Models for colorway."""
 
 from typing import Optional
 
@@ -16,6 +12,8 @@ class ColorwayModel(BaseRavelryModel):
 
     This includes the basic attributes shared by both the standard
     and full colorway objects.
+
+    https://www.ravelry.com/api#Colorway_result
     """
 
     id: int
@@ -28,6 +26,8 @@ class ColorwayFullModel(ColorwayModel):
     """Represents the full Colorway object with usage statistics.
 
     Extends ColorwayModel to include project counts and photo URLs.
+
+    https://www.ravelry.com/api#Colorway_result
     """
 
     photo_url: Optional[str] = Field(None, description="URL to the colorway image")

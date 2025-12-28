@@ -8,7 +8,7 @@ from pyravelry.models import FiberCategoriesModel, FiberCategoryModel
 
 
 class FiberCategoriesResource(BaseEndpoint):
-    """Endpoint for Color Families.
+    """Endpoint for Fiber Categories.
 
     Attributes:
         BaseEndpoint (AnyUrl): The endpoint for fiber categories.
@@ -18,6 +18,7 @@ class FiberCategoriesResource(BaseEndpoint):
     """
 
     endpoint: str = "/fiber_categories.json"
+    output_model = FiberCategoriesModel
 
     def list(self) -> list[FiberCategoryModel]:
         """

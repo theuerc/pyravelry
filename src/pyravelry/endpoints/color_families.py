@@ -21,6 +21,7 @@ class ColorFamiliesResource(BaseEndpoint):
     """
 
     endpoint: str = "/color_families.json"
+    output_model = ColorFamiliesModel
 
     def list(self) -> list[ColorFamilyModel]:
         """

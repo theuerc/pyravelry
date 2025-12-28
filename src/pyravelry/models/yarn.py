@@ -1,7 +1,4 @@
-"""Yarn results model
-
-https://www.ravelry.com/api#Yarn_result
-"""
+"""Yarn results model"""
 
 from typing import Any, Optional
 
@@ -19,7 +16,10 @@ from .yarnweight import YarnWeightModel
 
 
 class YarnBaseModel(BaseRavelryModel):
-    """Base fields shared across all Yarn result types."""
+    """Base fields shared across all Yarn result types.
+
+    https://www.ravelry.com/api#Yarn_result
+    """
 
     id: int
     name: str
@@ -45,8 +45,7 @@ class YarnBaseModel(BaseRavelryModel):
 class YarnModel(YarnBaseModel):
     """Represents a Ravelry Yarn result object.
 
-    Defined at:
-        https://www.ravelry.com/api#Yarn_result
+    https://www.ravelry.com/api#Yarn_result
     """
 
     first_photo: Optional[PhotoModel] = None
@@ -57,6 +56,8 @@ class YarnlistModel(YarnModel):
     """Represents a Ravelry Yarn (list) result object.
 
     Includes personal_attributes found in search results.
+
+    https://www.ravelry.com/api#Yarn_result
     """
 
     personal_attributes: Optional[dict] = Field(None, description="Hash containing favorited, bookmark_id, stash_ids")
@@ -72,8 +73,7 @@ class YarnStashlistModel(YarnBaseModel):
 class YarnFullModel(YarnBaseModel):
     """Represents a Ravelry Yarn (full) result object.
 
-    Defined at:
-        https://www.ravelry.com/api#Yarn_full_result
+    https://www.ravelry.com/api#Yarn_full_result
     """
 
     max_hook_size: Optional[Any] = None

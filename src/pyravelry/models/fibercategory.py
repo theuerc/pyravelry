@@ -1,7 +1,4 @@
-"""Fiber category model
-
-https://www.ravelry.com/api#FiberCategory_result
-"""
+"""Fiber category model"""
 
 from typing import Optional
 
@@ -13,8 +10,7 @@ from .base import BaseRavelryModel
 class FiberCategoryModel(BaseRavelryModel):
     """Represents a Ravelry FiberCategory results object.
 
-    Defined at:
-        https://www.ravelry.com/api#FiberCategory_result
+    https://www.ravelry.com/api#FiberCategory_result
     """
 
     id: int
@@ -38,6 +34,9 @@ FiberCategoryModel.model_rebuild()
 
 
 class FiberCategoriesModel(BaseRavelryModel):
-    """Wrapper for the fiber_categories.json response."""
+    """Wrapper for the fiber_categories.json response.
+
+    https://www.ravelry.com/api#FiberCategory_result
+    """
 
     fiber_categories: list[FiberCategoryModel]

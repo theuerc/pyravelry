@@ -1,8 +1,4 @@
-"""Yarn company models.
-
-Defined at:
-    https://www.ravelry.com/api#YarnCompany_result
-"""
+"""Yarn company models."""
 
 from typing import Optional
 
@@ -24,6 +20,8 @@ class YarnCompanyModel(YarnCompanyPublicModel):
     """
     Represents the standard, Full, and List versions of a YarnCompany.
     These share the same fields in the current documentation.
+
+    https://www.ravelry.com/api#YarnCompany_result
     """
 
     logo_url: Optional[str] = Field(None, description="URL to the company logo")
@@ -31,7 +29,10 @@ class YarnCompanyModel(YarnCompanyPublicModel):
 
 
 class YarnCompanyShopModel(BaseRavelryModel):
-    """Represents the 'Shop' version of a YarnCompany."""
+    """Represents the 'Shop' version of a YarnCompany.
+
+    https://www.ravelry.com/api#YarnCompany_result
+    """
 
     id: int
     name: str
@@ -44,6 +45,9 @@ class YarnCompanyShopModel(BaseRavelryModel):
 
 
 class YarnCompaniesModel(BaseRavelryModel):
-    """Wrapper for responses returning multiple yarn companies."""
+    """Wrapper for responses returning multiple yarn companies.
+
+    https://www.ravelry.com/api#YarnCompany_result
+    """
 
     yarn_companies: list[YarnCompanyModel]

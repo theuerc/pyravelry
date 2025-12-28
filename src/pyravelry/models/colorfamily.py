@@ -1,7 +1,4 @@
-"""Model for Colorfamily type.
-
-https://www.ravelry.com/api#ColorFamily_result
-"""
+"""Model for Colorfamily type."""
 
 from typing import Optional
 
@@ -13,8 +10,7 @@ from .base import BaseRavelryModel
 class ColorFamilyModel(BaseRavelryModel):
     """Represents a Ravelry ColorFamily results object.
 
-    Defined at:
-        https://www.ravelry.com/api#ColorFamily_result
+    https://www.ravelry.com/api#ColorFamily_result
     """
 
     id: int
@@ -28,6 +24,9 @@ class ColorFamilyModel(BaseRavelryModel):
 
 
 class ColorFamiliesModel(BaseRavelryModel):
-    """Wrapper for the color_families.json response."""
+    """Wrapper for the color_families.json response.
+
+    https://www.ravelry.com/api#ColorFamily_result
+    """
 
     color_families: list[ColorFamilyModel]

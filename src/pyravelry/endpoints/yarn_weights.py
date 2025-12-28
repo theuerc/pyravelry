@@ -18,10 +18,11 @@ class YarnWeightsResource(BaseEndpoint):
     """
 
     endpoint: str = "/yarn_weights.json"
+    output_model = YarnWeightsModel
 
     def list(self) -> list[YarnWeightModel]:
         """
-        List the current yarn weights
+        List the current yarn weights.
         Endpoint: GET /yarn_weights.json
         """
         response_dict = self._fetch(http_client=self._http, endpoint=YarnWeightsResource.endpoint)

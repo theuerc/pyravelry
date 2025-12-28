@@ -1,7 +1,4 @@
-"""Model for YarnFiber types.
-
-https://www.ravelry.com/api#YarnFiber_result
-"""
+"""Model for YarnFiber types."""
 
 from typing import Optional
 
@@ -15,8 +12,7 @@ from .fibertype import FiberTypeModel
 class YarnFiberFullModel(BaseRavelryModel):
     """Represents a YarnFiber (full) object.
 
-    Defined at:
-        https://www.ravelry.com/api#YarnFiber_result
+    https://www.ravelry.com/api#YarnFiber_result
     """
 
     id: int
@@ -28,8 +24,7 @@ class YarnFiberFullModel(BaseRavelryModel):
 class YarnFiberPublicModel(BaseRavelryModel):
     """Represents a YarnFiber (public) object.
 
-    Defined at:
-        https://www.ravelry.com/api#YarnFiber_result
+    https://www.ravelry.com/api#YarnFiber_result
     """
 
     id: int

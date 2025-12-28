@@ -11,7 +11,124 @@ This is python wrapper for the Ravelry API, which is a database of knitting / cr
 - **Github repository**: <https://github.com/theuerc/pyravelry/>
 - **Documentation** <https://theuerc.github.io/pyravelry/>
 
-## Getting started with your project
+Documentation for the Ravelry API--including how to get a http read-only API key--can be found here after logging in or making an account: https://www.ravelry.com/api
+
+This is the list of endpoints I am working through:
+
+- [x] /color_families
+- [ ] /current_user
+- [x] /fiber_attributes
+- [x] /fiber_categories
+- [x] /search
+- [x] /yarn_weights
+- [ ] /app (base level)
+- [ ] /bundled_items (base level)
+- [ ] /bundles (base level)
+- [ ] /carts (base level)
+- [ ] /comments (base level)
+- [ ] /deliveries (base level)
+- [ ] /designers (base level)
+- [ ] /drafts (base level)
+- [ ] /favorites (base level)
+- [ ] /fiber (base level)
+- [ ] /fiber_attributes_groups (base level)
+- [ ] /forum_posts (base level)
+- [ ] /forums (base level)
+- [ ] friends (base level)
+
+This is the list of pydantic models I am using for validating the output of the API:
+
+- [ ] Activity
+- [ ] Ad
+- [ ] AttributeGroup
+- [ ] Bookmark
+- [ ] Bundle
+- [ ] BundledItem
+- [ ] Business
+- [ ] Cart
+- [ ] CartItem
+- [ ] Collection
+- [x] ColorFamily
+- [x] Colorway
+- [ ] CombinedCart
+- [ ] ComponentYarn
+- [x] Craft
+- [ ] Delivery
+- [ ] Document
+- [ ] DownloadLink
+- [ ] DraftComponentYarn
+- [ ] DraftErrataLink
+- [ ] DraftNeedleSize
+- [ ] DraftPattern
+- [ ] DraftPatternYarn
+- [x] FiberAttribute
+- [x] FiberAttributeGroup
+- [x] FiberCategory
+- [ ] FiberPack
+- [ ] FiberStash
+- [x] FiberType
+- [ ] Forum
+- [ ] ForumPost
+- [ ] ForumPreference
+- [ ] ForumSet
+- [ ] ForumStatisticSummary
+- [ ] Friendship
+- [ ] Group
+- [ ] InStoreSale
+- [ ] Invoice
+- [ ] InvoiceLineItem
+- [ ] Language
+- [ ] Message
+- [ ] NeedleRecord
+- [ ] NeedleSize
+- [ ] NeedleType
+- [ ] Pack
+- [ ] Pattern
+- [ ] PatternAttribute
+- [ ] PatternAuthor
+- [ ] PatternCategory
+- [ ] PatternClassification
+- [ ] PatternLanguage
+- [ ] PatternNeedleSize
+- [ ] PatternSource
+- [ ] PatternSourceType
+- [ ] PatternTagging
+- [x] Photo
+- [ ] Printing
+- [ ] Product
+- [ ] ProductAttachment
+- [ ] ProductNotification
+- [ ] Project
+- [ ] ProjectStatus
+- [ ] QueuedProject
+- [ ] QueuedStash
+- [ ] Saleable
+- [ ] SavedSearch
+- [ ] Shop
+- [ ] ShopCustomer
+- [ ] ShopSchedule
+- [ ] SocialSite
+- [ ] Stash
+- [ ] StashStatus
+- [ ] Store
+- [ ] Tool
+- [ ] Topic
+- [ ] UnifiedStash
+- [ ] User
+- [ ] UserSite
+- [ ] Volume
+- [ ] VolumeAttachment
+- [x] Yarn
+- [x] YarnAttributeGroup
+- [x] YarnCompany
+- [x] YarnCountry
+- [x] YarnFiber
+- [x] YarnProvenance
+- [x] YarnWeight
+
+---
+
+Everything below this point will be deleted before the package is published.
 
 ### 1. Create a New Repository
 
