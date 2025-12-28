@@ -15,6 +15,12 @@ class BaseEndpoint(ABC):
         """Each child must define this string (e.g., '/patterns')."""
         pass
 
+    @property
+    @abstractmethod
+    def output_model(self) -> Any:
+        """Each child must define this output pydantic model"""
+        pass
+
     def __init__(self, http_client: SyncCacheClient) -> None:
         """Initializes the base endpoint for Ravelry.
 

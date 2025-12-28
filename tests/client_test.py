@@ -23,6 +23,7 @@ class TestRavelryClient:
             "yarn_weights",
             "search",
             "fiber_attributes",
+            "yarn_companies",
         ],
     )
     def test_attributes__with_context_manager(self, attribute: str) -> None:

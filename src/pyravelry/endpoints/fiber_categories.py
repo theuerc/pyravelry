@@ -25,6 +25,7 @@ class FiberCategoriesResource(BaseEndpoint):
         List the current fiber categories
         Endpoint: GET /fiber_categories.json
         """
-        response_dict = self._fetch(http_client=self._http, endpoint=FiberCategoriesResource.endpoint)
-        data = FiberCategoriesModel.model_validate(response_dict)
+        cls = FiberCategoriesResource
+        response_dict = self._fetch(http_client=self._http, endpoint=cls.endpoint)
+        data = cls.output_model.model_validate(response_dict)
         return data.fiber_categories
