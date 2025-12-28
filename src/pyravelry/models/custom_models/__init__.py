@@ -3,6 +3,6 @@
 These are not defined explicitly in the Ravelry documentation.
 """
 
-from . import search, paginator, yarncompany
+from . import paginator, search, yarncompany
 
-__all__ = ["search", "paginator", "yarncompany"]
+__all__ = ["paginator", "search", "yarncompany"]

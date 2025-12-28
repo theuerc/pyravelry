@@ -1,6 +1,8 @@
 from typing import Optional
-from pyravelry.models.base import BaseRavelryModel
+
 from pyravelry.models import YarnCompanyModel
+from pyravelry.models.base import BaseRavelryModel
+
 from .paginator import PaginatorModel
 
 

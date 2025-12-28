@@ -1,8 +1,9 @@
 """Endpoint for yarn companies"""
 
 from typing import Optional
+
 from pyravelry.endpoints.base import BaseEndpoint
-from pyravelry.models import YarnCompanySearchResponseModel, YarnCompanySearchParams
+from pyravelry.models import YarnCompanySearchParams, YarnCompanySearchResponseModel
 
 
 class YarnCompaniesResource(BaseEndpoint):

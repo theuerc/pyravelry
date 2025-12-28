@@ -10,8 +10,8 @@ from pyravelry.endpoints import (
     FiberAttributesResource,
     FiberCategoriesResource,
     SearchResource,
-    YarnWeightsResource,
     YarnCompaniesResource,
+    YarnWeightsResource,
 )
 
 from .settings import RavelrySettings

@@ -3,7 +3,7 @@ from typing import Any
 import pytest
 
 from pyravelry.endpoints import YarnCompaniesResource
-from pyravelry.models import YarnCompanySearchResponseModel, YarnCompanyModel
+from pyravelry.models import YarnCompanyModel, YarnCompanySearchResponseModel
 
 
 @pytest.mark.vcr
