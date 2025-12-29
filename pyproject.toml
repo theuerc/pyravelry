@@ -1,6 +1,6 @@
 [project]
 name = "pyravelry"
-version = "0.0.2"
+version = "0.0.3"
 description = "Python wrapper for the Ravelry API, which is a database of knitting / crocheting patterns."
 authors = [{ name = "Coulton Theuer", email = "theuerc@umich.edu" }]
 readme = "README.md"
