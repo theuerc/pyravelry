@@ -1,5 +1,3 @@
-"""Models for colorway."""
-
 from typing import Optional
 
 from pydantic import Field
@@ -13,7 +11,7 @@ class ColorwayModel(BaseRavelryModel):
     This includes the basic attributes shared by both the standard
     and full colorway objects.
 
-    https://www.ravelry.com/api#Colorway_result
+    [Colorway Ravelry API documentation](https://www.ravelry.com/api#Colorway_result)
     """
 
     id: int
@@ -27,7 +25,7 @@ class ColorwayFullModel(ColorwayModel):
 
     Extends ColorwayModel to include project counts and photo URLs.
 
-    https://www.ravelry.com/api#Colorway_result
+    [Colorway Ravelry API documentation](https://www.ravelry.com/api#Colorway_result)
     """
 
     photo_url: Optional[str] = Field(None, description="URL to the colorway image")
@@ -37,6 +35,9 @@ class ColorwayFullModel(ColorwayModel):
 
 
 class ColorwaysModel(BaseRavelryModel):
-    """Wrapper for responses returning a list of colorways."""
+    """Wrapper for responses returning a list of colorways.
+
+    [Colorway Ravelry API documentation](https://www.ravelry.com/api#Colorway_result)
+    """
 
     colorways: list[ColorwayModel]

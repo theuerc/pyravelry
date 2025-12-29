@@ -1,5 +1,3 @@
-"""Httpx client for getting data."""
-
 from types import TracebackType
 from typing import Optional, Self
 
@@ -18,7 +16,18 @@ from .settings import RavelrySettings
 
 
 class RavelryClient:
-    """Client to get data from the revelry api."""
+    """Client to get data from the revelry api.
+
+    Attributes:
+        settings (RavelrySettings): Authentication for the Ravelry API.
+        _http (SyncCacheClient): Httpx client with persistent caching
+        color_families (ColorFamiliesResource): Color Families endpoint
+        fiber_categories (FiberCategoriesResource): Fiber Categories endpoint
+        yarn_weights (YarnWeightsResource): Yarn Weights endpoint
+        search (SearchResource): Search endpoint
+        fiber_attributes (FiberAttributesResource): Fiber Attributes endpoint
+        yarn_companies (YarnCompaniesResource): Yarn Companies endpoint
+    """
 
     def __init__(self, settings: RavelrySettings) -> None:
         """Instantiates a revelry httpx client.

@@ -1,5 +1,3 @@
-"""Photo models"""
-
 from typing import Optional
 
 from pydantic import Field
@@ -12,7 +10,7 @@ class PhotoModel(BaseRavelryModel):
 
     Covers 'Photo' and 'Photo (small)' variants.
 
-    https://www.ravelry.com/api#Photo_result
+    [Photo Ravelry API documentation](https://www.ravelry.com/api#Photo_result)
     """
 
     id: int
@@ -40,7 +38,7 @@ class PhotoModel(BaseRavelryModel):
 class PhotoFullModel(PhotoModel):
     """Represents the 'Photo (full)' variant with additional fields.
 
-    https://www.ravelry.com/api#Photo_result
+    [Photo Ravelry API documentation](https://www.ravelry.com/api#Photo_result)
     """
 
     flickr_url: Optional[str] = None

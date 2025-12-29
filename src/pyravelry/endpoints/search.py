@@ -1,8 +1,3 @@
-"""Search endpoint
-
-https://www.ravelry.com/api#/_search
-"""
-
 from typing import Literal, Optional
 
 from pyravelry.endpoints.base import BaseEndpoint
@@ -10,7 +5,10 @@ from pyravelry.models import GlobalSearchResponseModel, SearchParams, SearchResu
 
 
 class SearchResource(BaseEndpoint):
-    """Search endpoint for Ravelry."""
+    """Search endpoint for Ravelry.
+
+    [Search Ravelry API documentation](https://www.ravelry.com/api#/_search)
+    """
 
     endpoint: str = "/search.json"
     input_model = SearchParams

@@ -292,14 +292,14 @@ wheels = [
 
 [[package]]
 name = "click"
-version = "8.3.1"
+version = "8.2.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "colorama", marker = "sys_platform == 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/3d/fa/656b739db8587d7b5dfa22e22ed02566950fbfbcdc20311993483657a5c0/click-8.3.1.tar.gz", hash = "sha256:12ff4785d337a1bb490bb7e9c2b1ee5da3112e94a8622f26a6c77f5d2fc6842a", size = 295065, upload-time = "2025-11-15T20:45:42.706Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/60/6c/8ca2efa64cf75a977a0d7fac081354553ebe483345c734fb6b6515d96bbc/click-8.2.1.tar.gz", hash = "sha256:27c491cc05d968d271d5a1db13e3b5a184636d9d930f148c50b038f0d0646202", size = 286342, upload-time = "2025-05-20T23:19:49.832Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/98/78/01c019cdb5d6498122777c1a43056ebb3ebfeef2076d9d026bfe15583b2b/click-8.3.1-py3-none-any.whl", hash = "sha256:981153a64e25f12d547d3426c367a4857371575ee7ad18df2a6183ab0545b2a6", size = 108274, upload-time = "2025-11-15T20:45:41.139Z" },
+    { url = "https://files.pythonhosted.org/packages/85/32/10bb5764d90a8eee674e9dc6f4db6a0ab47c8c4d0d83c27f7c39ac415a4d/click-8.2.1-py3-none-any.whl", hash = "sha256:61a3265b914e850b85317d0b3109c7f8cd35a670f963866005d6ef1d5175a12b", size = 102215, upload-time = "2025-05-20T23:19:47.796Z" },
 ]
 
 [[package]]
@@ -523,6 +523,18 @@ wheels = [
 ]
 
 [[package]]
+name = "fieldz"
+version = "0.1.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/78/c2/9d35a747f439051bff41511178b0b527f1466c7fd4b5a5f7357c136e82bc/fieldz-0.1.3.tar.gz", hash = "sha256:bc21013b2bd5f8a4a782ecef440343ff059fc0a4a2033ae4d616311675260585", size = 18018, upload-time = "2025-09-26T20:42:24.67Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/12/a0/5db990f52226aa4e01e268f285fa56ddf233b3b27b993b4ecc751cf2216f/fieldz-0.1.3-py3-none-any.whl", hash = "sha256:f975fc6f250958966e39504f89bf09bad41479b4c5e0b06b36d13fd92fbac792", size = 18227, upload-time = "2025-09-26T20:42:22.894Z" },
+]
+
+[[package]]
 name = "filelock"
 version = "3.20.1"
 source = { registry = "https://pypi.org/simple" }
@@ -553,6 +565,19 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/0d/0c/3a471b6e31951dce2360477420d0a8d1e00dea6cf33b70f3e8c3ab6e28e1/griffe-1.15.0.tar.gz", hash = "sha256:7726e3afd6f298fbc3696e67958803e7ac843c1cfe59734b6251a40cdbfb5eea", size = 424112, upload-time = "2025-11-10T15:03:15.52Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/9c/83/3b1d03d36f224edded98e9affd0467630fc09d766c0e56fb1498cbb04a9b/griffe-1.15.0-py3-none-any.whl", hash = "sha256:6f6762661949411031f5fcda9593f586e6ce8340f0ba88921a0f2ef7a81eb9a3", size = 150705, upload-time = "2025-11-10T15:03:13.549Z" },
+]
+
+[[package]]
+name = "griffe-fieldz"
+version = "0.4.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "fieldz" },
+    { name = "griffe" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3b/aa/eb58d641261f5222651db86976439dccde5dadeda42fb8c3445b1c85b7cc/griffe_fieldz-0.4.0.tar.gz", hash = "sha256:91d25a8199df4be8a5175556d9d8e6f43ef45cf5e93e52b8babfe4cf1037d5ff", size = 13283, upload-time = "2025-12-07T01:55:01.323Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/af/68/b7aa4caf9567863908b3b928e3ec141787044e3392d429e5b453f70bbfa4/griffe_fieldz-0.4.0-py3-none-any.whl", hash = "sha256:92b7ed3fd86c1da35b2851a272913ef27439c9cc3c232c15cab7eda34d2a51ad", size = 9087, upload-time = "2025-12-07T01:54:59.924Z" },
 ]
 
 [[package]]
@@ -1791,7 +1816,7 @@ wheels = [
 
 [[package]]
 name = "pyravelry"
-version = "0.0.2"
+version = "0.0.3"
 source = { editable = "." }
 dependencies = [
     { name = "hishel", extra = ["httpx"] },
@@ -1801,7 +1826,9 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
+    { name = "click" },
     { name = "deptry" },
+    { name = "griffe-fieldz" },
     { name = "ipykernel" },
     { name = "mkdocs" },
     { name = "mkdocs-material" },
@@ -1827,7 +1854,9 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
+    { name = "click", specifier = "<8.3.0" },
     { name = "deptry", specifier = ">=0.24.0" },
+    { name = "griffe-fieldz", specifier = ">=0.4.0" },
     { name = "ipykernel", specifier = ">=7.1.0" },
     { name = "mkdocs", specifier = ">=1.6.1" },
     { name = "mkdocs-material", specifier = ">=9.7.0" },

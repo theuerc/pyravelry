@@ -12,7 +12,7 @@ class YarnCountryModel(BaseRavelryModel):
 
     Attributes based on the YarnCountry (basic) specification.
 
-    https://www.ravelry.com/api#YarnCountry_result
+    [Yarn Country Ravelry API documentation](https://www.ravelry.com/api#YarnCountry_result)
     """
 
     id: int
@@ -31,7 +31,7 @@ class YarnCountryFullModel(YarnCountryModel):
 
     Inherits all fields from YarnCountryModel and adds the country name.
 
-    https://www.ravelry.com/api#YarnCountry_result
+    [Yarn Country Ravelry API documentation](https://www.ravelry.com/api#YarnCountry_result)
     """
 
     # The documentation didn't specify a type, but country_name is expected to be a string.

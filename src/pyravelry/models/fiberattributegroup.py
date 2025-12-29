@@ -1,5 +1,3 @@
-"""Fiber attribute group model."""
-
 from typing import Optional
 
 from pydantic import Field
@@ -10,7 +8,7 @@ from .base import BaseRavelryModel
 class FiberAttributeGroupModel(BaseRavelryModel):
     """Represents a Ravelry FiberAttributeGroup object.
 
-    https://www.ravelry.com/api#FiberAttributeGroup_result
+    [Fiber Attribute Group Ravelry API documentation](https://www.ravelry.com/api#FiberAttributeGroup_result)
     """
 
     id: int
@@ -24,7 +22,7 @@ class FiberAttributeGroupModel(BaseRavelryModel):
 class FiberAttributeGroupsModel(BaseRavelryModel):
     """Wrapper for the fiber_attribute_groups.json response.
 
-    https://www.ravelry.com/api#FiberAttributeGroup_result
+    [Fiber Attribute Group Ravelry API documentation](https://www.ravelry.com/api#FiberAttributeGroup_result)
     """
 
     fiber_attribute_groups: list[FiberAttributeGroupModel]

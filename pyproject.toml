@@ -1,6 +1,6 @@
 [project]
 name = "pyravelry"
-version = "0.0.2"
+version = "0.0.3"
 description = "Python wrapper for the Ravelry API, which is a database of knitting / crocheting patterns."
 authors = [{ name = "Coulton Theuer", email = "theuerc@umich.edu" }]
 readme = "README.md"
@@ -34,17 +34,20 @@ dev = [
     "pandas>=2.3.3",
     "polars>=1.36.1",
     "pytest-mock>=3.15.1",
+    "griffe-fieldz>=0.4.0",
     "pytest-recording>=0.13.4",
     "pre-commit>=4.5.0",
     "tox-uv>=1.29.0",
     "deptry>=0.24.0",
     "mypy>=1.19.0",
+    "click<8.3.0",
     "pytest-cov>=7.0.0",
     "ruff>=0.14.8",
     "mkdocs>=1.6.1",
     "mkdocs-material>=9.7.0",
     "mkdocstrings[python]>=1.0.0",
     "ipykernel>=7.1.0",
+    "griffe-fieldz>=0.4.0",
 ]
 
 [build-system]
