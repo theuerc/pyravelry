@@ -1,13 +1,10 @@
-"""Paginator model"""
-
 from pyravelry.models.base import BaseRavelryModel
 
 
 class PaginatorModel(BaseRavelryModel):
     """Standard Ravelry pagination object.
 
-    Documentation a little above this url:
-    https://www.ravelry.com/api#/_color_families
+    [Slightly Below Pagination Ravelry API documentation](https://www.ravelry.com/api#/_color_families)
     """
 
     page_count: int

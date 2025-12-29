@@ -1,9 +1,3 @@
-"""FiberType results model.
-
-Defined at:
-    https://www.ravelry.com/api#FiberType_result
-"""
-
 from pydantic import Field
 
 from .base import BaseRavelryModel
@@ -12,8 +6,7 @@ from .base import BaseRavelryModel
 class FiberTypeModel(BaseRavelryModel):
     """Represents a Ravelry FiberType results object.
 
-    Defined at:
-        https://www.ravelry.com/api#FiberType_result
+    [Fiber Type Ravelry API documentation](https://www.ravelry.com/api#FiberType_result)
     """
 
     id: int
@@ -24,6 +17,9 @@ class FiberTypeModel(BaseRavelryModel):
 
 
 class FiberTypesModel(BaseRavelryModel):
-    """Wrapper for the fiber_types.json response."""
+    """Wrapper for the fiber_types.json response.
+
+    [Fiber Type Ravelry API documentation](https://www.ravelry.com/api#FiberType_result)
+    """
 
     fiber_types: list[FiberTypeModel]

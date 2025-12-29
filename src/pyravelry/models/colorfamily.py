@@ -1,5 +1,3 @@
-"""Model for Colorfamily type."""
-
 from typing import Optional
 
 from pydantic import Field
@@ -10,7 +8,7 @@ from .base import BaseRavelryModel
 class ColorFamilyModel(BaseRavelryModel):
     """Represents a Ravelry ColorFamily results object.
 
-    https://www.ravelry.com/api#ColorFamily_result
+    [Color Family Ravelry API documentation](https://www.ravelry.com/api#ColorFamily_result)
     """
 
     id: int
@@ -26,7 +24,7 @@ class ColorFamilyModel(BaseRavelryModel):
 class ColorFamiliesModel(BaseRavelryModel):
     """Wrapper for the color_families.json response.
 
-    https://www.ravelry.com/api#ColorFamily_result
+    [Color Family Ravelry API documentation](https://www.ravelry.com/api#ColorFamily_result)
     """
 
     color_families: list[ColorFamilyModel]

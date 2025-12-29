@@ -22,7 +22,7 @@ $python -i
 'MerinoSeide'
 ```
 
-I've checked the API endpoints / models that are currently supported in the official documentation. The crossed ones are not planned to ever be supported:
+I've checked the API endpoints / models that are currently supported from the official [Ravelry Documentation](https://www.ravelry.com/api/). The crossed ones are not planned to ever be supported:
 
 Endpoints:
 

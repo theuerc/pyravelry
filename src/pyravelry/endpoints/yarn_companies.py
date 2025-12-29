@@ -1,5 +1,3 @@
-"""Endpoint for yarn companies"""
-
 from typing import Optional
 
 from pyravelry.endpoints.base import BaseEndpoint
@@ -9,7 +7,8 @@ from pyravelry.models import YarnCompanySearchParams, YarnCompanySearchResponseM
 class YarnCompaniesResource(BaseEndpoint):
     """
     Endpoint for yarn company specific operations.
-    https://www.ravelry.com/api#yarn_companies_search
+
+    [Yarn Companies Ravelry API documentation](https://www.ravelry.com/api#yarn_companies_search)
     """
 
     endpoint = "/yarn_companies"

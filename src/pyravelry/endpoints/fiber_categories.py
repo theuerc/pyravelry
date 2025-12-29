@@ -1,8 +1,3 @@
-"""Endpoint for fiber categories.
-
-https://www.ravelry.com/api#/_fiber_categories
-"""
-
 from pyravelry.endpoints.base import BaseEndpoint
 from pyravelry.models import FiberCategoriesModel, FiberCategoryModel
 
@@ -15,6 +10,8 @@ class FiberCategoriesResource(BaseEndpoint):
 
     Methods:
         list (list[FiberCategoryModel]): returns all fiber categories.
+
+    [Fiber Categories Ravelry API documentation](https://www.ravelry.com/api#/_fiber_categories)
     """
 
     endpoint: str = "/fiber_categories.json"

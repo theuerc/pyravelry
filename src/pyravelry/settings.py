@@ -1,5 +1,3 @@
-"""Ravelry configurations / authentication."""
-
 from __future__ import annotations
 
 from pydantic import Field, HttpUrl, SecretStr

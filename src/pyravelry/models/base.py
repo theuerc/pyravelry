@@ -1,5 +1,3 @@
-"""Defines the base pydantic model other ravelry results objects use."""
-
 from pydantic import BaseModel, ConfigDict
 
 

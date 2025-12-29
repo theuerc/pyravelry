@@ -7,7 +7,10 @@ from .paginator import PaginatorModel
 
 
 class YarnCompanySearchParams(BaseRavelryModel):
-    """Parameters for the yarn_companies/search endpoint."""
+    """Parameters for the yarn_companies/search endpoint.
+
+    [Yarn Companies Ravelry API documentation](https://www.ravelry.com/api#yarn_companies_search)
+    """
 
     query: Optional[str] = None
     page: int = 1
@@ -16,7 +19,10 @@ class YarnCompanySearchParams(BaseRavelryModel):
 
 
 class YarnCompanySearchResponseModel(BaseRavelryModel):
-    """Response returned by /yarn_companies/search.json."""
+    """Response returned by /yarn_companies/search.json.
+
+    [Yarn Companies Ravelry API documentation](https://www.ravelry.com/api#yarn_companies_search)
+    """
 
     yarn_companies: list[YarnCompanyModel]
     paginator: PaginatorModel

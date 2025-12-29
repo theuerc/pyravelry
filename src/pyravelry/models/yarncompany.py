@@ -21,7 +21,7 @@ class YarnCompanyModel(YarnCompanyPublicModel):
     Represents the standard, Full, and List versions of a YarnCompany.
     These share the same fields in the current documentation.
 
-    https://www.ravelry.com/api#YarnCompany_result
+    [Yarn Company Ravelry API documentation](https://www.ravelry.com/api#YarnCompany_result)
     """
 
     logo_url: Optional[str] = Field(None, description="URL to the company logo")
@@ -31,7 +31,7 @@ class YarnCompanyModel(YarnCompanyPublicModel):
 class YarnCompanyShopModel(BaseRavelryModel):
     """Represents the 'Shop' version of a YarnCompany.
 
-    https://www.ravelry.com/api#YarnCompany_result
+    [Yarn Company Ravelry API documentation](https://www.ravelry.com/api#YarnCompany_result)
     """
 
     id: int

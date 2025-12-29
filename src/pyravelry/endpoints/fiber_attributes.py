@@ -1,8 +1,3 @@
-"""Endpoint for fiber attributes.
-
-https://www.ravelry.com/api#/_fiber_attributes
-"""
-
 from pyravelry.endpoints.base import BaseEndpoint
 from pyravelry.models import FiberAttributeModel, FiberAttributesModel
 
@@ -15,6 +10,8 @@ class FiberAttributesResource(BaseEndpoint):
 
     Methods:
         list (list[FiberAttributeModel]): returns all fiber attributes.
+
+    [Fiber Attributes Ravelry API documentation](https://www.ravelry.com/api#/_fiber_attributes)
     """
 
     endpoint: str = "/fiber_attributes.json"
@@ -23,6 +20,7 @@ class FiberAttributesResource(BaseEndpoint):
     def list(self) -> list[FiberAttributeModel]:
         """
         List the current fiber attributes
+
         Endpoint: GET /fiber_attributes.json
         """
         cls = FiberAttributesResource

@@ -1,5 +1,3 @@
-"""Yarn Attribute Group model"""
-
 from typing import Optional
 
 from pydantic import Field
@@ -13,7 +11,7 @@ class YarnAttributeGroupModel(BaseRavelryModel):
     This model handles both the 'full' and 'list' versions by making
     the children field optional.
 
-    https://www.ravelry.com/api#YarnAttributeGroup_result
+    [Yarn Attribute Group Ravelry API documentation](https://www.ravelry.com/api#YarnAttributeGroup_result)
     """
 
     id: int
@@ -33,7 +31,7 @@ YarnAttributeGroupModel.model_rebuild()
 class YarnAttributeGroupsModel(BaseRavelryModel):
     """Wrapper for responses containing multiple yarn attribute groups.
 
-    https://www.ravelry.com/api#YarnAttributeGroup_result
+    [Yarn Attribute Group Ravelry API documentation](https://www.ravelry.com/api#YarnAttributeGroup_result)
     """
 
     yarn_attribute_groups: list[YarnAttributeGroupModel]

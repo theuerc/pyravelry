@@ -1,5 +1,3 @@
-"""Search parameter models"""
-
 from typing import Literal, Optional
 
 from pydantic import BaseModel, Field, field_validator
@@ -10,7 +8,7 @@ from pyravelry.models.base import BaseRavelryModel
 class SearchParams(BaseModel):
     """Parameters for the /search.json endpoint.
 
-    https://www.ravelry.com/api#/_search
+    [Search Ravelry API documentation](https://www.ravelry.com/api#/_search)
     """
 
     query: str = Field(...)
@@ -54,7 +52,10 @@ class SearchParams(BaseModel):
 
 
 class SearchRecordModel(BaseRavelryModel):
-    """Details about the specific record found in the search."""
+    """Details about the specific record found in the search.
+
+    [Search Ravelry API documentation](https://www.ravelry.com/api#/_search)
+    """
 
     type: str
     id: int
@@ -63,7 +64,10 @@ class SearchRecordModel(BaseRavelryModel):
 
 
 class SearchResultModel(BaseRavelryModel):
-    """Represents an individual result from the global search."""
+    """Represents an individual result from the global search.
+
+    [Search Ravelry API documentation](https://www.ravelry.com/api#/_search)
+    """
 
     title: str
     type_name: str = Field(..., alias="type_name")
@@ -74,6 +78,9 @@ class SearchResultModel(BaseRavelryModel):
 
 
 class GlobalSearchResponseModel(BaseRavelryModel):
-    """Wrapper for the search.json response."""
+    """Wrapper for the search.json response.
+
+    [Search Ravelry API documentation](https://www.ravelry.com/api#/_search)
+    """
 
     results: list[SearchResultModel]

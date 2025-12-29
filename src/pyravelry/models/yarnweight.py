@@ -10,7 +10,7 @@ from .base import BaseRavelryModel
 class YarnWeightModel(BaseRavelryModel):
     """Represents a Ravelry YarnWeight results object.
 
-    https://www.ravelry.com/api#YarnWeight_result
+    [Yarn Weight Ravelry API documentation](https://www.ravelry.com/api#YarnWeight_result)
     """
 
     id: int
@@ -30,7 +30,7 @@ class YarnWeightModel(BaseRavelryModel):
 class YarnWeightsModel(BaseRavelryModel):
     """Wrapper for the yarn_weights.json response.
 
-    https://www.ravelry.com/api#YarnWeight_result
+    [Yarn Weight Ravelry API documentation](https://www.ravelry.com/api#YarnWeight_result)
     """
 
     yarn_weights: list[YarnWeightModel]
