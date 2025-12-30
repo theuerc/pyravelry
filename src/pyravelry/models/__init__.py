@@ -4,6 +4,7 @@ from . import base
 from .base import BaseRavelryModel
 from .colorfamily import ColorFamiliesModel, ColorFamilyModel
 from .custom_models import paginator
+from .custom_models.paginator import PaginatorModel
 from .custom_models.search import (
     GlobalSearchResponseModel,
     SearchParams,
@@ -17,6 +18,10 @@ from .custom_models.yarncompany import (
 )
 from .fiberattribute import FiberAttributeModel, FiberAttributesModel
 from .fibercategory import FiberCategoriesModel, FiberCategoryModel
+from .socialsite import SocialSiteModel
+from .usersite import UserSiteModel
+from .yarnattributegroup import YarnAttributeGroupModel as YarnAttributeModel
+from .yarnattributegroup import YarnAttributeGroupsModel as YarnAttributesModel
 from .yarncompany import YarnCompaniesModel
 from .yarnweight import YarnWeightModel, YarnWeightsModel
 
@@ -29,9 +34,14 @@ __all__ = [
     "FiberCategoriesModel",
     "FiberCategoryModel",
     "GlobalSearchResponseModel",
+    "PaginatorModel",
     "SearchParams",
     "SearchRecordModel",
     "SearchResultModel",
+    "SocialSiteModel",
+    "UserSiteModel",
+    "YarnAttributeModel",
+    "YarnAttributesModel",
     "YarnCompaniesModel",
     "YarnCompanyModel",
     "YarnCompanySearchParams",
