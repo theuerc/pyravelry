@@ -8,6 +8,7 @@ from pyravelry.endpoints import (
     FiberAttributesResource,
     FiberCategoriesResource,
     SearchResource,
+    YarnAttributesResource,
     YarnCompaniesResource,
     YarnWeightsResource,
 )
@@ -45,6 +46,7 @@ class RavelryClient:
         self.color_families = ColorFamiliesResource(self._http)
         self.fiber_categories = FiberCategoriesResource(self._http)
         self.yarn_weights = YarnWeightsResource(self._http)
+        self.yarn_attributes = YarnAttributesResource(self._http)
         self.search = SearchResource(self._http)
         self.fiber_attributes = FiberAttributesResource(self._http)
         self.yarn_companies = YarnCompaniesResource(self._http)

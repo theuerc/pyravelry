@@ -72,7 +72,7 @@ Endpoints:
 - [ ] /topics
 - [ ] /upload
 - [ ] /volumes
-- [ ] /yarn_attributes
+- [x] /yarn_attributes
 - [x] /yarn_companies
 - [ ] /yarns
 

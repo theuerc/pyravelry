@@ -17,8 +17,8 @@ class TestYarnWeightsResource:
         assert self.obj is not None
 
     def test_list(self) -> None:
-        list_of_fiber_categories = self.obj.list()
+        list_of_yarn_weights = self.obj.list()
 
-        assert isinstance(list_of_fiber_categories, list)
-        assert len(list_of_fiber_categories) > 0
-        assert isinstance(list_of_fiber_categories[0], YarnWeightModel)
+        assert isinstance(list_of_yarn_weights, list)
+        assert len(list_of_yarn_weights) > 0
+        assert isinstance(list_of_yarn_weights[0], YarnWeightModel)
