@@ -1,0 +1,200 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - api.ravelry.com
+      User-Agent:
+      - python-httpx/0.28.1
+      authorization:
+      - Basic <REDACTED>
+    method: GET
+    uri: https://api.ravelry.com/yarn_attributes/groups.json
+  response:
+    body:
+      string: "{\"yarn_attribute_groups\": [{\"id\":8,\"name\":\"Care\",\"permalink\":\"care\",\"yarn_attributes\":[{\"created_at\":\"2016/05/27
+        15:07:32 -0400\",\"description\":\"lay flat to dry\",\"id\":76,\"name\":\"Dry
+        Flat\",\"permalink\":\"dry-flat\",\"sort_order\":5,\"yarn_attribute_group_id\":8},{\"created_at\":\"2016/05/27
+        15:07:32 -0400\",\"description\":\"wash by hand\",\"id\":4,\"name\":\"Hand
+        Wash\",\"permalink\":\"hand-wash\",\"sort_order\":4,\"yarn_attribute_group_id\":8},{\"created_at\":\"2016/05/27
+        15:07:32 -0400\",\"description\":\"wash by hand in cold water\",\"id\":5,\"name\":\"Hand
+        Wash Cold\",\"permalink\":\"hand-wash-cold\",\"sort_order\":5,\"yarn_attribute_group_id\":8},{\"created_at\":\"2016/05/27
+        15:07:31 -0400\",\"description\":\"yarn may be dried in a drying machine\",\"id\":3,\"name\":\"Machine
+        Dry\",\"permalink\":\"machine-dry\",\"sort_order\":3,\"yarn_attribute_group_id\":8},{\"created_at\":\"2016/05/27
+        15:07:31 -0400\",\"description\":\"yarn may be washed in a washing machine\",\"id\":2,\"name\":\"Machine
+        Wash\",\"permalink\":\"machine-wash\",\"sort_order\":2,\"yarn_attribute_group_id\":8},{\"created_at\":\"2016/05/27
+        15:07:31 -0400\",\"description\":\"yarn has been treated and may be washed
+        in a washing machine\",\"id\":1,\"name\":\"Superwash\",\"permalink\":\"superwash\",\"sort_order\":1,\"yarn_attribute_group_id\":8}],\"children\":[]},{\"id\":12,\"name\":\"Color\",\"permalink\":\"color\",\"yarn_attributes\":[{\"created_at\":\"2016/05/27
+        15:07:33 -0400\",\"description\":\"two or more contrasting singles plied together\",\"id\":19,\"name\":\"Barber
+        pole\",\"permalink\":\"barber-pole\",\"sort_order\":1,\"yarn_attribute_group_id\":12},{\"created_at\":\"2016/05/27
+        15:07:33 -0400\",\"description\":\"dyed in long color sections that gradually
+        blend into each other\",\"id\":20,\"name\":\"Gradient\",\"permalink\":\"gradient\",\"sort_order\":2,\"yarn_attribute_group_id\":12},{\"created_at\":\"2016/05/27
+        15:07:34 -0400\",\"description\":\"a subtly flecked color effect achieved
+        by blending together many different shades of fiber before spinning\",\"id\":21,\"name\":\"Heathered\",\"permalink\":\"heathered\",\"sort_order\":3,\"yarn_attribute_group_id\":12},{\"created_at\":\"2016/05/27
+        15:07:34 -0400\",\"description\":\"made up of two or more plies of different
+        colors twisted together\",\"id\":22,\"name\":\"Marled\",\"permalink\":\"marled\",\"sort_order\":4,\"yarn_attribute_group_id\":12},{\"created_at\":\"2016/05/27
+        15:07:34 -0400\",\"description\":\"made up of multiple unplied strands of
+        thin yarns in different solid colors\",\"id\":23,\"name\":\"Multi-strand unplied\",\"permalink\":\"multi-strand-unplied\",\"sort_order\":5,\"yarn_attribute_group_id\":12},{\"created_at\":\"2016/05/27
+        15:07:34 -0400\",\"description\":\"dyed in manner designed to create specific
+        patterns (often imitating those seen\\rin fair-isle knitting), most frequently
+        when making items with a small width or circumference\",\"id\":25,\"name\":\"Self-patterning\",\"permalink\":\"self-patterning\",\"sort_order\":6,\"yarn_attribute_group_id\":12},{\"created_at\":\"2016/05/27
+        15:07:34 -0400\",\"description\":\"dyed in manner designed to create stripes,
+        most frequently when making items with a small width or circumference\",\"id\":24,\"name\":\"Self-striping\",\"permalink\":\"self-striping\",\"sort_order\":7,\"yarn_attribute_group_id\":12},{\"created_at\":\"2016/05/27
+        15:07:35 -0400\",\"description\":\"dyed in a single hue with slight variation\",\"id\":26,\"name\":\"Semi-solid\",\"permalink\":\"semi-solid\",\"sort_order\":8,\"yarn_attribute_group_id\":12},{\"created_at\":\"2016/05/27
+        15:07:35 -0400\",\"description\":\"dyed in a single hue with no variation\",\"id\":78,\"name\":\"Solid
+        color\",\"permalink\":\"solid\",\"sort_order\":9,\"yarn_attribute_group_id\":12},{\"created_at\":\"2016/05/27
+        15:07:35 -0400\",\"description\":\"dye method that results in tiny flecks
+        of multiple colorsNULL\",\"id\":27,\"name\":\"Speckled\",\"permalink\":\"speckled\",\"sort_order\":10,\"yarn_attribute_group_id\":12},{\"created_at\":\"2016/05/27
+        15:07:33 -0400\",\"description\":\"incorporates different tones (shades or
+        tints) of the same hue\",\"id\":82,\"name\":\"Tonal\",\"permalink\":\"tonal\",\"sort_order\":11,\"yarn_attribute_group_id\":12},{\"created_at\":\"2016/05/27
+        15:07:35 -0400\",\"description\":\"yarn containing contrasting flecks of color
+        or neps, usually consisting of small pieces of fiber, on a solid background\",\"id\":28,\"name\":\"Tweed\",\"permalink\":\"tweed\",\"sort_order\":12,\"yarn_attribute_group_id\":12},{\"created_at\":\"2016/05/27
+        15:07:35 -0400\",\"description\":\"yarn dyed with more than one color\",\"id\":29,\"name\":\"Variegated\",\"permalink\":\"variegated\",\"sort_order\":13,\"yarn_attribute_group_id\":12}],\"children\":[]},{\"id\":13,\"name\":\"Construction\",\"permalink\":\"construction\",\"yarn_attributes\":[{\"created_at\":\"2016/05/27
+        15:07:36 -0400\",\"description\":\"a plying method that uses one single strand
+        to get a 3-ply yarn\",\"id\":42,\"name\":\"Chain-plied\",\"permalink\":\"chain-plied\",\"sort_order\":0,\"yarn_attribute_group_id\":13},{\"created_at\":\"2016/05/27
+        15:07:36 -0400\",\"description\":\"made up of smaller strands of yarn that
+        are worked into a chain or i-cord\",\"id\":43,\"name\":\"Chainette/i-cord\",\"permalink\":\"chainette-i-cord\",\"sort_order\":0,\"yarn_attribute_group_id\":13},{\"created_at\":\"2016/05/27
+        15:07:37 -0400\",\"description\":\"a thick and thin single plied and manipulated
+        onto a light weight, smooth, strong binder\\rthread\",\"id\":45,\"name\":\"Coils\",\"permalink\":\"coils\",\"sort_order\":0,\"yarn_attribute_group_id\":13},{\"created_at\":\"2016/05/27
+        15:07:38 -0400\",\"description\":\"brushed or fluffy yarn which creates a
+        fuzzy effect\",\"id\":58,\"name\":\"Halo\",\"permalink\":\"halo\",\"sort_order\":0,\"yarn_attribute_group_id\":13},{\"created_at\":\"2016/05/27
+        15:07:37 -0400\",\"description\":\"flat yarn\",\"id\":50,\"name\":\"Ribbon\",\"permalink\":\"ribbon\",\"sort_order\":0,\"yarn_attribute_group_id\":13},{\"created_at\":\"2016/05/27
+        15:07:37 -0400\",\"description\":\"webbed yarn that allows you to work into
+        the yarn itself and create a highly textured fabric with ruffles\",\"id\":51,\"name\":\"Ruffle\",\"permalink\":\"ruffle\",\"sort_order\":0,\"yarn_attribute_group_id\":13},{\"created_at\":\"2016/05/27
+        15:07:38 -0400\",\"description\":\"yarn with markedly thicker sections or
+        \u201Cslubs\u201D\",\"id\":56,\"name\":\"Slub\",\"permalink\":\"slub\",\"sort_order\":0,\"yarn_attribute_group_id\":13},{\"created_at\":\"2016/05/27
+        15:07:38 -0400\",\"description\":\"flat yarn constructed from a knitted or
+        woven tape\",\"id\":54,\"name\":\"Tape\",\"permalink\":\"tape\",\"sort_order\":0,\"yarn_attribute_group_id\":13},{\"created_at\":\"2016/05/27
+        15:07:37 -0400\",\"description\":\"yarn with a pronounced variation of thick
+        and thin weights\",\"id\":52,\"name\":\"Thick and thin\",\"permalink\":\"thick-and-thin\",\"sort_order\":0,\"yarn_attribute_group_id\":13},{\"created_at\":\"2016/05/27
+        15:07:38 -0400\",\"description\":\"single-strand, unspun lengths of wool or
+        fiber\",\"id\":55,\"name\":\"Unspun\",\"permalink\":\"unspun\",\"sort_order\":0,\"yarn_attribute_group_id\":13},{\"created_at\":\"2016/05/27
+        15:07:37 -0400\",\"description\":\"yarn in which the fibers appear to be twisted
+        in a direction like the letter Z when the yarn is held vertically\\r\",\"id\":80,\"name\":\"Z
+        Twist\",\"permalink\":\"z-twist\",\"sort_order\":0,\"yarn_attribute_group_id\":13}],\"children\":[{\"id\":14,\"name\":\"Foreign
+        objects\",\"permalink\":\"foreign-objects\",\"yarn_attributes\":[{\"created_at\":\"2016/05/27
+        15:07:35 -0400\",\"description\":\"a small piece of material (glass, stone,
+        clay, etc.) pierced for stringing\",\"id\":30,\"name\":\"Beads\",\"permalink\":\"beads\",\"sort_order\":0,\"yarn_attribute_group_id\":14},{\"created_at\":\"2016/05/27
+        15:07:35 -0400\",\"description\":\"a light, flat structure that grows from
+        and covers birds\",\"id\":31,\"name\":\"Feathers\",\"permalink\":\"feathers\",\"sort_order\":0,\"yarn_attribute_group_id\":14},{\"created_at\":\"2016/05/27
+        15:07:35 -0400\",\"description\":\"cloth made from agitating wet wool or other
+        suitable material\",\"id\":33,\"name\":\"Felt\",\"permalink\":\"felt\",\"sort_order\":0,\"yarn_attribute_group_id\":14},{\"created_at\":\"2016/05/27
+        15:07:36 -0400\",\"description\":\"other embellishments\",\"id\":35,\"name\":\"Other\",\"permalink\":\"other\",\"sort_order\":0,\"yarn_attribute_group_id\":14},{\"created_at\":\"2016/05/27
+        15:07:35 -0400\",\"description\":\"a long, narrow strip of fabric\",\"id\":34,\"name\":\"Ribbons\",\"permalink\":\"ribbons\",\"sort_order\":0,\"yarn_attribute_group_id\":14},{\"created_at\":\"2016/05/27
+        15:07:35 -0400\",\"description\":\"a small, shiny disk, often perforated in
+        the center\\r\",\"id\":32,\"name\":\"Sequins\",\"permalink\":\"sequins\",\"sort_order\":0,\"yarn_attribute_group_id\":14}],\"children\":[]},{\"id\":19,\"name\":\"Novelty\",\"permalink\":\"novelty\",\"yarn_attributes\":[{\"created_at\":\"2016/05/27
+        15:07:36 -0400\",\"description\":\"looped or curled yarn that gives a knobbly
+        surface effect\",\"id\":40,\"name\":\"Boucle\",\"permalink\":\"boucle\",\"sort_order\":0,\"yarn_attribute_group_id\":19},{\"created_at\":\"2016/05/27
+        15:07:37 -0400\",\"description\":\"soft, fuzzy yarn made by placing short
+        lengths of yarn (pile) between two core yarns, then twisting the yarn together\",\"id\":44,\"name\":\"Chenille\",\"permalink\":\"chenille\",\"sort_order\":0,\"yarn_attribute_group_id\":19},{\"created_at\":\"2016/05/27
+        15:07:37 -0400\",\"description\":\" yarn with a thread base and long strands
+        that jut out from it\",\"id\":46,\"name\":\"Eyelash\",\"permalink\":\"eyelash\",\"sort_order\":0,\"yarn_attribute_group_id\":19},{\"created_at\":\"2016/05/27
+        15:07:38 -0400\",\"description\":\"yarn consisting of a generally a loose
+        or untwisted core wrapped by at least one other strand\",\"id\":57,\"name\":\"Flamm\xE9\",\"permalink\":\"flamme\",\"sort_order\":0,\"yarn_attribute_group_id\":19},{\"created_at\":\"2016/05/27
+        15:07:37 -0400\",\"description\":\"yarn constructed like a ladder, with two
+        strands of material connected with short strips\",\"id\":47,\"name\":\"Ladder\",\"permalink\":\"ladder\",\"sort_order\":0,\"yarn_attribute_group_id\":19},{\"created_at\":\"2016/05/27
+        15:07:37 -0400\",\"description\":\"yarn constructed similarly to web or netting\",\"id\":48,\"name\":\"Mesh\",\"permalink\":\"mesh\",\"sort_order\":0,\"yarn_attribute_group_id\":19},{\"created_at\":\"2016/05/27
+        15:07:37 -0400\",\"description\":\"thick, plush yarns that are brushed or
+        napped to resemble suede leather\",\"id\":49,\"name\":\"Pom-pom\",\"permalink\":\"pom-pom\",\"sort_order\":0,\"yarn_attribute_group_id\":19},{\"created_at\":\"2016/05/27
+        15:07:37 -0400\",\"description\":\"thick, plush yarns that are brushed or
+        napped to resemble suede leather\",\"id\":53,\"name\":\"Sueded\",\"permalink\":\"sueded\",\"sort_order\":0,\"yarn_attribute_group_id\":19}],\"children\":[]},{\"id\":15,\"name\":\"Ply\",\"permalink\":\"ply\",\"yarn_attributes\":[{\"created_at\":\"2016/05/27
+        15:07:36 -0400\",\"description\":\"made up of 2 strands twisted together\",\"id\":37,\"name\":\"2-ply\",\"permalink\":\"2-ply\",\"sort_order\":2,\"yarn_attribute_group_id\":15},{\"created_at\":\"2016/05/27
+        15:07:36 -0400\",\"description\":\"made up of 3 strands twisted together\",\"id\":38,\"name\":\"3-ply\",\"permalink\":\"3-ply\",\"sort_order\":3,\"yarn_attribute_group_id\":15},{\"created_at\":\"2016/05/27
+        15:07:36 -0400\",\"description\":\"made up of 4 strands twisted together\",\"id\":79,\"name\":\"4-ply\",\"permalink\":\"4-ply\",\"sort_order\":3,\"yarn_attribute_group_id\":15},{\"created_at\":\"2016/05/27
+        15:07:39 -0400\",\"description\":\"made up of multiple strands (usually two
+        2-ply strands) of plied yarn that is then plied together in the opposite direction\",\"id\":65,\"name\":\"Cabled\",\"permalink\":\"cabled\",\"sort_order\":0,\"yarn_attribute_group_id\":15},{\"created_at\":\"2016/05/27
+        15:07:36 -0400\",\"description\":\"made up of 5 or more strands twisted together\",\"id\":39,\"name\":\"Multi
+        ply (5+)\",\"permalink\":\"multi-ply-5\",\"sort_order\":4,\"yarn_attribute_group_id\":15},{\"created_at\":\"2016/05/27
+        15:07:36 -0400\",\"description\":\"made up of a single strand of yarn\",\"id\":36,\"name\":\"Single
+        ply\",\"permalink\":\"single-ply\",\"sort_order\":1,\"yarn_attribute_group_id\":15}],\"children\":[]}]},{\"id\":16,\"name\":\"Drafting
+        method\",\"permalink\":\"drafting-method\",\"yarn_attributes\":[{\"created_at\":\"2016/05/27
+        15:07:38 -0400\",\"description\":\"constructed of fibers twisted around a
+        central core\",\"id\":59,\"name\":\"Core spun\",\"permalink\":\"core-spun\",\"sort_order\":0,\"yarn_attribute_group_id\":16},{\"created_at\":\"2016/05/27
+        15:07:38 -0400\",\"description\":\"yarn made with a worsted prep (combed)
+        and woolen spun (with fibers lined up perpendicular when drafting)\",\"id\":60,\"name\":\"Semi-woolen
+        spun\",\"permalink\":\"semi-woolen-spun\",\"sort_order\":0,\"yarn_attribute_group_id\":16},{\"created_at\":\"2016/05/27
+        15:07:38 -0400\",\"description\":\"yarn made with a woolen prep (carded) and
+        worsted spun (with fibers lined up parallel when drafting)\",\"id\":61,\"name\":\"Semi-worsted
+        spun\",\"permalink\":\"semi-worsted-spun\",\"sort_order\":0,\"yarn_attribute_group_id\":16},{\"created_at\":\"2016/05/27
+        15:07:38 -0400\",\"description\":\"made from carded fibers and spun from a
+        rolag to make a light, fluffy yarn with fibers going in multiple directions\",\"id\":63,\"name\":\"Woolen
+        spun\",\"permalink\":\"woolen-spun\",\"sort_order\":0,\"yarn_attribute_group_id\":16},{\"created_at\":\"2016/05/27
+        15:07:39 -0400\",\"description\":\"spun after fibers are aligned in the same
+        direction resulting in a smooth, dense yarn with fibers lying straight and
+        parallel\\r\",\"id\":64,\"name\":\"Worsted spun\",\"permalink\":\"worsted-spun\",\"sort_order\":0,\"yarn_attribute_group_id\":16}],\"children\":[]},{\"id\":11,\"name\":\"Dye\",\"permalink\":\"dye\",\"yarn_attributes\":[{\"created_at\":\"2016/05/27
+        15:07:33 -0400\",\"description\":\"dyed in the wool before processing\",\"id\":15,\"name\":\"Fleece
+        dyed\",\"permalink\":\"fleece-dyed\",\"sort_order\":0,\"yarn_attribute_group_id\":11},{\"created_at\":\"2016/05/27
+        15:07:33 -0400\",\"description\":\"dyed by hand\",\"id\":13,\"name\":\"Hand
+        dyed\",\"permalink\":\"hand-dyed\",\"sort_order\":0,\"yarn_attribute_group_id\":11},{\"created_at\":\"2016/05/27
+        15:07:33 -0400\",\"description\":\"dyed by machine\",\"id\":12,\"name\":\"Machine
+        dyed\",\"permalink\":\"machine-dyed\",\"sort_order\":0,\"yarn_attribute_group_id\":11},{\"created_at\":\"2016/05/27
+        15:07:33 -0400\",\"description\":\"dye derived from plants, invertebrates,
+        or minerals\",\"id\":16,\"name\":\"Natural dyes\",\"permalink\":\"natural-dyes\",\"sort_order\":0,\"yarn_attribute_group_id\":11},{\"created_at\":\"2016/05/27
+        15:07:33 -0400\",\"description\":\"no dye\",\"id\":17,\"name\":\"Undyed\",\"permalink\":\"undyed\",\"sort_order\":0,\"yarn_attribute_group_id\":11}],\"children\":[]},{\"id\":18,\"name\":\"Put
+        up\",\"permalink\":\"put-up\",\"yarn_attributes\":[{\"created_at\":\"2016/05/27
+        15:07:40 -0400\",\"description\":\"small skeins (usually weighing less than
+        25g), often sold in bundles\",\"id\":81,\"name\":\"Mini skeins\",\"permalink\":\"mini-skeins\",\"sort_order\":0,\"yarn_attribute_group_id\":18},{\"created_at\":\"2016/05/27
+        15:07:40 -0400\",\"description\":\"needs to be wound into a ball before use\",\"id\":75,\"name\":\"Winding
+        required\",\"permalink\":\"winding-required\",\"sort_order\":0,\"yarn_attribute_group_id\":18}],\"children\":[]},{\"id\":10,\"name\":\"Sustainability\",\"permalink\":\"sustainability\",\"yarn_attributes\":[{\"created_at\":\"2016/05/27
+        15:07:32 -0400\",\"description\":\"certified by an accredited organic certification
+        organization\",\"id\":10,\"name\":\"Certified Organic\",\"permalink\":\"certified-organic\",\"sort_order\":0,\"yarn_attribute_group_id\":10},{\"created_at\":\"2016/05/27
+        15:07:32 -0400\",\"description\":\"accredited by a fair trade certification
+        organization\",\"id\":9,\"name\":\"Fair Trade\",\"permalink\":\"fair-trade\",\"sort_order\":0,\"yarn_attribute_group_id\":10},{\"created_at\":\"2016/05/27
+        15:07:32 -0400\",\"description\":\"made from material that was previously
+        used or discarded\",\"id\":11,\"name\":\"Recycled\",\"permalink\":\"recycled\",\"sort_order\":0,\"yarn_attribute_group_id\":10}],\"children\":[]},{\"id\":9,\"name\":\"Treatments\",\"permalink\":\"treatments\",\"yarn_attributes\":[{\"created_at\":\"2016/05/27
+        15:07:32 -0400\",\"description\":\"will conduct electricity and carry a current.\",\"id\":6,\"name\":\"Conductive\",\"permalink\":\"conductive\",\"sort_order\":0,\"yarn_attribute_group_id\":9},{\"created_at\":\"2016/05/27
+        15:07:32 -0400\",\"description\":\"a treatment that strengthens cellulose
+        fibers and gives them a lustrous appearance. Most typically used with cotton.\",\"id\":8,\"name\":\"Mercerized\",\"permalink\":\"mercerized\",\"sort_order\":0,\"yarn_attribute_group_id\":9},{\"created_at\":\"2016/05/27
+        15:07:32 -0400\",\"description\":\"chemically treated to repel or kill moths\",\"id\":7,\"name\":\"Moth-proofed\",\"permalink\":\"moth-proofed\",\"sort_order\":0,\"yarn_attribute_group_id\":9}],\"children\":[]}]}"
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,PUT,DELETE,PATCH
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 29 Dec 2025 21:59:42 GMT
+      ETag:
+      - W/"153a9c8ab2ee077b88183f41d0cd889f"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-API:
+      - '1'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Handled-By:
+      - lamb
+      X-Ruby:
+      - '2'
+      X-Runtime:
+      - '22'
+      X-Up-Location:
+      - https://api.ravelry.com/yarn_attributes/groups.json
+      X-Up-Method:
+      - get
+      content-length:
+      - '15707'
+    status:
+      code: 200
+      message: OK
+version: 1

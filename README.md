@@ -27,4 +27,4 @@ $python -i
 'MerinoSeide'
 ```
 
-More information can be found in the [pyravelry documentation](https://theuerc.github.io/pyravelry/).
+More information about this API wrapper can be found in the [pyravelry documentation](https://theuerc.github.io/pyravelry/).

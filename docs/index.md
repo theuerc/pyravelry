@@ -27,25 +27,25 @@ I've checked the API endpoints / models that are currently supported from the of
 Endpoints:
 
 - [x] /color_families
-- [ ] ~~/current_user~~
+- [X] /current_user
 - [x] /fiber_attributes
 - [x] /fiber_categories
 - [x] /search
 - [x] /yarn_weights
-- [ ] ~~/app (base level)~~
-- [ ] /bundled_items (base level)
-- [ ] /bundles (base level)
-- [ ] ~~/carts (base level)~~
-- [ ] ~~/comments (base level)~~ # doesn't allow retrieval of anyone else's comments.
-- [ ] ~~/deliveries (base level)~~
-- [ ] /designers (base level)
-- [ ] ~~/drafts (base level)~~
-- [ ] ~~/favorites (base level)~~
+- [ ] ~~/app~~
+- [ ] /bundled_items
+- [ ] /bundles
+- [ ] ~~/carts~~
+- [ ] ~~/comments~~ # doesn't allow retrieval of anyone else's comments.
+- [ ] ~~/deliveries~~
+- [ ] /designers
+- [ ] ~~/drafts~~
+- [ ] ~~/favorites~~
 - [ ] /fiber (base level)
 - [ ] /fiber_attributes_groups (base level)
 - [ ] /forum_posts (base level)
 - [ ] /forums (base level)
-- [ ] ~~/friends (base level)~~
+- [ ] ~~/friends~~
 - [ ] /groups
 - [ ] ~~/in_store_sales~~
 - [ ] /languages
@@ -59,7 +59,7 @@ Endpoints:
 - [ ] /pattern_source_types
 - [ ] /pattern_sources
 - [ ] /patterns
-- [ ] /people
+- [x] /people
 - [ ] /photos
 - [ ] /product_attachments
 - [ ] /products
@@ -72,7 +72,7 @@ Endpoints:
 - [ ] /topics
 - [ ] /upload
 - [ ] /volumes
-- [ ] /yarn_attributes
+- [x] /yarn_attributes
 - [x] /yarn_companies
 - [ ] /yarns
 

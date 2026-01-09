@@ -1,0 +1,64 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - api.ravelry.com
+      User-Agent:
+      - python-httpx/0.28.1
+      authorization:
+      - Basic <REDACTED>
+    method: GET
+    uri: https://api.ravelry.com/people/cltheuer.json
+  response:
+    body:
+      string: '{"user": {"fave_curse":null,"first_name":null,"id":13988848,"location":"","username":"cltheuer","tiny_photo_url":null,"small_photo_url":null,"photo_url":null,"large_photo_url":null,"about_me":null,"about_me_html":null,"profile_country_code":null,"user_sites":[]}}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,PUT,DELETE,PATCH
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '263'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 09 Jan 2026 04:01:25 GMT
+      ETag:
+      - W/"e0a0b0fb808f1fd0e8b83b93c1fc6ffd"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-API:
+      - '1'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Handled-By:
+      - ewe
+      X-Ruby:
+      - '2'
+      X-Runtime:
+      - '18'
+      X-Up-Location:
+      - https://api.ravelry.com/people/cltheuer.json
+      X-Up-Method:
+      - get
+    status:
+      code: 200
+      message: OK
+version: 1
