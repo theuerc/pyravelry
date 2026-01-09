@@ -1,0 +1,3359 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="This is python wrapper for the Ravelry API, which is a database of knitting / crocheting patterns.">
+      
+      
+        <meta name="author" content="Coulton Theuer">
+      
+      
+        <link rel="canonical" href="https://theuerc.github.io/pyravelry/endpoints/">
+      
+      
+        <link rel="prev" href="../config/">
+      
+      
+        <link rel="next" href="../models/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Endpoints - pyravelry</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pyravelry.endpoints" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="pyravelry" class="md-header__button md-logo" aria-label="pyravelry" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            pyravelry
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Endpoints
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/theuerc/pyravelry" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    theuerc/pyravelry
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="pyravelry" class="md-nav__button md-logo" aria-label="pyravelry" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    pyravelry
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/theuerc/pyravelry" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    theuerc/pyravelry
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Config
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Endpoints
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Endpoints
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pyravelry.endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        endpoints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.ColorFamiliesResource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ColorFamiliesResource
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ColorFamiliesResource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.ColorFamiliesResource.list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        list
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.CurrentUserResource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CurrentUserResource
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CurrentUserResource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.CurrentUserResource.get" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.FiberAttributesResource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FiberAttributesResource
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FiberAttributesResource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.FiberAttributesResource.list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        list
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.FiberCategoriesResource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FiberCategoriesResource
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FiberCategoriesResource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.FiberCategoriesResource.list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        list
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.PeopleResource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PeopleResource
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PeopleResource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.PeopleResource.show" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        show
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.PeopleResource.update" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        update
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.SearchResource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SearchResource
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SearchResource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.SearchResource.query" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        query
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.YarnAttributesResource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        YarnAttributesResource
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="YarnAttributesResource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.YarnAttributesResource.list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        list
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.YarnCompaniesResource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        YarnCompaniesResource
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="YarnCompaniesResource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.YarnCompaniesResource.query" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        query
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.YarnWeightsResource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        YarnWeightsResource
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="YarnWeightsResource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.YarnWeightsResource.list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        list
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pyravelry.endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        endpoints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.ColorFamiliesResource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ColorFamiliesResource
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ColorFamiliesResource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.ColorFamiliesResource.list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        list
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.CurrentUserResource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CurrentUserResource
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CurrentUserResource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.CurrentUserResource.get" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.FiberAttributesResource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FiberAttributesResource
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FiberAttributesResource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.FiberAttributesResource.list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        list
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.FiberCategoriesResource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FiberCategoriesResource
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FiberCategoriesResource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.FiberCategoriesResource.list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        list
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.PeopleResource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PeopleResource
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PeopleResource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.PeopleResource.show" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        show
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.PeopleResource.update" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        update
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.SearchResource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SearchResource
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SearchResource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.SearchResource.query" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        query
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.YarnAttributesResource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        YarnAttributesResource
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="YarnAttributesResource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.YarnAttributesResource.list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        list
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.YarnCompaniesResource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        YarnCompaniesResource
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="YarnCompaniesResource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.YarnCompaniesResource.query" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        query
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.YarnWeightsResource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        YarnWeightsResource
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="YarnWeightsResource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyravelry.endpoints.YarnWeightsResource.list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        list
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Endpoints</h1>
+
+<hr />
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="pyravelry.endpoints"></a>
+    <div class="doc doc-contents first">
+
+        <p>Endpoints for Ravelry</p>
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="pyravelry.endpoints.ColorFamiliesResource" class="doc doc-heading">
+            <code>pyravelry.endpoints.ColorFamiliesResource</code>
+
+
+<a href="#pyravelry.endpoints.ColorFamiliesResource" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="pyravelry.endpoints.base.BaseEndpoint">BaseEndpoint</span></code></p>
+
+
+
+        <p>Endpoint for Color Families.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="pyravelry.endpoints.ColorFamiliesResource.BaseEndpoint">BaseEndpoint</span></code></td>
+            <td>
+                  <code><span title="AnyUrl">AnyUrl</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The endpoint for colorfamily.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pyravelry.endpoints.ColorFamiliesResource.output_model">output_model</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="pyravelry.models.ColorFamiliesModel" href="../models/#pyravelry.models.ColorFamiliesModel">ColorFamiliesModel</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The pydantic model that the api output is validated against.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+            <tr class="doc-section-item">
+              <td><code><span title="pyravelry.endpoints.ColorFamiliesResource.list ">list </span></code></td>
+              <td>
+                <div class="doc-md-description">
+                  <p>returns all color families.</p>
+                </div>
+              </td>
+            </tr>
+      </tbody>
+    </table>
+        <p><a href="https://www.ravelry.com/api#/_color_families">Color Family Ravelry API documentation</a></p>
+
+
+
+
+
+
+
+
+              <details class="mkdocstrings-source">
+                <summary>Source code in <code>src/pyravelry/endpoints/color_families.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">ColorFamiliesResource</span><span class="p">(</span><span class="n">BaseEndpoint</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Endpoint for Color Families.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        BaseEndpoint (AnyUrl): The endpoint for colorfamily.</span>
+<span class="sd">        output_model (ColorFamiliesModel): The pydantic model that the api output is validated against.</span>
+
+<span class="sd">    Methods:</span>
+<span class="sd">        list (list[ColorFamilyModel]): returns all color families.</span>
+
+<span class="sd">    [Color Family Ravelry API documentation](https://www.ravelry.com/api#/_color_families)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">endpoint</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/color_families.json&quot;</span>
+    <span class="n">output_model</span> <span class="o">=</span> <span class="n">ColorFamiliesModel</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">ColorFamilyModel</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Retrieves all color families from Ravelry.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">cls</span> <span class="o">=</span> <span class="n">ColorFamiliesResource</span>
+        <span class="n">response_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">http_client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="bp">cls</span><span class="o">.</span><span class="n">endpoint</span><span class="p">)</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">output_model</span><span class="o">.</span><span class="n">model_validate</span><span class="p">(</span><span class="n">response_dict</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">color_families</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pyravelry.endpoints.ColorFamiliesResource.list" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">pyravelry</span><span class="o">.</span><span class="n">endpoints</span><span class="o">.</span><span class="n">ColorFamiliesResource</span><span class="o">.</span><span class="n">list</span><span class="p">()</span></code>
+
+<a href="#pyravelry.endpoints.ColorFamiliesResource.list" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Retrieves all color families from Ravelry.</p>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>src/pyravelry/endpoints/color_families.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">ColorFamilyModel</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retrieves all color families from Ravelry.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">cls</span> <span class="o">=</span> <span class="n">ColorFamiliesResource</span>
+    <span class="n">response_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">http_client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="bp">cls</span><span class="o">.</span><span class="n">endpoint</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">output_model</span><span class="o">.</span><span class="n">model_validate</span><span class="p">(</span><span class="n">response_dict</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">color_families</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="pyravelry.endpoints.CurrentUserResource" class="doc doc-heading">
+            <code>pyravelry.endpoints.CurrentUserResource</code>
+
+
+<a href="#pyravelry.endpoints.CurrentUserResource" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="pyravelry.endpoints.base.BaseEndpoint">BaseEndpoint</span></code></p>
+
+
+
+        <p>Endpoint for the currently authenticated user.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="pyravelry.endpoints.CurrentUserResource.endpoint">endpoint</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The endpoint for current_user.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pyravelry.endpoints.CurrentUserResource.output_model">output_model</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="pyravelry.models.UserModel" href="../models/#pyravelry.models.UserModel">UserModel</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The pydantic model that the api output is validated against.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+            <tr class="doc-section-item">
+              <td><code><span title="pyravelry.endpoints.CurrentUserResource.get ">get </span></code></td>
+              <td>
+                <div class="doc-md-description">
+                  <p>Returns the authenticated user's details.</p>
+                </div>
+              </td>
+            </tr>
+      </tbody>
+    </table>
+        <p><a href="https://www.ravelry.com/api#/_current_user">Current User Ravelry API documentation</a></p>
+
+
+
+
+
+
+
+
+              <details class="mkdocstrings-source">
+                <summary>Source code in <code>src/pyravelry/endpoints/current_user.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">CurrentUserResource</span><span class="p">(</span><span class="n">BaseEndpoint</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Endpoint for the currently authenticated user.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        endpoint (str): The endpoint for current_user.</span>
+<span class="sd">        output_model (UserModel): The pydantic model that the api output is validated against.</span>
+
+<span class="sd">    Methods:</span>
+<span class="sd">        get (UserModel): Returns the authenticated user&#39;s details.</span>
+
+<span class="sd">    [Current User Ravelry API documentation](https://www.ravelry.com/api#/_current_user)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">endpoint</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/current_user.json&quot;</span>
+    <span class="n">output_model</span> <span class="o">=</span> <span class="n">UserModel</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">UserFullModel</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Retrieves the details of the currently authenticated user.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">cls</span> <span class="o">=</span> <span class="n">CurrentUserResource</span>
+        <span class="n">response_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">http_client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="bp">cls</span><span class="o">.</span><span class="n">endpoint</span><span class="p">)</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">output_model</span><span class="o">.</span><span class="n">model_validate</span><span class="p">(</span><span class="n">response_dict</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">user</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pyravelry.endpoints.CurrentUserResource.get" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">pyravelry</span><span class="o">.</span><span class="n">endpoints</span><span class="o">.</span><span class="n">CurrentUserResource</span><span class="o">.</span><span class="n">get</span><span class="p">()</span></code>
+
+<a href="#pyravelry.endpoints.CurrentUserResource.get" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Retrieves the details of the currently authenticated user.</p>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>src/pyravelry/endpoints/current_user.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">UserFullModel</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retrieves the details of the currently authenticated user.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">cls</span> <span class="o">=</span> <span class="n">CurrentUserResource</span>
+    <span class="n">response_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">http_client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="bp">cls</span><span class="o">.</span><span class="n">endpoint</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">output_model</span><span class="o">.</span><span class="n">model_validate</span><span class="p">(</span><span class="n">response_dict</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">user</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="pyravelry.endpoints.FiberAttributesResource" class="doc doc-heading">
+            <code>pyravelry.endpoints.FiberAttributesResource</code>
+
+
+<a href="#pyravelry.endpoints.FiberAttributesResource" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="pyravelry.endpoints.base.BaseEndpoint">BaseEndpoint</span></code></p>
+
+
+
+        <p>Endpoint for Fiber Attributes.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="pyravelry.endpoints.FiberAttributesResource.BaseEndpoint">BaseEndpoint</span></code></td>
+            <td>
+                  <code><span title="AnyUrl">AnyUrl</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The endpoint for fiber attributes.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+            <tr class="doc-section-item">
+              <td><code><span title="pyravelry.endpoints.FiberAttributesResource.list ">list </span></code></td>
+              <td>
+                <div class="doc-md-description">
+                  <p>returns all fiber attributes.</p>
+                </div>
+              </td>
+            </tr>
+      </tbody>
+    </table>
+        <p><a href="https://www.ravelry.com/api#/_fiber_attributes">Fiber Attributes Ravelry API documentation</a></p>
+
+
+
+
+
+
+
+
+              <details class="mkdocstrings-source">
+                <summary>Source code in <code>src/pyravelry/endpoints/fiber_attributes.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">FiberAttributesResource</span><span class="p">(</span><span class="n">BaseEndpoint</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Endpoint for Fiber Attributes.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        BaseEndpoint (AnyUrl): The endpoint for fiber attributes.</span>
+
+<span class="sd">    Methods:</span>
+<span class="sd">        list (list[FiberAttributeModel]): returns all fiber attributes.</span>
+
+<span class="sd">    [Fiber Attributes Ravelry API documentation](https://www.ravelry.com/api#/_fiber_attributes)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">endpoint</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/fiber_attributes.json&quot;</span>
+    <span class="n">output_model</span> <span class="o">=</span> <span class="n">FiberAttributesModel</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">FiberAttributeModel</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        List the current fiber attributes</span>
+
+<span class="sd">        Endpoint: GET /fiber_attributes.json</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">cls</span> <span class="o">=</span> <span class="n">FiberAttributesResource</span>
+        <span class="n">response_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">http_client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="bp">cls</span><span class="o">.</span><span class="n">endpoint</span><span class="p">)</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">output_model</span><span class="o">.</span><span class="n">model_validate</span><span class="p">(</span><span class="n">response_dict</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">fiber_attributes</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pyravelry.endpoints.FiberAttributesResource.list" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">pyravelry</span><span class="o">.</span><span class="n">endpoints</span><span class="o">.</span><span class="n">FiberAttributesResource</span><span class="o">.</span><span class="n">list</span><span class="p">()</span></code>
+
+<a href="#pyravelry.endpoints.FiberAttributesResource.list" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>List the current fiber attributes</p>
+<p>Endpoint: GET /fiber_attributes.json</p>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>src/pyravelry/endpoints/fiber_attributes.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">FiberAttributeModel</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    List the current fiber attributes</span>
+
+<span class="sd">    Endpoint: GET /fiber_attributes.json</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">cls</span> <span class="o">=</span> <span class="n">FiberAttributesResource</span>
+    <span class="n">response_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">http_client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="bp">cls</span><span class="o">.</span><span class="n">endpoint</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">output_model</span><span class="o">.</span><span class="n">model_validate</span><span class="p">(</span><span class="n">response_dict</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">fiber_attributes</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="pyravelry.endpoints.FiberCategoriesResource" class="doc doc-heading">
+            <code>pyravelry.endpoints.FiberCategoriesResource</code>
+
+
+<a href="#pyravelry.endpoints.FiberCategoriesResource" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="pyravelry.endpoints.base.BaseEndpoint">BaseEndpoint</span></code></p>
+
+
+
+        <p>Endpoint for Fiber Categories.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="pyravelry.endpoints.FiberCategoriesResource.BaseEndpoint">BaseEndpoint</span></code></td>
+            <td>
+                  <code><span title="AnyUrl">AnyUrl</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The endpoint for fiber categories.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+            <tr class="doc-section-item">
+              <td><code><span title="pyravelry.endpoints.FiberCategoriesResource.list ">list </span></code></td>
+              <td>
+                <div class="doc-md-description">
+                  <p>returns all fiber categories.</p>
+                </div>
+              </td>
+            </tr>
+      </tbody>
+    </table>
+        <p><a href="https://www.ravelry.com/api#/_fiber_categories">Fiber Categories Ravelry API documentation</a></p>
+
+
+
+
+
+
+
+
+              <details class="mkdocstrings-source">
+                <summary>Source code in <code>src/pyravelry/endpoints/fiber_categories.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">FiberCategoriesResource</span><span class="p">(</span><span class="n">BaseEndpoint</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Endpoint for Fiber Categories.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        BaseEndpoint (AnyUrl): The endpoint for fiber categories.</span>
+
+<span class="sd">    Methods:</span>
+<span class="sd">        list (list[FiberCategoryModel]): returns all fiber categories.</span>
+
+<span class="sd">    [Fiber Categories Ravelry API documentation](https://www.ravelry.com/api#/_fiber_categories)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">endpoint</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/fiber_categories.json&quot;</span>
+    <span class="n">output_model</span> <span class="o">=</span> <span class="n">FiberCategoriesModel</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">FiberCategoryModel</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        List the current fiber categories</span>
+<span class="sd">        Endpoint: GET /fiber_categories.json</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">cls</span> <span class="o">=</span> <span class="n">FiberCategoriesResource</span>
+        <span class="n">response_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">http_client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="bp">cls</span><span class="o">.</span><span class="n">endpoint</span><span class="p">)</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">output_model</span><span class="o">.</span><span class="n">model_validate</span><span class="p">(</span><span class="n">response_dict</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">fiber_categories</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pyravelry.endpoints.FiberCategoriesResource.list" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">pyravelry</span><span class="o">.</span><span class="n">endpoints</span><span class="o">.</span><span class="n">FiberCategoriesResource</span><span class="o">.</span><span class="n">list</span><span class="p">()</span></code>
+
+<a href="#pyravelry.endpoints.FiberCategoriesResource.list" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>List the current fiber categories
+Endpoint: GET /fiber_categories.json</p>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>src/pyravelry/endpoints/fiber_categories.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">FiberCategoryModel</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    List the current fiber categories</span>
+<span class="sd">    Endpoint: GET /fiber_categories.json</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">cls</span> <span class="o">=</span> <span class="n">FiberCategoriesResource</span>
+    <span class="n">response_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">http_client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="bp">cls</span><span class="o">.</span><span class="n">endpoint</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">output_model</span><span class="o">.</span><span class="n">model_validate</span><span class="p">(</span><span class="n">response_dict</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">fiber_categories</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="pyravelry.endpoints.PeopleResource" class="doc doc-heading">
+            <code>pyravelry.endpoints.PeopleResource</code>
+
+
+<a href="#pyravelry.endpoints.PeopleResource" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="pyravelry.endpoints.base.BaseEndpoint">BaseEndpoint</span></code></p>
+
+
+
+        <p>People endpoint for Ravelry.</p>
+<p><a href="https://www.ravelry.com/api#people_show">People Ravelry API documentation</a></p>
+
+
+
+
+
+
+
+
+              <details class="mkdocstrings-source">
+                <summary>Source code in <code>src/pyravelry/endpoints/people.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">PeopleResource</span><span class="p">(</span><span class="n">BaseEndpoint</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;People endpoint for Ravelry.</span>
+
+<span class="sd">    [People Ravelry API documentation](https://www.ravelry.com/api#people_show)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">endpoint</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/people&quot;</span>
+    <span class="n">output_model</span> <span class="o">=</span> <span class="n">UserModel</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">show</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">UserModel</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get a user&#39;s profile information.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            username (str): Username or integer ID of the user to lookup.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            UserFullModel: The full user profile data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">cls</span> <span class="o">=</span> <span class="n">PeopleResource</span>
+
+        <span class="n">validated_username</span> <span class="o">=</span> <span class="n">Identifier</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">username</span><span class="p">)</span><span class="o">.</span><span class="n">id</span>
+        <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;/&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="bp">cls</span><span class="o">.</span><span class="n">endpoint</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">validated_username</span><span class="si">}</span><span class="s2">.json&quot;</span><span class="p">])</span>
+
+        <span class="n">response_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">http_client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s2">&quot;GET&quot;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="n">output_model</span><span class="o">.</span><span class="n">model_validate</span><span class="p">(</span><span class="n">response_dict</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">UserPostModel</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">UserModel</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Update a user&#39;s profile. Requires profile-write permission.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            username (str): Username or integer ID of the user to update.</span>
+<span class="sd">            data (UserPostModel): User object containing fields to update (e.g., about_me).</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            UserFullModel: The updated user profile.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">cls</span> <span class="o">=</span> <span class="n">PeopleResource</span>
+
+        <span class="n">validated_username</span> <span class="o">=</span> <span class="n">Identifier</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">username</span><span class="p">)</span><span class="o">.</span><span class="n">id</span>
+        <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;/&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="bp">cls</span><span class="o">.</span><span class="n">endpoint</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">validated_username</span><span class="si">}</span><span class="s2">.json&quot;</span><span class="p">])</span>
+
+        <span class="n">payload</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">model_dump</span><span class="p">(</span><span class="n">exclude_unset</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="n">response_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span>
+            <span class="n">http_client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="p">,</span>
+            <span class="n">endpoint</span><span class="o">=</span><span class="n">url</span><span class="p">,</span>
+            <span class="n">method</span><span class="o">=</span><span class="s2">&quot;POST&quot;</span><span class="p">,</span>
+            <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="n">output_model</span><span class="o">.</span><span class="n">model_validate</span><span class="p">(</span><span class="n">response_dict</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pyravelry.endpoints.PeopleResource.show" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">pyravelry</span><span class="o">.</span><span class="n">endpoints</span><span class="o">.</span><span class="n">PeopleResource</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">username</span><span class="p">)</span></code>
+
+<a href="#pyravelry.endpoints.PeopleResource.show" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Get a user's profile information.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>username</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Username or integer ID of the user to lookup.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+<th>Name</th>          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+<td><code>UserFullModel</code></td>            <td>
+                  <code><a class="autorefs autorefs-internal" title="pyravelry.models.UserModel" href="../models/#pyravelry.models.UserModel">UserModel</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The full user profile data.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>src/pyravelry/endpoints/people.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">show</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">UserModel</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get a user&#39;s profile information.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        username (str): Username or integer ID of the user to lookup.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        UserFullModel: The full user profile data.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">cls</span> <span class="o">=</span> <span class="n">PeopleResource</span>
+
+    <span class="n">validated_username</span> <span class="o">=</span> <span class="n">Identifier</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">username</span><span class="p">)</span><span class="o">.</span><span class="n">id</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;/&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="bp">cls</span><span class="o">.</span><span class="n">endpoint</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">validated_username</span><span class="si">}</span><span class="s2">.json&quot;</span><span class="p">])</span>
+
+    <span class="n">response_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">http_client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s2">&quot;GET&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="n">output_model</span><span class="o">.</span><span class="n">model_validate</span><span class="p">(</span><span class="n">response_dict</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pyravelry.endpoints.PeopleResource.update" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">pyravelry</span><span class="o">.</span><span class="n">endpoints</span><span class="o">.</span><span class="n">PeopleResource</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span></code>
+
+<a href="#pyravelry.endpoints.PeopleResource.update" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Update a user's profile. Requires profile-write permission.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>username</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Username or integer ID of the user to update.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>data</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="pyravelry.models.UserPostModel" href="../models/#pyravelry.models.UserPostModel">UserPostModel</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>User object containing fields to update (e.g., about_me).</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+<th>Name</th>          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+<td><code>UserFullModel</code></td>            <td>
+                  <code><a class="autorefs autorefs-internal" title="pyravelry.models.UserModel" href="../models/#pyravelry.models.UserModel">UserModel</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The updated user profile.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>src/pyravelry/endpoints/people.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">UserPostModel</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">UserModel</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Update a user&#39;s profile. Requires profile-write permission.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        username (str): Username or integer ID of the user to update.</span>
+<span class="sd">        data (UserPostModel): User object containing fields to update (e.g., about_me).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        UserFullModel: The updated user profile.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">cls</span> <span class="o">=</span> <span class="n">PeopleResource</span>
+
+    <span class="n">validated_username</span> <span class="o">=</span> <span class="n">Identifier</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">username</span><span class="p">)</span><span class="o">.</span><span class="n">id</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;/&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="bp">cls</span><span class="o">.</span><span class="n">endpoint</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">validated_username</span><span class="si">}</span><span class="s2">.json&quot;</span><span class="p">])</span>
+
+    <span class="n">payload</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">model_dump</span><span class="p">(</span><span class="n">exclude_unset</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="n">response_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span>
+        <span class="n">http_client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="p">,</span>
+        <span class="n">endpoint</span><span class="o">=</span><span class="n">url</span><span class="p">,</span>
+        <span class="n">method</span><span class="o">=</span><span class="s2">&quot;POST&quot;</span><span class="p">,</span>
+        <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="n">output_model</span><span class="o">.</span><span class="n">model_validate</span><span class="p">(</span><span class="n">response_dict</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="pyravelry.endpoints.SearchResource" class="doc doc-heading">
+            <code>pyravelry.endpoints.SearchResource</code>
+
+
+<a href="#pyravelry.endpoints.SearchResource" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="pyravelry.endpoints.base.BaseEndpoint">BaseEndpoint</span></code></p>
+
+
+
+        <p>Search endpoint for Ravelry.</p>
+<p><a href="https://www.ravelry.com/api#/_search">Search Ravelry API documentation</a></p>
+
+
+
+
+
+
+
+
+              <details class="mkdocstrings-source">
+                <summary>Source code in <code>src/pyravelry/endpoints/search.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">SearchResource</span><span class="p">(</span><span class="n">BaseEndpoint</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Search endpoint for Ravelry.</span>
+
+<span class="sd">    [Search Ravelry API documentation](https://www.ravelry.com/api#/_search)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">endpoint</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/search.json&quot;</span>
+    <span class="n">input_model</span> <span class="o">=</span> <span class="n">SearchParams</span>
+    <span class="n">output_model</span> <span class="o">=</span> <span class="n">GlobalSearchResponseModel</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">query</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">limit</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+        <span class="n">types</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span>
+            <span class="nb">list</span><span class="p">[</span>
+                <span class="n">Literal</span><span class="p">[</span>
+                    <span class="s2">&quot;User&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;PatternAuthor&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;PatternSource&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;Pattern&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;YarnCompany&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;Yarn&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;Group&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;Event&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;Project&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;Page&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;Topic&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;Shop&quot;</span><span class="p">,</span>
+                <span class="p">]</span>
+            <span class="p">]</span>
+            <span class="o">|</span> <span class="kc">None</span>
+        <span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">SearchResultModel</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Perform a global search.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            query (str): Any fulltext string</span>
+<span class="sd">            limit (int): integer between 1 and 50</span>
+<span class="sd">            types (str|list): Optional. space delineated string or list of strings</span>
+<span class="sd">                for the types of categories that you are searching.</span>
+<span class="sd">                See client.search.param_model.model_json_schema()</span>
+<span class="sd">                for available types.</span>
+
+<span class="sd">        Usage:</span>
+<span class="sd">            search.query(query=&quot;merino&quot;, limit=10, types=[&quot;Yarn&quot;])</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">cls</span> <span class="o">=</span> <span class="n">SearchResource</span>
+        <span class="n">params_obj</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">input_model</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="n">query</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="n">limit</span><span class="p">,</span> <span class="n">types</span><span class="o">=</span><span class="n">types</span><span class="p">)</span>
+
+        <span class="c1"># Flatten the &#39;types&#39; list into a space-delimited string</span>
+        <span class="n">params_dict</span> <span class="o">=</span> <span class="n">params_obj</span><span class="o">.</span><span class="n">model_dump</span><span class="p">(</span><span class="n">exclude_none</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s2">&quot;types&quot;</span> <span class="ow">in</span> <span class="n">params_dict</span><span class="p">:</span>
+            <span class="n">params_dict</span><span class="p">[</span><span class="s2">&quot;types&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">params_dict</span><span class="p">[</span><span class="s2">&quot;types&quot;</span><span class="p">])</span>
+
+        <span class="n">response_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span>
+            <span class="n">http_client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="p">,</span>
+            <span class="n">endpoint</span><span class="o">=</span><span class="bp">cls</span><span class="o">.</span><span class="n">endpoint</span><span class="p">,</span>
+            <span class="n">params</span><span class="o">=</span><span class="n">params_dict</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">output_model</span><span class="o">.</span><span class="n">model_validate</span><span class="p">(</span><span class="n">response_dict</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">results</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pyravelry.endpoints.SearchResource.query" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">pyravelry</span><span class="o">.</span><span class="n">endpoints</span><span class="o">.</span><span class="n">SearchResource</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">types</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+<a href="#pyravelry.endpoints.SearchResource.query" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Perform a global search.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>query</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Any fulltext string</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>limit</code>
+            </td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>integer between 1 and 50</p>
+              </div>
+            </td>
+            <td>
+                  <code>10</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>types</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span> | <span title="list">list</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Optional. space delineated string or list of strings
+for the types of categories that you are searching.
+See client.search.param_model.model_json_schema()
+for available types.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<details class="usage" open>
+  <summary>Usage</summary>
+  <p>search.query(query="merino", limit=10, types=["Yarn"])</p>
+</details>
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>src/pyravelry/endpoints/search.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">query</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span>
+    <span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">limit</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="n">types</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span>
+        <span class="nb">list</span><span class="p">[</span>
+            <span class="n">Literal</span><span class="p">[</span>
+                <span class="s2">&quot;User&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;PatternAuthor&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;PatternSource&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Pattern&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;YarnCompany&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Yarn&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Group&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Event&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Project&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Page&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Topic&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Shop&quot;</span><span class="p">,</span>
+            <span class="p">]</span>
+        <span class="p">]</span>
+        <span class="o">|</span> <span class="kc">None</span>
+    <span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">SearchResultModel</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Perform a global search.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        query (str): Any fulltext string</span>
+<span class="sd">        limit (int): integer between 1 and 50</span>
+<span class="sd">        types (str|list): Optional. space delineated string or list of strings</span>
+<span class="sd">            for the types of categories that you are searching.</span>
+<span class="sd">            See client.search.param_model.model_json_schema()</span>
+<span class="sd">            for available types.</span>
+
+<span class="sd">    Usage:</span>
+<span class="sd">        search.query(query=&quot;merino&quot;, limit=10, types=[&quot;Yarn&quot;])</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">cls</span> <span class="o">=</span> <span class="n">SearchResource</span>
+    <span class="n">params_obj</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">input_model</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="n">query</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="n">limit</span><span class="p">,</span> <span class="n">types</span><span class="o">=</span><span class="n">types</span><span class="p">)</span>
+
+    <span class="c1"># Flatten the &#39;types&#39; list into a space-delimited string</span>
+    <span class="n">params_dict</span> <span class="o">=</span> <span class="n">params_obj</span><span class="o">.</span><span class="n">model_dump</span><span class="p">(</span><span class="n">exclude_none</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">if</span> <span class="s2">&quot;types&quot;</span> <span class="ow">in</span> <span class="n">params_dict</span><span class="p">:</span>
+        <span class="n">params_dict</span><span class="p">[</span><span class="s2">&quot;types&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">params_dict</span><span class="p">[</span><span class="s2">&quot;types&quot;</span><span class="p">])</span>
+
+    <span class="n">response_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span>
+        <span class="n">http_client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="p">,</span>
+        <span class="n">endpoint</span><span class="o">=</span><span class="bp">cls</span><span class="o">.</span><span class="n">endpoint</span><span class="p">,</span>
+        <span class="n">params</span><span class="o">=</span><span class="n">params_dict</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">output_model</span><span class="o">.</span><span class="n">model_validate</span><span class="p">(</span><span class="n">response_dict</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">results</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="pyravelry.endpoints.YarnAttributesResource" class="doc doc-heading">
+            <code>pyravelry.endpoints.YarnAttributesResource</code>
+
+
+<a href="#pyravelry.endpoints.YarnAttributesResource" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="pyravelry.endpoints.base.BaseEndpoint">BaseEndpoint</span></code></p>
+
+
+
+        <p>Endpoint for Color Families.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="pyravelry.endpoints.YarnAttributesResource.BaseEndpoint">BaseEndpoint</span></code></td>
+            <td>
+                  <code><span title="AnyUrl">AnyUrl</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The endpoint for yarn attributes.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+            <tr class="doc-section-item">
+              <td><code><span title="pyravelry.endpoints.YarnAttributesResource.list ">list </span></code></td>
+              <td>
+                <div class="doc-md-description">
+                  <p>returns all yarn attributes.</p>
+                </div>
+              </td>
+            </tr>
+      </tbody>
+    </table>
+        <p><a href="https://www.ravelry.com/api#yarn_attributes_list">Yarn Attributes Ravelry API documentation</a></p>
+
+
+
+
+
+
+
+
+              <details class="mkdocstrings-source">
+                <summary>Source code in <code>src/pyravelry/endpoints/yarn_attributes.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">YarnAttributesResource</span><span class="p">(</span><span class="n">BaseEndpoint</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Endpoint for Color Families.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        BaseEndpoint (AnyUrl): The endpoint for yarn attributes.</span>
+
+<span class="sd">    Methods:</span>
+<span class="sd">        list (list[YarnAttributeModel]): returns all yarn attributes.</span>
+
+<span class="sd">    [Yarn Attributes Ravelry API documentation](https://www.ravelry.com/api#yarn_attributes_list)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">endpoint</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/yarn_attributes/groups.json&quot;</span>
+    <span class="n">output_model</span> <span class="o">=</span> <span class="n">YarnAttributesModel</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">YarnAttributeModel</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        List the current yarn attributes.</span>
+
+<span class="sd">        Endpoint: GET /yarn_attributes/groups.json</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">cls</span> <span class="o">=</span> <span class="n">YarnAttributesResource</span>
+        <span class="n">response_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">http_client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="bp">cls</span><span class="o">.</span><span class="n">endpoint</span><span class="p">)</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">output_model</span><span class="o">.</span><span class="n">model_validate</span><span class="p">(</span><span class="n">response_dict</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">yarn_attribute_groups</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pyravelry.endpoints.YarnAttributesResource.list" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">pyravelry</span><span class="o">.</span><span class="n">endpoints</span><span class="o">.</span><span class="n">YarnAttributesResource</span><span class="o">.</span><span class="n">list</span><span class="p">()</span></code>
+
+<a href="#pyravelry.endpoints.YarnAttributesResource.list" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>List the current yarn attributes.</p>
+<p>Endpoint: GET /yarn_attributes/groups.json</p>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>src/pyravelry/endpoints/yarn_attributes.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">YarnAttributeModel</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    List the current yarn attributes.</span>
+
+<span class="sd">    Endpoint: GET /yarn_attributes/groups.json</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">cls</span> <span class="o">=</span> <span class="n">YarnAttributesResource</span>
+    <span class="n">response_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">http_client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="bp">cls</span><span class="o">.</span><span class="n">endpoint</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">output_model</span><span class="o">.</span><span class="n">model_validate</span><span class="p">(</span><span class="n">response_dict</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">yarn_attribute_groups</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="pyravelry.endpoints.YarnCompaniesResource" class="doc doc-heading">
+            <code>pyravelry.endpoints.YarnCompaniesResource</code>
+
+
+<a href="#pyravelry.endpoints.YarnCompaniesResource" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="pyravelry.endpoints.base.BaseEndpoint">BaseEndpoint</span></code></p>
+
+
+
+        <p>Endpoint for yarn company specific operations.</p>
+<p><a href="https://www.ravelry.com/api#yarn_companies_search">Yarn Companies Ravelry API documentation</a></p>
+
+
+
+
+
+
+
+
+              <details class="mkdocstrings-source">
+                <summary>Source code in <code>src/pyravelry/endpoints/yarn_companies.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">YarnCompaniesResource</span><span class="p">(</span><span class="n">BaseEndpoint</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Endpoint for yarn company specific operations.</span>
+
+<span class="sd">    [Yarn Companies Ravelry API documentation](https://www.ravelry.com/api#yarn_companies_search)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;/yarn_companies&quot;</span>
+    <span class="n">input_model</span> <span class="o">=</span> <span class="n">YarnCompanySearchParams</span>
+    <span class="n">output_model</span> <span class="o">=</span> <span class="n">YarnCompanySearchResponseModel</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">query</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">query</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">page</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="n">page_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">48</span><span class="p">,</span>
+        <span class="n">sort</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;best&quot;</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">YarnCompanySearchResponseModel</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Search the yarn company directory.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            query: Search term for fulltext searching.</span>
+<span class="sd">            page: Result page to retrieve.</span>
+<span class="sd">            page_size: Number of results per page.</span>
+<span class="sd">            sort: Sort order (e.g., &#39;best&#39;, &#39;best_&#39;; reverse order with _ suffix)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">cls</span> <span class="o">=</span> <span class="n">YarnCompaniesResource</span>
+
+        <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;/&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="bp">cls</span><span class="o">.</span><span class="n">endpoint</span><span class="p">,</span> <span class="s2">&quot;/search.json&quot;</span><span class="p">])</span>
+
+        <span class="n">params</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">input_model</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="n">query</span><span class="p">,</span> <span class="n">page</span><span class="o">=</span><span class="n">page</span><span class="p">,</span> <span class="n">page_size</span><span class="o">=</span><span class="n">page_size</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="n">sort</span><span class="p">)</span>
+
+        <span class="n">response_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span>
+            <span class="n">http_client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="p">,</span>
+            <span class="n">endpoint</span><span class="o">=</span><span class="n">url</span><span class="p">,</span>
+            <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="o">.</span><span class="n">model_dump</span><span class="p">(</span><span class="n">exclude_none</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+        <span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="n">output_model</span><span class="o">.</span><span class="n">model_validate</span><span class="p">(</span><span class="n">response_dict</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pyravelry.endpoints.YarnCompaniesResource.query" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">pyravelry</span><span class="o">.</span><span class="n">endpoints</span><span class="o">.</span><span class="n">YarnCompaniesResource</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">page_size</span><span class="o">=</span><span class="mi">48</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="s1">&#39;best&#39;</span><span class="p">)</span></code>
+
+<a href="#pyravelry.endpoints.YarnCompaniesResource.query" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Search the yarn company directory.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>query</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Search term for fulltext searching.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>page</code>
+            </td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Result page to retrieve.</p>
+              </div>
+            </td>
+            <td>
+                  <code>1</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>page_size</code>
+            </td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Number of results per page.</p>
+              </div>
+            </td>
+            <td>
+                  <code>48</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>sort</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Sort order (e.g., 'best', 'best_'; reverse order with _ suffix)</p>
+              </div>
+            </td>
+            <td>
+                  <code>&#39;best&#39;</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>src/pyravelry/endpoints/yarn_companies.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">query</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span>
+    <span class="n">query</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">page</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="n">page_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">48</span><span class="p">,</span>
+    <span class="n">sort</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;best&quot;</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">YarnCompanySearchResponseModel</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Search the yarn company directory.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        query: Search term for fulltext searching.</span>
+<span class="sd">        page: Result page to retrieve.</span>
+<span class="sd">        page_size: Number of results per page.</span>
+<span class="sd">        sort: Sort order (e.g., &#39;best&#39;, &#39;best_&#39;; reverse order with _ suffix)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">cls</span> <span class="o">=</span> <span class="n">YarnCompaniesResource</span>
+
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;/&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="bp">cls</span><span class="o">.</span><span class="n">endpoint</span><span class="p">,</span> <span class="s2">&quot;/search.json&quot;</span><span class="p">])</span>
+
+    <span class="n">params</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">input_model</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="n">query</span><span class="p">,</span> <span class="n">page</span><span class="o">=</span><span class="n">page</span><span class="p">,</span> <span class="n">page_size</span><span class="o">=</span><span class="n">page_size</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="n">sort</span><span class="p">)</span>
+
+    <span class="n">response_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span>
+        <span class="n">http_client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="p">,</span>
+        <span class="n">endpoint</span><span class="o">=</span><span class="n">url</span><span class="p">,</span>
+        <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="o">.</span><span class="n">model_dump</span><span class="p">(</span><span class="n">exclude_none</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+    <span class="p">)</span>
+
+    <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="n">output_model</span><span class="o">.</span><span class="n">model_validate</span><span class="p">(</span><span class="n">response_dict</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="pyravelry.endpoints.YarnWeightsResource" class="doc doc-heading">
+            <code>pyravelry.endpoints.YarnWeightsResource</code>
+
+
+<a href="#pyravelry.endpoints.YarnWeightsResource" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="pyravelry.endpoints.base.BaseEndpoint">BaseEndpoint</span></code></p>
+
+
+
+        <p>Endpoint for Color Families.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="pyravelry.endpoints.YarnWeightsResource.BaseEndpoint">BaseEndpoint</span></code></td>
+            <td>
+                  <code><span title="AnyUrl">AnyUrl</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The endpoint for yarn weights.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+            <tr class="doc-section-item">
+              <td><code><span title="pyravelry.endpoints.YarnWeightsResource.list ">list </span></code></td>
+              <td>
+                <div class="doc-md-description">
+                  <p>returns all yarn weights.</p>
+                </div>
+              </td>
+            </tr>
+      </tbody>
+    </table>
+        <p><a href="https://www.ravelry.com/api#/_yarn_weights">Yarn Weights Ravelry API documentation</a></p>
+
+
+
+
+
+
+
+
+              <details class="mkdocstrings-source">
+                <summary>Source code in <code>src/pyravelry/endpoints/yarn_weights.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">YarnWeightsResource</span><span class="p">(</span><span class="n">BaseEndpoint</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Endpoint for Color Families.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        BaseEndpoint (AnyUrl): The endpoint for yarn weights.</span>
+
+<span class="sd">    Methods:</span>
+<span class="sd">        list (list[YarnWeightModel]): returns all yarn weights.</span>
+
+<span class="sd">    [Yarn Weights Ravelry API documentation](https://www.ravelry.com/api#/_yarn_weights)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">endpoint</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/yarn_weights.json&quot;</span>
+    <span class="n">output_model</span> <span class="o">=</span> <span class="n">YarnWeightsModel</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">YarnWeightModel</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        List the current yarn weights.</span>
+
+<span class="sd">        Endpoint: GET /yarn_weights.json</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">cls</span> <span class="o">=</span> <span class="n">YarnWeightsResource</span>
+        <span class="n">response_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">http_client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="bp">cls</span><span class="o">.</span><span class="n">endpoint</span><span class="p">)</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">output_model</span><span class="o">.</span><span class="n">model_validate</span><span class="p">(</span><span class="n">response_dict</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">yarn_weights</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pyravelry.endpoints.YarnWeightsResource.list" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">pyravelry</span><span class="o">.</span><span class="n">endpoints</span><span class="o">.</span><span class="n">YarnWeightsResource</span><span class="o">.</span><span class="n">list</span><span class="p">()</span></code>
+
+<a href="#pyravelry.endpoints.YarnWeightsResource.list" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>List the current yarn weights.</p>
+<p>Endpoint: GET /yarn_weights.json</p>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>src/pyravelry/endpoints/yarn_weights.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">YarnWeightModel</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    List the current yarn weights.</span>
+
+<span class="sd">    Endpoint: GET /yarn_weights.json</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">cls</span> <span class="o">=</span> <span class="n">YarnWeightsResource</span>
+    <span class="n">response_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">http_client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_http</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="bp">cls</span><span class="o">.</span><span class="n">endpoint</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">output_model</span><span class="o">.</span><span class="n">model_validate</span><span class="p">(</span><span class="n">response_dict</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">yarn_weights</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Maintained by <a href="https://theuerc.com">theuerc</a>.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/theuerc/pyravelry" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://pypi.org/project/pyravelry" target="_blank" rel="noopener" title="pypi.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
