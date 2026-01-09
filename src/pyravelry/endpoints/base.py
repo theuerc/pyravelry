@@ -34,16 +34,24 @@ class BaseEndpoint(ABC):
         http_client: SyncCacheClient,
         endpoint: str,
         params: Optional[dict[str, str]] = None,
+        method: str = "GET",
+        **kwargs: Any,
     ) -> Any:
         """Fetches all data from the API or the cache.
 
         Args:
             http_client (SyncCacheClient): httpx Client to use.
             endpoint (str): endpoint to hit for the request.
+            params (Optional[dict[str, str]]): Defaults to none. Parameters to pass to the http client.
+            method (str): Defaults to "GET". The http method to use for the request.
+            **kwargs (Any): Additional keyword arguements for the http client.
 
         Returns:
             Any: JSON object with the requested data.
         """
-        response = http_client.get(endpoint, params=params)
+        if method == "GET":
+            response = http_client.get(endpoint, params=params, **kwargs)
+        if method == "POST":
+            response = http_client.post(endpoint, params=params, **kwargs)
         response.raise_for_status()
         return response.json()

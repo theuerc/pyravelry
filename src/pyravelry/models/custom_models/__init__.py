@@ -3,9 +3,10 @@
 These are not defined explicitly in the Ravelry documentation.
 """
 
-from . import paginator, search, yarncompany
+from . import identifiers, paginator, search, yarncompany
 
 __all__ = [
+    "identifiers",
     "paginator",
     "search",
     "yarncompany",

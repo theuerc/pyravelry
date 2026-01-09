@@ -5,8 +5,10 @@ from hishel.httpx import SyncCacheClient
 
 from pyravelry.endpoints import (
     ColorFamiliesResource,
+    CurrentUserResource,
     FiberAttributesResource,
     FiberCategoriesResource,
+    PeopleResource,
     SearchResource,
     YarnAttributesResource,
     YarnCompaniesResource,
@@ -50,6 +52,8 @@ class RavelryClient:
         self.search = SearchResource(self._http)
         self.fiber_attributes = FiberAttributesResource(self._http)
         self.yarn_companies = YarnCompaniesResource(self._http)
+        self.people = PeopleResource(self._http)
+        self.current_user = CurrentUserResource(self._http)
 
     def close(self) -> None:
         """Closes the httpx client."""
