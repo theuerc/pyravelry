@@ -33,6 +33,7 @@ Endpoints:
 - [x] /search
 - [x] /yarn_weights
 - [ ] /app
+- [ ] /app
 - [ ] /bundled_items
 - [ ] /bundles
 - [ ] /carts
