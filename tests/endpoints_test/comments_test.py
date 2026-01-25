@@ -18,7 +18,8 @@ class TestSearchResource:
 
     @pytest.mark.dependency(name="comment_create")
     def test_create(self) -> None:
-        results = self.obj.create(type_="project", commented_id=12489643, body="This is a reply comment", reply_to_id=1)
+        results = self.obj.create(
+            type_="project", commented_id=12489643, body="This is a reply comment", reply_to_id=1)
 
         pytest.shared = results.id
 
