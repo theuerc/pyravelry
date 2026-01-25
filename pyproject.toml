@@ -48,6 +48,7 @@ dev = [
     "mkdocstrings[python]>=1.0.0",
     "ipykernel>=7.1.0",
     "griffe-fieldz>=0.4.0",
+    "pytest-dependency>=0.6.0",
 ]
 
 [build-system]

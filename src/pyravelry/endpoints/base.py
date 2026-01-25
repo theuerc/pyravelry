@@ -53,5 +53,7 @@ class BaseEndpoint(ABC):
             response = http_client.get(endpoint, params=params, **kwargs)
         if method == "POST":
             response = http_client.post(endpoint, params=params, **kwargs)
+        if method == "DELETE":
+            response = http_client.delete(endpoint, params=params, **kwargs)
         response.raise_for_status()
         return response.json()

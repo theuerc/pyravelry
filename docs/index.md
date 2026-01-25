@@ -36,7 +36,7 @@ Endpoints:
 - [ ] /bundled_items
 - [ ] /bundles
 - [ ] /carts
-- [ ] /comments
+- [X] /comments
 - [ ] /deliveries
 - [ ] /designers
 - [ ] /drafts

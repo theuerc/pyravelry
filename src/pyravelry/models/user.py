@@ -9,7 +9,7 @@ from .usersite import UserSiteModel
 class PatternAuthorForUserModel(BaseRavelryModel):
     """Represents a PatternAuthor (for_user) object.
 
-    [Ravelry API documentation](https://www.ravelry.com/api#PatternAuthor_result)
+    [Pattern Author Ravelry API documentation](https://www.ravelry.com/api#PatternAuthor_result)
     """
 
     id: int
