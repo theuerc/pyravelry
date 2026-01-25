@@ -1,0 +1,72 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - api.ravelry.com
+      User-Agent:
+      - python-httpx/0.28.1
+      authorization:
+      - Basic <REDACTED>
+    method: GET
+    uri: https://api.ravelry.com/people/cltheuer/comments/list.json?page=1&page_size=25
+  response:
+    body:
+      string: '{"comments": [{"created_at":"2026/01/24 15:22:52 -0500","id":12489643,"user_id":13988848,"commentable":{"comments_count":1,"completed":null,"craft_id":1,"created_at":"2026/01/24
+        15:22:28 -0500","favorites_count":0,"id":38390420,"made_for":"","made_for_user_id":null,"name":"Test
+        Project","pattern_id":null,"permalink":"test-project","progress":null,"project_status_changed":"2026/01/24
+        15:22:37 -0500","project_status_id":1,"rating":null,"size":"","started":null,"updated_at":"2026/01/24
+        15:22:37 -0500","user_id":13988848,"links":{"self":{"href":"https://www.ravelry.com/projects/cltheuer/test-project"}},"pattern_name":null,"craft_name":"Crochet","status_name":"In
+        progress","tag_names":[],"first_photo":null,"photos_count":0,"ends_per_inch":null,"picks_per_inch":null,"gauge":null,"row_gauge":null,"gauge_repeats":null,"gauge_divisor":null,"gauge_pattern":"","completed_day_set":false,"started_day_set":false,"user":{"id":13988848,"username":"cltheuer","tiny_photo_url":null,"small_photo_url":null,"photo_url":null,"profile_country_code":null}}}]}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,PUT,DELETE,PATCH
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 25 Jan 2026 07:06:22 GMT
+      ETag:
+      - W/"9b100e6961b63fad6c2fbac8acea80bf"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-API:
+      - '1'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Handled-By:
+      - yearling
+      X-Ruby:
+      - '2'
+      X-Runtime:
+      - '23'
+      X-Up-Location:
+      - https://api.ravelry.com/people/cltheuer/comments/list.json?page=1&page_size=25
+      X-Up-Method:
+      - get
+      content-length:
+      - '1050'
+    status:
+      code: 200
+      message: OK
+version: 1

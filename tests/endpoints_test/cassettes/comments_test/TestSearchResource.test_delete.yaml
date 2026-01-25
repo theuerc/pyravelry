@@ -1,0 +1,65 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - api.ravelry.com
+      User-Agent:
+      - python-httpx/0.28.1
+      authorization:
+      - Basic <REDACTED>
+    method: DELETE
+    uri: https://api.ravelry.com/comments/12489656.json
+  response:
+    body:
+      string: '{"comment": {"created_at":"2026/01/24 15:36:00 -0500","id":12489656,"comment_html":"\n<p>This
+        is a reply comment</p>\n","replies":[],"highlighted_project":null,"user":{"id":13988848,"username":"cltheuer","tiny_photo_url":null,"small_photo_url":null,"photo_url":null,"profile_country_code":null}}}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,PUT,DELETE,PATCH
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '296'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 24 Jan 2026 21:10:41 GMT
+      ETag:
+      - W/"ab5d7186f87425da94069416758a7866"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-API:
+      - '1'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Handled-By:
+      - ewe
+      X-Ruby:
+      - '2'
+      X-Runtime:
+      - '52'
+      X-Up-Location:
+      - https://api.ravelry.com/comments/12489656.json
+      X-Up-Method:
+      - delete
+    status:
+      code: 200
+      message: OK
+version: 1

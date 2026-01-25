@@ -32,27 +32,27 @@ Endpoints:
 - [x] /fiber_categories
 - [x] /search
 - [x] /yarn_weights
-- [ ] ~~/app~~
+- [ ] /app
 - [ ] /bundled_items
 - [ ] /bundles
-- [ ] ~~/carts~~
-- [ ] ~~/comments~~ # doesn't allow retrieval of anyone else's comments.
-- [ ] ~~/deliveries~~
+- [ ] /carts
+- [X] /comments
+- [ ] /deliveries
 - [ ] /designers
-- [ ] ~~/drafts~~
-- [ ] ~~/favorites~~
-- [ ] /fiber (base level)
-- [ ] /fiber_attributes_groups (base level)
-- [ ] /forum_posts (base level)
-- [ ] /forums (base level)
-- [ ] ~~/friends~~
+- [ ] /drafts
+- [ ] /favorites
+- [ ] /fiber
+- [ ] /fiber_attributes_groups
+- [ ] /forum_posts
+- [ ] /forums
+- [ ] /friends
 - [ ] /groups
-- [ ] ~~/in_store_sales~~
+- [ ] /in_store_sales
 - [ ] /languages
-- [ ] ~~/library~~
-- [ ] ~~/messages~~
+- [ ] /library
+- [ ] /messages
 - [ ] /needles
-- [ ] ~~/packs~~
+- [ ] /packs
 - [ ] /pages
 - [ ] /pattern_attributes
 - [ ] /pattern_categories
@@ -64,10 +64,10 @@ Endpoints:
 - [ ] /product_attachments
 - [ ] /products
 - [ ] /projects
-- [ ] ~~/queue~~
-- [ ] ~~/saved_searches~~
-- [ ] ~~/shops~~
-- [ ] ~~/stash~~
+- [ ] /queue
+- [ ] /saved_searches
+- [ ] /shops
+- [ ] /stash
 - [ ] /stores
 - [ ] /topics
 - [ ] /upload
@@ -75,93 +75,3 @@ Endpoints:
 - [x] /yarn_attributes
 - [x] /yarn_companies
 - [ ] /yarns
-
-Models:
-
-- [ ] Activity
-- [ ] Ad
-- [ ] AttributeGroup
-- [ ] Bookmark
-- [ ] Bundle
-- [ ] BundledItem
-- [ ] Business
-- [ ] Cart
-- [ ] CartItem
-- [ ] Collection
-- [x] ColorFamily
-- [x] Colorway
-- [ ] CombinedCart
-- [ ] ComponentYarn
-- [x] Craft
-- [ ] Delivery
-- [ ] Document
-- [ ] DownloadLink
-- [ ] DraftComponentYarn
-- [ ] DraftErrataLink
-- [ ] DraftNeedleSize
-- [ ] DraftPattern
-- [ ] DraftPatternYarn
-- [x] FiberAttribute
-- [x] FiberAttributeGroup
-- [x] FiberCategory
-- [ ] FiberPack
-- [ ] FiberStash
-- [x] FiberType
-- [ ] Forum
-- [ ] ForumPost
-- [ ] ForumPreference
-- [ ] ForumSet
-- [ ] ForumStatisticSummary
-- [ ] Friendship
-- [ ] Group
-- [ ] InStoreSale
-- [ ] Invoice
-- [ ] InvoiceLineItem
-- [ ] Language
-- [ ] Message
-- [ ] NeedleRecord
-- [ ] NeedleSize
-- [ ] NeedleType
-- [ ] Pack
-- [ ] Pattern
-- [ ] PatternAttribute
-- [ ] PatternAuthor
-- [ ] PatternCategory
-- [ ] PatternClassification
-- [ ] PatternLanguage
-- [ ] PatternNeedleSize
-- [ ] PatternSource
-- [ ] PatternSourceType
-- [ ] PatternTagging
-- [x] Photo
-- [ ] Printing
-- [ ] Product
-- [ ] ProductAttachment
-- [ ] ProductNotification
-- [ ] Project
-- [ ] ProjectStatus
-- [ ] QueuedProject
-- [ ] QueuedStash
-- [ ] Saleable
-- [ ] SavedSearch
-- [ ] Shop
-- [ ] ShopCustomer
-- [ ] ShopSchedule
-- [ ] SocialSite
-- [ ] Stash
-- [ ] StashStatus
-- [ ] Store
-- [ ] Tool
-- [ ] Topic
-- [ ] UnifiedStash
-- [ ] User
-- [ ] UserSite
-- [ ] Volume
-- [ ] VolumeAttachment
-- [x] Yarn
-- [x] YarnAttributeGroup
-- [x] YarnCompany
-- [x] YarnCountry
-- [x] YarnFiber
-- [x] YarnProvenance
-- [x] YarnWeight

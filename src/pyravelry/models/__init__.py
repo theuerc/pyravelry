@@ -3,9 +3,17 @@
 from . import base
 from .base import BaseRavelryModel
 from .colorfamily import ColorFamiliesModel, ColorFamilyModel
+from .comment import (
+    CommentCreateModel,
+    CommentExportModel,
+    CommentFullModel,
+    CommentHistoriesModel,
+    CommentHistoryModel,
+    CommentModel,
+)
 from .custom_models import paginator
 from .custom_models.identifiers import Identifier
-from .custom_models.paginator import PaginatorModel
+from .custom_models.paginator import PaginatorModel, SimplifiedPaginator
 from .custom_models.search import (
     GlobalSearchResponseModel,
     SearchParams,
@@ -31,6 +39,12 @@ __all__ = [
     "BaseRavelryModel",
     "ColorFamiliesModel",
     "ColorFamilyModel",
+    "CommentCreateModel",
+    "CommentExportModel",
+    "CommentFullModel",
+    "CommentHistoriesModel",
+    "CommentHistoryModel",
+    "CommentModel",
     "FiberAttributeModel",
     "FiberAttributesModel",
     "FiberCategoriesModel",
@@ -41,6 +55,7 @@ __all__ = [
     "SearchParams",
     "SearchRecordModel",
     "SearchResultModel",
+    "SimplifiedPaginator",
     "SocialSiteModel",
     "UserFullModel",
     "UserModel",

@@ -12,3 +12,13 @@ class PaginatorModel(BaseRavelryModel):
     page_size: int
     results: int
     last_page: int
+
+
+class SimplifiedPaginator(BaseRavelryModel):
+    """Simplified paginator object.
+
+    [Comments Ravelry API documentation](https://www.ravelry.com/api/#Comment_result)
+    """
+
+    page: int
+    page_size: int
