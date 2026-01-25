@@ -51,7 +51,8 @@ class CommentsResource(BaseEndpoint):
             "reply_to_id": reply_to_id,
         }
 
-        response_dict = self._fetch(http_client=self._http, endpoint=url, method="POST", params=payload)
+        response_dict = self._fetch(
+            http_client=self._http, endpoint=url, method="POST", params=payload)
 
         return CommentFullModel.model_validate(response_dict["comment"])
 
@@ -70,7 +71,8 @@ class CommentsResource(BaseEndpoint):
 
         url = "/".join([cls.endpoint, f"{id_}.json"])
 
-        response_dict = self._fetch(http_client=self._http, endpoint=url, method="DELETE")
+        response_dict = self._fetch(
+            http_client=self._http, endpoint=url, method="DELETE")
 
         return CommentFullModel.model_validate(response_dict["comment"])
 
@@ -84,7 +86,8 @@ class CommentsResource(BaseEndpoint):
         params = cls.paginator_model(page=page, page_size=page_size)
 
         url = "/".join(["people", str(username), "comments", "list.json"])
-        response_dict = self._fetch(http_client=self._http, endpoint=url, params=params.model_dump())
+        response_dict = self._fetch(
+            http_client=self._http, endpoint=url, params=params.model_dump())
 
         data = CommentHistoriesModel.model_validate(response_dict)
         return data.comments
