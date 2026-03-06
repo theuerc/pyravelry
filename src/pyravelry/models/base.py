@@ -1,5 +1,3 @@
-import pandas as pd
-import polars as pl
 from pydantic import BaseModel, ConfigDict
 
 
@@ -11,19 +9,3 @@ class BaseRavelryModel(BaseModel):
         validate_by_alias=True,
         extra="allow",
     )
-
-    def to_pandas(self) -> pd.DataFrame:
-        """Convert the model to a pandas DataFrame.
-
-        Returns:
-            pd.DataFrame: Pydantic model converted to DataFrame.
-        """
-        return pd.DataFrame([self.model_dump()])
-
-    def to_polars(self) -> pd.DataFrame:
-        """Convert the model to a polars DataFrame.
-
-        Returns:
-            pl.DataFrame: Pydantic model converted to DataFrame.
-        """
-        return pl.DataFrame([self.model_dump()])
