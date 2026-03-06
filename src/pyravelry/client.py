@@ -5,6 +5,7 @@ from hishel.httpx import SyncCacheClient
 
 from pyravelry.endpoints import (
     ColorFamiliesResource,
+    CommentsResource,
     CurrentUserResource,
     FiberAttributesResource,
     FiberCategoriesResource,
@@ -32,7 +33,7 @@ class RavelryClient:
         yarn_companies (YarnCompaniesResource): Yarn Companies endpoint
     """
 
-    def __init__(self, settings: RavelrySettings) -> None:
+    def __init__(self, settings: RavelrySettings, *, http_client: SyncCacheClient | None = None) -> None:
         """Instantiates a revelry httpx client.
 
         Args:
@@ -40,10 +41,14 @@ class RavelryClient:
         """
         self.settings = settings
         # Initialize the persistent httpx client with auth
-        self._http = SyncCacheClient(
-            base_url=str(settings.base_url),
-            auth=settings.auth_tuple,
-            timeout=10.0,
+        self._http = (
+            SyncCacheClient(
+                base_url=str(settings.base_url),
+                auth=settings.auth_tuple,
+                timeout=10.0,
+            )
+            if http_client is None
+            else http_client
         )
         self.color_families = ColorFamiliesResource(self._http)
         self.fiber_categories = FiberCategoriesResource(self._http)
@@ -54,6 +59,7 @@ class RavelryClient:
         self.yarn_companies = YarnCompaniesResource(self._http)
         self.people = PeopleResource(self._http)
         self.current_user = CurrentUserResource(self._http)
+        self.comments = CommentsResource(self._http)
 
     def close(self) -> None:
         """Closes the httpx client."""

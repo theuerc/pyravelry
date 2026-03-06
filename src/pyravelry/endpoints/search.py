@@ -1,5 +1,7 @@
 from typing import Literal, Optional
 
+from pydantic import validate_call
+
 from pyravelry.endpoints.base import BaseEndpoint
 from pyravelry.models import GlobalSearchResponseModel, SearchParams, SearchResultModel
 
@@ -14,6 +16,7 @@ class SearchResource(BaseEndpoint):
     input_model = SearchParams
     output_model = GlobalSearchResponseModel
 
+    @validate_call
     def query(
         self,
         query: str,
@@ -57,6 +60,7 @@ class SearchResource(BaseEndpoint):
 
         # Flatten the 'types' list into a space-delimited string
         params_dict = params_obj.model_dump(exclude_none=True)
+
         if "types" in params_dict:
             params_dict["types"] = " ".join(params_dict["types"])
 
