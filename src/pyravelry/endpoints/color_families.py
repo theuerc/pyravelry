@@ -23,7 +23,6 @@ class ColorFamiliesResource(BaseEndpoint):
         Retrieves all color families from Ravelry.
         """
         cls = ColorFamiliesResource
-        response_dict = self._fetch(
-            http_client=self._http, endpoint=cls.endpoint)
+        response_dict = self._fetch(http_client=self._http, endpoint=cls.endpoint)
         data = cls.output_model.model_validate(response_dict)
         return data.color_families
