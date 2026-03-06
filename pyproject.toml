@@ -1,6 +1,6 @@
 [project]
 name = "pyravelry"
-version = "0.0.3"
+version = "0.0.4"
 description = "Python wrapper for the Ravelry API, which is a database of knitting / crocheting patterns."
 authors = [{ name = "Coulton Theuer", email = "theuerc@umich.edu" }]
 readme = "README.md"
@@ -19,8 +19,6 @@ classifiers = [
 ]
 dependencies = [
     "hishel[httpx]>=1.1.7",
-    "pandas>=2.3.3",
-    "polars>=1.36.1",
     "pydantic>=2.12.5",
     "pydantic-settings>=2.12.0",
 ]
