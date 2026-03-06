@@ -1,6 +1,6 @@
-from pydantic import BaseModel, ConfigDict
 import pandas as pd
 import polars as pl
+from pydantic import BaseModel, ConfigDict
 
 
 class BaseRavelryModel(BaseModel):
