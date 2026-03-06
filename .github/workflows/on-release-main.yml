@@ -62,5 +62,8 @@ jobs:
       - name: Set up the environment
         uses: ./.github/actions/setup-python-env
 
+      - name: Replace index.md with README.md
+        run: mv ./README.md ./docs/index.md
+
       - name: Deploy documentation
         run: uv run mkdocs gh-deploy --force

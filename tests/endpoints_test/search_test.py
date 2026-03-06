@@ -25,7 +25,7 @@ class TestSearchResource:
 
     def test_query__multiple_types(self) -> None:
         # should split and strip types
-        results = self.obj.query(query="merino", limit=10, types="  Yarn Group Event ")
+        results = self.obj.query(query="merino", limit=10, types=["Yarn", "Group", "Event"])
 
         assert isinstance(results, list)
         assert len(results) > 0

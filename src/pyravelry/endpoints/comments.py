@@ -1,10 +1,12 @@
+from typing import Literal
+
+from pydantic import validate_call
+
 from pyravelry.endpoints.base import BaseEndpoint
 from pyravelry.models import (
-    CommentCreateModel,
     CommentFullModel,
     CommentHistoriesModel,
     CommentHistoryModel,
-    Identifier,
     SimplifiedPaginator,
 )
 
@@ -25,12 +27,18 @@ class CommentsResource(BaseEndpoint):
     output_model = CommentFullModel
     list_model = CommentHistoriesModel
 
-    def create(self, data: CommentCreateModel) -> CommentFullModel:
+    @validate_call
+    def create(
+        self, type_: Literal["project", "pattern", "yarn", "stash"], commented_id: int, body: str, reply_to_id: int
+    ) -> CommentFullModel:
         """
         Post a comment related to an object (project, pattern, yarn, or stash).
 
         Arguments:
-            data (CommentCreateModel): the data for the comment being created.
+            type_ (Literal["project", "pattern", "yarn", "stash"]): The type of item being commented on.
+            commented_id (int): ID of the item being commented on.
+            body (str): Comment body.
+            reply_to_id (int): ID of the comment being replied to. Restricted to item owners.
 
         Returns:
             (CommentFullModel): The published comment
@@ -39,12 +47,18 @@ class CommentsResource(BaseEndpoint):
 
         url = "/".join([cls.endpoint, "create.json"])
 
-        payload = data.model_dump(exclude_unset=True)
+        payload = {
+            "type": type_,
+            "commented_id": commented_id,
+            "body": body,
+            "reply_to_id": reply_to_id,
+        }
 
         response_dict = self._fetch(http_client=self._http, endpoint=url, method="POST", params=payload)
 
         return CommentFullModel.model_validate(response_dict["comment"])
 
+    @validate_call
     def delete(self, id_: int) -> CommentFullModel:
         """
         Delete a comment by its ID.
@@ -57,25 +71,22 @@ class CommentsResource(BaseEndpoint):
         """
         cls = CommentsResource
 
-        verified_id = Identifier(id=id_).id
-
-        url = "/".join([cls.endpoint, f"{verified_id}.json"])
+        url = "/".join([cls.endpoint, f"{id_}.json"])
 
         response_dict = self._fetch(http_client=self._http, endpoint=url, method="DELETE")
 
         return CommentFullModel.model_validate(response_dict["comment"])
 
+    @validate_call
     def list(self, username: str, page: int = 1, page_size: int = 25) -> list[CommentHistoryModel]:
         """
         Get list of comments left by a specific user.
         """
         cls = CommentsResource
 
-        validated_username = Identifier(id=username).id
-
         params = cls.paginator_model(page=page, page_size=page_size)
 
-        url = "/".join(["people", str(validated_username), "comments", "list.json"])
+        url = "/".join(["people", str(username), "comments", "list.json"])
         response_dict = self._fetch(http_client=self._http, endpoint=url, params=params.model_dump())
 
         data = CommentHistoriesModel.model_validate(response_dict)
