@@ -47,7 +47,11 @@ class PeopleResource(BaseEndpoint):
 
         Args:
             username (str): Username or integer ID of the user to update.
-            data (UserPostModel): User object containing fields to update (e.g., about_me).
+            first_name (str | None): User's first name.
+            about_me (str | None): User's "About Me" description.
+            fave_colors (str | None): User's favorite colors.
+            fave_curse (str | None): User's favorite curse word.
+            location (str | None): User's location.
 
         Returns:
             UserFullModel: The updated user profile.
