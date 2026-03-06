@@ -1,5 +1,7 @@
 from typing import Optional
 
+from pydantic import validate_call
+
 from pyravelry.endpoints.base import BaseEndpoint
 from pyravelry.models import YarnCompanySearchParams, YarnCompanySearchResponseModel
 
@@ -15,6 +17,7 @@ class YarnCompaniesResource(BaseEndpoint):
     input_model = YarnCompanySearchParams
     output_model = YarnCompanySearchResponseModel
 
+    @validate_call
     def query(
         self,
         query: Optional[str] = None,

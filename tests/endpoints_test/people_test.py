@@ -3,7 +3,7 @@ from typing import Any
 import pytest
 
 from pyravelry.endpoints import PeopleResource
-from pyravelry.models import UserModel, UserPostModel
+from pyravelry.models import UserModel
 
 
 @pytest.mark.vcr
@@ -22,12 +22,8 @@ class TestSearchResource:
         assert isinstance(results, UserModel)
 
     def test_update_description(self) -> None:
-        data = UserPostModel(fave_colors="Blue")
+        old_user = self.obj.update(username="cltheuer", fave_colors="Blue")
 
-        old_user = self.obj.update(username="cltheuer", data=data)
-
-        data = UserPostModel(fave_colors="Red")
-
-        new_user = self.obj.update(username="cltheuer", data=data)
+        new_user = self.obj.update(username="cltheuer", fave_colors="Red")
 
         assert old_user != new_user

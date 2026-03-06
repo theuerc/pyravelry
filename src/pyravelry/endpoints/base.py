@@ -33,7 +33,7 @@ class BaseEndpoint(ABC):
     def _fetch(
         http_client: SyncCacheClient,
         endpoint: str,
-        params: Optional[dict[str, str]] = None,
+        params: Optional[dict[str, Any]] = None,
         method: str = "GET",
         **kwargs: Any,
     ) -> Any:

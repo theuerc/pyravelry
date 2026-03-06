@@ -3,7 +3,7 @@ from typing import Any
 import pytest
 
 from pyravelry.endpoints import CommentsResource
-from pyravelry.models import CommentCreateModel, CommentFullModel, CommentHistoryModel
+from pyravelry.models import CommentFullModel, CommentHistoryModel
 
 
 @pytest.mark.vcr
@@ -18,9 +18,7 @@ class TestSearchResource:
 
     @pytest.mark.dependency(name="comment_create")
     def test_create(self) -> None:
-        data = CommentCreateModel(type="project", commented_id=12489643, body="This is a reply comment", reply_to_id=1)
-
-        results = self.obj.create(data=data)
+        results = self.obj.create(type_="project", commented_id=12489643, body="This is a reply comment", reply_to_id=1)
 
         pytest.shared = results.id
 
