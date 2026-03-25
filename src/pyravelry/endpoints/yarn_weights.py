@@ -1,5 +1,5 @@
 from pyravelry.endpoints.base import BaseEndpoint
-from pyravelry.models import YarnWeightModel, YarnWeightsModel
+from pyravelry.models import YarnWeightsModel
 
 
 class YarnWeightsResource(BaseEndpoint):
@@ -17,7 +17,7 @@ class YarnWeightsResource(BaseEndpoint):
     endpoint: str = "/yarn_weights.json"
     output_model = YarnWeightsModel
 
-    def list(self) -> list[YarnWeightModel]:
+    def list(self) -> YarnWeightsModel:
         """
         List the current yarn weights.
 
@@ -25,5 +25,4 @@ class YarnWeightsResource(BaseEndpoint):
         """
         cls = YarnWeightsResource
         response_dict = self._fetch(http_client=self._http, endpoint=cls.endpoint)
-        data = cls.output_model.model_validate(response_dict)
-        return data.yarn_weights
+        return cls.output_model.model_validate(response_dict)

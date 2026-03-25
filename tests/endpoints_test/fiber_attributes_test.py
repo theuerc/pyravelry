@@ -17,8 +17,16 @@ class TestFiberAttributesResource:
         assert self.obj is not None
 
     def test_list(self) -> None:
-        list_of_fiber_categories = self.obj.list()
+        list_of_fiber_attributes_ = self.obj.list()
 
-        assert isinstance(list_of_fiber_categories, list)
-        assert len(list_of_fiber_categories) > 0
-        assert isinstance(list_of_fiber_categories[0], FiberAttributeModel)
+        list_of_fiber_attributes = list_of_fiber_attributes_.fiber_attributes
+
+        assert isinstance(list_of_fiber_attributes, list)
+        assert len(list_of_fiber_attributes) > 0
+        assert isinstance(list_of_fiber_attributes[0], FiberAttributeModel)
+
+        pd_df = list_of_fiber_attributes_.pandas
+        pl_df = list_of_fiber_attributes_.polars
+
+        assert not pd_df.empty
+        assert not pl_df.is_empty()

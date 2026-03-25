@@ -3,7 +3,7 @@ from typing import Literal, Optional
 from pydantic import validate_call
 
 from pyravelry.endpoints.base import BaseEndpoint
-from pyravelry.models import GlobalSearchResponseModel, SearchParams, SearchResultModel
+from pyravelry.models import GlobalSearchResponseModel, SearchParams
 
 
 class SearchResource(BaseEndpoint):
@@ -40,7 +40,7 @@ class SearchResource(BaseEndpoint):
             ]
             | None
         ] = None,
-    ) -> list[SearchResultModel]:
+    ) -> GlobalSearchResponseModel:
         """
         Perform a global search.
 
@@ -70,5 +70,4 @@ class SearchResource(BaseEndpoint):
             params=params_dict,
         )
 
-        data = cls.output_model.model_validate(response_dict)
-        return data.results
+        return cls.output_model.model_validate(response_dict)

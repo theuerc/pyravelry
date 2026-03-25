@@ -19,4 +19,12 @@ class TestCurrentUserResource:
     def test_list(self) -> None:
         current_user = self.obj.get()
 
-        assert isinstance(current_user, UserFullModel)
+        current_user_ = current_user.user
+
+        assert isinstance(current_user_, UserFullModel)
+
+        pd_df = current_user.pandas
+        pl_df = current_user.polars
+
+        assert not pd_df.empty
+        assert not pl_df.is_empty()

@@ -1,5 +1,5 @@
 from pyravelry.endpoints.base import BaseEndpoint
-from pyravelry.models import FiberAttributeModel, FiberAttributesModel
+from pyravelry.models import FiberAttributesModel
 
 
 class FiberAttributesResource(BaseEndpoint):
@@ -17,7 +17,7 @@ class FiberAttributesResource(BaseEndpoint):
     endpoint: str = "/fiber_attributes.json"
     output_model = FiberAttributesModel
 
-    def list(self) -> list[FiberAttributeModel]:
+    def list(self) -> FiberAttributesModel:
         """
         List the current fiber attributes
 
@@ -26,4 +26,4 @@ class FiberAttributesResource(BaseEndpoint):
         cls = FiberAttributesResource
         response_dict = self._fetch(http_client=self._http, endpoint=cls.endpoint)
         data = cls.output_model.model_validate(response_dict)
-        return data.fiber_attributes
+        return data

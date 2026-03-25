@@ -1,5 +1,5 @@
 from pyravelry.endpoints.base import BaseEndpoint
-from pyravelry.models import ColorFamiliesModel, ColorFamilyModel
+from pyravelry.models import ColorFamiliesModel
 
 
 class ColorFamiliesResource(BaseEndpoint):
@@ -18,11 +18,11 @@ class ColorFamiliesResource(BaseEndpoint):
     endpoint: str = "/color_families.json"
     output_model = ColorFamiliesModel
 
-    def list(self) -> list[ColorFamilyModel]:
+    def list(self) -> ColorFamiliesModel:
         """
         Retrieves all color families from Ravelry.
         """
         cls = ColorFamiliesResource
         response_dict = self._fetch(http_client=self._http, endpoint=cls.endpoint)
         data = cls.output_model.model_validate(response_dict)
-        return data.color_families
+        return data

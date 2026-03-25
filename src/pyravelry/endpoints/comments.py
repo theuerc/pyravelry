@@ -6,7 +6,6 @@ from pyravelry.endpoints.base import BaseEndpoint
 from pyravelry.models import (
     CommentFullModel,
     CommentHistoriesModel,
-    CommentHistoryModel,
     SimplifiedPaginator,
 )
 
@@ -78,7 +77,7 @@ class CommentsResource(BaseEndpoint):
         return CommentFullModel.model_validate(response_dict["comment"])
 
     @validate_call
-    def list(self, username: str, page: int = 1, page_size: int = 25) -> list[CommentHistoryModel]:
+    def list(self, username: str, page: int = 1, page_size: int = 25) -> CommentHistoriesModel:
         """
         Get list of comments left by a specific user.
         """
@@ -90,4 +89,4 @@ class CommentsResource(BaseEndpoint):
         response_dict = self._fetch(http_client=self._http, endpoint=url, params=params.model_dump())
 
         data = CommentHistoriesModel.model_validate(response_dict)
-        return data.comments
+        return data
