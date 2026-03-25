@@ -24,14 +24,34 @@ class TestSearchResource:
 
         assert isinstance(results, CommentFullModel)
 
+        pd_df = results.pandas
+        pl_df = results.polars
+
+        assert not pd_df.empty
+        assert not pl_df.is_empty()
+
     @pytest.mark.dependency(depends=["comment_create"])
     def test_delete(self) -> None:
         results = self.obj.delete(id_=pytest.shared)
 
         assert isinstance(results, CommentFullModel)
 
+        pd_df = results.pandas
+        pl_df = results.polars
+
+        assert not pd_df.empty
+        assert not pl_df.is_empty()
+
     def test_list(self) -> None:
         results = self.obj.list(username="cltheuer")
 
-        assert isinstance(results, list)
-        assert isinstance(results[0], CommentHistoryModel)
+        data = results.comments
+
+        assert isinstance(data, list)
+        assert isinstance(data[0], CommentHistoryModel)
+
+        pd_df = results.pandas
+        pl_df = results.polars
+
+        assert not pd_df.empty
+        assert not pl_df.is_empty()

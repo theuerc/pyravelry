@@ -26,3 +26,9 @@ class TestYarnCompanyResources:
         assert isinstance(results, YarnCompanySearchResponseModel)
         assert len(results.yarn_companies) > 0
         assert isinstance(results.yarn_companies[0], YarnCompanyModel)
+
+        pd_df = results.pandas
+        pl_df = results.polars
+
+        assert not pd_df.empty
+        assert not pl_df.is_empty()

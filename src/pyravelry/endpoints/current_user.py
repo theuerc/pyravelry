@@ -1,5 +1,5 @@
 from pyravelry.endpoints.base import BaseEndpoint
-from pyravelry.models import UserFullModel, UserModel
+from pyravelry.models import UserModel
 
 
 class CurrentUserResource(BaseEndpoint):
@@ -18,11 +18,11 @@ class CurrentUserResource(BaseEndpoint):
     endpoint: str = "/current_user.json"
     output_model = UserModel
 
-    def get(self) -> UserFullModel:
+    def get(self) -> UserModel:
         """
         Retrieves the details of the currently authenticated user.
         """
         cls = CurrentUserResource
         response_dict = self._fetch(http_client=self._http, endpoint=cls.endpoint)
         data = cls.output_model.model_validate(response_dict)
-        return data.user
+        return data

@@ -1,5 +1,5 @@
 from pyravelry.endpoints.base import BaseEndpoint
-from pyravelry.models import YarnAttributeModel, YarnAttributesModel
+from pyravelry.models import YarnAttributesModel
 
 
 class YarnAttributesResource(BaseEndpoint):
@@ -17,7 +17,7 @@ class YarnAttributesResource(BaseEndpoint):
     endpoint: str = "/yarn_attributes/groups.json"
     output_model = YarnAttributesModel
 
-    def list(self) -> list[YarnAttributeModel]:
+    def list(self) -> YarnAttributesModel:
         """
         List the current yarn attributes.
 
@@ -25,5 +25,4 @@ class YarnAttributesResource(BaseEndpoint):
         """
         cls = YarnAttributesResource
         response_dict = self._fetch(http_client=self._http, endpoint=cls.endpoint)
-        data = cls.output_model.model_validate(response_dict)
-        return data.yarn_attribute_groups
+        return cls.output_model.model_validate(response_dict)

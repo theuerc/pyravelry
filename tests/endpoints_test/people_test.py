@@ -21,9 +21,21 @@ class TestSearchResource:
 
         assert isinstance(results, UserModel)
 
+        pd_df = results.pandas
+        pl_df = results.polars
+
+        assert not pd_df.empty
+        assert not pl_df.is_empty()
+
     def test_update_description(self) -> None:
         old_user = self.obj.update(username="cltheuer", fave_colors="Blue")
 
         new_user = self.obj.update(username="cltheuer", fave_colors="Red")
 
         assert old_user != new_user
+
+        pd_df = old_user.pandas
+        pl_df = old_user.polars
+
+        assert not pd_df.empty
+        assert not pl_df.is_empty()

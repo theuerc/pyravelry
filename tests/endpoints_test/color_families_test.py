@@ -19,6 +19,13 @@ class TestColorFamiliesResource:
     def test_list(self) -> None:
         list_of_color_families = self.obj.list()
 
-        assert isinstance(list_of_color_families, list)
-        assert len(list_of_color_families) > 0
-        assert isinstance(list_of_color_families[0], ColorFamilyModel)
+        color_family_list = list_of_color_families.color_families
+        assert isinstance(color_family_list, list)
+        assert len(color_family_list) > 0
+        assert isinstance(color_family_list[0], ColorFamilyModel)
+
+        pd_df = list_of_color_families.pandas
+        pl_df = list_of_color_families.polars
+
+        assert not pd_df.empty
+        assert not pl_df.is_empty()
