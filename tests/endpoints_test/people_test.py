@@ -21,8 +21,8 @@ class TestSearchResource:
 
         assert isinstance(results, UserModel)
 
-        pd_df = results.pandas
-        pl_df = results.polars
+        pd_df = results.to_pandas()
+        pl_df = results.to_polars()
 
         assert not pd_df.empty
         assert not pl_df.is_empty()
@@ -34,8 +34,8 @@ class TestSearchResource:
 
         assert old_user != new_user
 
-        pd_df = old_user.pandas
-        pl_df = old_user.polars
+        pd_df = old_user.to_pandas()
+        pl_df = old_user.to_polars()
 
         assert not pd_df.empty
         assert not pl_df.is_empty()

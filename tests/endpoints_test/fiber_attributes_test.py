@@ -25,8 +25,8 @@ class TestFiberAttributesResource:
         assert len(list_of_fiber_attributes) > 0
         assert isinstance(list_of_fiber_attributes[0], FiberAttributeModel)
 
-        pd_df = list_of_fiber_attributes_.pandas
-        pl_df = list_of_fiber_attributes_.polars
+        pd_df = list_of_fiber_attributes_.to_pandas()
+        pl_df = list_of_fiber_attributes_.to_polars()
 
         assert not pd_df.empty
         assert not pl_df.is_empty()

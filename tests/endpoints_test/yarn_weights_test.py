@@ -25,8 +25,8 @@ class TestYarnWeightsResource:
         assert len(list_of_yarn_weights) > 0
         assert isinstance(list_of_yarn_weights[0], YarnWeightModel)
 
-        pd_df = list_of_yarn_weights_.pandas
-        pl_df = list_of_yarn_weights_.polars
+        pd_df = list_of_yarn_weights_.to_pandas()
+        pl_df = list_of_yarn_weights_.to_polars()
 
         assert not pd_df.empty
         assert not pl_df.is_empty()

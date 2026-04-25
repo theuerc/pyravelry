@@ -17,34 +17,36 @@ Use of this API wrapper requires a [Ravelry Account](https://www.ravelry.com/) a
 Quick Start:
 
 ```bash
-$pip install pyravelry
-$python -i
+$ pip install pyravelry
+$ python -i
 >>> from pyravelry import Client, Settings
 >>> settings = Settings(RAVELRY_USERNAME=..., RAVELRY_API_KEY=...)
 >>> client = Client(settings=settings)
 >>> results = client.search.query(query="merino", limit=10, types=["Yarn"])
->>> results[0].title
+>>> results.results[0].title
 'MerinoSeide'
->>> results.pandas.loc[:, ["title", "type_name", "record.type"]].head()
-           title type_name record.type
-0    MerinoSeide      yarn        Yarn
-1    Merinosukka      yarn        Yarn
-2      MERINO100      yarn        Yarn
-3  Merino-Tussah      yarn        Yarn
-4    Merinosilke      yarn        Yarn
->>> results.polars["title", "type_name", "record.type"].head()
-shape: (5, 3)
-┌───────────────┬───────────┬─────────────┐
-│ title         ┆ type_name ┆ record.type │
-│ ---           ┆ ---       ┆ ---         │
-│ str           ┆ str       ┆ str         │
-╞═══════════════╪═══════════╪═════════════╡
-│ MerinoSeide   ┆ yarn      ┆ Yarn        │
-│ Merinosukka   ┆ yarn      ┆ Yarn        │
-│ MERINO100     ┆ yarn      ┆ Yarn        │
-│ Merino-Tussah ┆ yarn      ┆ Yarn        │
-│ Merinosilke   ┆ yarn      ┆ Yarn        │
-└───────────────┴───────────┴─────────────┘
+>>> results.to_pandas().loc[:, ["title"]].head()
+           title
+0    MerinoSeide
+1    Merinosukka
+2      MERINO100
+3  Merino-Tussah
+4    Merinosilke
+>>> results.to_polars()["title"].head()
+shape: (10,)
+Series: 'title' [str]
+[
+        "MerinoSeide"
+        "Merinosukka"
+        "MERINO100"
+        "Merino-Tussah"
+        "Merinosilke"
+        "Merinowol"
+        "Merinosweet"
+        "Merino-Soft"
+        "MerinoSilk"
+        "MerinoCottonSilk"
+]
 ```
 
 More information about this API wrapper can be found in the [pyravelry documentation](https://theuerc.github.io/pyravelry/).

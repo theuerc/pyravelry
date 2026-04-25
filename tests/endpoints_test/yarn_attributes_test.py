@@ -24,8 +24,8 @@ class TestYarnAttributesResource:
         assert len(list_of_yarn_attributes) > 0
         assert isinstance(list_of_yarn_attributes[0], YarnAttributeModel)
 
-        pd_df = list_of_yarn_attributes_.pandas
-        pl_df = list_of_yarn_attributes_.polars
+        pd_df = list_of_yarn_attributes_.to_pandas()
+        pl_df = list_of_yarn_attributes_.to_polars()
 
         assert not pd_df.empty
         assert not pl_df.is_empty()
