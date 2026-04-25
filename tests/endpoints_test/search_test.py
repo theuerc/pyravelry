@@ -25,8 +25,8 @@ class TestSearchResource:
         assert len(results) > 0
         assert isinstance(results[0], SearchResultModel)
 
-        pd_df = results_.pandas
-        pl_df = results_.polars
+        pd_df = results_.to_pandas()
+        pl_df = results_.to_polars()
 
         assert not pd_df.empty
         assert not pl_df.is_empty()
@@ -41,8 +41,8 @@ class TestSearchResource:
         assert len(results) > 0
         assert isinstance(results[0], SearchResultModel)
 
-        pd_df = results_.pandas
-        pl_df = results_.polars
+        pd_df = results_.to_pandas()
+        pl_df = results_.to_polars()
 
         assert not pd_df.empty
         assert not pl_df.is_empty()

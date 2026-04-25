@@ -23,8 +23,8 @@ class TestCurrentUserResource:
 
         assert isinstance(current_user_, UserFullModel)
 
-        pd_df = current_user.pandas
-        pl_df = current_user.polars
+        pd_df = current_user.to_pandas()
+        pl_df = current_user.to_polars()
 
         assert not pd_df.empty
         assert not pl_df.is_empty()

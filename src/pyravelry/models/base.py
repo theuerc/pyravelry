@@ -12,8 +12,7 @@ class BaseRavelryModel(BaseModel):
         extra="allow",
     )
 
-    @property
-    def pandas(self) -> pd.DataFrame:
+    def to_pandas(self) -> pd.DataFrame:
         """Converts the pyravelry model into a pandas dataframe.
 
         Returns:
@@ -26,8 +25,7 @@ class BaseRavelryModel(BaseModel):
             data = next(data.values().__iter__())
         return pd.json_normalize(data)
 
-    @property
-    def polars(self) -> pl.DataFrame:
+    def to_polars(self) -> pl.DataFrame:
         """Converts the pyravelry model into a polars dataframe.
 
         This is very hacky and converts to pandas then polars,
@@ -37,4 +35,4 @@ class BaseRavelryModel(BaseModel):
         Returns:
             pl.DataFrame: polars Dataframe with pyravelry content.
         """
-        return pl.from_pandas(self.pandas)
+        return pl.from_pandas(self.to_pandas())

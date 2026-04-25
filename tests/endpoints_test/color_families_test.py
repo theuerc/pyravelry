@@ -24,8 +24,8 @@ class TestColorFamiliesResource:
         assert len(color_family_list) > 0
         assert isinstance(color_family_list[0], ColorFamilyModel)
 
-        pd_df = list_of_color_families.pandas
-        pl_df = list_of_color_families.polars
+        pd_df = list_of_color_families.to_pandas()
+        pl_df = list_of_color_families.to_polars()
 
         assert not pd_df.empty
         assert not pl_df.is_empty()

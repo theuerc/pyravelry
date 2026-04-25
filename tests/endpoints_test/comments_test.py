@@ -24,8 +24,8 @@ class TestSearchResource:
 
         assert isinstance(results, CommentFullModel)
 
-        pd_df = results.pandas
-        pl_df = results.polars
+        pd_df = results.to_pandas()
+        pl_df = results.to_polars()
 
         assert not pd_df.empty
         assert not pl_df.is_empty()
@@ -36,8 +36,8 @@ class TestSearchResource:
 
         assert isinstance(results, CommentFullModel)
 
-        pd_df = results.pandas
-        pl_df = results.polars
+        pd_df = results.to_pandas()
+        pl_df = results.to_polars()
 
         assert not pd_df.empty
         assert not pl_df.is_empty()
@@ -50,8 +50,8 @@ class TestSearchResource:
         assert isinstance(data, list)
         assert isinstance(data[0], CommentHistoryModel)
 
-        pd_df = results.pandas
-        pl_df = results.polars
+        pd_df = results.to_pandas()
+        pl_df = results.to_polars()
 
         assert not pd_df.empty
         assert not pl_df.is_empty()
