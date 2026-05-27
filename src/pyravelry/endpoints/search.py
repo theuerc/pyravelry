@@ -1,8 +1,9 @@
-from typing import Literal, Optional
+from types import SimpleNamespace
+from typing import Literal, Optional, cast
 
 from pydantic import validate_call
 
-from pyravelry.endpoints.base import BaseEndpoint
+from pyravelry.endpoints.base import Action, BaseEndpoint
 from pyravelry.models import GlobalSearchResponseModel, SearchParams
 
 
@@ -12,9 +13,9 @@ class SearchResource(BaseEndpoint):
     [Search Ravelry API documentation](https://www.ravelry.com/api#/_search)
     """
 
-    endpoint: str = "/search.json"
-    input_model = SearchParams
-    output_model = GlobalSearchResponseModel
+    actions = SimpleNamespace(
+        query=Action("/search.json", GlobalSearchResponseModel),
+    )
 
     @validate_call
     def query(
@@ -55,8 +56,7 @@ class SearchResource(BaseEndpoint):
         Usage:
             search.query(query="merino", limit=10, types=["Yarn"])
         """
-        cls = SearchResource
-        params_obj = cls.input_model(query=query, limit=limit, types=types)
+        params_obj = SearchParams(query=query, limit=limit, types=types)
 
         # Flatten the 'types' list into a space-delimited string
         params_dict = params_obj.model_dump(exclude_none=True)
@@ -64,10 +64,6 @@ class SearchResource(BaseEndpoint):
         if "types" in params_dict:
             params_dict["types"] = " ".join(params_dict["types"])
 
-        response_dict = self._fetch(
-            http_client=self._http,
-            endpoint=cls.endpoint,
-            params=params_dict,
-        )
+        response_dict = self._fetch(self._http.get(self.actions.query.url, params=params_dict))
 
-        return cls.output_model.model_validate(response_dict)
+        return cast(GlobalSearchResponseModel, self.actions.query.model.model_validate(response_dict))

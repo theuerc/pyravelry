@@ -1,4 +1,7 @@
-from pyravelry.endpoints.base import BaseEndpoint
+from types import SimpleNamespace
+from typing import cast
+
+from pyravelry.endpoints.base import Action, BaseEndpoint
 from pyravelry.models import YarnWeightsModel
 
 
@@ -14,8 +17,7 @@ class YarnWeightsResource(BaseEndpoint):
     [Yarn Weights Ravelry API documentation](https://www.ravelry.com/api#/_yarn_weights)
     """
 
-    endpoint: str = "/yarn_weights.json"
-    output_model = YarnWeightsModel
+    actions = SimpleNamespace(list=Action("/yarn_weights.json", YarnWeightsModel))
 
     def list(self) -> YarnWeightsModel:
         """
@@ -23,6 +25,5 @@ class YarnWeightsResource(BaseEndpoint):
 
         Endpoint: GET /yarn_weights.json
         """
-        cls = YarnWeightsResource
-        response_dict = self._fetch(http_client=self._http, endpoint=cls.endpoint)
-        return cls.output_model.model_validate(response_dict)
+        response_dict = self._fetch(self._http.get(self.actions.list.url))
+        return cast(YarnWeightsModel, self.actions.list.model.model_validate(response_dict))

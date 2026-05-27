@@ -1,0 +1,67 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - api.ravelry.com
+      User-Agent:
+      - python-httpx/0.28.1
+      authorization:
+      - Basic <REDACTED>
+    method: GET
+    uri: https://api.ravelry.com/needles/sizes.json
+  response:
+    body:
+      string: '{"needle_sizes": [{"hook":null,"id":43,"metric":0.5,"us":"8/0"},{"hook":null,"id":25,"metric":0.6,"us":null},{"hook":null,"id":26,"metric":0.7,"us":null},{"hook":null,"id":42,"metric":0.75,"us":"6/0"},{"hook":null,"id":27,"metric":0.75,"us":null},{"hook":null,"id":28,"metric":0.85,"us":null},{"hook":null,"id":29,"metric":0.9,"us":null},{"hook":null,"id":41,"metric":1.0,"us":"5/0"},{"hook":null,"id":30,"metric":1.0,"us":null},{"hook":null,"id":31,"metric":1.05,"us":null},{"hook":null,"id":47,"metric":1.1,"us":null},{"hook":null,"id":32,"metric":1.1,"us":null},{"hook":null,"id":33,"metric":1.15,"us":null},{"hook":null,"id":40,"metric":1.25,"us":"4/0"},{"hook":null,"id":34,"metric":1.25,"us":null},{"hook":null,"id":35,"metric":1.3,"us":null},{"hook":null,"id":36,"metric":1.4,"us":null},{"hook":null,"id":37,"metric":1.5,"us":null},{"hook":null,"id":39,"metric":1.5,"us":"000"},{"hook":null,"id":38,"metric":1.65,"us":null},{"hook":null,"id":22,"metric":1.75,"us":"00"},{"hook":null,"id":44,"metric":1.8,"us":null},{"hook":null,"id":45,"metric":1.9,"us":null},{"hook":null,"id":19,"metric":2.0,"us":"0"},{"hook":null,"id":46,"metric":2.1,"us":null},{"hook":"B","id":1,"metric":2.25,"us":"1.0"},{"hook":null,"id":50,"metric":2.35,"us":null},{"hook":null,"id":21,"metric":2.5,"us":"1.5"},{"hook":"C","id":2,"metric":2.75,"us":"2.0"},{"hook":null,"id":20,"metric":3.0,"us":"2.5"},{"hook":"D","id":3,"metric":3.25,"us":"3.0"},{"hook":"E","id":4,"metric":3.5,"us":"4.0"},{"hook":"F","id":5,"metric":3.75,"us":"5.0"},{"hook":"G","id":6,"metric":4.0,"us":"6.0"},{"hook":"G","id":49,"metric":4.25,"us":null},{"hook":null,"id":7,"metric":4.5,"us":"7.0"},{"hook":null,"id":55,"metric":4.75,"us":null},{"hook":"H","id":8,"metric":5.0,"us":"8.0"},{"hook":"I","id":9,"metric":5.5,"us":"9.0"},{"hook":"J","id":10,"metric":6.0,"us":"10.0"},{"hook":"K","id":11,"metric":6.5,"us":"10.5"},{"hook":null,"id":23,"metric":7.0,"us":null},{"hook":null,"id":24,"metric":7.5,"us":null},{"hook":"L","id":12,"metric":8.0,"us":"11.0"},{"hook":"M/N","id":13,"metric":9.0,"us":"13.0"},{"hook":"N/P","id":14,"metric":10.0,"us":"15.0"},{"hook":"P","id":51,"metric":11.5,"us":"16"},{"hook":null,"id":15,"metric":12.0,"us":"17.0"},{"hook":null,"id":48,"metric":12.0,"us":null},{"hook":"P/Q","id":16,"metric":15.0,"us":"19.0"},{"hook":"Q","id":52,"metric":15.75,"us":null},{"hook":"S","id":17,"metric":19.0,"us":"35.0"},{"hook":null,"id":18,"metric":25.0,"us":"50.0"},{"hook":null,"id":53,"metric":40.0,"us":null}]}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,PUT,DELETE,PATCH
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 26 May 2026 03:55:04 GMT
+      ETag:
+      - W/"7b8d01ea7ebca5ae91074fd6453f1bc6"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-API:
+      - '1'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Handled-By:
+      - yearling
+      X-Ruby:
+      - '2'
+      X-Runtime:
+      - '16'
+      X-Up-Location:
+      - https://api.ravelry.com/needles/sizes.json
+      X-Up-Method:
+      - get
+      content-length:
+      - '2487'
+    status:
+      code: 200
+      message: OK
+version: 1

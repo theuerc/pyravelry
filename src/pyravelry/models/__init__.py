@@ -27,6 +27,9 @@ from .custom_models.yarncompany import (
 )
 from .fiberattribute import FiberAttributeModel, FiberAttributesModel
 from .fibercategory import FiberCategoriesModel, FiberCategoryModel
+from .needlerecord import NeedleRecordFullModel, NeedleRecordListModel, NeedleRecordSmallModel
+from .needlesize import NeedleSizeFullModel, NeedleSizeListModel, NeedleSizePostModel, NeedleSizesModel
+from .needletype import NeedleTypeFullModel, NeedleTypeModel, NeedleTypesModel
 from .socialsite import SocialSiteModel
 from .user import UserFullModel, UserModel, UserPostModel, UserSmallModel
 from .usersite import UserSiteModel
@@ -51,6 +54,16 @@ __all__ = [
     "FiberCategoryModel",
     "GlobalSearchResponseModel",
     "Identifier",
+    "NeedleRecordFullModel",
+    "NeedleRecordListModel",
+    "NeedleRecordSmallModel",
+    "NeedleSizeFullModel",
+    "NeedleSizeListModel",
+    "NeedleSizePostModel",
+    "NeedleSizesModel",
+    "NeedleTypeFullModel",
+    "NeedleTypeModel",
+    "NeedleTypesModel",
     "PaginatorModel",
     "SearchParams",
     "SearchRecordModel",

@@ -1,4 +1,7 @@
-from pyravelry.endpoints.base import BaseEndpoint
+from types import SimpleNamespace
+from typing import cast
+
+from pyravelry.endpoints.base import Action, BaseEndpoint
 from pyravelry.models import FiberCategoriesModel
 
 
@@ -14,15 +17,12 @@ class FiberCategoriesResource(BaseEndpoint):
     [Fiber Categories Ravelry API documentation](https://www.ravelry.com/api#/_fiber_categories)
     """
 
-    endpoint: str = "/fiber_categories.json"
-    output_model = FiberCategoriesModel
+    actions = SimpleNamespace(list=Action("/fiber_categories.json", FiberCategoriesModel))
 
     def list(self) -> FiberCategoriesModel:
         """
         List the current fiber categories
         Endpoint: GET /fiber_categories.json
         """
-        cls = FiberCategoriesResource
-        response_dict = self._fetch(http_client=self._http, endpoint=cls.endpoint)
-        data = cls.output_model.model_validate(response_dict)
-        return data
+        response_dict = self._fetch(self._http.get(self.actions.list.url))
+        return cast(FiberCategoriesModel, self.actions.list.model.model_validate(response_dict))

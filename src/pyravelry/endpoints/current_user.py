@@ -1,4 +1,7 @@
-from pyravelry.endpoints.base import BaseEndpoint
+from types import SimpleNamespace
+from typing import cast
+
+from pyravelry.endpoints.base import Action, BaseEndpoint
 from pyravelry.models import UserModel
 
 
@@ -15,14 +18,11 @@ class CurrentUserResource(BaseEndpoint):
     [Current User Ravelry API documentation](https://www.ravelry.com/api#/_current_user)
     """
 
-    endpoint: str = "/current_user.json"
-    output_model = UserModel
+    actions = SimpleNamespace(get=Action("/current_user.json", UserModel))
 
     def get(self) -> UserModel:
         """
         Retrieves the details of the currently authenticated user.
         """
-        cls = CurrentUserResource
-        response_dict = self._fetch(http_client=self._http, endpoint=cls.endpoint)
-        data = cls.output_model.model_validate(response_dict)
-        return data
+        response_dict = self._fetch(self._http.get(self.actions.get.url))
+        return cast(UserModel, self.actions.get.model.model_validate(response_dict))

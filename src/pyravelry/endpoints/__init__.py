@@ -6,6 +6,7 @@ from .comments import CommentsResource
 from .current_user import CurrentUserResource
 from .fiber_attributes import FiberAttributesResource
 from .fiber_categories import FiberCategoriesResource
+from .needles import NeedlesResource
 from .people import PeopleResource
 from .search import SearchResource
 from .yarn_attributes import YarnAttributesResource
@@ -19,6 +20,7 @@ __all__ = [
     "CurrentUserResource",
     "FiberAttributesResource",
     "FiberCategoriesResource",
+    "NeedlesResource",
     "PeopleResource",
     "SearchResource",
     "YarnAttributesResource",

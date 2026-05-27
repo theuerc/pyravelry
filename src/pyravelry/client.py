@@ -9,6 +9,7 @@ from pyravelry.endpoints import (
     CurrentUserResource,
     FiberAttributesResource,
     FiberCategoriesResource,
+    NeedlesResource,
     PeopleResource,
     SearchResource,
     YarnAttributesResource,
@@ -60,6 +61,7 @@ class RavelryClient:
         self.people = PeopleResource(self._http)
         self.current_user = CurrentUserResource(self._http)
         self.comments = CommentsResource(self._http)
+        self.needles = NeedlesResource(self._http)
 
     def close(self) -> None:
         """Closes the httpx client."""

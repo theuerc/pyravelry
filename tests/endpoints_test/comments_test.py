@@ -7,7 +7,7 @@ from pyravelry.models import CommentFullModel, CommentHistoryModel
 
 
 @pytest.mark.vcr
-class TestSearchResource:
+class TestCommentsResource:
     @pytest.fixture(autouse=True)
     def setup(self, api_info: Any) -> None:
         """Automatically sets up the resource for every test in this class."""
