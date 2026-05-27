@@ -1,8 +1,9 @@
-from typing import Optional
+from types import SimpleNamespace
+from typing import Optional, cast
 
 from pydantic import validate_call
 
-from pyravelry.endpoints.base import BaseEndpoint
+from pyravelry.endpoints.base import Action, BaseEndpoint
 from pyravelry.models import YarnCompanySearchParams, YarnCompanySearchResponseModel
 
 
@@ -13,9 +14,7 @@ class YarnCompaniesResource(BaseEndpoint):
     [Yarn Companies Ravelry API documentation](https://www.ravelry.com/api#yarn_companies_search)
     """
 
-    endpoint = "/yarn_companies"
-    input_model = YarnCompanySearchParams
-    output_model = YarnCompanySearchResponseModel
+    actions = SimpleNamespace(query=Action("/yarn_companies/search.json", YarnCompanySearchResponseModel))
 
     @validate_call
     def query(
@@ -34,16 +33,8 @@ class YarnCompaniesResource(BaseEndpoint):
             page_size: Number of results per page.
             sort: Sort order (e.g., 'best', 'best_'; reverse order with _ suffix)
         """
-        cls = YarnCompaniesResource
+        params = YarnCompanySearchParams(query=query, page=page, page_size=page_size, sort=sort)
 
-        url = "/".join([cls.endpoint, "/search.json"])
+        response_dict = self._fetch(self._http.get(self.actions.query.url, params=params.model_dump(exclude_none=True)))
 
-        params = cls.input_model(query=query, page=page, page_size=page_size, sort=sort)
-
-        response_dict = self._fetch(
-            http_client=self._http,
-            endpoint=url,
-            params=params.model_dump(exclude_none=True),
-        )
-
-        return cls.output_model.model_validate(response_dict)
+        return cast(YarnCompanySearchResponseModel, self.actions.query.model.model_validate(response_dict))

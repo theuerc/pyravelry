@@ -1,8 +1,9 @@
-from typing import Literal
+from types import SimpleNamespace
+from typing import Literal, cast
 
 from pydantic import validate_call
 
-from pyravelry.endpoints.base import BaseEndpoint
+from pyravelry.endpoints.base import Action, BaseEndpoint
 from pyravelry.models import (
     CommentFullModel,
     CommentHistoriesModel,
@@ -21,10 +22,11 @@ class CommentsResource(BaseEndpoint):
     [Comments Ravelry API documentation](https://www.ravelry.com/api#/_comments)
     """
 
-    endpoint = "/comments"
-    paginator_model = SimplifiedPaginator
-    output_model = CommentFullModel
-    list_model = CommentHistoriesModel
+    actions = SimpleNamespace(
+        create=Action("/comments/create.json", CommentFullModel),
+        delete=Action("/comments/{}.json", CommentFullModel),
+        list=Action("/people/{}/comments/list.json", CommentHistoriesModel),
+    )
 
     @validate_call
     def create(
@@ -42,9 +44,6 @@ class CommentsResource(BaseEndpoint):
         Returns:
             (CommentFullModel): The published comment
         """
-        cls = CommentsResource
-
-        url = "/".join([cls.endpoint, "create.json"])
 
         payload = {
             "type": type_,
@@ -53,9 +52,9 @@ class CommentsResource(BaseEndpoint):
             "reply_to_id": reply_to_id,
         }
 
-        response_dict = self._fetch(http_client=self._http, endpoint=url, method="POST", params=payload)
+        response_dict = self._fetch(self._http.post(self.actions.create.url, params=payload))
 
-        return CommentFullModel.model_validate(response_dict["comment"])
+        return cast(CommentFullModel, self.actions.create.model.model_validate(response_dict["comment"]))
 
     @validate_call
     def delete(self, id_: int) -> CommentFullModel:
@@ -68,25 +67,19 @@ class CommentsResource(BaseEndpoint):
         Returns:
             (CommentFullModel): The deleted comment.
         """
-        cls = CommentsResource
+        response_dict = self._fetch(self._http.delete(self.actions.delete.url.format(id_)))
 
-        url = "/".join([cls.endpoint, f"{id_}.json"])
-
-        response_dict = self._fetch(http_client=self._http, endpoint=url, method="DELETE")
-
-        return CommentFullModel.model_validate(response_dict["comment"])
+        return cast(CommentFullModel, self.actions.delete.model.model_validate(response_dict["comment"]))
 
     @validate_call
     def list(self, username: str, page: int = 1, page_size: int = 25) -> CommentHistoriesModel:
         """
         Get list of comments left by a specific user.
         """
-        cls = CommentsResource
+        params = SimplifiedPaginator(page=page, page_size=page_size)
 
-        params = cls.paginator_model(page=page, page_size=page_size)
+        response_dict = self._fetch(
+            self._http.get(self.actions.list.url.format(str(username)), params=params.model_dump())
+        )
 
-        url = "/".join(["people", str(username), "comments", "list.json"])
-        response_dict = self._fetch(http_client=self._http, endpoint=url, params=params.model_dump())
-
-        data = CommentHistoriesModel.model_validate(response_dict)
-        return data
+        return cast(CommentHistoriesModel, self.actions.list.model.model_validate(response_dict))

@@ -1,4 +1,7 @@
-from pyravelry.endpoints.base import BaseEndpoint
+from types import SimpleNamespace
+from typing import cast
+
+from pyravelry.endpoints.base import Action, BaseEndpoint
 from pyravelry.models import FiberAttributesModel
 
 
@@ -14,8 +17,7 @@ class FiberAttributesResource(BaseEndpoint):
     [Fiber Attributes Ravelry API documentation](https://www.ravelry.com/api#/_fiber_attributes)
     """
 
-    endpoint: str = "/fiber_attributes.json"
-    output_model = FiberAttributesModel
+    actions = SimpleNamespace(list=Action("/fiber_attributes.json", FiberAttributesModel))
 
     def list(self) -> FiberAttributesModel:
         """
@@ -23,7 +25,5 @@ class FiberAttributesResource(BaseEndpoint):
 
         Endpoint: GET /fiber_attributes.json
         """
-        cls = FiberAttributesResource
-        response_dict = self._fetch(http_client=self._http, endpoint=cls.endpoint)
-        data = cls.output_model.model_validate(response_dict)
-        return data
+        response_dict = self._fetch(self._http.get(self.actions.list.url))
+        return cast(FiberAttributesModel, self.actions.list.model.model_validate(response_dict))

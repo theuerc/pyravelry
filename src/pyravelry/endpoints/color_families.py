@@ -1,4 +1,7 @@
-from pyravelry.endpoints.base import BaseEndpoint
+from types import SimpleNamespace
+from typing import cast
+
+from pyravelry.endpoints.base import Action, BaseEndpoint
 from pyravelry.models import ColorFamiliesModel
 
 
@@ -15,14 +18,13 @@ class ColorFamiliesResource(BaseEndpoint):
     [Color Family Ravelry API documentation](https://www.ravelry.com/api#/_color_families)
     """
 
-    endpoint: str = "/color_families.json"
-    output_model = ColorFamiliesModel
+    actions = SimpleNamespace(
+        list=Action("/color_families.json", ColorFamiliesModel),
+    )
 
     def list(self) -> ColorFamiliesModel:
         """
         Retrieves all color families from Ravelry.
         """
-        cls = ColorFamiliesResource
-        response_dict = self._fetch(http_client=self._http, endpoint=cls.endpoint)
-        data = cls.output_model.model_validate(response_dict)
-        return data
+        response_dict = self._fetch(self._http.get(self.actions.list.url))
+        return cast(ColorFamiliesModel, self.actions.list.model.model_validate(response_dict))

@@ -1,6 +1,9 @@
+from types import SimpleNamespace
+from typing import cast
+
 from pydantic import validate_call
 
-from pyravelry.endpoints.base import BaseEndpoint
+from pyravelry.endpoints.base import Action, BaseEndpoint
 from pyravelry.models import UserModel, UserPostModel
 
 
@@ -10,8 +13,10 @@ class PeopleResource(BaseEndpoint):
     [People Ravelry API documentation](https://www.ravelry.com/api#people_show)
     """
 
-    endpoint: str = "/people"
-    output_model = UserModel
+    actions = SimpleNamespace(
+        show=Action("/people/{}.json", UserModel),
+        update=Action("/people/{}.json", UserModel),
+    )
 
     @validate_call
     def show(self, username: str) -> UserModel:
@@ -24,13 +29,9 @@ class PeopleResource(BaseEndpoint):
         Returns:
             UserFullModel: The full user profile data.
         """
-        cls = PeopleResource
+        response_dict = self._fetch(self._http.get(self.actions.show.url.format(username)))
 
-        url = "/".join([cls.endpoint, f"{username}.json"])
-
-        response_dict = self._fetch(http_client=self._http, endpoint=url, method="GET")
-
-        return cls.output_model.model_validate(response_dict)
+        return cast(UserModel, self.actions.show.model.model_validate(response_dict))
 
     @validate_call
     def update(
@@ -56,10 +57,6 @@ class PeopleResource(BaseEndpoint):
         Returns:
             UserFullModel: The updated user profile.
         """
-        cls = PeopleResource
-
-        url = "/".join([cls.endpoint, f"{username}.json"])
-
         update_data = {
             "first_name": first_name,
             "about_me": about_me,
@@ -70,11 +67,6 @@ class PeopleResource(BaseEndpoint):
 
         payload = UserPostModel(**update_data).model_dump(exclude_unset=True)
 
-        response_dict = self._fetch(
-            http_client=self._http,
-            endpoint=url,
-            method="POST",
-            json=payload,
-        )
+        response_dict = self._fetch(self._http.post(self.actions.update.url.format(username), json=payload))
 
-        return cls.output_model.model_validate(response_dict)
+        return cast(UserModel, self.actions.update.model.model_validate(response_dict))

@@ -1,0 +1,525 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - api.ravelry.com
+      User-Agent:
+      - python-httpx/0.28.1
+      authorization:
+      - Basic <REDACTED>
+    method: GET
+    uri: https://api.ravelry.com/needles/types.json
+  response:
+    body:
+      string: "{\"needle_types\": [{\"id\":1,\"length\":10,\"needle_size_id\":1,\"description\":\"US
+        1 (2.25mm) 10\\\" st\",\"name\":\"1 \",\"metric_name\":\"2.25\",\"type_name\":\"straight\"},{\"id\":2,\"length\":10,\"needle_size_id\":2,\"description\":\"US
+        2 (2.75mm) 10\\\" st\",\"name\":\"2 \",\"metric_name\":\"2.75\",\"type_name\":\"straight\"},{\"id\":3,\"length\":10,\"needle_size_id\":3,\"description\":\"US
+        3 (3.25mm) 10\\\" st\",\"name\":\"3 \",\"metric_name\":\"3.25\",\"type_name\":\"straight\"},{\"id\":4,\"length\":10,\"needle_size_id\":4,\"description\":\"US
+        4 (3.5mm) 10\\\" st\",\"name\":\"4 \",\"metric_name\":\"3.5\",\"type_name\":\"straight\"},{\"id\":5,\"length\":10,\"needle_size_id\":5,\"description\":\"US
+        5 (3.75mm) 10\\\" st\",\"name\":\"5 \",\"metric_name\":\"3.75\",\"type_name\":\"straight\"},{\"id\":6,\"length\":10,\"needle_size_id\":6,\"description\":\"US
+        6 (4mm) 10\\\" st\",\"name\":\"6 \",\"metric_name\":\"4\",\"type_name\":\"straight\"},{\"id\":7,\"length\":10,\"needle_size_id\":7,\"description\":\"US
+        7 (4.5mm) 10\\\" st\",\"name\":\"7 \",\"metric_name\":\"4.5\",\"type_name\":\"straight\"},{\"id\":8,\"length\":10,\"needle_size_id\":8,\"description\":\"US
+        8 (5mm) 10\\\" st\",\"name\":\"8 \",\"metric_name\":\"5\",\"type_name\":\"straight\"},{\"id\":9,\"length\":10,\"needle_size_id\":9,\"description\":\"US
+        9 (5.5mm) 10\\\" st\",\"name\":\"9 \",\"metric_name\":\"5.5\",\"type_name\":\"straight\"},{\"id\":10,\"length\":10,\"needle_size_id\":10,\"description\":\"US
+        10 (6mm) 10\\\" st\",\"name\":\"10 \",\"metric_name\":\"6\",\"type_name\":\"straight\"},{\"id\":11,\"length\":10,\"needle_size_id\":11,\"description\":\"US
+        10\xBD(6.5mm) 10\\\" st\",\"name\":\"10.5\",\"metric_name\":\"6.5\",\"type_name\":\"straight\"},{\"id\":12,\"length\":10,\"needle_size_id\":12,\"description\":\"US
+        11 (8mm) 10\\\" st\",\"name\":\"11 \",\"metric_name\":\"8\",\"type_name\":\"straight\"},{\"id\":13,\"length\":10,\"needle_size_id\":13,\"description\":\"US
+        13 (9mm) 10\\\" st\",\"name\":\"13 \",\"metric_name\":\"9\",\"type_name\":\"straight\"},{\"id\":14,\"length\":10,\"needle_size_id\":14,\"description\":\"US
+        15 (10mm) 10\\\" st\",\"name\":\"15 \",\"metric_name\":\"10\",\"type_name\":\"straight\"},{\"id\":15,\"length\":10,\"needle_size_id\":15,\"description\":\"US
+        17 (12mm) 10\\\" st\",\"name\":\"17 \",\"metric_name\":\"12\",\"type_name\":\"straight\"},{\"id\":16,\"length\":10,\"needle_size_id\":16,\"description\":\"US
+        19 (15mm) 10\\\" st\",\"name\":\"19 \",\"metric_name\":\"15\",\"type_name\":\"straight\"},{\"id\":17,\"length\":10,\"needle_size_id\":17,\"description\":\"US
+        35 (19mm) 10\\\" st\",\"name\":\"35 \",\"metric_name\":\"19\",\"type_name\":\"straight\"},{\"id\":18,\"length\":10,\"needle_size_id\":18,\"description\":\"US
+        50 (25mm) 10\\\" st\",\"name\":\"50 \",\"metric_name\":\"25\",\"type_name\":\"straight\"},{\"id\":19,\"length\":10,\"needle_size_id\":19,\"description\":\"US
+        0(2mm) 10\\\" st\",\"name\":\"0\",\"metric_name\":\"2\",\"type_name\":\"straight\"},{\"id\":20,\"length\":10,\"needle_size_id\":20,\"description\":\"US
+        2\xBD(3mm) 10\\\" st\",\"name\":\"2.5\",\"metric_name\":\"3\",\"type_name\":\"straight\"},{\"id\":21,\"length\":10,\"needle_size_id\":21,\"description\":\"US
+        1\xBD(2.5mm) 10\\\" st\",\"name\":\"1.5\",\"metric_name\":\"2.5\",\"type_name\":\"straight\"},{\"id\":22,\"length\":10,\"needle_size_id\":22,\"description\":\"US
+        00(1.75mm) 10\\\" st\",\"name\":\"00\",\"metric_name\":\"1.75\",\"type_name\":\"straight\"},{\"id\":23,\"length\":14,\"needle_size_id\":1,\"description\":\"US
+        1 (2.25mm) 14\\\" st\",\"name\":\"1 \",\"metric_name\":\"2.25\",\"type_name\":\"straight\"},{\"id\":24,\"length\":14,\"needle_size_id\":2,\"description\":\"US
+        2 (2.75mm) 14\\\" st\",\"name\":\"2 \",\"metric_name\":\"2.75\",\"type_name\":\"straight\"},{\"id\":25,\"length\":14,\"needle_size_id\":3,\"description\":\"US
+        3 (3.25mm) 14\\\" st\",\"name\":\"3 \",\"metric_name\":\"3.25\",\"type_name\":\"straight\"},{\"id\":26,\"length\":14,\"needle_size_id\":4,\"description\":\"US
+        4 (3.5mm) 14\\\" st\",\"name\":\"4 \",\"metric_name\":\"3.5\",\"type_name\":\"straight\"},{\"id\":27,\"length\":14,\"needle_size_id\":5,\"description\":\"US
+        5 (3.75mm) 14\\\" st\",\"name\":\"5 \",\"metric_name\":\"3.75\",\"type_name\":\"straight\"},{\"id\":28,\"length\":14,\"needle_size_id\":6,\"description\":\"US
+        6 (4mm) 14\\\" st\",\"name\":\"6 \",\"metric_name\":\"4\",\"type_name\":\"straight\"},{\"id\":29,\"length\":14,\"needle_size_id\":7,\"description\":\"US
+        7 (4.5mm) 14\\\" st\",\"name\":\"7 \",\"metric_name\":\"4.5\",\"type_name\":\"straight\"},{\"id\":30,\"length\":14,\"needle_size_id\":8,\"description\":\"US
+        8 (5mm) 14\\\" st\",\"name\":\"8 \",\"metric_name\":\"5\",\"type_name\":\"straight\"},{\"id\":31,\"length\":14,\"needle_size_id\":9,\"description\":\"US
+        9 (5.5mm) 14\\\" st\",\"name\":\"9 \",\"metric_name\":\"5.5\",\"type_name\":\"straight\"},{\"id\":32,\"length\":14,\"needle_size_id\":10,\"description\":\"US
+        10 (6mm) 14\\\" st\",\"name\":\"10 \",\"metric_name\":\"6\",\"type_name\":\"straight\"},{\"id\":33,\"length\":14,\"needle_size_id\":11,\"description\":\"US
+        10\xBD(6.5mm) 14\\\" st\",\"name\":\"10.5\",\"metric_name\":\"6.5\",\"type_name\":\"straight\"},{\"id\":34,\"length\":14,\"needle_size_id\":12,\"description\":\"US
+        11 (8mm) 14\\\" st\",\"name\":\"11 \",\"metric_name\":\"8\",\"type_name\":\"straight\"},{\"id\":35,\"length\":14,\"needle_size_id\":13,\"description\":\"US
+        13 (9mm) 14\\\" st\",\"name\":\"13 \",\"metric_name\":\"9\",\"type_name\":\"straight\"},{\"id\":36,\"length\":14,\"needle_size_id\":14,\"description\":\"US
+        15 (10mm) 14\\\" st\",\"name\":\"15 \",\"metric_name\":\"10\",\"type_name\":\"straight\"},{\"id\":37,\"length\":14,\"needle_size_id\":15,\"description\":\"US
+        17 (12mm) 14\\\" st\",\"name\":\"17 \",\"metric_name\":\"12\",\"type_name\":\"straight\"},{\"id\":38,\"length\":14,\"needle_size_id\":16,\"description\":\"US
+        19 (15mm) 14\\\" st\",\"name\":\"19 \",\"metric_name\":\"15\",\"type_name\":\"straight\"},{\"id\":39,\"length\":14,\"needle_size_id\":17,\"description\":\"US
+        35 (19mm) 14\\\" st\",\"name\":\"35 \",\"metric_name\":\"19\",\"type_name\":\"straight\"},{\"id\":40,\"length\":14,\"needle_size_id\":18,\"description\":\"US
+        50 (25mm) 14\\\" st\",\"name\":\"50 \",\"metric_name\":\"25\",\"type_name\":\"straight\"},{\"id\":41,\"length\":14,\"needle_size_id\":19,\"description\":\"US
+        0(2mm) 14\\\" st\",\"name\":\"0\",\"metric_name\":\"2\",\"type_name\":\"straight\"},{\"id\":42,\"length\":14,\"needle_size_id\":20,\"description\":\"US
+        2\xBD(3mm) 14\\\" st\",\"name\":\"2.5\",\"metric_name\":\"3\",\"type_name\":\"straight\"},{\"id\":43,\"length\":14,\"needle_size_id\":21,\"description\":\"US
+        1\xBD(2.5mm) 14\\\" st\",\"name\":\"1.5\",\"metric_name\":\"2.5\",\"type_name\":\"straight\"},{\"id\":44,\"length\":14,\"needle_size_id\":22,\"description\":\"US
+        00(1.75mm) 14\\\" st\",\"name\":\"00\",\"metric_name\":\"1.75\",\"type_name\":\"straight\"},{\"id\":45,\"length\":4,\"needle_size_id\":1,\"description\":\"US
+        1 (2.25mm) sock dp\",\"name\":\"1 \",\"metric_name\":\"2.25\",\"type_name\":\"dp\"},{\"id\":46,\"length\":4,\"needle_size_id\":2,\"description\":\"US
+        2 (2.75mm) sock dp\",\"name\":\"2 \",\"metric_name\":\"2.75\",\"type_name\":\"dp\"},{\"id\":47,\"length\":4,\"needle_size_id\":3,\"description\":\"US
+        3 (3.25mm) sock dp\",\"name\":\"3 \",\"metric_name\":\"3.25\",\"type_name\":\"dp\"},{\"id\":48,\"length\":4,\"needle_size_id\":4,\"description\":\"US
+        4 (3.5mm) sock dp\",\"name\":\"4 \",\"metric_name\":\"3.5\",\"type_name\":\"dp\"},{\"id\":49,\"length\":4,\"needle_size_id\":5,\"description\":\"US
+        5 (3.75mm) sock dp\",\"name\":\"5 \",\"metric_name\":\"3.75\",\"type_name\":\"dp\"},{\"id\":50,\"length\":4,\"needle_size_id\":6,\"description\":\"US
+        6 (4mm) sock dp\",\"name\":\"6 \",\"metric_name\":\"4\",\"type_name\":\"dp\"},{\"id\":51,\"length\":4,\"needle_size_id\":7,\"description\":\"US
+        7 (4.5mm) sock dp\",\"name\":\"7 \",\"metric_name\":\"4.5\",\"type_name\":\"dp\"},{\"id\":52,\"length\":4,\"needle_size_id\":8,\"description\":\"US
+        8 (5mm) sock dp\",\"name\":\"8 \",\"metric_name\":\"5\",\"type_name\":\"dp\"},{\"id\":53,\"length\":4,\"needle_size_id\":9,\"description\":\"US
+        9 (5.5mm) sock dp\",\"name\":\"9 \",\"metric_name\":\"5.5\",\"type_name\":\"dp\"},{\"id\":54,\"length\":4,\"needle_size_id\":10,\"description\":\"US
+        10 (6mm) sock dp\",\"name\":\"10 \",\"metric_name\":\"6\",\"type_name\":\"dp\"},{\"id\":55,\"length\":4,\"needle_size_id\":11,\"description\":\"US
+        10\xBD(6.5mm) sock dp\",\"name\":\"10.5\",\"metric_name\":\"6.5\",\"type_name\":\"dp\"},{\"id\":56,\"length\":4,\"needle_size_id\":12,\"description\":\"US
+        11 (8mm) sock dp\",\"name\":\"11 \",\"metric_name\":\"8\",\"type_name\":\"dp\"},{\"id\":57,\"length\":4,\"needle_size_id\":13,\"description\":\"US
+        13 (9mm) sock dp\",\"name\":\"13 \",\"metric_name\":\"9\",\"type_name\":\"dp\"},{\"id\":58,\"length\":4,\"needle_size_id\":14,\"description\":\"US
+        15 (10mm) sock dp\",\"name\":\"15 \",\"metric_name\":\"10\",\"type_name\":\"dp\"},{\"id\":59,\"length\":4,\"needle_size_id\":15,\"description\":\"US
+        17 (12mm) sock dp\",\"name\":\"17 \",\"metric_name\":\"12\",\"type_name\":\"dp\"},{\"id\":60,\"length\":4,\"needle_size_id\":16,\"description\":\"US
+        19 (15mm) sock dp\",\"name\":\"19 \",\"metric_name\":\"15\",\"type_name\":\"dp\"},{\"id\":61,\"length\":4,\"needle_size_id\":17,\"description\":\"US
+        35 (19mm) sock dp\",\"name\":\"35 \",\"metric_name\":\"19\",\"type_name\":\"dp\"},{\"id\":62,\"length\":4,\"needle_size_id\":18,\"description\":\"US
+        50 (25mm) sock dp\",\"name\":\"50 \",\"metric_name\":\"25\",\"type_name\":\"dp\"},{\"id\":63,\"length\":4,\"needle_size_id\":19,\"description\":\"US
+        0(2mm) sock dp\",\"name\":\"0\",\"metric_name\":\"2\",\"type_name\":\"dp\"},{\"id\":64,\"length\":4,\"needle_size_id\":20,\"description\":\"US
+        2\xBD(3mm) sock dp\",\"name\":\"2.5\",\"metric_name\":\"3\",\"type_name\":\"dp\"},{\"id\":65,\"length\":4,\"needle_size_id\":21,\"description\":\"US
+        1\xBD(2.5mm) sock dp\",\"name\":\"1.5\",\"metric_name\":\"2.5\",\"type_name\":\"dp\"},{\"id\":66,\"length\":4,\"needle_size_id\":22,\"description\":\"US
+        00(1.75mm) sock dp\",\"name\":\"00\",\"metric_name\":\"1.75\",\"type_name\":\"dp\"},{\"id\":67,\"length\":8,\"needle_size_id\":1,\"description\":\"US
+        1 (2.25mm) std dp\",\"name\":\"1 \",\"metric_name\":\"2.25\",\"type_name\":\"dp\"},{\"id\":68,\"length\":8,\"needle_size_id\":2,\"description\":\"US
+        2 (2.75mm) std dp\",\"name\":\"2 \",\"metric_name\":\"2.75\",\"type_name\":\"dp\"},{\"id\":69,\"length\":8,\"needle_size_id\":3,\"description\":\"US
+        3 (3.25mm) std dp\",\"name\":\"3 \",\"metric_name\":\"3.25\",\"type_name\":\"dp\"},{\"id\":70,\"length\":8,\"needle_size_id\":4,\"description\":\"US
+        4 (3.5mm) std dp\",\"name\":\"4 \",\"metric_name\":\"3.5\",\"type_name\":\"dp\"},{\"id\":71,\"length\":8,\"needle_size_id\":5,\"description\":\"US
+        5 (3.75mm) std dp\",\"name\":\"5 \",\"metric_name\":\"3.75\",\"type_name\":\"dp\"},{\"id\":72,\"length\":8,\"needle_size_id\":6,\"description\":\"US
+        6 (4mm) std dp\",\"name\":\"6 \",\"metric_name\":\"4\",\"type_name\":\"dp\"},{\"id\":73,\"length\":8,\"needle_size_id\":7,\"description\":\"US
+        7 (4.5mm) std dp\",\"name\":\"7 \",\"metric_name\":\"4.5\",\"type_name\":\"dp\"},{\"id\":74,\"length\":8,\"needle_size_id\":8,\"description\":\"US
+        8 (5mm) std dp\",\"name\":\"8 \",\"metric_name\":\"5\",\"type_name\":\"dp\"},{\"id\":75,\"length\":8,\"needle_size_id\":9,\"description\":\"US
+        9 (5.5mm) std dp\",\"name\":\"9 \",\"metric_name\":\"5.5\",\"type_name\":\"dp\"},{\"id\":76,\"length\":8,\"needle_size_id\":10,\"description\":\"US
+        10 (6mm) std dp\",\"name\":\"10 \",\"metric_name\":\"6\",\"type_name\":\"dp\"},{\"id\":77,\"length\":8,\"needle_size_id\":11,\"description\":\"US
+        10\xBD(6.5mm) std dp\",\"name\":\"10.5\",\"metric_name\":\"6.5\",\"type_name\":\"dp\"},{\"id\":78,\"length\":8,\"needle_size_id\":12,\"description\":\"US
+        11 (8mm) std dp\",\"name\":\"11 \",\"metric_name\":\"8\",\"type_name\":\"dp\"},{\"id\":79,\"length\":8,\"needle_size_id\":13,\"description\":\"US
+        13 (9mm) std dp\",\"name\":\"13 \",\"metric_name\":\"9\",\"type_name\":\"dp\"},{\"id\":80,\"length\":8,\"needle_size_id\":14,\"description\":\"US
+        15 (10mm) std dp\",\"name\":\"15 \",\"metric_name\":\"10\",\"type_name\":\"dp\"},{\"id\":81,\"length\":8,\"needle_size_id\":15,\"description\":\"US
+        17 (12mm) std dp\",\"name\":\"17 \",\"metric_name\":\"12\",\"type_name\":\"dp\"},{\"id\":82,\"length\":8,\"needle_size_id\":16,\"description\":\"US
+        19 (15mm) std dp\",\"name\":\"19 \",\"metric_name\":\"15\",\"type_name\":\"dp\"},{\"id\":83,\"length\":8,\"needle_size_id\":17,\"description\":\"US
+        35 (19mm) std dp\",\"name\":\"35 \",\"metric_name\":\"19\",\"type_name\":\"dp\"},{\"id\":84,\"length\":8,\"needle_size_id\":18,\"description\":\"US
+        50 (25mm) std dp\",\"name\":\"50 \",\"metric_name\":\"25\",\"type_name\":\"dp\"},{\"id\":85,\"length\":8,\"needle_size_id\":19,\"description\":\"US
+        0(2mm) std dp\",\"name\":\"0\",\"metric_name\":\"2\",\"type_name\":\"dp\"},{\"id\":86,\"length\":8,\"needle_size_id\":20,\"description\":\"US
+        2\xBD(3mm) std dp\",\"name\":\"2.5\",\"metric_name\":\"3\",\"type_name\":\"dp\"},{\"id\":87,\"length\":8,\"needle_size_id\":21,\"description\":\"US
+        1\xBD(2.5mm) std dp\",\"name\":\"1.5\",\"metric_name\":\"2.5\",\"type_name\":\"dp\"},{\"id\":88,\"length\":8,\"needle_size_id\":22,\"description\":\"US
+        00(1.75mm) std dp\",\"name\":\"00\",\"metric_name\":\"1.75\",\"type_name\":\"dp\"},{\"id\":89,\"length\":12,\"needle_size_id\":1,\"description\":\"US
+        1 (2.25mm) 12\\\" cir\",\"name\":\"1 \",\"metric_name\":\"2.25\",\"type_name\":\"circular\"},{\"id\":90,\"length\":12,\"needle_size_id\":2,\"description\":\"US
+        2 (2.75mm) 12\\\" cir\",\"name\":\"2 \",\"metric_name\":\"2.75\",\"type_name\":\"circular\"},{\"id\":91,\"length\":12,\"needle_size_id\":3,\"description\":\"US
+        3 (3.25mm) 12\\\" cir\",\"name\":\"3 \",\"metric_name\":\"3.25\",\"type_name\":\"circular\"},{\"id\":92,\"length\":12,\"needle_size_id\":4,\"description\":\"US
+        4 (3.5mm) 12\\\" cir\",\"name\":\"4 \",\"metric_name\":\"3.5\",\"type_name\":\"circular\"},{\"id\":93,\"length\":12,\"needle_size_id\":5,\"description\":\"US
+        5 (3.75mm) 12\\\" cir\",\"name\":\"5 \",\"metric_name\":\"3.75\",\"type_name\":\"circular\"},{\"id\":94,\"length\":12,\"needle_size_id\":6,\"description\":\"US
+        6 (4mm) 12\\\" cir\",\"name\":\"6 \",\"metric_name\":\"4\",\"type_name\":\"circular\"},{\"id\":95,\"length\":12,\"needle_size_id\":7,\"description\":\"US
+        7 (4.5mm) 12\\\" cir\",\"name\":\"7 \",\"metric_name\":\"4.5\",\"type_name\":\"circular\"},{\"id\":96,\"length\":12,\"needle_size_id\":8,\"description\":\"US
+        8 (5mm) 12\\\" cir\",\"name\":\"8 \",\"metric_name\":\"5\",\"type_name\":\"circular\"},{\"id\":97,\"length\":12,\"needle_size_id\":9,\"description\":\"US
+        9 (5.5mm) 12\\\" cir\",\"name\":\"9 \",\"metric_name\":\"5.5\",\"type_name\":\"circular\"},{\"id\":98,\"length\":12,\"needle_size_id\":10,\"description\":\"US
+        10 (6mm) 12\\\" cir\",\"name\":\"10 \",\"metric_name\":\"6\",\"type_name\":\"circular\"},{\"id\":99,\"length\":12,\"needle_size_id\":11,\"description\":\"US
+        10\xBD(6.5mm) 12\\\" cir\",\"name\":\"10.5\",\"metric_name\":\"6.5\",\"type_name\":\"circular\"},{\"id\":100,\"length\":12,\"needle_size_id\":12,\"description\":\"US
+        11 (8mm) 12\\\" cir\",\"name\":\"11 \",\"metric_name\":\"8\",\"type_name\":\"circular\"},{\"id\":101,\"length\":12,\"needle_size_id\":13,\"description\":\"US
+        13 (9mm) 12\\\" cir\",\"name\":\"13 \",\"metric_name\":\"9\",\"type_name\":\"circular\"},{\"id\":102,\"length\":12,\"needle_size_id\":14,\"description\":\"US
+        15 (10mm) 12\\\" cir\",\"name\":\"15 \",\"metric_name\":\"10\",\"type_name\":\"circular\"},{\"id\":103,\"length\":12,\"needle_size_id\":15,\"description\":\"US
+        17 (12mm) 12\\\" cir\",\"name\":\"17 \",\"metric_name\":\"12\",\"type_name\":\"circular\"},{\"id\":104,\"length\":12,\"needle_size_id\":16,\"description\":\"US
+        19 (15mm) 12\\\" cir\",\"name\":\"19 \",\"metric_name\":\"15\",\"type_name\":\"circular\"},{\"id\":105,\"length\":12,\"needle_size_id\":17,\"description\":\"US
+        35 (19mm) 12\\\" cir\",\"name\":\"35 \",\"metric_name\":\"19\",\"type_name\":\"circular\"},{\"id\":106,\"length\":12,\"needle_size_id\":18,\"description\":\"US
+        50 (25mm) 12\\\" cir\",\"name\":\"50 \",\"metric_name\":\"25\",\"type_name\":\"circular\"},{\"id\":107,\"length\":12,\"needle_size_id\":19,\"description\":\"US
+        0(2mm) 12\\\" cir\",\"name\":\"0\",\"metric_name\":\"2\",\"type_name\":\"circular\"},{\"id\":108,\"length\":12,\"needle_size_id\":20,\"description\":\"US
+        2\xBD(3mm) 12\\\" cir\",\"name\":\"2.5\",\"metric_name\":\"3\",\"type_name\":\"circular\"},{\"id\":109,\"length\":12,\"needle_size_id\":21,\"description\":\"US
+        1\xBD(2.5mm) 12\\\" cir\",\"name\":\"1.5\",\"metric_name\":\"2.5\",\"type_name\":\"circular\"},{\"id\":110,\"length\":12,\"needle_size_id\":22,\"description\":\"US
+        00(1.75mm) 12\\\" cir\",\"name\":\"00\",\"metric_name\":\"1.75\",\"type_name\":\"circular\"},{\"id\":111,\"length\":16,\"needle_size_id\":1,\"description\":\"US
+        1 (2.25mm) 16\\\" cir\",\"name\":\"1 \",\"metric_name\":\"2.25\",\"type_name\":\"circular\"},{\"id\":112,\"length\":16,\"needle_size_id\":2,\"description\":\"US
+        2 (2.75mm) 16\\\" cir\",\"name\":\"2 \",\"metric_name\":\"2.75\",\"type_name\":\"circular\"},{\"id\":113,\"length\":16,\"needle_size_id\":3,\"description\":\"US
+        3 (3.25mm) 16\\\" cir\",\"name\":\"3 \",\"metric_name\":\"3.25\",\"type_name\":\"circular\"},{\"id\":114,\"length\":16,\"needle_size_id\":4,\"description\":\"US
+        4 (3.5mm) 16\\\" cir\",\"name\":\"4 \",\"metric_name\":\"3.5\",\"type_name\":\"circular\"},{\"id\":115,\"length\":16,\"needle_size_id\":5,\"description\":\"US
+        5 (3.75mm) 16\\\" cir\",\"name\":\"5 \",\"metric_name\":\"3.75\",\"type_name\":\"circular\"},{\"id\":116,\"length\":16,\"needle_size_id\":6,\"description\":\"US
+        6 (4mm) 16\\\" cir\",\"name\":\"6 \",\"metric_name\":\"4\",\"type_name\":\"circular\"},{\"id\":117,\"length\":16,\"needle_size_id\":7,\"description\":\"US
+        7 (4.5mm) 16\\\" cir\",\"name\":\"7 \",\"metric_name\":\"4.5\",\"type_name\":\"circular\"},{\"id\":118,\"length\":16,\"needle_size_id\":8,\"description\":\"US
+        8 (5mm) 16\\\" cir\",\"name\":\"8 \",\"metric_name\":\"5\",\"type_name\":\"circular\"},{\"id\":119,\"length\":16,\"needle_size_id\":9,\"description\":\"US
+        9 (5.5mm) 16\\\" cir\",\"name\":\"9 \",\"metric_name\":\"5.5\",\"type_name\":\"circular\"},{\"id\":120,\"length\":16,\"needle_size_id\":10,\"description\":\"US
+        10 (6mm) 16\\\" cir\",\"name\":\"10 \",\"metric_name\":\"6\",\"type_name\":\"circular\"},{\"id\":121,\"length\":16,\"needle_size_id\":11,\"description\":\"US
+        10\xBD(6.5mm) 16\\\" cir\",\"name\":\"10.5\",\"metric_name\":\"6.5\",\"type_name\":\"circular\"},{\"id\":122,\"length\":16,\"needle_size_id\":12,\"description\":\"US
+        11 (8mm) 16\\\" cir\",\"name\":\"11 \",\"metric_name\":\"8\",\"type_name\":\"circular\"},{\"id\":123,\"length\":16,\"needle_size_id\":13,\"description\":\"US
+        13 (9mm) 16\\\" cir\",\"name\":\"13 \",\"metric_name\":\"9\",\"type_name\":\"circular\"},{\"id\":124,\"length\":16,\"needle_size_id\":14,\"description\":\"US
+        15 (10mm) 16\\\" cir\",\"name\":\"15 \",\"metric_name\":\"10\",\"type_name\":\"circular\"},{\"id\":125,\"length\":16,\"needle_size_id\":15,\"description\":\"US
+        17 (12mm) 16\\\" cir\",\"name\":\"17 \",\"metric_name\":\"12\",\"type_name\":\"circular\"},{\"id\":126,\"length\":16,\"needle_size_id\":16,\"description\":\"US
+        19 (15mm) 16\\\" cir\",\"name\":\"19 \",\"metric_name\":\"15\",\"type_name\":\"circular\"},{\"id\":127,\"length\":16,\"needle_size_id\":17,\"description\":\"US
+        35 (19mm) 16\\\" cir\",\"name\":\"35 \",\"metric_name\":\"19\",\"type_name\":\"circular\"},{\"id\":128,\"length\":16,\"needle_size_id\":18,\"description\":\"US
+        50 (25mm) 16\\\" cir\",\"name\":\"50 \",\"metric_name\":\"25\",\"type_name\":\"circular\"},{\"id\":129,\"length\":16,\"needle_size_id\":19,\"description\":\"US
+        0(2mm) 16\\\" cir\",\"name\":\"0\",\"metric_name\":\"2\",\"type_name\":\"circular\"},{\"id\":130,\"length\":16,\"needle_size_id\":20,\"description\":\"US
+        2\xBD(3mm) 16\\\" cir\",\"name\":\"2.5\",\"metric_name\":\"3\",\"type_name\":\"circular\"},{\"id\":131,\"length\":16,\"needle_size_id\":21,\"description\":\"US
+        1\xBD(2.5mm) 16\\\" cir\",\"name\":\"1.5\",\"metric_name\":\"2.5\",\"type_name\":\"circular\"},{\"id\":132,\"length\":16,\"needle_size_id\":22,\"description\":\"US
+        00(1.75mm) 16\\\" cir\",\"name\":\"00\",\"metric_name\":\"1.75\",\"type_name\":\"circular\"},{\"id\":133,\"length\":20,\"needle_size_id\":1,\"description\":\"US
+        1 (2.25mm) 20\\\" cir\",\"name\":\"1 \",\"metric_name\":\"2.25\",\"type_name\":\"circular\"},{\"id\":134,\"length\":20,\"needle_size_id\":2,\"description\":\"US
+        2 (2.75mm) 20\\\" cir\",\"name\":\"2 \",\"metric_name\":\"2.75\",\"type_name\":\"circular\"},{\"id\":135,\"length\":20,\"needle_size_id\":3,\"description\":\"US
+        3 (3.25mm) 20\\\" cir\",\"name\":\"3 \",\"metric_name\":\"3.25\",\"type_name\":\"circular\"},{\"id\":136,\"length\":20,\"needle_size_id\":4,\"description\":\"US
+        4 (3.5mm) 20\\\" cir\",\"name\":\"4 \",\"metric_name\":\"3.5\",\"type_name\":\"circular\"},{\"id\":137,\"length\":20,\"needle_size_id\":5,\"description\":\"US
+        5 (3.75mm) 20\\\" cir\",\"name\":\"5 \",\"metric_name\":\"3.75\",\"type_name\":\"circular\"},{\"id\":138,\"length\":20,\"needle_size_id\":6,\"description\":\"US
+        6 (4mm) 20\\\" cir\",\"name\":\"6 \",\"metric_name\":\"4\",\"type_name\":\"circular\"},{\"id\":139,\"length\":20,\"needle_size_id\":7,\"description\":\"US
+        7 (4.5mm) 20\\\" cir\",\"name\":\"7 \",\"metric_name\":\"4.5\",\"type_name\":\"circular\"},{\"id\":140,\"length\":20,\"needle_size_id\":8,\"description\":\"US
+        8 (5mm) 20\\\" cir\",\"name\":\"8 \",\"metric_name\":\"5\",\"type_name\":\"circular\"},{\"id\":141,\"length\":20,\"needle_size_id\":9,\"description\":\"US
+        9 (5.5mm) 20\\\" cir\",\"name\":\"9 \",\"metric_name\":\"5.5\",\"type_name\":\"circular\"},{\"id\":142,\"length\":20,\"needle_size_id\":10,\"description\":\"US
+        10 (6mm) 20\\\" cir\",\"name\":\"10 \",\"metric_name\":\"6\",\"type_name\":\"circular\"},{\"id\":143,\"length\":20,\"needle_size_id\":11,\"description\":\"US
+        10\xBD(6.5mm) 20\\\" cir\",\"name\":\"10.5\",\"metric_name\":\"6.5\",\"type_name\":\"circular\"},{\"id\":144,\"length\":20,\"needle_size_id\":12,\"description\":\"US
+        11 (8mm) 20\\\" cir\",\"name\":\"11 \",\"metric_name\":\"8\",\"type_name\":\"circular\"},{\"id\":145,\"length\":20,\"needle_size_id\":13,\"description\":\"US
+        13 (9mm) 20\\\" cir\",\"name\":\"13 \",\"metric_name\":\"9\",\"type_name\":\"circular\"},{\"id\":146,\"length\":20,\"needle_size_id\":14,\"description\":\"US
+        15 (10mm) 20\\\" cir\",\"name\":\"15 \",\"metric_name\":\"10\",\"type_name\":\"circular\"},{\"id\":147,\"length\":20,\"needle_size_id\":15,\"description\":\"US
+        17 (12mm) 20\\\" cir\",\"name\":\"17 \",\"metric_name\":\"12\",\"type_name\":\"circular\"},{\"id\":148,\"length\":20,\"needle_size_id\":16,\"description\":\"US
+        19 (15mm) 20\\\" cir\",\"name\":\"19 \",\"metric_name\":\"15\",\"type_name\":\"circular\"},{\"id\":149,\"length\":20,\"needle_size_id\":17,\"description\":\"US
+        35 (19mm) 20\\\" cir\",\"name\":\"35 \",\"metric_name\":\"19\",\"type_name\":\"circular\"},{\"id\":150,\"length\":20,\"needle_size_id\":18,\"description\":\"US
+        50 (25mm) 20\\\" cir\",\"name\":\"50 \",\"metric_name\":\"25\",\"type_name\":\"circular\"},{\"id\":151,\"length\":20,\"needle_size_id\":19,\"description\":\"US
+        0(2mm) 20\\\" cir\",\"name\":\"0\",\"metric_name\":\"2\",\"type_name\":\"circular\"},{\"id\":152,\"length\":20,\"needle_size_id\":20,\"description\":\"US
+        2\xBD(3mm) 20\\\" cir\",\"name\":\"2.5\",\"metric_name\":\"3\",\"type_name\":\"circular\"},{\"id\":153,\"length\":20,\"needle_size_id\":21,\"description\":\"US
+        1\xBD(2.5mm) 20\\\" cir\",\"name\":\"1.5\",\"metric_name\":\"2.5\",\"type_name\":\"circular\"},{\"id\":154,\"length\":20,\"needle_size_id\":22,\"description\":\"US
+        00(1.75mm) 20\\\" cir\",\"name\":\"00\",\"metric_name\":\"1.75\",\"type_name\":\"circular\"},{\"id\":155,\"length\":24,\"needle_size_id\":1,\"description\":\"US
+        1 (2.25mm) 24\\\" cir\",\"name\":\"1 \",\"metric_name\":\"2.25\",\"type_name\":\"circular\"},{\"id\":156,\"length\":24,\"needle_size_id\":2,\"description\":\"US
+        2 (2.75mm) 24\\\" cir\",\"name\":\"2 \",\"metric_name\":\"2.75\",\"type_name\":\"circular\"},{\"id\":157,\"length\":24,\"needle_size_id\":3,\"description\":\"US
+        3 (3.25mm) 24\\\" cir\",\"name\":\"3 \",\"metric_name\":\"3.25\",\"type_name\":\"circular\"},{\"id\":158,\"length\":24,\"needle_size_id\":4,\"description\":\"US
+        4 (3.5mm) 24\\\" cir\",\"name\":\"4 \",\"metric_name\":\"3.5\",\"type_name\":\"circular\"},{\"id\":159,\"length\":24,\"needle_size_id\":5,\"description\":\"US
+        5 (3.75mm) 24\\\" cir\",\"name\":\"5 \",\"metric_name\":\"3.75\",\"type_name\":\"circular\"},{\"id\":160,\"length\":24,\"needle_size_id\":6,\"description\":\"US
+        6 (4mm) 24\\\" cir\",\"name\":\"6 \",\"metric_name\":\"4\",\"type_name\":\"circular\"},{\"id\":161,\"length\":24,\"needle_size_id\":7,\"description\":\"US
+        7 (4.5mm) 24\\\" cir\",\"name\":\"7 \",\"metric_name\":\"4.5\",\"type_name\":\"circular\"},{\"id\":162,\"length\":24,\"needle_size_id\":8,\"description\":\"US
+        8 (5mm) 24\\\" cir\",\"name\":\"8 \",\"metric_name\":\"5\",\"type_name\":\"circular\"},{\"id\":163,\"length\":24,\"needle_size_id\":9,\"description\":\"US
+        9 (5.5mm) 24\\\" cir\",\"name\":\"9 \",\"metric_name\":\"5.5\",\"type_name\":\"circular\"},{\"id\":164,\"length\":24,\"needle_size_id\":10,\"description\":\"US
+        10 (6mm) 24\\\" cir\",\"name\":\"10 \",\"metric_name\":\"6\",\"type_name\":\"circular\"},{\"id\":165,\"length\":24,\"needle_size_id\":11,\"description\":\"US
+        10\xBD(6.5mm) 24\\\" cir\",\"name\":\"10.5\",\"metric_name\":\"6.5\",\"type_name\":\"circular\"},{\"id\":166,\"length\":24,\"needle_size_id\":12,\"description\":\"US
+        11 (8mm) 24\\\" cir\",\"name\":\"11 \",\"metric_name\":\"8\",\"type_name\":\"circular\"},{\"id\":167,\"length\":24,\"needle_size_id\":13,\"description\":\"US
+        13 (9mm) 24\\\" cir\",\"name\":\"13 \",\"metric_name\":\"9\",\"type_name\":\"circular\"},{\"id\":168,\"length\":24,\"needle_size_id\":14,\"description\":\"US
+        15 (10mm) 24\\\" cir\",\"name\":\"15 \",\"metric_name\":\"10\",\"type_name\":\"circular\"},{\"id\":169,\"length\":24,\"needle_size_id\":15,\"description\":\"US
+        17 (12mm) 24\\\" cir\",\"name\":\"17 \",\"metric_name\":\"12\",\"type_name\":\"circular\"},{\"id\":170,\"length\":24,\"needle_size_id\":16,\"description\":\"US
+        19 (15mm) 24\\\" cir\",\"name\":\"19 \",\"metric_name\":\"15\",\"type_name\":\"circular\"},{\"id\":171,\"length\":24,\"needle_size_id\":17,\"description\":\"US
+        35 (19mm) 24\\\" cir\",\"name\":\"35 \",\"metric_name\":\"19\",\"type_name\":\"circular\"},{\"id\":172,\"length\":24,\"needle_size_id\":18,\"description\":\"US
+        50 (25mm) 24\\\" cir\",\"name\":\"50 \",\"metric_name\":\"25\",\"type_name\":\"circular\"},{\"id\":173,\"length\":24,\"needle_size_id\":19,\"description\":\"US
+        0(2mm) 24\\\" cir\",\"name\":\"0\",\"metric_name\":\"2\",\"type_name\":\"circular\"},{\"id\":174,\"length\":24,\"needle_size_id\":20,\"description\":\"US
+        2\xBD(3mm) 24\\\" cir\",\"name\":\"2.5\",\"metric_name\":\"3\",\"type_name\":\"circular\"},{\"id\":175,\"length\":24,\"needle_size_id\":21,\"description\":\"US
+        1\xBD(2.5mm) 24\\\" cir\",\"name\":\"1.5\",\"metric_name\":\"2.5\",\"type_name\":\"circular\"},{\"id\":176,\"length\":24,\"needle_size_id\":22,\"description\":\"US
+        00(1.75mm) 24\\\" cir\",\"name\":\"00\",\"metric_name\":\"1.75\",\"type_name\":\"circular\"},{\"id\":177,\"length\":29,\"needle_size_id\":1,\"description\":\"US
+        1 (2.25mm) 29\\\" cir\",\"name\":\"1 \",\"metric_name\":\"2.25\",\"type_name\":\"circular\"},{\"id\":178,\"length\":29,\"needle_size_id\":2,\"description\":\"US
+        2 (2.75mm) 29\\\" cir\",\"name\":\"2 \",\"metric_name\":\"2.75\",\"type_name\":\"circular\"},{\"id\":179,\"length\":29,\"needle_size_id\":3,\"description\":\"US
+        3 (3.25mm) 29\\\" cir\",\"name\":\"3 \",\"metric_name\":\"3.25\",\"type_name\":\"circular\"},{\"id\":180,\"length\":29,\"needle_size_id\":4,\"description\":\"US
+        4 (3.5mm) 29\\\" cir\",\"name\":\"4 \",\"metric_name\":\"3.5\",\"type_name\":\"circular\"},{\"id\":181,\"length\":29,\"needle_size_id\":5,\"description\":\"US
+        5 (3.75mm) 29\\\" cir\",\"name\":\"5 \",\"metric_name\":\"3.75\",\"type_name\":\"circular\"},{\"id\":182,\"length\":29,\"needle_size_id\":6,\"description\":\"US
+        6 (4mm) 29\\\" cir\",\"name\":\"6 \",\"metric_name\":\"4\",\"type_name\":\"circular\"},{\"id\":183,\"length\":29,\"needle_size_id\":7,\"description\":\"US
+        7 (4.5mm) 29\\\" cir\",\"name\":\"7 \",\"metric_name\":\"4.5\",\"type_name\":\"circular\"},{\"id\":184,\"length\":29,\"needle_size_id\":8,\"description\":\"US
+        8 (5mm) 29\\\" cir\",\"name\":\"8 \",\"metric_name\":\"5\",\"type_name\":\"circular\"},{\"id\":185,\"length\":29,\"needle_size_id\":9,\"description\":\"US
+        9 (5.5mm) 29\\\" cir\",\"name\":\"9 \",\"metric_name\":\"5.5\",\"type_name\":\"circular\"},{\"id\":186,\"length\":29,\"needle_size_id\":10,\"description\":\"US
+        10 (6mm) 29\\\" cir\",\"name\":\"10 \",\"metric_name\":\"6\",\"type_name\":\"circular\"},{\"id\":187,\"length\":29,\"needle_size_id\":11,\"description\":\"US
+        10\xBD(6.5mm) 29\\\" cir\",\"name\":\"10.5\",\"metric_name\":\"6.5\",\"type_name\":\"circular\"},{\"id\":188,\"length\":29,\"needle_size_id\":12,\"description\":\"US
+        11 (8mm) 29\\\" cir\",\"name\":\"11 \",\"metric_name\":\"8\",\"type_name\":\"circular\"},{\"id\":189,\"length\":29,\"needle_size_id\":13,\"description\":\"US
+        13 (9mm) 29\\\" cir\",\"name\":\"13 \",\"metric_name\":\"9\",\"type_name\":\"circular\"},{\"id\":190,\"length\":29,\"needle_size_id\":14,\"description\":\"US
+        15 (10mm) 29\\\" cir\",\"name\":\"15 \",\"metric_name\":\"10\",\"type_name\":\"circular\"},{\"id\":191,\"length\":29,\"needle_size_id\":15,\"description\":\"US
+        17 (12mm) 29\\\" cir\",\"name\":\"17 \",\"metric_name\":\"12\",\"type_name\":\"circular\"},{\"id\":192,\"length\":29,\"needle_size_id\":16,\"description\":\"US
+        19 (15mm) 29\\\" cir\",\"name\":\"19 \",\"metric_name\":\"15\",\"type_name\":\"circular\"},{\"id\":193,\"length\":29,\"needle_size_id\":17,\"description\":\"US
+        35 (19mm) 29\\\" cir\",\"name\":\"35 \",\"metric_name\":\"19\",\"type_name\":\"circular\"},{\"id\":194,\"length\":29,\"needle_size_id\":18,\"description\":\"US
+        50 (25mm) 29\\\" cir\",\"name\":\"50 \",\"metric_name\":\"25\",\"type_name\":\"circular\"},{\"id\":195,\"length\":29,\"needle_size_id\":19,\"description\":\"US
+        0(2mm) 29\\\" cir\",\"name\":\"0\",\"metric_name\":\"2\",\"type_name\":\"circular\"},{\"id\":196,\"length\":29,\"needle_size_id\":20,\"description\":\"US
+        2\xBD(3mm) 29\\\" cir\",\"name\":\"2.5\",\"metric_name\":\"3\",\"type_name\":\"circular\"},{\"id\":197,\"length\":29,\"needle_size_id\":21,\"description\":\"US
+        1\xBD(2.5mm) 29\\\" cir\",\"name\":\"1.5\",\"metric_name\":\"2.5\",\"type_name\":\"circular\"},{\"id\":198,\"length\":29,\"needle_size_id\":22,\"description\":\"US
+        00(1.75mm) 29\\\" cir\",\"name\":\"00\",\"metric_name\":\"1.75\",\"type_name\":\"circular\"},{\"id\":199,\"length\":32,\"needle_size_id\":1,\"description\":\"US
+        1 (2.25mm) 32\\\" cir\",\"name\":\"1 \",\"metric_name\":\"2.25\",\"type_name\":\"circular\"},{\"id\":200,\"length\":32,\"needle_size_id\":2,\"description\":\"US
+        2 (2.75mm) 32\\\" cir\",\"name\":\"2 \",\"metric_name\":\"2.75\",\"type_name\":\"circular\"},{\"id\":201,\"length\":32,\"needle_size_id\":3,\"description\":\"US
+        3 (3.25mm) 32\\\" cir\",\"name\":\"3 \",\"metric_name\":\"3.25\",\"type_name\":\"circular\"},{\"id\":202,\"length\":32,\"needle_size_id\":4,\"description\":\"US
+        4 (3.5mm) 32\\\" cir\",\"name\":\"4 \",\"metric_name\":\"3.5\",\"type_name\":\"circular\"},{\"id\":203,\"length\":32,\"needle_size_id\":5,\"description\":\"US
+        5 (3.75mm) 32\\\" cir\",\"name\":\"5 \",\"metric_name\":\"3.75\",\"type_name\":\"circular\"},{\"id\":204,\"length\":32,\"needle_size_id\":6,\"description\":\"US
+        6 (4mm) 32\\\" cir\",\"name\":\"6 \",\"metric_name\":\"4\",\"type_name\":\"circular\"},{\"id\":205,\"length\":32,\"needle_size_id\":7,\"description\":\"US
+        7 (4.5mm) 32\\\" cir\",\"name\":\"7 \",\"metric_name\":\"4.5\",\"type_name\":\"circular\"},{\"id\":206,\"length\":32,\"needle_size_id\":8,\"description\":\"US
+        8 (5mm) 32\\\" cir\",\"name\":\"8 \",\"metric_name\":\"5\",\"type_name\":\"circular\"},{\"id\":207,\"length\":32,\"needle_size_id\":9,\"description\":\"US
+        9 (5.5mm) 32\\\" cir\",\"name\":\"9 \",\"metric_name\":\"5.5\",\"type_name\":\"circular\"},{\"id\":208,\"length\":32,\"needle_size_id\":10,\"description\":\"US
+        10 (6mm) 32\\\" cir\",\"name\":\"10 \",\"metric_name\":\"6\",\"type_name\":\"circular\"},{\"id\":209,\"length\":32,\"needle_size_id\":11,\"description\":\"US
+        10\xBD(6.5mm) 32\\\" cir\",\"name\":\"10.5\",\"metric_name\":\"6.5\",\"type_name\":\"circular\"},{\"id\":210,\"length\":32,\"needle_size_id\":12,\"description\":\"US
+        11 (8mm) 32\\\" cir\",\"name\":\"11 \",\"metric_name\":\"8\",\"type_name\":\"circular\"},{\"id\":211,\"length\":32,\"needle_size_id\":13,\"description\":\"US
+        13 (9mm) 32\\\" cir\",\"name\":\"13 \",\"metric_name\":\"9\",\"type_name\":\"circular\"},{\"id\":212,\"length\":32,\"needle_size_id\":14,\"description\":\"US
+        15 (10mm) 32\\\" cir\",\"name\":\"15 \",\"metric_name\":\"10\",\"type_name\":\"circular\"},{\"id\":213,\"length\":32,\"needle_size_id\":15,\"description\":\"US
+        17 (12mm) 32\\\" cir\",\"name\":\"17 \",\"metric_name\":\"12\",\"type_name\":\"circular\"},{\"id\":214,\"length\":32,\"needle_size_id\":16,\"description\":\"US
+        19 (15mm) 32\\\" cir\",\"name\":\"19 \",\"metric_name\":\"15\",\"type_name\":\"circular\"},{\"id\":215,\"length\":32,\"needle_size_id\":17,\"description\":\"US
+        35 (19mm) 32\\\" cir\",\"name\":\"35 \",\"metric_name\":\"19\",\"type_name\":\"circular\"},{\"id\":216,\"length\":32,\"needle_size_id\":18,\"description\":\"US
+        50 (25mm) 32\\\" cir\",\"name\":\"50 \",\"metric_name\":\"25\",\"type_name\":\"circular\"},{\"id\":217,\"length\":32,\"needle_size_id\":19,\"description\":\"US
+        0(2mm) 32\\\" cir\",\"name\":\"0\",\"metric_name\":\"2\",\"type_name\":\"circular\"},{\"id\":218,\"length\":32,\"needle_size_id\":20,\"description\":\"US
+        2\xBD(3mm) 32\\\" cir\",\"name\":\"2.5\",\"metric_name\":\"3\",\"type_name\":\"circular\"},{\"id\":219,\"length\":32,\"needle_size_id\":21,\"description\":\"US
+        1\xBD(2.5mm) 32\\\" cir\",\"name\":\"1.5\",\"metric_name\":\"2.5\",\"type_name\":\"circular\"},{\"id\":220,\"length\":32,\"needle_size_id\":22,\"description\":\"US
+        00(1.75mm) 32\\\" cir\",\"name\":\"00\",\"metric_name\":\"1.75\",\"type_name\":\"circular\"},{\"id\":221,\"length\":40,\"needle_size_id\":1,\"description\":\"US
+        1 (2.25mm) 40\\\" cir\",\"name\":\"1 \",\"metric_name\":\"2.25\",\"type_name\":\"circular\"},{\"id\":222,\"length\":40,\"needle_size_id\":2,\"description\":\"US
+        2 (2.75mm) 40\\\" cir\",\"name\":\"2 \",\"metric_name\":\"2.75\",\"type_name\":\"circular\"},{\"id\":223,\"length\":40,\"needle_size_id\":3,\"description\":\"US
+        3 (3.25mm) 40\\\" cir\",\"name\":\"3 \",\"metric_name\":\"3.25\",\"type_name\":\"circular\"},{\"id\":224,\"length\":40,\"needle_size_id\":4,\"description\":\"US
+        4 (3.5mm) 40\\\" cir\",\"name\":\"4 \",\"metric_name\":\"3.5\",\"type_name\":\"circular\"},{\"id\":225,\"length\":40,\"needle_size_id\":5,\"description\":\"US
+        5 (3.75mm) 40\\\" cir\",\"name\":\"5 \",\"metric_name\":\"3.75\",\"type_name\":\"circular\"},{\"id\":226,\"length\":40,\"needle_size_id\":6,\"description\":\"US
+        6 (4mm) 40\\\" cir\",\"name\":\"6 \",\"metric_name\":\"4\",\"type_name\":\"circular\"},{\"id\":227,\"length\":40,\"needle_size_id\":7,\"description\":\"US
+        7 (4.5mm) 40\\\" cir\",\"name\":\"7 \",\"metric_name\":\"4.5\",\"type_name\":\"circular\"},{\"id\":228,\"length\":40,\"needle_size_id\":8,\"description\":\"US
+        8 (5mm) 40\\\" cir\",\"name\":\"8 \",\"metric_name\":\"5\",\"type_name\":\"circular\"},{\"id\":229,\"length\":40,\"needle_size_id\":9,\"description\":\"US
+        9 (5.5mm) 40\\\" cir\",\"name\":\"9 \",\"metric_name\":\"5.5\",\"type_name\":\"circular\"},{\"id\":230,\"length\":40,\"needle_size_id\":10,\"description\":\"US
+        10 (6mm) 40\\\" cir\",\"name\":\"10 \",\"metric_name\":\"6\",\"type_name\":\"circular\"},{\"id\":231,\"length\":40,\"needle_size_id\":11,\"description\":\"US
+        10\xBD(6.5mm) 40\\\" cir\",\"name\":\"10.5\",\"metric_name\":\"6.5\",\"type_name\":\"circular\"},{\"id\":232,\"length\":40,\"needle_size_id\":12,\"description\":\"US
+        11 (8mm) 40\\\" cir\",\"name\":\"11 \",\"metric_name\":\"8\",\"type_name\":\"circular\"},{\"id\":233,\"length\":40,\"needle_size_id\":13,\"description\":\"US
+        13 (9mm) 40\\\" cir\",\"name\":\"13 \",\"metric_name\":\"9\",\"type_name\":\"circular\"},{\"id\":234,\"length\":40,\"needle_size_id\":14,\"description\":\"US
+        15 (10mm) 40\\\" cir\",\"name\":\"15 \",\"metric_name\":\"10\",\"type_name\":\"circular\"},{\"id\":235,\"length\":40,\"needle_size_id\":15,\"description\":\"US
+        17 (12mm) 40\\\" cir\",\"name\":\"17 \",\"metric_name\":\"12\",\"type_name\":\"circular\"},{\"id\":236,\"length\":40,\"needle_size_id\":16,\"description\":\"US
+        19 (15mm) 40\\\" cir\",\"name\":\"19 \",\"metric_name\":\"15\",\"type_name\":\"circular\"},{\"id\":237,\"length\":40,\"needle_size_id\":17,\"description\":\"US
+        35 (19mm) 40\\\" cir\",\"name\":\"35 \",\"metric_name\":\"19\",\"type_name\":\"circular\"},{\"id\":238,\"length\":40,\"needle_size_id\":18,\"description\":\"US
+        50 (25mm) 40\\\" cir\",\"name\":\"50 \",\"metric_name\":\"25\",\"type_name\":\"circular\"},{\"id\":239,\"length\":40,\"needle_size_id\":19,\"description\":\"US
+        0(2mm) 40\\\" cir\",\"name\":\"0\",\"metric_name\":\"2\",\"type_name\":\"circular\"},{\"id\":240,\"length\":40,\"needle_size_id\":20,\"description\":\"US
+        2\xBD(3mm) 40\\\" cir\",\"name\":\"2.5\",\"metric_name\":\"3\",\"type_name\":\"circular\"},{\"id\":241,\"length\":40,\"needle_size_id\":21,\"description\":\"US
+        1\xBD(2.5mm) 40\\\" cir\",\"name\":\"1.5\",\"metric_name\":\"2.5\",\"type_name\":\"circular\"},{\"id\":242,\"length\":40,\"needle_size_id\":22,\"description\":\"US
+        00(1.75mm) 40\\\" cir\",\"name\":\"00\",\"metric_name\":\"1.75\",\"type_name\":\"circular\"},{\"id\":243,\"length\":47,\"needle_size_id\":1,\"description\":\"US
+        1 (2.25mm) 47\\\" cir\",\"name\":\"1 \",\"metric_name\":\"2.25\",\"type_name\":\"circular\"},{\"id\":244,\"length\":47,\"needle_size_id\":2,\"description\":\"US
+        2 (2.75mm) 47\\\" cir\",\"name\":\"2 \",\"metric_name\":\"2.75\",\"type_name\":\"circular\"},{\"id\":245,\"length\":47,\"needle_size_id\":3,\"description\":\"US
+        3 (3.25mm) 47\\\" cir\",\"name\":\"3 \",\"metric_name\":\"3.25\",\"type_name\":\"circular\"},{\"id\":246,\"length\":47,\"needle_size_id\":4,\"description\":\"US
+        4 (3.5mm) 47\\\" cir\",\"name\":\"4 \",\"metric_name\":\"3.5\",\"type_name\":\"circular\"},{\"id\":247,\"length\":47,\"needle_size_id\":5,\"description\":\"US
+        5 (3.75mm) 47\\\" cir\",\"name\":\"5 \",\"metric_name\":\"3.75\",\"type_name\":\"circular\"},{\"id\":248,\"length\":47,\"needle_size_id\":6,\"description\":\"US
+        6 (4mm) 47\\\" cir\",\"name\":\"6 \",\"metric_name\":\"4\",\"type_name\":\"circular\"},{\"id\":249,\"length\":47,\"needle_size_id\":7,\"description\":\"US
+        7 (4.5mm) 47\\\" cir\",\"name\":\"7 \",\"metric_name\":\"4.5\",\"type_name\":\"circular\"},{\"id\":250,\"length\":47,\"needle_size_id\":8,\"description\":\"US
+        8 (5mm) 47\\\" cir\",\"name\":\"8 \",\"metric_name\":\"5\",\"type_name\":\"circular\"},{\"id\":251,\"length\":47,\"needle_size_id\":9,\"description\":\"US
+        9 (5.5mm) 47\\\" cir\",\"name\":\"9 \",\"metric_name\":\"5.5\",\"type_name\":\"circular\"},{\"id\":252,\"length\":47,\"needle_size_id\":10,\"description\":\"US
+        10 (6mm) 47\\\" cir\",\"name\":\"10 \",\"metric_name\":\"6\",\"type_name\":\"circular\"},{\"id\":253,\"length\":47,\"needle_size_id\":11,\"description\":\"US
+        10\xBD(6.5mm) 47\\\" cir\",\"name\":\"10.5\",\"metric_name\":\"6.5\",\"type_name\":\"circular\"},{\"id\":254,\"length\":47,\"needle_size_id\":12,\"description\":\"US
+        11 (8mm) 47\\\" cir\",\"name\":\"11 \",\"metric_name\":\"8\",\"type_name\":\"circular\"},{\"id\":255,\"length\":47,\"needle_size_id\":13,\"description\":\"US
+        13 (9mm) 47\\\" cir\",\"name\":\"13 \",\"metric_name\":\"9\",\"type_name\":\"circular\"},{\"id\":256,\"length\":47,\"needle_size_id\":14,\"description\":\"US
+        15 (10mm) 47\\\" cir\",\"name\":\"15 \",\"metric_name\":\"10\",\"type_name\":\"circular\"},{\"id\":257,\"length\":47,\"needle_size_id\":15,\"description\":\"US
+        17 (12mm) 47\\\" cir\",\"name\":\"17 \",\"metric_name\":\"12\",\"type_name\":\"circular\"},{\"id\":258,\"length\":47,\"needle_size_id\":16,\"description\":\"US
+        19 (15mm) 47\\\" cir\",\"name\":\"19 \",\"metric_name\":\"15\",\"type_name\":\"circular\"},{\"id\":259,\"length\":47,\"needle_size_id\":17,\"description\":\"US
+        35 (19mm) 47\\\" cir\",\"name\":\"35 \",\"metric_name\":\"19\",\"type_name\":\"circular\"},{\"id\":260,\"length\":47,\"needle_size_id\":18,\"description\":\"US
+        50 (25mm) 47\\\" cir\",\"name\":\"50 \",\"metric_name\":\"25\",\"type_name\":\"circular\"},{\"id\":261,\"length\":47,\"needle_size_id\":19,\"description\":\"US
+        0(2mm) 47\\\" cir\",\"name\":\"0\",\"metric_name\":\"2\",\"type_name\":\"circular\"},{\"id\":262,\"length\":47,\"needle_size_id\":20,\"description\":\"US
+        2\xBD(3mm) 47\\\" cir\",\"name\":\"2.5\",\"metric_name\":\"3\",\"type_name\":\"circular\"},{\"id\":263,\"length\":47,\"needle_size_id\":21,\"description\":\"US
+        1\xBD(2.5mm) 47\\\" cir\",\"name\":\"1.5\",\"metric_name\":\"2.5\",\"type_name\":\"circular\"},{\"id\":264,\"length\":47,\"needle_size_id\":22,\"description\":\"US
+        00(1.75mm) 47\\\" cir\",\"name\":\"00\",\"metric_name\":\"1.75\",\"type_name\":\"circular\"},{\"id\":265,\"length\":60,\"needle_size_id\":1,\"description\":\"US
+        1 (2.25mm) 60\\\" cir\",\"name\":\"1 \",\"metric_name\":\"2.25\",\"type_name\":\"circular\"},{\"id\":266,\"length\":60,\"needle_size_id\":2,\"description\":\"US
+        2 (2.75mm) 60\\\" cir\",\"name\":\"2 \",\"metric_name\":\"2.75\",\"type_name\":\"circular\"},{\"id\":267,\"length\":60,\"needle_size_id\":3,\"description\":\"US
+        3 (3.25mm) 60\\\" cir\",\"name\":\"3 \",\"metric_name\":\"3.25\",\"type_name\":\"circular\"},{\"id\":268,\"length\":60,\"needle_size_id\":4,\"description\":\"US
+        4 (3.5mm) 60\\\" cir\",\"name\":\"4 \",\"metric_name\":\"3.5\",\"type_name\":\"circular\"},{\"id\":269,\"length\":60,\"needle_size_id\":5,\"description\":\"US
+        5 (3.75mm) 60\\\" cir\",\"name\":\"5 \",\"metric_name\":\"3.75\",\"type_name\":\"circular\"},{\"id\":270,\"length\":60,\"needle_size_id\":6,\"description\":\"US
+        6 (4mm) 60\\\" cir\",\"name\":\"6 \",\"metric_name\":\"4\",\"type_name\":\"circular\"},{\"id\":271,\"length\":60,\"needle_size_id\":7,\"description\":\"US
+        7 (4.5mm) 60\\\" cir\",\"name\":\"7 \",\"metric_name\":\"4.5\",\"type_name\":\"circular\"},{\"id\":272,\"length\":60,\"needle_size_id\":8,\"description\":\"US
+        8 (5mm) 60\\\" cir\",\"name\":\"8 \",\"metric_name\":\"5\",\"type_name\":\"circular\"},{\"id\":273,\"length\":60,\"needle_size_id\":9,\"description\":\"US
+        9 (5.5mm) 60\\\" cir\",\"name\":\"9 \",\"metric_name\":\"5.5\",\"type_name\":\"circular\"},{\"id\":274,\"length\":60,\"needle_size_id\":10,\"description\":\"US
+        10 (6mm) 60\\\" cir\",\"name\":\"10 \",\"metric_name\":\"6\",\"type_name\":\"circular\"},{\"id\":275,\"length\":60,\"needle_size_id\":11,\"description\":\"US
+        10\xBD(6.5mm) 60\\\" cir\",\"name\":\"10.5\",\"metric_name\":\"6.5\",\"type_name\":\"circular\"},{\"id\":276,\"length\":60,\"needle_size_id\":12,\"description\":\"US
+        11 (8mm) 60\\\" cir\",\"name\":\"11 \",\"metric_name\":\"8\",\"type_name\":\"circular\"},{\"id\":277,\"length\":60,\"needle_size_id\":13,\"description\":\"US
+        13 (9mm) 60\\\" cir\",\"name\":\"13 \",\"metric_name\":\"9\",\"type_name\":\"circular\"},{\"id\":278,\"length\":60,\"needle_size_id\":14,\"description\":\"US
+        15 (10mm) 60\\\" cir\",\"name\":\"15 \",\"metric_name\":\"10\",\"type_name\":\"circular\"},{\"id\":279,\"length\":60,\"needle_size_id\":15,\"description\":\"US
+        17 (12mm) 60\\\" cir\",\"name\":\"17 \",\"metric_name\":\"12\",\"type_name\":\"circular\"},{\"id\":280,\"length\":60,\"needle_size_id\":16,\"description\":\"US
+        19 (15mm) 60\\\" cir\",\"name\":\"19 \",\"metric_name\":\"15\",\"type_name\":\"circular\"},{\"id\":281,\"length\":60,\"needle_size_id\":17,\"description\":\"US
+        35 (19mm) 60\\\" cir\",\"name\":\"35 \",\"metric_name\":\"19\",\"type_name\":\"circular\"},{\"id\":282,\"length\":60,\"needle_size_id\":18,\"description\":\"US
+        50 (25mm) 60\\\" cir\",\"name\":\"50 \",\"metric_name\":\"25\",\"type_name\":\"circular\"},{\"id\":283,\"length\":60,\"needle_size_id\":19,\"description\":\"US
+        0(2mm) 60\\\" cir\",\"name\":\"0\",\"metric_name\":\"2\",\"type_name\":\"circular\"},{\"id\":284,\"length\":60,\"needle_size_id\":20,\"description\":\"US
+        2\xBD(3mm) 60\\\" cir\",\"name\":\"2.5\",\"metric_name\":\"3\",\"type_name\":\"circular\"},{\"id\":285,\"length\":60,\"needle_size_id\":21,\"description\":\"US
+        1\xBD(2.5mm) 60\\\" cir\",\"name\":\"1.5\",\"metric_name\":\"2.5\",\"type_name\":\"circular\"},{\"id\":286,\"length\":60,\"needle_size_id\":22,\"description\":\"US
+        00(1.75mm) 60\\\" cir\",\"name\":\"00\",\"metric_name\":\"1.75\",\"type_name\":\"circular\"},{\"id\":287,\"length\":5,\"needle_size_id\":1,\"description\":\"B
+        hook (2.25mm)\",\"name\":\"B\",\"metric_name\":\"2.25\",\"type_name\":\"hook\"},{\"id\":288,\"length\":5,\"needle_size_id\":2,\"description\":\"C
+        hook (2.75mm)\",\"name\":\"C\",\"metric_name\":\"2.75\",\"type_name\":\"hook\"},{\"id\":289,\"length\":5,\"needle_size_id\":3,\"description\":\"D
+        hook (3.25mm)\",\"name\":\"D\",\"metric_name\":\"3.25\",\"type_name\":\"hook\"},{\"id\":290,\"length\":5,\"needle_size_id\":4,\"description\":\"E
+        hook (3.5mm)\",\"name\":\"E\",\"metric_name\":\"3.5\",\"type_name\":\"hook\"},{\"id\":291,\"length\":5,\"needle_size_id\":5,\"description\":\"F
+        hook (3.75mm)\",\"name\":\"F\",\"metric_name\":\"3.75\",\"type_name\":\"hook\"},{\"id\":292,\"length\":5,\"needle_size_id\":6,\"description\":\"G
+        hook (4mm)\",\"name\":\"G\",\"metric_name\":\"4\",\"type_name\":\"hook\"},{\"id\":293,\"length\":5,\"needle_size_id\":8,\"description\":\"H
+        hook (5mm)\",\"name\":\"H\",\"metric_name\":\"5\",\"type_name\":\"hook\"},{\"id\":294,\"length\":5,\"needle_size_id\":9,\"description\":\"I
+        hook (5.5mm)\",\"name\":\"I\",\"metric_name\":\"5.5\",\"type_name\":\"hook\"},{\"id\":295,\"length\":5,\"needle_size_id\":10,\"description\":\"J
+        hook (6mm)\",\"name\":\"J\",\"metric_name\":\"6\",\"type_name\":\"hook\"},{\"id\":296,\"length\":5,\"needle_size_id\":11,\"description\":\"K
+        hook (6.5mm)\",\"name\":\"K\",\"metric_name\":\"6.5\",\"type_name\":\"hook\"},{\"id\":297,\"length\":5,\"needle_size_id\":12,\"description\":\"L
+        hook (8mm)\",\"name\":\"L\",\"metric_name\":\"8\",\"type_name\":\"hook\"},{\"id\":298,\"length\":5,\"needle_size_id\":13,\"description\":\"M/N
+        hook (9mm)\",\"name\":\"M/N\",\"metric_name\":\"9\",\"type_name\":\"hook\"},{\"id\":299,\"length\":5,\"needle_size_id\":14,\"description\":\"N/P
+        hook (10mm)\",\"name\":\"N/P\",\"metric_name\":\"10\",\"type_name\":\"hook\"},{\"id\":300,\"length\":5,\"needle_size_id\":16,\"description\":\"P/Q
+        hook (15mm)\",\"name\":\"P/Q\",\"metric_name\":\"15\",\"type_name\":\"hook\"},{\"id\":301,\"length\":5,\"needle_size_id\":17,\"description\":\"S
+        hook (19mm)\",\"name\":\"S\",\"metric_name\":\"19\",\"type_name\":\"hook\"},{\"id\":302,\"length\":5,\"needle_size_id\":22,\"description\":\"
+        hook (1.75mm)\",\"name\":null,\"metric_name\":\"1.75\",\"type_name\":\"hook\"},{\"id\":303,\"length\":5,\"needle_size_id\":19,\"description\":\"
+        hook (2mm)\",\"name\":null,\"metric_name\":\"2\",\"type_name\":\"hook\"},{\"id\":304,\"length\":5,\"needle_size_id\":21,\"description\":\"
+        hook (2.5mm)\",\"name\":null,\"metric_name\":\"2.5\",\"type_name\":\"hook\"},{\"id\":305,\"length\":5,\"needle_size_id\":20,\"description\":\"
+        hook (3mm)\",\"name\":null,\"metric_name\":\"3\",\"type_name\":\"hook\"},{\"id\":306,\"length\":5,\"needle_size_id\":7,\"description\":\"
+        hook (4.5mm)\",\"name\":null,\"metric_name\":\"4.5\",\"type_name\":\"hook\"},{\"id\":307,\"length\":5,\"needle_size_id\":15,\"description\":\"
+        hook (12mm)\",\"name\":null,\"metric_name\":\"12\",\"type_name\":\"hook\"},{\"id\":308,\"length\":5,\"needle_size_id\":18,\"description\":\"
+        hook (25mm)\",\"name\":null,\"metric_name\":\"25\",\"type_name\":\"hook\"},{\"id\":309,\"length\":10,\"needle_size_id\":23,\"description\":\"US
+        (7mm) 10\\\" st\",\"name\":\"\",\"metric_name\":\"7\",\"type_name\":\"straight\"},{\"id\":310,\"length\":10,\"needle_size_id\":24,\"description\":\"US
+        (7.5mm) 10\\\" st\",\"name\":\"\",\"metric_name\":\"7.5\",\"type_name\":\"straight\"},{\"id\":311,\"length\":14,\"needle_size_id\":23,\"description\":\"US
+        (7mm) 14\\\" st\",\"name\":\"\",\"metric_name\":\"7\",\"type_name\":\"straight\"},{\"id\":312,\"length\":14,\"needle_size_id\":24,\"description\":\"US
+        (7.5mm) 14\\\" st\",\"name\":\"\",\"metric_name\":\"7.5\",\"type_name\":\"straight\"},{\"id\":313,\"length\":4,\"needle_size_id\":23,\"description\":\"US
+        (7mm) sock dp\",\"name\":\"\",\"metric_name\":\"7\",\"type_name\":\"dp\"},{\"id\":314,\"length\":4,\"needle_size_id\":24,\"description\":\"US
+        (7.5mm) sock dp\",\"name\":\"\",\"metric_name\":\"7.5\",\"type_name\":\"dp\"},{\"id\":315,\"length\":8,\"needle_size_id\":23,\"description\":\"US
+        (7mm) std dp\",\"name\":\"\",\"metric_name\":\"7\",\"type_name\":\"dp\"},{\"id\":316,\"length\":8,\"needle_size_id\":24,\"description\":\"US
+        (7.5mm) std dp\",\"name\":\"\",\"metric_name\":\"7.5\",\"type_name\":\"dp\"},{\"id\":317,\"length\":12,\"needle_size_id\":23,\"description\":\"US
+        (7mm) 12\\\" cir\",\"name\":\"\",\"metric_name\":\"7\",\"type_name\":\"circular\"},{\"id\":318,\"length\":12,\"needle_size_id\":24,\"description\":\"US
+        (7.5mm) 12\\\" cir\",\"name\":\"\",\"metric_name\":\"7.5\",\"type_name\":\"circular\"},{\"id\":319,\"length\":16,\"needle_size_id\":23,\"description\":\"US
+        (7mm) 16\\\" cir\",\"name\":\"\",\"metric_name\":\"7\",\"type_name\":\"circular\"},{\"id\":320,\"length\":16,\"needle_size_id\":24,\"description\":\"US
+        (7.5mm) 16\\\" cir\",\"name\":\"\",\"metric_name\":\"7.5\",\"type_name\":\"circular\"},{\"id\":321,\"length\":20,\"needle_size_id\":23,\"description\":\"US
+        (7mm) 20\\\" cir\",\"name\":\"\",\"metric_name\":\"7\",\"type_name\":\"circular\"},{\"id\":322,\"length\":20,\"needle_size_id\":24,\"description\":\"US
+        (7.5mm) 20\\\" cir\",\"name\":\"\",\"metric_name\":\"7.5\",\"type_name\":\"circular\"},{\"id\":323,\"length\":24,\"needle_size_id\":23,\"description\":\"US
+        (7mm) 24\\\" cir\",\"name\":\"\",\"metric_name\":\"7\",\"type_name\":\"circular\"},{\"id\":324,\"length\":24,\"needle_size_id\":24,\"description\":\"US
+        (7.5mm) 24\\\" cir\",\"name\":\"\",\"metric_name\":\"7.5\",\"type_name\":\"circular\"},{\"id\":325,\"length\":29,\"needle_size_id\":23,\"description\":\"US
+        (7mm) 29\\\" cir\",\"name\":\"\",\"metric_name\":\"7\",\"type_name\":\"circular\"},{\"id\":326,\"length\":29,\"needle_size_id\":24,\"description\":\"US
+        (7.5mm) 29\\\" cir\",\"name\":\"\",\"metric_name\":\"7.5\",\"type_name\":\"circular\"},{\"id\":327,\"length\":32,\"needle_size_id\":23,\"description\":\"US
+        (7mm) 32\\\" cir\",\"name\":\"\",\"metric_name\":\"7\",\"type_name\":\"circular\"},{\"id\":328,\"length\":32,\"needle_size_id\":24,\"description\":\"US
+        (7.5mm) 32\\\" cir\",\"name\":\"\",\"metric_name\":\"7.5\",\"type_name\":\"circular\"},{\"id\":329,\"length\":40,\"needle_size_id\":23,\"description\":\"US
+        (7mm) 40\\\" cir\",\"name\":\"\",\"metric_name\":\"7\",\"type_name\":\"circular\"},{\"id\":330,\"length\":40,\"needle_size_id\":24,\"description\":\"US
+        (7.5mm) 40\\\" cir\",\"name\":\"\",\"metric_name\":\"7.5\",\"type_name\":\"circular\"},{\"id\":331,\"length\":47,\"needle_size_id\":23,\"description\":\"US
+        (7mm) 47\\\" cir\",\"name\":\"\",\"metric_name\":\"7\",\"type_name\":\"circular\"},{\"id\":332,\"length\":47,\"needle_size_id\":24,\"description\":\"US
+        (7.5mm) 47\\\" cir\",\"name\":\"\",\"metric_name\":\"7.5\",\"type_name\":\"circular\"},{\"id\":333,\"length\":60,\"needle_size_id\":23,\"description\":\"US
+        (7mm) 60\\\" cir\",\"name\":\"\",\"metric_name\":\"7\",\"type_name\":\"circular\"},{\"id\":334,\"length\":60,\"needle_size_id\":24,\"description\":\"US
+        (7.5mm) 60\\\" cir\",\"name\":\"\",\"metric_name\":\"7.5\",\"type_name\":\"circular\"},{\"id\":335,\"length\":5,\"needle_size_id\":23,\"description\":\"
+        hook (7mm)\",\"name\":null,\"metric_name\":\"7\",\"type_name\":\"hook\"},{\"id\":336,\"length\":5,\"needle_size_id\":24,\"description\":\"
+        hook (7.5mm)\",\"name\":null,\"metric_name\":\"7.5\",\"type_name\":\"hook\"},{\"id\":337,\"length\":9,\"needle_size_id\":1,\"description\":\"US
+        1 (2.25mm) 9\\\" cir\",\"name\":\"1 \",\"metric_name\":\"2.25\",\"type_name\":\"circular\"},{\"id\":338,\"length\":9,\"needle_size_id\":2,\"description\":\"US
+        2 (2.75mm) 9\\\" cir\",\"name\":\"2 \",\"metric_name\":\"2.75\",\"type_name\":\"circular\"},{\"id\":339,\"length\":9,\"needle_size_id\":3,\"description\":\"US
+        3 (3.25mm) 9\\\" cir\",\"name\":\"3 \",\"metric_name\":\"3.25\",\"type_name\":\"circular\"},{\"id\":340,\"length\":9,\"needle_size_id\":4,\"description\":\"US
+        4 (3.5mm) 9\\\" cir\",\"name\":\"4 \",\"metric_name\":\"3.5\",\"type_name\":\"circular\"},{\"id\":341,\"length\":9,\"needle_size_id\":5,\"description\":\"US
+        5 (3.75mm) 9\\\" cir\",\"name\":\"5 \",\"metric_name\":\"3.75\",\"type_name\":\"circular\"},{\"id\":342,\"length\":9,\"needle_size_id\":6,\"description\":\"US
+        6 (4mm) 9\\\" cir\",\"name\":\"6 \",\"metric_name\":\"4\",\"type_name\":\"circular\"},{\"id\":343,\"length\":9,\"needle_size_id\":7,\"description\":\"US
+        7 (4.5mm) 9\\\" cir\",\"name\":\"7 \",\"metric_name\":\"4.5\",\"type_name\":\"circular\"},{\"id\":344,\"length\":9,\"needle_size_id\":8,\"description\":\"US
+        8 (5mm) 9\\\" cir\",\"name\":\"8 \",\"metric_name\":\"5\",\"type_name\":\"circular\"},{\"id\":345,\"length\":9,\"needle_size_id\":9,\"description\":\"US
+        9 (5.5mm) 9\\\" cir\",\"name\":\"9 \",\"metric_name\":\"5.5\",\"type_name\":\"circular\"},{\"id\":346,\"length\":9,\"needle_size_id\":10,\"description\":\"US
+        10 (6mm) 9\\\" cir\",\"name\":\"10 \",\"metric_name\":\"6\",\"type_name\":\"circular\"},{\"id\":347,\"length\":9,\"needle_size_id\":11,\"description\":\"US
+        10\xBD(6.5mm) 9\\\" cir\",\"name\":\"10.5\",\"metric_name\":\"6.5\",\"type_name\":\"circular\"},{\"id\":348,\"length\":9,\"needle_size_id\":12,\"description\":\"US
+        11 (8mm) 9\\\" cir\",\"name\":\"11 \",\"metric_name\":\"8\",\"type_name\":\"circular\"},{\"id\":349,\"length\":9,\"needle_size_id\":13,\"description\":\"US
+        13 (9mm) 9\\\" cir\",\"name\":\"13 \",\"metric_name\":\"9\",\"type_name\":\"circular\"},{\"id\":350,\"length\":9,\"needle_size_id\":14,\"description\":\"US
+        15 (10mm) 9\\\" cir\",\"name\":\"15 \",\"metric_name\":\"10\",\"type_name\":\"circular\"},{\"id\":351,\"length\":9,\"needle_size_id\":15,\"description\":\"US
+        17 (12mm) 9\\\" cir\",\"name\":\"17 \",\"metric_name\":\"12\",\"type_name\":\"circular\"},{\"id\":352,\"length\":9,\"needle_size_id\":16,\"description\":\"US
+        19 (15mm) 9\\\" cir\",\"name\":\"19 \",\"metric_name\":\"15\",\"type_name\":\"circular\"},{\"id\":353,\"length\":9,\"needle_size_id\":17,\"description\":\"US
+        35 (19mm) 9\\\" cir\",\"name\":\"35 \",\"metric_name\":\"19\",\"type_name\":\"circular\"},{\"id\":354,\"length\":9,\"needle_size_id\":18,\"description\":\"US
+        50 (25mm) 9\\\" cir\",\"name\":\"50 \",\"metric_name\":\"25\",\"type_name\":\"circular\"},{\"id\":355,\"length\":9,\"needle_size_id\":19,\"description\":\"US
+        0(2mm) 9\\\" cir\",\"name\":\"0\",\"metric_name\":\"2\",\"type_name\":\"circular\"},{\"id\":356,\"length\":9,\"needle_size_id\":20,\"description\":\"US
+        2\xBD(3mm) 9\\\" cir\",\"name\":\"2.5\",\"metric_name\":\"3\",\"type_name\":\"circular\"},{\"id\":357,\"length\":9,\"needle_size_id\":21,\"description\":\"US
+        1\xBD(2.5mm) 9\\\" cir\",\"name\":\"1.5\",\"metric_name\":\"2.5\",\"type_name\":\"circular\"},{\"id\":358,\"length\":9,\"needle_size_id\":22,\"description\":\"US
+        00(1.75mm) 9\\\" cir\",\"name\":\"00\",\"metric_name\":\"1.75\",\"type_name\":\"circular\"},{\"id\":359,\"length\":9,\"needle_size_id\":23,\"description\":\"US
+        (7mm) 9\\\" cir\",\"name\":\"\",\"metric_name\":\"7\",\"type_name\":\"circular\"},{\"id\":360,\"length\":9,\"needle_size_id\":24,\"description\":\"US
+        (7.5mm) 9\\\" cir\",\"name\":\"\",\"metric_name\":\"7.5\",\"type_name\":\"circular\"},{\"id\":368,\"length\":10,\"needle_size_id\":39,\"description\":\"US
+        000(1.5mm) 10\\\" st\",\"name\":\"000\",\"metric_name\":\"1.5\",\"type_name\":\"straight\"},{\"id\":369,\"length\":14,\"needle_size_id\":39,\"description\":\"US
+        000(1.5mm) 14\\\" st\",\"name\":\"000\",\"metric_name\":\"1.5\",\"type_name\":\"straight\"},{\"id\":370,\"length\":4,\"needle_size_id\":39,\"description\":\"US
+        000(1.5mm) sock dp\",\"name\":\"000\",\"metric_name\":\"1.5\",\"type_name\":\"dp\"},{\"id\":371,\"length\":8,\"needle_size_id\":39,\"description\":\"US
+        000(1.5mm) std dp\",\"name\":\"000\",\"metric_name\":\"1.5\",\"type_name\":\"dp\"},{\"id\":372,\"length\":12,\"needle_size_id\":39,\"description\":\"US
+        000(1.5mm) 12\\\" cir\",\"name\":\"000\",\"metric_name\":\"1.5\",\"type_name\":\"circular\"},{\"id\":373,\"length\":16,\"needle_size_id\":39,\"description\":\"US
+        000(1.5mm) 16\\\" cir\",\"name\":\"000\",\"metric_name\":\"1.5\",\"type_name\":\"circular\"},{\"id\":374,\"length\":20,\"needle_size_id\":39,\"description\":\"US
+        000(1.5mm) 20\\\" cir\",\"name\":\"000\",\"metric_name\":\"1.5\",\"type_name\":\"circular\"},{\"id\":375,\"length\":24,\"needle_size_id\":39,\"description\":\"US
+        000(1.5mm) 24\\\" cir\",\"name\":\"000\",\"metric_name\":\"1.5\",\"type_name\":\"circular\"},{\"id\":376,\"length\":29,\"needle_size_id\":39,\"description\":\"US
+        000(1.5mm) 29\\\" cir\",\"name\":\"000\",\"metric_name\":\"1.5\",\"type_name\":\"circular\"},{\"id\":377,\"length\":32,\"needle_size_id\":39,\"description\":\"US
+        000(1.5mm) 32\\\" cir\",\"name\":\"000\",\"metric_name\":\"1.5\",\"type_name\":\"circular\"},{\"id\":378,\"length\":40,\"needle_size_id\":39,\"description\":\"US
+        000(1.5mm) 40\\\" cir\",\"name\":\"000\",\"metric_name\":\"1.5\",\"type_name\":\"circular\"},{\"id\":379,\"length\":47,\"needle_size_id\":39,\"description\":\"US
+        000(1.5mm) 47\\\" cir\",\"name\":\"000\",\"metric_name\":\"1.5\",\"type_name\":\"circular\"},{\"id\":380,\"length\":60,\"needle_size_id\":39,\"description\":\"US
+        000(1.5mm) 60\\\" cir\",\"name\":\"000\",\"metric_name\":\"1.5\",\"type_name\":\"circular\"},{\"id\":381,\"length\":5,\"needle_size_id\":39,\"description\":\"
+        steel (1.5mm)\",\"name\":null,\"metric_name\":\"1.5\",\"type_name\":\"steel\"},{\"id\":382,\"length\":9,\"needle_size_id\":39,\"description\":\"US
+        000(1.5mm) 9\\\" cir\",\"name\":\"000\",\"metric_name\":\"1.5\",\"type_name\":\"circular\"},{\"id\":383,\"length\":10,\"needle_size_id\":40,\"description\":\"US
+        4/0(1.25mm) 10\\\" st\",\"name\":\"0000\",\"metric_name\":\"1.25\",\"type_name\":\"straight\"},{\"id\":384,\"length\":14,\"needle_size_id\":40,\"description\":\"US
+        4/0(1.25mm) 14\\\" st\",\"name\":\"0000\",\"metric_name\":\"1.25\",\"type_name\":\"straight\"},{\"id\":385,\"length\":4,\"needle_size_id\":40,\"description\":\"US
+        4/0(1.25mm) sock dp\",\"name\":\"0000\",\"metric_name\":\"1.25\",\"type_name\":\"dp\"},{\"id\":386,\"length\":8,\"needle_size_id\":40,\"description\":\"US
+        4/0(1.25mm) std dp\",\"name\":\"0000\",\"metric_name\":\"1.25\",\"type_name\":\"dp\"},{\"id\":387,\"length\":12,\"needle_size_id\":40,\"description\":\"US
+        4/0(1.25mm) 12\\\" cir\",\"name\":\"0000\",\"metric_name\":\"1.25\",\"type_name\":\"circular\"},{\"id\":388,\"length\":16,\"needle_size_id\":40,\"description\":\"US
+        4/0(1.25mm) 16\\\" cir\",\"name\":\"0000\",\"metric_name\":\"1.25\",\"type_name\":\"circular\"},{\"id\":389,\"length\":20,\"needle_size_id\":40,\"description\":\"US
+        4/0(1.25mm) 20\\\" cir\",\"name\":\"0000\",\"metric_name\":\"1.25\",\"type_name\":\"circular\"},{\"id\":390,\"length\":24,\"needle_size_id\":40,\"description\":\"US
+        4/0(1.25mm) 24\\\" cir\",\"name\":\"0000\",\"metric_name\":\"1.25\",\"type_name\":\"circular\"},{\"id\":391,\"length\":29,\"needle_size_id\":40,\"description\":\"US
+        4/0(1.25mm) 29\\\" cir\",\"name\":\"0000\",\"metric_name\":\"1.25\",\"type_name\":\"circular\"},{\"id\":392,\"length\":32,\"needle_size_id\":40,\"description\":\"US
+        4/0(1.25mm) 32\\\" cir\",\"name\":\"0000\",\"metric_name\":\"1.25\",\"type_name\":\"circular\"},{\"id\":393,\"length\":40,\"needle_size_id\":40,\"description\":\"US
+        4/0(1.25mm) 40\\\" cir\",\"name\":\"0000\",\"metric_name\":\"1.25\",\"type_name\":\"circular\"},{\"id\":394,\"length\":47,\"needle_size_id\":40,\"description\":\"US
+        4/0(1.25mm) 47\\\" cir\",\"name\":\"0000\",\"metric_name\":\"1.25\",\"type_name\":\"circular\"},{\"id\":395,\"length\":60,\"needle_size_id\":40,\"description\":\"US
+        4/0(1.25mm) 60\\\" cir\",\"name\":\"0000\",\"metric_name\":\"1.25\",\"type_name\":\"circular\"},{\"id\":396,\"length\":5,\"needle_size_id\":40,\"description\":\"
+        steel (1.25mm)\",\"name\":null,\"metric_name\":\"1.25\",\"type_name\":\"steel\"},{\"id\":397,\"length\":9,\"needle_size_id\":40,\"description\":\"US
+        4/0(1.25mm) 9\\\" cir\",\"name\":\"0000\",\"metric_name\":\"1.25\",\"type_name\":\"circular\"},{\"id\":398,\"length\":10,\"needle_size_id\":41,\"description\":\"US
+        5/0(1mm) 10\\\" st\",\"name\":\"00000\",\"metric_name\":\"1\",\"type_name\":\"straight\"},{\"id\":399,\"length\":14,\"needle_size_id\":41,\"description\":\"US
+        5/0(1mm) 14\\\" st\",\"name\":\"00000\",\"metric_name\":\"1\",\"type_name\":\"straight\"},{\"id\":400,\"length\":4,\"needle_size_id\":41,\"description\":\"US
+        5/0(1mm) sock dp\",\"name\":\"00000\",\"metric_name\":\"1\",\"type_name\":\"dp\"},{\"id\":401,\"length\":8,\"needle_size_id\":41,\"description\":\"US
+        5/0(1mm) std dp\",\"name\":\"00000\",\"metric_name\":\"1\",\"type_name\":\"dp\"},{\"id\":402,\"length\":12,\"needle_size_id\":41,\"description\":\"US
+        5/0(1mm) 12\\\" cir\",\"name\":\"00000\",\"metric_name\":\"1\",\"type_name\":\"circular\"},{\"id\":403,\"length\":16,\"needle_size_id\":41,\"description\":\"US
+        5/0(1mm) 16\\\" cir\",\"name\":\"00000\",\"metric_name\":\"1\",\"type_name\":\"circular\"},{\"id\":404,\"length\":20,\"needle_size_id\":41,\"description\":\"US
+        5/0(1mm) 20\\\" cir\",\"name\":\"00000\",\"metric_name\":\"1\",\"type_name\":\"circular\"},{\"id\":405,\"length\":24,\"needle_size_id\":41,\"description\":\"US
+        5/0(1mm) 24\\\" cir\",\"name\":\"00000\",\"metric_name\":\"1\",\"type_name\":\"circular\"},{\"id\":406,\"length\":29,\"needle_size_id\":41,\"description\":\"US
+        5/0(1mm) 29\\\" cir\",\"name\":\"00000\",\"metric_name\":\"1\",\"type_name\":\"circular\"},{\"id\":407,\"length\":32,\"needle_size_id\":41,\"description\":\"US
+        5/0(1mm) 32\\\" cir\",\"name\":\"00000\",\"metric_name\":\"1\",\"type_name\":\"circular\"},{\"id\":408,\"length\":40,\"needle_size_id\":41,\"description\":\"US
+        5/0(1mm) 40\\\" cir\",\"name\":\"00000\",\"metric_name\":\"1\",\"type_name\":\"circular\"},{\"id\":409,\"length\":47,\"needle_size_id\":41,\"description\":\"US
+        5/0(1mm) 47\\\" cir\",\"name\":\"00000\",\"metric_name\":\"1\",\"type_name\":\"circular\"},{\"id\":410,\"length\":60,\"needle_size_id\":41,\"description\":\"US
+        5/0(1mm) 60\\\" cir\",\"name\":\"00000\",\"metric_name\":\"1\",\"type_name\":\"circular\"},{\"id\":411,\"length\":5,\"needle_size_id\":41,\"description\":\"
+        steel (1mm)\",\"name\":null,\"metric_name\":\"1\",\"type_name\":\"steel\"},{\"id\":412,\"length\":9,\"needle_size_id\":41,\"description\":\"US
+        5/0(1mm) 9\\\" cir\",\"name\":\"00000\",\"metric_name\":\"1\",\"type_name\":\"circular\"},{\"id\":413,\"length\":10,\"needle_size_id\":42,\"description\":\"US
+        6/0(0.75mm) 10\\\" st\",\"name\":\"000000\",\"metric_name\":\"0.75\",\"type_name\":\"straight\"},{\"id\":414,\"length\":14,\"needle_size_id\":42,\"description\":\"US
+        6/0(0.75mm) 14\\\" st\",\"name\":\"000000\",\"metric_name\":\"0.75\",\"type_name\":\"straight\"},{\"id\":415,\"length\":4,\"needle_size_id\":42,\"description\":\"US
+        6/0(0.75mm) sock dp\",\"name\":\"000000\",\"metric_name\":\"0.75\",\"type_name\":\"dp\"},{\"id\":416,\"length\":8,\"needle_size_id\":42,\"description\":\"US
+        6/0(0.75mm) std dp\",\"name\":\"000000\",\"metric_name\":\"0.75\",\"type_name\":\"dp\"},{\"id\":417,\"length\":12,\"needle_size_id\":42,\"description\":\"US
+        6/0(0.75mm) 12\\\" cir\",\"name\":\"000000\",\"metric_name\":\"0.75\",\"type_name\":\"circular\"},{\"id\":418,\"length\":16,\"needle_size_id\":42,\"description\":\"US
+        6/0(0.75mm) 16\\\" cir\",\"name\":\"000000\",\"metric_name\":\"0.75\",\"type_name\":\"circular\"},{\"id\":419,\"length\":20,\"needle_size_id\":42,\"description\":\"US
+        6/0(0.75mm) 20\\\" cir\",\"name\":\"000000\",\"metric_name\":\"0.75\",\"type_name\":\"circular\"},{\"id\":420,\"length\":24,\"needle_size_id\":42,\"description\":\"US
+        6/0(0.75mm) 24\\\" cir\",\"name\":\"000000\",\"metric_name\":\"0.75\",\"type_name\":\"circular\"},{\"id\":421,\"length\":29,\"needle_size_id\":42,\"description\":\"US
+        6/0(0.75mm) 29\\\" cir\",\"name\":\"000000\",\"metric_name\":\"0.75\",\"type_name\":\"circular\"},{\"id\":422,\"length\":32,\"needle_size_id\":42,\"description\":\"US
+        6/0(0.75mm) 32\\\" cir\",\"name\":\"000000\",\"metric_name\":\"0.75\",\"type_name\":\"circular\"},{\"id\":423,\"length\":40,\"needle_size_id\":42,\"description\":\"US
+        6/0(0.75mm) 40\\\" cir\",\"name\":\"000000\",\"metric_name\":\"0.75\",\"type_name\":\"circular\"},{\"id\":424,\"length\":47,\"needle_size_id\":42,\"description\":\"US
+        6/0(0.75mm) 47\\\" cir\",\"name\":\"000000\",\"metric_name\":\"0.75\",\"type_name\":\"circular\"},{\"id\":425,\"length\":60,\"needle_size_id\":42,\"description\":\"US
+        6/0(0.75mm) 60\\\" cir\",\"name\":\"000000\",\"metric_name\":\"0.75\",\"type_name\":\"circular\"},{\"id\":426,\"length\":5,\"needle_size_id\":42,\"description\":\"
+        steel (0.75mm)\",\"name\":null,\"metric_name\":\"0.75\",\"type_name\":\"steel\"},{\"id\":427,\"length\":9,\"needle_size_id\":42,\"description\":\"US
+        6/0(0.75mm) 9\\\" cir\",\"name\":\"000000\",\"metric_name\":\"0.75\",\"type_name\":\"circular\"},{\"id\":428,\"length\":10,\"needle_size_id\":43,\"description\":\"US
+        8/0(0.5mm) 10\\\" st\",\"name\":\"00000000\",\"metric_name\":\"0.5\",\"type_name\":\"straight\"},{\"id\":429,\"length\":14,\"needle_size_id\":43,\"description\":\"US
+        8/0(0.5mm) 14\\\" st\",\"name\":\"00000000\",\"metric_name\":\"0.5\",\"type_name\":\"straight\"},{\"id\":430,\"length\":4,\"needle_size_id\":43,\"description\":\"US
+        8/0(0.5mm) sock dp\",\"name\":\"00000000\",\"metric_name\":\"0.5\",\"type_name\":\"dp\"},{\"id\":431,\"length\":8,\"needle_size_id\":43,\"description\":\"US
+        8/0(0.5mm) std dp\",\"name\":\"00000000\",\"metric_name\":\"0.5\",\"type_name\":\"dp\"},{\"id\":432,\"length\":12,\"needle_size_id\":43,\"description\":\"US
+        8/0(0.5mm) 12\\\" cir\",\"name\":\"00000000\",\"metric_name\":\"0.5\",\"type_name\":\"circular\"},{\"id\":433,\"length\":16,\"needle_size_id\":43,\"description\":\"US
+        8/0(0.5mm) 16\\\" cir\",\"name\":\"00000000\",\"metric_name\":\"0.5\",\"type_name\":\"circular\"},{\"id\":434,\"length\":20,\"needle_size_id\":43,\"description\":\"US
+        8/0(0.5mm) 20\\\" cir\",\"name\":\"00000000\",\"metric_name\":\"0.5\",\"type_name\":\"circular\"},{\"id\":435,\"length\":24,\"needle_size_id\":43,\"description\":\"US
+        8/0(0.5mm) 24\\\" cir\",\"name\":\"00000000\",\"metric_name\":\"0.5\",\"type_name\":\"circular\"},{\"id\":436,\"length\":29,\"needle_size_id\":43,\"description\":\"US
+        8/0(0.5mm) 29\\\" cir\",\"name\":\"00000000\",\"metric_name\":\"0.5\",\"type_name\":\"circular\"},{\"id\":437,\"length\":32,\"needle_size_id\":43,\"description\":\"US
+        8/0(0.5mm) 32\\\" cir\",\"name\":\"00000000\",\"metric_name\":\"0.5\",\"type_name\":\"circular\"},{\"id\":438,\"length\":40,\"needle_size_id\":43,\"description\":\"US
+        8/0(0.5mm) 40\\\" cir\",\"name\":\"00000000\",\"metric_name\":\"0.5\",\"type_name\":\"circular\"},{\"id\":439,\"length\":47,\"needle_size_id\":43,\"description\":\"US
+        8/0(0.5mm) 47\\\" cir\",\"name\":\"00000000\",\"metric_name\":\"0.5\",\"type_name\":\"circular\"},{\"id\":440,\"length\":60,\"needle_size_id\":43,\"description\":\"US
+        8/0(0.5mm) 60\\\" cir\",\"name\":\"00000000\",\"metric_name\":\"0.5\",\"type_name\":\"circular\"},{\"id\":441,\"length\":5,\"needle_size_id\":43,\"description\":\"
+        steel (0.5mm)\",\"name\":null,\"metric_name\":\"0.5\",\"type_name\":\"steel\"},{\"id\":442,\"length\":9,\"needle_size_id\":43,\"description\":\"US
+        8/0(0.5mm) 9\\\" cir\",\"name\":\"00000000\",\"metric_name\":\"0.5\",\"type_name\":\"circular\"},{\"id\":443,\"length\":5,\"needle_size_id\":25,\"description\":\"
+        steel (0.6mm)\",\"name\":null,\"metric_name\":\"0.6\",\"type_name\":\"steel\"},{\"id\":444,\"length\":5,\"needle_size_id\":26,\"description\":\"
+        steel (0.7mm)\",\"name\":null,\"metric_name\":\"0.7\",\"type_name\":\"steel\"},{\"id\":445,\"length\":5,\"needle_size_id\":27,\"description\":\"14
+        steel (0.75mm)\",\"name\":\"14\",\"metric_name\":\"0.75\",\"type_name\":\"steel\"},{\"id\":446,\"length\":5,\"needle_size_id\":28,\"description\":\"13
+        steel (0.85mm)\",\"name\":\"13\",\"metric_name\":\"0.85\",\"type_name\":\"steel\"},{\"id\":447,\"length\":5,\"needle_size_id\":29,\"description\":\"
+        steel (0.9mm)\",\"name\":null,\"metric_name\":\"0.9\",\"type_name\":\"steel\"},{\"id\":448,\"length\":5,\"needle_size_id\":30,\"description\":\"12
+        steel (1mm)\",\"name\":\"12\",\"metric_name\":\"1\",\"type_name\":\"steel\"},{\"id\":449,\"length\":5,\"needle_size_id\":31,\"description\":\"
+        steel (1.05mm)\",\"name\":null,\"metric_name\":\"1.05\",\"type_name\":\"steel\"},{\"id\":450,\"length\":5,\"needle_size_id\":32,\"description\":\"
+        steel (1.1mm)\",\"name\":null,\"metric_name\":\"1.1\",\"type_name\":\"steel\"},{\"id\":451,\"length\":5,\"needle_size_id\":33,\"description\":\"
+        steel (1.15mm)\",\"name\":null,\"metric_name\":\"1.15\",\"type_name\":\"steel\"},{\"id\":452,\"length\":5,\"needle_size_id\":34,\"description\":\"
+        steel (1.25mm)\",\"name\":null,\"metric_name\":\"1.25\",\"type_name\":\"steel\"},{\"id\":453,\"length\":5,\"needle_size_id\":35,\"description\":\"10
+        steel (1.3mm)\",\"name\":\"10\",\"metric_name\":\"1.3\",\"type_name\":\"steel\"},{\"id\":454,\"length\":5,\"needle_size_id\":36,\"description\":\"9
+        steel (1.4mm)\",\"name\":\"9\",\"metric_name\":\"1.4\",\"type_name\":\"steel\"},{\"id\":455,\"length\":5,\"needle_size_id\":37,\"description\":\"8
+        steel (1.5mm)\",\"name\":\"8\",\"metric_name\":\"1.5\",\"type_name\":\"steel\"},{\"id\":456,\"length\":5,\"needle_size_id\":38,\"description\":\"7
+        steel (1.65mm)\",\"name\":\"7\",\"metric_name\":\"1.65\",\"type_name\":\"steel\"},{\"id\":458,\"length\":5,\"needle_size_id\":19,\"description\":\"4
+        steel (2mm)\",\"name\":\"4\",\"metric_name\":\"2\",\"type_name\":\"steel\"},{\"id\":459,\"length\":5,\"needle_size_id\":1,\"description\":\"2
+        steel (2.25mm)\",\"name\":\"2\",\"metric_name\":\"2.25\",\"type_name\":\"steel\"},{\"id\":460,\"length\":5,\"needle_size_id\":2,\"description\":\"1
+        steel (2.75mm)\",\"name\":\"1\",\"metric_name\":\"2.75\",\"type_name\":\"steel\"},{\"id\":461,\"length\":5,\"needle_size_id\":3,\"description\":\"0
+        steel (3.25mm)\",\"name\":\"0\",\"metric_name\":\"3.25\",\"type_name\":\"steel\"},{\"id\":462,\"length\":5,\"needle_size_id\":4,\"description\":\"00
+        steel (3.5mm)\",\"name\":\"00\",\"metric_name\":\"3.5\",\"type_name\":\"steel\"},{\"id\":463,\"length\":5,\"needle_size_id\":44,\"description\":\"6
+        steel (1.8mm)\",\"name\":\"6\",\"metric_name\":\"1.8\",\"type_name\":\"steel\"},{\"id\":464,\"length\":5,\"needle_size_id\":45,\"description\":\"5
+        steel (1.9mm)\",\"name\":\"5\",\"metric_name\":\"1.9\",\"type_name\":\"steel\"},{\"id\":465,\"length\":5,\"needle_size_id\":46,\"description\":\"3
+        steel (2.1mm)\",\"name\":\"3\",\"metric_name\":\"2.1\",\"type_name\":\"steel\"},{\"id\":466,\"length\":5,\"needle_size_id\":47,\"description\":\"11
+        steel (1.1mm)\",\"name\":\"11\",\"metric_name\":\"1.1\",\"type_name\":\"steel\"}]}"
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,PUT,DELETE,PATCH
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 26 May 2026 03:51:49 GMT
+      ETag:
+      - W/"fe56e9ab641a9736dbf8dd7aef4a7ec0"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-API:
+      - '1'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Handled-By:
+      - lamb
+      X-Ruby:
+      - '2'
+      X-Runtime:
+      - '397'
+      X-Up-Location:
+      - https://api.ravelry.com/needles/types.json
+      X-Up-Method:
+      - get
+      content-length:
+      - '60875'
+    status:
+      code: 200
+      message: OK
+version: 1

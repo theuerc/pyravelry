@@ -1,0 +1,190 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - api.ravelry.com
+      User-Agent:
+      - python-httpx/0.28.1
+      authorization:
+      - Basic <REDACTED>
+    method: GET
+    uri: https://api.ravelry.com/people/maryheatherb/needles/list.json
+  response:
+    body:
+      string: "{\"needle_records\": [{\"comment\":\"Bryspun Flex\",\"id\":123480,\"needle_type_id\":4,\"needle_type\":{\"id\":4,\"length\":10,\"needle_size_id\":4,\"description\":\"US
+        4 (3.5mm) 10\\\" st\",\"name\":\"4 \",\"metric_name\":\"3.5\",\"type_name\":\"straight\"}},{\"comment\":\"Clover
+        Bamboo\",\"id\":123481,\"needle_type_id\":6,\"needle_type\":{\"id\":6,\"length\":10,\"needle_size_id\":6,\"description\":\"US
+        6 (4mm) 10\\\" st\",\"name\":\"6 \",\"metric_name\":\"4\",\"type_name\":\"straight\"}},{\"comment\":\"Clover
+        Bamboo 7\\\"\",\"id\":123363,\"needle_type_id\":45,\"needle_type\":{\"id\":45,\"length\":4,\"needle_size_id\":1,\"description\":\"US
+        1 (2.25mm) sock dp\",\"name\":\"1 \",\"metric_name\":\"2.25\",\"type_name\":\"dp\"}},{\"comment\":\"Clover
+        Bamboo 7\\\"\",\"id\":123368,\"needle_type_id\":46,\"needle_type\":{\"id\":46,\"length\":4,\"needle_size_id\":2,\"description\":\"US
+        2 (2.75mm) sock dp\",\"name\":\"2 \",\"metric_name\":\"2.75\",\"type_name\":\"dp\"}},{\"comment\":\"Clover
+        Bamboo 7\\\"\",\"id\":123372,\"needle_type_id\":70,\"needle_type\":{\"id\":70,\"length\":8,\"needle_size_id\":4,\"description\":\"US
+        4 (3.5mm) std dp\",\"name\":\"4 \",\"metric_name\":\"3.5\",\"type_name\":\"dp\"}},{\"comment\":\"Clover
+        Bamboo 7\\\"\",\"id\":123479,\"needle_type_id\":71,\"needle_type\":{\"id\":71,\"length\":8,\"needle_size_id\":5,\"description\":\"US
+        5 (3.75mm) std dp\",\"name\":\"5 \",\"metric_name\":\"3.75\",\"type_name\":\"dp\"}},{\"comment\":\"Clover
+        Bamboo 7\\\"\",\"id\":123375,\"needle_type_id\":72,\"needle_type\":{\"id\":72,\"length\":8,\"needle_size_id\":6,\"description\":\"US
+        6 (4mm) std dp\",\"name\":\"6 \",\"metric_name\":\"4\",\"type_name\":\"dp\"}},{\"comment\":\"Bryspun
+        Plastic (a bit small for a 6, too big for a 5)\",\"id\":123378,\"needle_type_id\":72,\"needle_type\":{\"id\":72,\"length\":8,\"needle_size_id\":6,\"description\":\"US
+        6 (4mm) std dp\",\"name\":\"6 \",\"metric_name\":\"4\",\"type_name\":\"dp\"}},{\"comment\":\"Clover
+        Bamboo 7\\\"\",\"id\":123362,\"needle_type_id\":76,\"needle_type\":{\"id\":76,\"length\":8,\"needle_size_id\":10,\"description\":\"US
+        10 (6mm) std dp\",\"name\":\"10 \",\"metric_name\":\"6\",\"type_name\":\"dp\"}},{\"comment\":\"Clover
+        Bamboo 7\\\"\",\"id\":123367,\"needle_type_id\":77,\"needle_type\":{\"id\":77,\"length\":8,\"needle_size_id\":11,\"description\":\"US
+        10\xBD(6.5mm) std dp\",\"name\":\"10.5\",\"metric_name\":\"6.5\",\"type_name\":\"dp\"}},{\"comment\":\"Brittany
+        Birch 8\\\"\",\"id\":123374,\"needle_type_id\":78,\"needle_type\":{\"id\":78,\"length\":8,\"needle_size_id\":12,\"description\":\"US
+        11 (8mm) std dp\",\"name\":\"11 \",\"metric_name\":\"8\",\"type_name\":\"dp\"}},{\"comment\":\"Crystal
+        Palace 8\\\"\",\"id\":123364,\"needle_type_id\":79,\"needle_type\":{\"id\":79,\"length\":8,\"needle_size_id\":13,\"description\":\"US
+        13 (9mm) std dp\",\"name\":\"13 \",\"metric_name\":\"9\",\"type_name\":\"dp\"}},{\"comment\":\"Brittany
+        Birch 8\\\"\",\"id\":123379,\"needle_type_id\":80,\"needle_type\":{\"id\":80,\"length\":8,\"needle_size_id\":14,\"description\":\"US
+        15 (10mm) std dp\",\"name\":\"15 \",\"metric_name\":\"10\",\"type_name\":\"dp\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123450,\"needle_type_id\":116,\"needle_type\":{\"id\":116,\"length\":16,\"needle_size_id\":6,\"description\":\"US
+        6 (4mm) 16\\\" cir\",\"name\":\"6 \",\"metric_name\":\"4\",\"type_name\":\"circular\"}},{\"comment\":\"Clover
+        Bamboo\",\"id\":123425,\"needle_type_id\":117,\"needle_type\":{\"id\":117,\"length\":16,\"needle_size_id\":7,\"description\":\"US
+        7 (4.5mm) 16\\\" cir\",\"name\":\"7 \",\"metric_name\":\"4.5\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123467,\"needle_type_id\":118,\"needle_type\":{\"id\":118,\"length\":16,\"needle_size_id\":8,\"description\":\"US
+        8 (5mm) 16\\\" cir\",\"name\":\"8 \",\"metric_name\":\"5\",\"type_name\":\"circular\"}},{\"comment\":\"Crystal
+        Palace Bamboo\",\"id\":123427,\"needle_type_id\":119,\"needle_type\":{\"id\":119,\"length\":16,\"needle_size_id\":9,\"description\":\"US
+        9 (5.5mm) 16\\\" cir\",\"name\":\"9 \",\"metric_name\":\"5.5\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123429,\"needle_type_id\":119,\"needle_type\":{\"id\":119,\"length\":16,\"needle_size_id\":9,\"description\":\"US
+        9 (5.5mm) 16\\\" cir\",\"name\":\"9 \",\"metric_name\":\"5.5\",\"type_name\":\"circular\"}},{\"comment\":\"Clover
+        Bamboo\",\"id\":123424,\"needle_type_id\":120,\"needle_type\":{\"id\":120,\"length\":16,\"needle_size_id\":10,\"description\":\"US
+        10 (6mm) 16\\\" cir\",\"name\":\"10 \",\"metric_name\":\"6\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123430,\"needle_type_id\":121,\"needle_type\":{\"id\":121,\"length\":16,\"needle_size_id\":11,\"description\":\"US
+        10\xBD(6.5mm) 16\\\" cir\",\"name\":\"10.5\",\"metric_name\":\"6.5\",\"type_name\":\"circular\"}},{\"comment\":\"Crystal
+        Palace Bamboo\",\"id\":123433,\"needle_type_id\":121,\"needle_type\":{\"id\":121,\"length\":16,\"needle_size_id\":11,\"description\":\"US
+        10\xBD(6.5mm) 16\\\" cir\",\"name\":\"10.5\",\"metric_name\":\"6.5\",\"type_name\":\"circular\"}},{\"comment\":\"Crystal
+        Palace Bamboo\",\"id\":123432,\"needle_type_id\":123,\"needle_type\":{\"id\":123,\"length\":16,\"needle_size_id\":13,\"description\":\"US
+        13 (9mm) 16\\\" cir\",\"name\":\"13 \",\"metric_name\":\"9\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123431,\"needle_type_id\":155,\"needle_type\":{\"id\":155,\"length\":24,\"needle_size_id\":1,\"description\":\"US
+        1 (2.25mm) 24\\\" cir\",\"name\":\"1 \",\"metric_name\":\"2.25\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123435,\"needle_type_id\":157,\"needle_type\":{\"id\":157,\"length\":24,\"needle_size_id\":3,\"description\":\"US
+        3 (3.25mm) 24\\\" cir\",\"name\":\"3 \",\"metric_name\":\"3.25\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123468,\"needle_type_id\":157,\"needle_type\":{\"id\":157,\"length\":24,\"needle_size_id\":3,\"description\":\"US
+        3 (3.25mm) 24\\\" cir\",\"name\":\"3 \",\"metric_name\":\"3.25\",\"type_name\":\"circular\"}},{\"comment\":\"Clover
+        Bamboo\",\"id\":123422,\"needle_type_id\":159,\"needle_type\":{\"id\":159,\"length\":24,\"needle_size_id\":5,\"description\":\"US
+        5 (3.75mm) 24\\\" cir\",\"name\":\"5 \",\"metric_name\":\"3.75\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123453,\"needle_type_id\":160,\"needle_type\":{\"id\":160,\"length\":24,\"needle_size_id\":6,\"description\":\"US
+        6 (4mm) 24\\\" cir\",\"name\":\"6 \",\"metric_name\":\"4\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123454,\"needle_type_id\":160,\"needle_type\":{\"id\":160,\"length\":24,\"needle_size_id\":6,\"description\":\"US
+        6 (4mm) 24\\\" cir\",\"name\":\"6 \",\"metric_name\":\"4\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123412,\"needle_type_id\":161,\"needle_type\":{\"id\":161,\"length\":24,\"needle_size_id\":7,\"description\":\"US
+        7 (4.5mm) 24\\\" cir\",\"name\":\"7 \",\"metric_name\":\"4.5\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123415,\"needle_type_id\":161,\"needle_type\":{\"id\":161,\"length\":24,\"needle_size_id\":7,\"description\":\"US
+        7 (4.5mm) 24\\\" cir\",\"name\":\"7 \",\"metric_name\":\"4.5\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123461,\"needle_type_id\":161,\"needle_type\":{\"id\":161,\"length\":24,\"needle_size_id\":7,\"description\":\"US
+        7 (4.5mm) 24\\\" cir\",\"name\":\"7 \",\"metric_name\":\"4.5\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123407,\"needle_type_id\":163,\"needle_type\":{\"id\":163,\"length\":24,\"needle_size_id\":9,\"description\":\"US
+        9 (5.5mm) 24\\\" cir\",\"name\":\"9 \",\"metric_name\":\"5.5\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123400,\"needle_type_id\":165,\"needle_type\":{\"id\":165,\"length\":24,\"needle_size_id\":11,\"description\":\"US
+        10\xBD(6.5mm) 24\\\" cir\",\"name\":\"10.5\",\"metric_name\":\"6.5\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123410,\"needle_type_id\":165,\"needle_type\":{\"id\":165,\"length\":24,\"needle_size_id\":11,\"description\":\"US
+        10\xBD(6.5mm) 24\\\" cir\",\"name\":\"10.5\",\"metric_name\":\"6.5\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123411,\"needle_type_id\":166,\"needle_type\":{\"id\":166,\"length\":24,\"needle_size_id\":12,\"description\":\"US
+        11 (8mm) 24\\\" cir\",\"name\":\"11 \",\"metric_name\":\"8\",\"type_name\":\"circular\"}},{\"comment\":\"Clover
+        Bamboo\",\"id\":123420,\"needle_type_id\":179,\"needle_type\":{\"id\":179,\"length\":29,\"needle_size_id\":3,\"description\":\"US
+        3 (3.25mm) 29\\\" cir\",\"name\":\"3 \",\"metric_name\":\"3.25\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123434,\"needle_type_id\":179,\"needle_type\":{\"id\":179,\"length\":29,\"needle_size_id\":3,\"description\":\"US
+        3 (3.25mm) 29\\\" cir\",\"name\":\"3 \",\"metric_name\":\"3.25\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123393,\"needle_type_id\":180,\"needle_type\":{\"id\":180,\"length\":29,\"needle_size_id\":4,\"description\":\"US
+        4 (3.5mm) 29\\\" cir\",\"name\":\"4 \",\"metric_name\":\"3.5\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123416,\"needle_type_id\":182,\"needle_type\":{\"id\":182,\"length\":29,\"needle_size_id\":6,\"description\":\"US
+        6 (4mm) 29\\\" cir\",\"name\":\"6 \",\"metric_name\":\"4\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123478,\"needle_type_id\":183,\"needle_type\":{\"id\":183,\"length\":29,\"needle_size_id\":7,\"description\":\"US
+        7 (4.5mm) 29\\\" cir\",\"name\":\"7 \",\"metric_name\":\"4.5\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123417,\"needle_type_id\":184,\"needle_type\":{\"id\":184,\"length\":29,\"needle_size_id\":8,\"description\":\"US
+        8 (5mm) 29\\\" cir\",\"name\":\"8 \",\"metric_name\":\"5\",\"type_name\":\"circular\"}},{\"comment\":\"Metal
+        with nice plastic join\",\"id\":123426,\"needle_type_id\":186,\"needle_type\":{\"id\":186,\"length\":29,\"needle_size_id\":10,\"description\":\"US
+        10 (6mm) 29\\\" cir\",\"name\":\"10 \",\"metric_name\":\"6\",\"type_name\":\"circular\"}},{\"comment\":\"Clover
+        Bamboo\",\"id\":123421,\"needle_type_id\":187,\"needle_type\":{\"id\":187,\"length\":29,\"needle_size_id\":11,\"description\":\"US
+        10\xBD(6.5mm) 29\\\" cir\",\"name\":\"10.5\",\"metric_name\":\"6.5\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123428,\"needle_type_id\":187,\"needle_type\":{\"id\":187,\"length\":29,\"needle_size_id\":11,\"description\":\"US
+        10\xBD(6.5mm) 29\\\" cir\",\"name\":\"10.5\",\"metric_name\":\"6.5\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123405,\"needle_type_id\":190,\"needle_type\":{\"id\":190,\"length\":29,\"needle_size_id\":14,\"description\":\"US
+        15 (10mm) 29\\\" cir\",\"name\":\"15 \",\"metric_name\":\"10\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123409,\"needle_type_id\":192,\"needle_type\":{\"id\":192,\"length\":29,\"needle_size_id\":16,\"description\":\"US
+        19 (15mm) 29\\\" cir\",\"name\":\"19 \",\"metric_name\":\"15\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Natura\",\"id\":123460,\"needle_type_id\":200,\"needle_type\":{\"id\":200,\"length\":32,\"needle_size_id\":2,\"description\":\"US
+        2 (2.75mm) 32\\\" cir\",\"name\":\"2 \",\"metric_name\":\"2.75\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123440,\"needle_type_id\":202,\"needle_type\":{\"id\":202,\"length\":32,\"needle_size_id\":4,\"description\":\"US
+        4 (3.5mm) 32\\\" cir\",\"name\":\"4 \",\"metric_name\":\"3.5\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123466,\"needle_type_id\":202,\"needle_type\":{\"id\":202,\"length\":32,\"needle_size_id\":4,\"description\":\"US
+        4 (3.5mm) 32\\\" cir\",\"name\":\"4 \",\"metric_name\":\"3.5\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123397,\"needle_type_id\":206,\"needle_type\":{\"id\":206,\"length\":32,\"needle_size_id\":8,\"description\":\"US
+        8 (5mm) 32\\\" cir\",\"name\":\"8 \",\"metric_name\":\"5\",\"type_name\":\"circular\"}},{\"comment\":\"Crystal
+        Palace Bamboo\",\"id\":123418,\"needle_type_id\":210,\"needle_type\":{\"id\":210,\"length\":32,\"needle_size_id\":12,\"description\":\"US
+        11 (8mm) 32\\\" cir\",\"name\":\"11 \",\"metric_name\":\"8\",\"type_name\":\"circular\"}},{\"comment\":\"Crystal
+        Palace Bamboo\",\"id\":123423,\"needle_type_id\":210,\"needle_type\":{\"id\":210,\"length\":32,\"needle_size_id\":12,\"description\":\"US
+        11 (8mm) 32\\\" cir\",\"name\":\"11 \",\"metric_name\":\"8\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        (Sparkly)\",\"id\":123408,\"needle_type_id\":215,\"needle_type\":{\"id\":215,\"length\":32,\"needle_size_id\":17,\"description\":\"US
+        35 (19mm) 32\\\" cir\",\"name\":\"35 \",\"metric_name\":\"19\",\"type_name\":\"circular\"}},{\"comment\":\"Addi
+        Turbo\",\"id\":123469,\"needle_type_id\":217,\"needle_type\":{\"id\":217,\"length\":32,\"needle_size_id\":19,\"description\":\"US
+        0(2mm) 32\\\" cir\",\"name\":\"0\",\"metric_name\":\"2\",\"type_name\":\"circular\"}},{\"comment\":\"Cream
+        plastic\",\"id\":123484,\"needle_type_id\":291,\"needle_type\":{\"id\":291,\"length\":5,\"needle_size_id\":5,\"description\":\"F
+        hook (3.75mm)\",\"name\":\"F\",\"metric_name\":\"3.75\",\"type_name\":\"hook\"}},{\"comment\":\"Gold
+        metal\",\"id\":123488,\"needle_type_id\":291,\"needle_type\":{\"id\":291,\"length\":5,\"needle_size_id\":5,\"description\":\"F
+        hook (3.75mm)\",\"name\":\"F\",\"metric_name\":\"3.75\",\"type_name\":\"hook\"}},{\"comment\":\"Clover
+        metal grip handle\",\"id\":123483,\"needle_type_id\":294,\"needle_type\":{\"id\":294,\"length\":5,\"needle_size_id\":9,\"description\":\"I
+        hook (5.5mm)\",\"name\":\"I\",\"metric_name\":\"5.5\",\"type_name\":\"hook\"}},{\"comment\":\"Clover
+        metal grip handle\",\"id\":123482,\"needle_type_id\":295,\"needle_type\":{\"id\":295,\"length\":5,\"needle_size_id\":10,\"description\":\"J
+        hook (6mm)\",\"name\":\"J\",\"metric_name\":\"6\",\"type_name\":\"hook\"}},{\"comment\":\"Susan
+        Bates 10 mm\",\"id\":123487,\"needle_type_id\":299,\"needle_type\":{\"id\":299,\"length\":5,\"needle_size_id\":14,\"description\":\"N/P
+        hook (10mm)\",\"name\":\"N/P\",\"metric_name\":\"10\",\"type_name\":\"hook\"}},{\"comment\":\"Susan
+        Bates Plastic\",\"id\":123489,\"needle_type_id\":301,\"needle_type\":{\"id\":301,\"length\":5,\"needle_size_id\":17,\"description\":\"S
+        hook (19mm)\",\"name\":\"S\",\"metric_name\":\"19\",\"type_name\":\"hook\"}},{\"comment\":\"Susan
+        Bates 11.5 mm\",\"id\":123486,\"needle_type_id\":307,\"needle_type\":{\"id\":307,\"length\":5,\"needle_size_id\":15,\"description\":\"
+        hook (12mm)\",\"name\":null,\"metric_name\":\"12\",\"type_name\":\"hook\"}},{\"comment\":\"Susan
+        Bates plastic\",\"id\":123490,\"needle_type_id\":308,\"needle_type\":{\"id\":308,\"length\":5,\"needle_size_id\":18,\"description\":\"
+        hook (25mm)\",\"name\":null,\"metric_name\":\"25\",\"type_name\":\"hook\"}}]}"
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,PUT,DELETE,PATCH
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 26 May 2026 03:51:48 GMT
+      ETag:
+      - W/"338841d271811d204beb9d488be34679"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-API:
+      - '1'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Handled-By:
+      - yearling
+      X-Ruby:
+      - '2'
+      X-Runtime:
+      - '109'
+      X-Up-Location:
+      - https://api.ravelry.com/people/maryheatherb/needles/list.json
+      X-Up-Method:
+      - get
+      content-length:
+      - '12908'
+    status:
+      code: 200
+      message: OK
+version: 1

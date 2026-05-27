@@ -1,9 +1,24 @@
 """Defines the base subclass endpoint"""
 
 from abc import ABC, abstractmethod
-from typing import Any, Optional
+from dataclasses import dataclass
+from types import SimpleNamespace
+from typing import TYPE_CHECKING, Any
 
 from hishel.httpx import SyncCacheClient
+
+from pyravelry.models import BaseRavelryModel
+
+if TYPE_CHECKING:
+    from httpx import Response
+
+
+@dataclass(frozen=True)
+class Action:
+    """Holds information about endpoints and models."""
+
+    url: str
+    model: type[BaseRavelryModel]
 
 
 class BaseEndpoint(ABC):
@@ -11,15 +26,21 @@ class BaseEndpoint(ABC):
 
     @property
     @abstractmethod
-    def endpoint(self) -> str:
-        """Each child must define this string (e.g., '/patterns')."""
+    def actions(self) -> SimpleNamespace:
+        """Each child must define an action (e.g., Action('/patterns', PatternModel))."""
         pass
 
-    @property
-    @abstractmethod
-    def output_model(self) -> Any:
-        """Each child must define this output pydantic model"""
-        pass
+    # @property
+    # @abstractmethod
+    # def endpoint(self) -> str:
+    #     """Each child must define this string (e.g., '/patterns')."""
+    #     pass
+
+    # @property
+    # @abstractmethod
+    # def output_model(self) -> Any:
+    #     """Each child must define this output pydantic model"""
+    #     pass
 
     def __init__(self, http_client: SyncCacheClient) -> None:
         """Initializes the base endpoint for Ravelry.
@@ -30,30 +51,19 @@ class BaseEndpoint(ABC):
         self._http = http_client
 
     @staticmethod
-    def _fetch(
-        http_client: SyncCacheClient,
-        endpoint: str,
-        params: Optional[dict[str, Any]] = None,
-        method: str = "GET",
-        **kwargs: Any,
-    ) -> Any:
+    def _fetch(response: "Response") -> Any:
         """Fetches all data from the API or the cache.
 
+        This just reduces boilderplate.
+
+        Example of people talking about this:
+        <https://github.com/encode/httpx/discussions/2336>
+
         Args:
-            http_client (SyncCacheClient): httpx Client to use.
-            endpoint (str): endpoint to hit for the request.
-            params (Optional[dict[str, str]]): Defaults to none. Parameters to pass to the http client.
-            method (str): Defaults to "GET". The http method to use for the request.
-            **kwargs (Any): Additional keyword arguements for the http client.
+            response (Response): httpx Reponse to process.
 
         Returns:
-            Any: JSON object with the requested data.
+            Any: JSON object with the requested data from the response.
         """
-        if method == "GET":
-            response = http_client.get(endpoint, params=params, **kwargs)
-        if method == "POST":
-            response = http_client.post(endpoint, params=params, **kwargs)
-        if method == "DELETE":
-            response = http_client.delete(endpoint, params=params, **kwargs)
         response.raise_for_status()
         return response.json()

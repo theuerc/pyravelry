@@ -15,7 +15,7 @@ interactions:
       authorization:
       - Basic <REDACTED>
     method: GET
-    uri: https://api.ravelry.com/yarn_companies//search.json?query=Lion&page=1&page_size=10&sort=best_
+    uri: https://api.ravelry.com/yarn_companies/search.json?query=Lion&page=1&page_size=10&sort=best_
   response:
     body:
       string: '{"yarn_companies": [{"id":99,"name":"Lion Brand","permalink":"lion-brand","url":"http://www.lionbrand.com","yarns_count":489},{"id":28146,"name":"Lion
