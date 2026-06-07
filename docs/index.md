@@ -10,7 +10,6 @@ Endpoints:
 - [x] /search
 - [x] /yarn_weights
 - [ ] /app
-- [ ] /app
 - [ ] /bundled_items
 - [ ] /bundles
 - [ ] /carts
@@ -29,7 +28,7 @@ Endpoints:
 - [ ] /languages
 - [ ] /library
 - [ ] /messages
-- [ ] /needles
+- [X] /needles
 - [ ] /packs
 - [ ] /pages
 - [ ] /pattern_attributes
