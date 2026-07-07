@@ -1,9 +1,8 @@
-from types import SimpleNamespace
 from typing import Literal, cast
 
 from pydantic import validate_call
 
-from pyravelry.endpoints.base import Action, BaseEndpoint
+from pyravelry.endpoints.base import Action, BaseEndpoint, TypedNamespace
 from pyravelry.models import (
     CommentFullModel,
     CommentHistoriesModel,
@@ -22,7 +21,7 @@ class CommentsResource(BaseEndpoint):
     [Comments Ravelry API documentation](https://www.ravelry.com/api#/_comments)
     """
 
-    actions = SimpleNamespace(
+    actions = TypedNamespace(
         create=Action("/comments/create.json", CommentFullModel),
         delete=Action("/comments/{}.json", CommentFullModel),
         list=Action("/people/{}/comments/list.json", CommentHistoriesModel),
@@ -75,6 +74,14 @@ class CommentsResource(BaseEndpoint):
     def list(self, username: str, page: int = 1, page_size: int = 25) -> CommentHistoriesModel:
         """
         Get list of comments left by a specific user.
+
+        Args:
+            username (str): username to be retrieved
+            page (int, optional): page number. Defaults to 1.
+            page_size (int, optional): size of page. Defaults to 25.
+
+        Returns:
+            CommentHistoriesModel: The comment history for a particular username.
         """
         params = SimplifiedPaginator(page=page, page_size=page_size)
 

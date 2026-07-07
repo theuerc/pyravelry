@@ -1,0 +1,83 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - api.ravelry.com
+      User-Agent:
+      - python-httpx/0.28.1
+      authorization:
+      - Basic <REDACTED>
+    method: GET
+    uri: https://api.ravelry.com/yarns.json?ids=101+102
+  response:
+    body:
+      string: '{"yarns": {"101":{"discontinued":true,"gauge_divisor":4,"grams":50,"id":101,"machine_washable":null,"max_gauge":null,"min_gauge":24.0,"name":"Windsong","permalink":"cherry-tree-hill-yarn-windsong","rating_average":3.33,"rating_count":3,"rating_total":10,"texture":"railroad
+        ribbon","thread_size":null,"wpi":null,"yardage":165,"notes_html":"","min_needle_size":null,"max_needle_size":null,"min_hook_size":null,"max_hook_size":null,"personal_attributes":{"favorited":false,"bookmark_id":null},"yarn_weight":{"crochet_gauge":null,"id":10,"knit_gauge":"24-26","max_gauge":null,"min_gauge":null,"name":"Sport","ply":"5","wpi":"12"},"yarn_company":{"id":8,"name":"Cherry
+        Tree Hill Yarn","permalink":"cherry-tree-hill-yarn","url":"","yarns_count":156},"yarn_fibers":[{"id":137,"percentage":100,"fiber_type":{"animal_fiber":false,"id":2,"name":"Nylon","synthetic":true,"vegetable_fiber":false},"fiber_category":{"id":216,"name":"Nylon
+        / Polyamide","permalink":"nylon","parent":{"id":207,"name":"Manufactured Fibers","permalink":"manufactured-fibers"}}}],"yarn_attributes":[{"description":"dyed
+        by hand","id":13,"name":"Hand dyed","permalink":"hand-dyed","yarn_attribute_group":{"id":11,"name":"Dye","permalink":"dye"}},{"description":"flat
+        yarn","id":50,"name":"Ribbon","permalink":"ribbon","yarn_attribute_group":{"id":13,"name":"Construction","permalink":"construction"}},{"description":"needs
+        to be wound into a ball before use","id":75,"name":"Winding required","permalink":"winding-required","yarn_attribute_group":{"id":18,"name":"Put
+        up","permalink":"put-up"}},{"description":"yarn constructed like a ladder,
+        with two strands of material connected with short strips","id":47,"name":"Ladder","permalink":"ladder","yarn_attribute_group":{"id":19,"name":"Novelty","permalink":"novelty"}}],"yarn_provenance":[],"photos":[{"id":19472991,"sort_order":1,"user_id":28581,"x_offset":-76,"y_offset":-5,"square_url":"https://images4-g.ravelrycache.com/uploads/spininmum24swtz/7582395/CTHWindsongVineyard_square.jpg","medium_url":"https://images4-f.ravelrycache.com/uploads/spininmum24swtz/7582395/CTHWindsongVineyard_medium.jpg","thumbnail_url":"https://images4-f.ravelrycache.com/uploads/spininmum24swtz/7582395/CTHWindsongVineyard_thumbnail.jpg","small_url":"https://images4-g.ravelrycache.com/uploads/spininmum24swtz/7582395/CTHWindsongVineyard_small_best_fit.jpg","flickr_url":null,"shelved_url":"https://images4-g.ravelrycache.com/uploads/spininmum24swtz/7582395/CTHWindsongVineyard_shelved.jpg","medium2_url":"https://images4-a.ravelrycache.com/uploads/spininmum24swtz/7582395/CTHWindsongVineyard_medium2.jpg","small2_url":"https://images4-g.ravelrycache.com/uploads/spininmum24swtz/7582395/CTHWindsongVineyard_small2.jpg","caption":null,"caption_html":null,"copyright_holder":"spininmum24swtz","aspect_ratio":1.6666666666666667},{"id":2771967,"sort_order":2,"user_id":12442,"x_offset":-18,"y_offset":-10,"square_url":"https://images4-f.ravelrycache.com/uploads/TinkrKnit/523681200/2570084057_0ffc733a86_b_square.jpg","medium_url":"https://images4-g.ravelrycache.com/uploads/TinkrKnit/523681200/2570084057_0ffc733a86_b_medium.jpg","thumbnail_url":"https://images4-g.ravelrycache.com/uploads/TinkrKnit/523681200/2570084057_0ffc733a86_b_thumbnail.jpg","small_url":"https://images4-g.ravelrycache.com/uploads/TinkrKnit/523681200/2570084057_0ffc733a86_b_small.jpg","flickr_url":"http://www.flickr.com/photos/11872451@N04/2570084057","shelved_url":"https://images4-f.ravelrycache.com/uploads/TinkrKnit/523681200/2570084057_0ffc733a86_b_shelved.jpg","medium2_url":"https://images4-a.ravelrycache.com/uploads/TinkrKnit/523681200/2570084057_0ffc733a86_b_medium2.jpg","small2_url":"https://images4-f.ravelrycache.com/uploads/TinkrKnit/523681200/2570084057_0ffc733a86_b_small2.jpg","caption":"Stash
+        35 032","caption_html":"Stash 35 032","copyright_holder":null,"aspect_ratio":1.3333333333333333}]},"102":{"discontinued":true,"gauge_divisor":4,"grams":50,"id":102,"machine_washable":false,"max_gauge":null,"min_gauge":18.0,"name":"Meringue","permalink":"knit-one-crochet-too-meringue","rating_average":4.0,"rating_count":6,"rating_total":24,"texture":"Ribbon,
+        Woven","thread_size":null,"wpi":null,"yardage":100,"notes_html":"\n<p>60%
+        merino, 25% rayon, 15% nylon</p>\n","min_needle_size":{"id":7,"us":"7 ","metric":4.5,"us_steel":null,"crochet":false,"knitting":true,"hook":null,"name":"US
+        7  - 4.5 mm","pretty_metric":"4.5"},"max_needle_size":{"id":7,"us":"7 ","metric":4.5,"us_steel":null,"crochet":false,"knitting":true,"hook":null,"name":"US
+        7  - 4.5 mm","pretty_metric":"4.5"},"min_hook_size":null,"max_hook_size":null,"personal_attributes":{"favorited":false,"bookmark_id":null},"yarn_weight":{"crochet_gauge":null,"id":12,"knit_gauge":"20","max_gauge":null,"min_gauge":null,"name":"Worsted","ply":"10","wpi":"9"},"yarn_company":{"id":9,"name":"Knit
+        One, Crochet Too","permalink":"knit-one-crochet-too","url":"http://www.knitonecrochettoo.com/index.html","yarns_count":85},"yarn_fibers":[{"id":138,"percentage":null,"fiber_type":{"animal_fiber":true,"id":3,"name":"Wool","synthetic":false,"vegetable_fiber":false},"fiber_category":{"id":1,"name":"Wool","permalink":"wool"}},{"id":140,"percentage":15,"fiber_type":{"animal_fiber":false,"id":2,"name":"Nylon","synthetic":true,"vegetable_fiber":false},"fiber_category":{"id":216,"name":"Nylon
+        / Polyamide","permalink":"nylon","parent":{"id":207,"name":"Manufactured Fibers","permalink":"manufactured-fibers"}}},{"id":139,"percentage":25,"fiber_type":{"animal_fiber":false,"id":4,"name":"Rayon","synthetic":true,"vegetable_fiber":false},"fiber_category":{"id":218,"name":"Rayon
+        / Viscose","permalink":"viscose","parent":{"id":207,"name":"Manufactured Fibers","permalink":"manufactured-fibers"}}}],"yarn_attributes":[],"yarn_provenance":[],"photos":[{"id":147802,"sort_order":1,"user_id":480,"x_offset":-33,"y_offset":-8,"square_url":"https://farm2.static.flickr.com/1303/663373093_682ea7cdd9_s.jpg","medium_url":"https://farm2.static.flickr.com/1303/663373093_682ea7cdd9.jpg","thumbnail_url":"https://farm2.static.flickr.com/1303/663373093_682ea7cdd9_t.jpg","small_url":"https://farm2.static.flickr.com/1303/663373093_682ea7cdd9_m.jpg","flickr_url":null,"shelved_url":null,"medium2_url":"https://farm2.static.flickr.com/1303/663373093_682ea7cdd9_z.jpg","small2_url":"https://farm2.static.flickr.com/1303/663373093_682ea7cdd9_n.jpg","caption":null,"caption_html":null,"copyright_holder":null,"aspect_ratio":1.3333333333333333}]}}}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,PUT,DELETE,PATCH
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 07 Jul 2026 01:34:46 GMT
+      ETag:
+      - W/"7f9cdedfb935970f158b494345cf834f"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-API:
+      - '1'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Handled-By:
+      - lamb
+      X-Ruby:
+      - '2'
+      X-Runtime:
+      - '39'
+      X-Up-Location:
+      - https://api.ravelry.com/yarns.json?ids=101+102
+      X-Up-Method:
+      - get
+      content-length:
+      - '6464'
+    status:
+      code: 200
+      message: OK
+version: 1

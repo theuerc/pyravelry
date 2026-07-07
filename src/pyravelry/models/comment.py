@@ -90,6 +90,15 @@ class CommentFullModel(CommentModel):
     )
 
 
+class CommentListModel(BaseRavelryModel):
+    """Represents multiple full Comment in a history context.
+
+    [Comments Ravelry API documentation](https://www.ravelry.com/api/#Comment_result)
+    """
+
+    comments: list[CommentFullModel]
+
+
 class CommentExportModel(CreatedAtBase):
     """Simplified Comment model for export purposes.
 

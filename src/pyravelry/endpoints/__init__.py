@@ -9,6 +9,7 @@ from .fiber_categories import FiberCategoriesResource
 from .needles import NeedlesResource
 from .people import PeopleResource
 from .search import SearchResource
+from .yarn import YarnsResource
 from .yarn_attributes import YarnAttributesResource
 from .yarn_companies import YarnCompaniesResource
 from .yarn_weights import YarnWeightsResource
@@ -26,5 +27,6 @@ __all__ = [
     "YarnAttributesResource",
     "YarnCompaniesResource",
     "YarnWeightsResource",
+    "YarnsResource",
     "base",
 ]

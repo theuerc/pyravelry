@@ -1,9 +1,8 @@
-from types import SimpleNamespace
 from typing import Literal, Optional, cast
 
 from pydantic import validate_call
 
-from pyravelry.endpoints.base import Action, BaseEndpoint
+from pyravelry.endpoints.base import Action, BaseEndpoint, TypedNamespace
 from pyravelry.models import GlobalSearchResponseModel, SearchParams
 
 
@@ -13,7 +12,7 @@ class SearchResource(BaseEndpoint):
     [Search Ravelry API documentation](https://www.ravelry.com/api#/_search)
     """
 
-    actions = SimpleNamespace(
+    actions = TypedNamespace(
         query=Action("/search.json", GlobalSearchResponseModel),
     )
 

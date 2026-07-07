@@ -1,10 +1,12 @@
 from typing import Any, Optional
 
+import pandas as pd
 from pydantic import Field
 
-from .base import BaseRavelryModel
-
-# Assuming these are implemented in separate files as requested
+from .base import BaseParentRavelryModel, BaseRavelryModel
+from .colorway import ColorwayFullModel
+from .comment import CommentListModel
+from .custom_models.paginator import PaginatorModel
 from .photo import PhotoModel
 from .yarnattributegroup import YarnAttributeGroupModel
 from .yarncompany import YarnCompanyModel
@@ -50,7 +52,7 @@ class YarnModel(YarnBaseModel):
     yarn_weight: Optional[YarnWeightModel] = None
 
 
-class YarnlistModel(YarnModel):
+class YarnListModel(YarnModel):
     """Represents a Ravelry Yarn (list) result object.
 
     Includes personal_attributes found in search results.
@@ -61,11 +63,20 @@ class YarnlistModel(YarnModel):
     personal_attributes: Optional[dict] = Field(None, description="Hash containing favorited, bookmark_id, stash_ids")
 
 
-class YarnStashlistModel(YarnBaseModel):
+class YarnStashListModel(YarnBaseModel):
     """Represents a Ravelry Yarn (stash_list) result object."""
 
     yarn_company: Optional[YarnCompanyModel] = None
     yarn_weight: Optional[YarnWeightModel] = None
+
+
+class YarnListListModel(BaseRavelryModel):
+    """List of yarnlist models.
+
+    [Yarn Ravelry API documentation](https://www.ravelry.com/api#yarns_comments)
+    """
+
+    yarns: list[YarnListModel]
 
 
 class YarnFullModel(YarnBaseModel):
@@ -88,3 +99,57 @@ class YarnFullModel(YarnBaseModel):
     yarn_fibers: list[YarnFiberFullModel] = Field(default_factory=list)
     yarn_provenance: list[YarnProvenanceModel] = Field(default_factory=list, description="Location and processing info")
     yarn_weight: Optional[YarnWeightModel] = None
+
+
+class YarnResponseComments(BaseParentRavelryModel):
+    """Typing info for YarnResources::comments
+
+    Doesn't include a `to_pandas()` method, but the attribute models do.
+    """
+
+    comments: CommentListModel
+    paginator: PaginatorModel
+
+
+class YarnResponseSearch(BaseParentRavelryModel):
+    """Typing info for YarnResources::search
+
+    Doesn't include a `to_pandas()` method, but the attribute models do.
+    """
+
+    yarns: YarnListListModel
+    paginator: PaginatorModel
+
+
+class YarnResponseShow(BaseParentRavelryModel):
+    """Typing info for YarnResources::show
+
+    Doesn't include a `to_pandas()` method, but the attribute models do.
+    """
+
+    yarn: YarnFullModel
+    colorways: Optional[ColorwayFullModel] = None
+    paginator: Optional[PaginatorModel] = None
+
+
+class YarnResponseYarns(BaseRavelryModel):
+    """Typing info for YarnResources::yarns
+
+    Doesn't include a `to_pandas()` method, but the attribute models may.
+    """
+
+    yarns: dict[int, YarnFullModel]
+
+    def to_pandas(self) -> pd.DataFrame:
+        """Converts the pyravelry model into a pandas dataframe.
+
+        Returns:
+            pd.DataFrame: pandas Dataframe with pyravelry content.
+        """
+        import pyarrow  # noqa: F401
+
+        data = self.model_dump()
+        if len(data.keys()) == 1:
+            data = next(data.values().__iter__())
+
+        return pd.DataFrame.from_dict(data, orient="index")

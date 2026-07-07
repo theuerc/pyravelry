@@ -73,6 +73,12 @@ warn_unused_ignores = true
 show_error_codes = true
 
 [[tool.mypy.overrides]]
+module = "pyravelry.endpoints.*"
+disable_error_code = [
+    "attr-defined",
+]
+
+[[tool.mypy.overrides]]
 module = "pyarrow.*"
 ignore_missing_imports = true
 

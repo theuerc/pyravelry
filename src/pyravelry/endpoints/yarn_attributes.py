@@ -1,7 +1,6 @@
-from types import SimpleNamespace
 from typing import cast
 
-from pyravelry.endpoints.base import Action, BaseEndpoint
+from pyravelry.endpoints.base import Action, BaseEndpoint, TypedNamespace
 from pyravelry.models import YarnAttributesModel
 
 
@@ -17,7 +16,7 @@ class YarnAttributesResource(BaseEndpoint):
     [Yarn Attributes Ravelry API documentation](https://www.ravelry.com/api#yarn_attributes_list)
     """
 
-    actions = SimpleNamespace(list=Action("/yarn_attributes/groups.json", YarnAttributesModel))
+    actions = TypedNamespace(list=Action("/yarn_attributes/groups.json", YarnAttributesModel))
 
     def list(self) -> YarnAttributesModel:
         """
