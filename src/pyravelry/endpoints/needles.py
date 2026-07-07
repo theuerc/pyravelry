@@ -1,9 +1,8 @@
-from types import SimpleNamespace
 from typing import Literal, Optional, cast
 
 from pydantic import validate_call
 
-from pyravelry.endpoints.base import Action, BaseEndpoint
+from pyravelry.endpoints.base import Action, BaseEndpoint, TypedNamespace
 from pyravelry.models import (
     NeedleRecordListModel,
     NeedleSizesModel,
@@ -17,7 +16,7 @@ class NeedlesResource(BaseEndpoint):
     Handles user needle inventories, global needle sizes, and needle types.
     """
 
-    actions = SimpleNamespace(
+    actions = TypedNamespace(
         list=Action("/people/{}/needles/list.json", NeedleRecordListModel),
         sizes=Action("/needles/sizes.json", NeedleSizesModel),
         types=Action("/needles/types.json", NeedleTypesModel),

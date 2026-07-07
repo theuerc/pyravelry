@@ -1,7 +1,6 @@
-from types import SimpleNamespace
 from typing import cast
 
-from pyravelry.endpoints.base import Action, BaseEndpoint
+from pyravelry.endpoints.base import Action, BaseEndpoint, TypedNamespace
 from pyravelry.models import ColorFamiliesModel
 
 
@@ -18,7 +17,7 @@ class ColorFamiliesResource(BaseEndpoint):
     [Color Family Ravelry API documentation](https://www.ravelry.com/api#/_color_families)
     """
 
-    actions = SimpleNamespace(
+    actions = TypedNamespace(
         list=Action("/color_families.json", ColorFamiliesModel),
     )
 

@@ -1,0 +1,184 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - api.ravelry.com
+      User-Agent:
+      - python-httpx/0.28.1
+      authorization:
+      - Basic <REDACTED>
+    method: GET
+    uri: https://api.ravelry.com/yarns/100/comments.json
+  response:
+    body:
+      string: "{\"comments\": [{\"created_at\":\"2007/09/13 15:19:34 -0400\",\"id\":25719,\"comment_html\":\"\\n<p>I
+        don\u2019t love knitting with this yarn, but it may make the most comfortable,
+        hard-wearing socks I\u2019ve made yet.</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":2930,\"username\":\"regp03\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/regp03/75652898/100_1838_tiny.JPG\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/regp03/75652898/100_1838_small.JPG\",\"photo_url\":\"https://avatars-d.ravelrycache.com/regp03/75652898/100_1838_large.JPG\",\"profile_country_code\":\"US\"}},{\"created_at\":\"2007/10/07
+        03:27:25 -0400\",\"id\":36399,\"comment_html\":\"\\n<p>I found this yarn very
+        pleasingly smooth and thick to knit with.</p>\\n\\n<p>It is wearing very well
+        with no felting, no wear spots and no colour loss or bleeding whatsoever.
+        Very good quality yarn.</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":1322,\"username\":\"fraxknits\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/fraxknits/23732/fraxknits-avatar-1640_tiny.png\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/fraxknits/23732/fraxknits-avatar-1640_small.png\",\"photo_url\":\"https://avatars-d.ravelrycache.com/fraxknits/23732/fraxknits-avatar-1640_large.png\",\"profile_country_code\":null}},{\"created_at\":\"2007/10/07
+        08:04:14 -0400\",\"id\":36453,\"comment_html\":\"\\n<p>I\u2019ve knit several
+        pairs of socks with this yarn and love it. The feel in my hands while I knit
+        is wonderful, the colors are great, and the socks feel great on my feet.</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":17165,\"username\":\"Rox\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/Rox/545229339/Rox_2018_2_tiny.jpg\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/Rox/545229339/Rox_2018_2_small.jpg\",\"photo_url\":\"https://avatars-d.ravelrycache.com/Rox/545229339/Rox_2018_2_large.jpg\",\"profile_country_code\":\"US\"}},{\"created_at\":\"2007/10/16
+        09:48:36 -0400\",\"id\":42176,\"comment_html\":\"\\n<p>This is my absolute
+        favorite, hands down, sock yarn. The tactile experience of knitting with it
+        brought me pure joy. It\u2019s so smooth and soft as it flows over your fingers.
+        The stitch definition is wonderful, and it wears fabulously. I can\u2019t
+        have enough of it in my stash.</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":2261,\"username\":\"turtlegirl76\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/turtlegirl76/398072750/Me_cropped_tiny.png\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/turtlegirl76/398072750/Me_cropped_small.png\",\"photo_url\":\"https://avatars-d.ravelrycache.com/turtlegirl76/398072750/Me_cropped_large.png\",\"profile_country_code\":\"US\"}},{\"created_at\":\"2007/11/12
+        09:55:39 -0500\",\"id\":60701,\"comment_html\":\"\\n<p>The socks only get
+        snugglier and fluffier with washing. I looove this yarn!</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":11676,\"username\":\"pickyknitter\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/pickyknitter/51354/IMG_0694_tiny.JPG\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/pickyknitter/51354/IMG_0694_small.JPG\",\"photo_url\":\"https://avatars-d.ravelrycache.com/pickyknitter/51354/IMG_0694_large.JPG\",\"profile_country_code\":\"US\"}},{\"created_at\":\"2007/12/20
+        14:19:35 -0500\",\"id\":91725,\"comment_html\":\"\\n<p>I knit my first pair
+        of socks this year with this yarn and loved it. It\u2019s SO soft. However
+        today I discovered a hole in the heel, and the heel of the other sock is also
+        very thin. I\u2019m not sure if this is a fault of the yarn or an indication
+        of a pedicure need. O.o</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":15924,\"username\":\"Aidylsock\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/Aidylsock/1673823/Boreas-icon_tiny.jpg\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/Aidylsock/1673823/Boreas-icon_small.jpg\",\"photo_url\":\"https://avatars-d.ravelrycache.com/Aidylsock/1673823/Boreas-icon_large.jpg\",\"profile_country_code\":\"US\"}},{\"created_at\":\"2007/12/30
+        09:29:51 -0500\",\"id\":98624,\"comment_html\":\"\\n<p>Although I\u2019m not
+        really against pooling in self-striping yarns, I will mention that in CTH
+        Supersock I\u2019ve <em>never</em> experienced pooling. I\u2019ve knit socks
+        with CTH on US 1 and 2 at 60 sts and US 1 at 66 sts.</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":816,\"username\":\"Cabbage\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/Cabbage/107843382/Screen_shot_2012-06-15_at_7.19.30_AM_tiny.png\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/Cabbage/107843382/Screen_shot_2012-06-15_at_7.19.30_AM_small.png\",\"photo_url\":\"https://avatars-d.ravelrycache.com/Cabbage/107843382/Screen_shot_2012-06-15_at_7.19.30_AM_large.png\",\"profile_country_code\":\"US\"}},{\"created_at\":\"2008/01/10
+        22:28:10 -0500\",\"id\":112147,\"comment_html\":\"\\n<p>My absolute favorite.
+        Great colorways, nice feel, wears well, generally. I\u2019m sort of addicted
+        to the stuff.</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":50213,\"username\":\"mondayrowing\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/mondayrowing/21456168/Photo_18_tiny.jpg\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/mondayrowing/21456168/Photo_18_small.jpg\",\"photo_url\":\"https://avatars-d.ravelrycache.com/mondayrowing/21456168/Photo_18_large.jpg\",\"profile_country_code\":\"US\"}},{\"created_at\":\"2008/01/16
+        17:00:55 -0500\",\"id\":118561,\"comment_html\":\"\\n<p>I\u2019ve knit more
+        than one pair of socks with this yarn. I love the colorways, but the yarn
+        tends to get a halo with only a few washings, which I hate - all that work
+        on a stitch pattern and you can\u2019t see it very well. Previously I have
+        not had any trouble with pooling due to the very short length of each color
+        in the sequence, but on the current socks I\u2019m making, I\u2019m having
+        the dickens of a time with it. I doubt I\u2019ll be buying any more of this
+        yarn.</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":19417,\"username\":\"pageta\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/pageta/254374694/IMG_0640_tiny.jpg\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/pageta/254374694/IMG_0640_small.jpg\",\"photo_url\":\"https://avatars-d.ravelrycache.com/pageta/254374694/IMG_0640_large.jpg\",\"profile_country_code\":\"US\"}},{\"created_at\":\"2008/02/09
+        12:22:42 -0500\",\"id\":146208,\"comment_html\":\"\\n<p>My bamboo dpns turns
+        blue with this yarn it bleeds, but I don\u2019t mind. The yarn is so lovely!!</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":33375,\"username\":\"Fiolinn\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/Fiolinn/630878889/11850385_401294403400243_130965023_a_tiny.jpg\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/Fiolinn/630878889/11850385_401294403400243_130965023_a_small.jpg\",\"photo_url\":\"https://avatars-d.ravelrycache.com/Fiolinn/630878889/11850385_401294403400243_130965023_a_large.jpg\",\"profile_country_code\":\"NO\"}},{\"created_at\":\"2008/03/05
+        01:49:52 -0500\",\"id\":175892,\"comment_html\":\"\\n<p>I\u2019ve knit two
+        pairs of socks with this yarn, the first bled like crazy when I (handwashed!)
+        it, so for the second pair, I added vinegar to the wash water and had no trouble
+        with bleeding. However, the second pair of socks was finished two weeks ago
+        and already there are holes on the balls of my feet! That sucks. I think I
+        need to knit to a tighter gauge.</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":91089,\"username\":\"SquidWidget\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/SquidWidget/832148839/FB_IMG_1642444867160_tiny.jpg\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/SquidWidget/832148839/FB_IMG_1642444867160_small.jpg\",\"photo_url\":\"https://avatars-d.ravelrycache.com/SquidWidget/832148839/FB_IMG_1642444867160_large.jpg\",\"profile_country_code\":\"US\"}},{\"created_at\":\"2008/04/01
+        09:34:55 -0400\",\"id\":208038,\"comment_html\":\"\\n<p>I knit a pair of Monkeys
+        with this yarn, and by the time they had been washed 5 or so times they had
+        lost about half their color. While I love the way the yarn feels, and I love
+        the finished product, I\u2019ll probably avoid this yarn in the future. I
+        bought the yarn for its in-the-hank color, not what it would be in 5 washings.
+        :(</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":18927,\"username\":\"DanaOfUnwind\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/DanaOfUnwind/1079523324/IMG_6226_tiny.jpeg\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/DanaOfUnwind/1079523324/IMG_6226_small.jpeg\",\"photo_url\":\"https://avatars-d.ravelrycache.com/DanaOfUnwind/1079523324/IMG_6226_large.jpeg\",\"profile_country_code\":\"US\"}},{\"created_at\":\"2008/04/07
+        19:17:22 -0400\",\"id\":215501,\"comment_html\":\"\\n<p>I have used this yarn
+        twice. The first time, it flashed and pooled in the worst possible way. However,
+        my second skein was perfectly fine. The yarn feels very smooth and knits up
+        nicely, but to me it\u2019s not the prettiest yarn when done--a little flat
+        in appearance.</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":77606,\"username\":\"YaYaHenry\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/YaYaHenry/635561360/FC3B81B2-6F82-43C7-AD19-FBA7F12108D2_tiny.jpeg\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/YaYaHenry/635561360/FC3B81B2-6F82-43C7-AD19-FBA7F12108D2_small.jpeg\",\"photo_url\":\"https://avatars-d.ravelrycache.com/YaYaHenry/635561360/FC3B81B2-6F82-43C7-AD19-FBA7F12108D2_large.jpeg\",\"profile_country_code\":\"US\"}},{\"created_at\":\"2008/05/02
+        13:17:36 -0400\",\"id\":242983,\"comment_html\":\"\\n<p>I have 2 pr of socks
+        I knit with this, and 3 of the socks wore holes through in about a year of
+        light wear.</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":60357,\"username\":\"YarnComa\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/marilynmac/558579/db__5mmpeace_tiny.jpg\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/marilynmac/558579/db__5mmpeace_small.jpg\",\"photo_url\":\"https://avatars-d.ravelrycache.com/marilynmac/558579/db__5mmpeace_large.jpg\",\"profile_country_code\":\"US\"}},{\"created_at\":\"2008/08/11
+        11:58:39 -0400\",\"id\":367069,\"comment_html\":\"\\n<p>I bought my first
+        hank of this in May in Vermont (I live in North Carolina). I knit my first
+        Hedera sock. I liked the yarn. It feels good and holds a lace pattern well.
+        I rewound my ball for the second sock and discovered it was full of knots\u2026I
+        lost cound after 13! When I emailed the company, someone named Cheryl suggested
+        I return it for store credit. The yarn store I went to is a 14 hour drive
+        from me! Nevermind the week and a half of knitting the first sock. What should
+        I do with that? I am so disappointed. I will NOT buy this yarn again.</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":71348,\"username\":\"eightlegeddj\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/eightlegeddj/20338698/19679_1330277934805_1166693798_31019226_3310931_n_tiny.jpg\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/eightlegeddj/20338698/19679_1330277934805_1166693798_31019226_3310931_n_small.jpg\",\"photo_url\":\"https://avatars-d.ravelrycache.com/eightlegeddj/20338698/19679_1330277934805_1166693798_31019226_3310931_n_large.jpg\",\"profile_country_code\":\"US\"}},{\"created_at\":\"2008/08/20
+        11:13:21 -0400\",\"id\":381672,\"comment_html\":\"\\n<p>Initially I loved
+        the feel of this yarn. But is has major problems, losing its color, felting
+        and essentially no response from CTH about these problems.</p>\\n\\n<p>I used
+        a beautiful pink/bright red colorway. With the first wash, it became less
+        beautiful and less distinct. With the second wash, it was a uniform dull redish
+        pink with no hint of the previous beautiful color.</p>\\n\\n<p>But, with the
+        second machine wash in my front loading machine, the socks felted and shrank
+        beyond repair. Only then did I learn that others have experienced this same
+        problem.</p>\\n\\n<p>I emailed CTH about this problem, but CTH didn\u2019t
+        even respond to my email.</p>\\n\\n<p>No more CTH for this yarn consumer!!</p>\\n\\n<p>I
+        warn everyone else out there not to believe the representation that this yarn
+        is machine washable.</p>\\n\\n<p>HAND WASH ONLY and expect to lose the vibrancy
+        of color present in the original yarn.</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":144038,\"username\":\"AnniePearl\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/AnniePearl/90791182/Superann_GPH0678_tiny.jpg\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/AnniePearl/90791182/Superann_GPH0678_small.jpg\",\"photo_url\":\"https://avatars-d.ravelrycache.com/AnniePearl/90791182/Superann_GPH0678_large.jpg\",\"profile_country_code\":\"US\"}},{\"created_at\":\"2008/09/17
+        16:20:06 -0400\",\"id\":426781,\"comment_html\":\"\\n<p>I\u2019ve knitted
+        with this yarn once, and will not buy it again. The colours are beautiful,
+        but the knitted fabric turned fuzzy after ONE wear. And I made gloves! Wonder
+        what socks would\u2019ve looked like\u2026 Shame really, because the colours
+        <strong>are</strong> very pretty.</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":3734,\"username\":\"MevrouwWalvis\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/MevrouwWalvis/32593/mevrouwwalvis-avatar-4793_tiny.png\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/MevrouwWalvis/32593/mevrouwwalvis-avatar-4793_small.png\",\"photo_url\":\"https://avatars-d.ravelrycache.com/MevrouwWalvis/32593/mevrouwwalvis-avatar-4793_large.png\",\"profile_country_code\":\"FI\"}},{\"created_at\":\"2008/11/28
+        20:55:47 -0500\",\"id\":539433,\"comment_html\":\"\\n<p>i\u2019m loving the
+        way it knits up and it feels great but on 1s, I\u2019m afraid that i\u2019m
+        about to run out of yarn on HONESTLY a pretty short sock (river rapids). I
+        only wear a 9 womens and I\u2019ve never run out of a sock yarn on 1s. :(</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":37993,\"username\":\"lynseymit\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/lynseymit/415114765/IMG_20161013_204115_tiny.jpg\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/lynseymit/415114765/IMG_20161013_204115_small.jpg\",\"photo_url\":\"https://avatars-d.ravelrycache.com/lynseymit/415114765/IMG_20161013_204115_large.jpg\",\"profile_country_code\":\"US\"}},{\"created_at\":\"2009/02/24
+        05:48:11 -0500\",\"id\":707193,\"comment_html\":\"\\n<p>One of my favorites.
+        Clear stitch definition, tight twist, very deep colors. Doesn\u2019t pill.</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":119472,\"username\":\"Ganeshas\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/Ganeshas/23526893/marpleknits_tiny.jpg\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/Ganeshas/23526893/marpleknits_small.jpg\",\"photo_url\":\"https://avatars-d.ravelrycache.com/Ganeshas/23526893/marpleknits_large.jpg\",\"profile_country_code\":\"FI\"}},{\"created_at\":\"2009/03/26
+        10:17:06 -0400\",\"id\":769982,\"comment_html\":\"\\n<p>Mine are getting very
+        fuzzy with only about 3 days of wear and 2 washings since I got them. The
+        fuzziness is being caused by the wear based on where it touches my shoes.
+        Hope this doesn\u2019t mean all this work is going to turn into a pile of
+        fuzz. Not sure I\u2019ll get this again!</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":44274,\"username\":\"FinnGarian\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/FinnGarian/4635453/marimekko-unikko_tiny.png\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/FinnGarian/4635453/marimekko-unikko_small.png\",\"photo_url\":\"https://avatars-d.ravelrycache.com/FinnGarian/4635453/marimekko-unikko_large.png\",\"profile_country_code\":\"US\"}},{\"created_at\":\"2010/02/10
+        10:00:23 -0500\",\"id\":1455363,\"comment_html\":\"\\n<p>It\u2019s not such
+        a big deal to hand wash socks after all that labor. I knit some with this
+        yarn for my husband and they\u2019re still going strong after many wearings
+        and washings with Eucalin. The color is just as vibrant as ever, too.</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":11533,\"username\":\"KatieK\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/KatieK/1500542/2764095940_d13da0a0ba_m_tiny.jpg\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/KatieK/1500542/2764095940_d13da0a0ba_m_small.jpg\",\"photo_url\":\"https://avatars-d.ravelrycache.com/KatieK/1500542/2764095940_d13da0a0ba_m_large.jpg\",\"profile_country_code\":\"US\"}},{\"created_at\":\"2010/02/24
+        15:04:49 -0500\",\"id\":1499643,\"comment_html\":\"\\n<p>Nice yarn, but not
+        very hardwearing for socks. after 9months i got a hole in one heel</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":26231,\"username\":\"tannina\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/tannina/228984164/Marc_Almond_-_Vermin_In_Ermine_-_LP_RECORD-128705_tiny.jpg\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/tannina/228984164/Marc_Almond_-_Vermin_In_Ermine_-_LP_RECORD-128705_small.jpg\",\"photo_url\":\"https://avatars-d.ravelrycache.com/tannina/228984164/Marc_Almond_-_Vermin_In_Ermine_-_LP_RECORD-128705_large.jpg\",\"profile_country_code\":\"DE\"}},{\"created_at\":\"2010/03/04
+        15:16:46 -0500\",\"id\":1526009,\"comment_html\":\"\\n<p>I just wound a skein
+        of the Wild Cherry Supersock yarn and found four knots. I was planning to
+        make a shawlette, but with four knots, there is no way I would even begin
+        to do so. I guess it will become a pair of socks. I am very disappointed and
+        will not purchase more of this brand.</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":63207,\"username\":\"Deb-knits\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/Deb-knits/658135879/6ED6E174-47F8-4D17-B9B0-25DBF7E0DEDA_tiny.jpeg\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/Deb-knits/658135879/6ED6E174-47F8-4D17-B9B0-25DBF7E0DEDA_small.jpeg\",\"photo_url\":\"https://avatars-d.ravelrycache.com/Deb-knits/658135879/6ED6E174-47F8-4D17-B9B0-25DBF7E0DEDA_large.jpeg\",\"profile_country_code\":\"US\"}},{\"created_at\":\"2010/03/17
+        22:47:15 -0400\",\"id\":1562835,\"comment_html\":\"\\n<p>Made a pair of socks
+        for my mother which are now felted and work better as coasters. She says she
+        never put them in the dryer but put them in the washer. I still would have
+        have expected this degree of felting.</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":5550,\"username\":\"KnittyKnurse\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/KnittyKnurse/28259965/KnottyKnurse_tiny.png\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/KnittyKnurse/28259965/KnottyKnurse_small.png\",\"photo_url\":\"https://avatars-d.ravelrycache.com/KnittyKnurse/28259965/KnottyKnurse_large.png\",\"profile_country_code\":\"US\"}},{\"created_at\":\"2011/03/05
+        08:25:10 -0500\",\"id\":2558024,\"comment_html\":\"\\n<p>Just an update from
+        how fuzzy my socks got\u2026 after less than a year of very moderate use,
+        always washing in a garment bag and laying flat to dry, I blew out these socks.
+        I wore them probably once every 2 weeks. I find it interesting how some people
+        find this yarn hard-wearing because mine was most definitely not. It\u2019s
+        a shame too because the colors were lovely.</p>\\n\",\"replies\":[],\"highlighted_project\":null,\"user\":{\"id\":44274,\"username\":\"FinnGarian\",\"tiny_photo_url\":\"https://avatars-d.ravelrycache.com/FinnGarian/4635453/marimekko-unikko_tiny.png\",\"small_photo_url\":\"https://avatars-d.ravelrycache.com/FinnGarian/4635453/marimekko-unikko_small.png\",\"photo_url\":\"https://avatars-d.ravelrycache.com/FinnGarian/4635453/marimekko-unikko_large.png\",\"profile_country_code\":\"US\"}}],
+        \"paginator\": {\"page_count\":2,\"page\":1,\"page_size\":25,\"results\":32,\"last_page\":2}}"
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,PUT,DELETE,PATCH
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 07 Jun 2026 04:31:32 GMT
+      ETag:
+      - W/"3d00ea4e6bcd5c96699787d68f8c1eab"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-API:
+      - '1'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Handled-By:
+      - baa
+      X-Ruby:
+      - '2'
+      X-Runtime:
+      - '105'
+      X-Up-Location:
+      - https://api.ravelry.com/yarns/100/comments.json
+      X-Up-Method:
+      - get
+      content-length:
+      - '19212'
+    status:
+      code: 200
+      message: OK
+version: 1

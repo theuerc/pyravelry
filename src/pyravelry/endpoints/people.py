@@ -1,9 +1,8 @@
-from types import SimpleNamespace
 from typing import cast
 
 from pydantic import validate_call
 
-from pyravelry.endpoints.base import Action, BaseEndpoint
+from pyravelry.endpoints.base import Action, BaseEndpoint, TypedNamespace
 from pyravelry.models import UserModel, UserPostModel
 
 
@@ -13,7 +12,7 @@ class PeopleResource(BaseEndpoint):
     [People Ravelry API documentation](https://www.ravelry.com/api#people_show)
     """
 
-    actions = SimpleNamespace(
+    actions = TypedNamespace(
         show=Action("/people/{}.json", UserModel),
         update=Action("/people/{}.json", UserModel),
     )

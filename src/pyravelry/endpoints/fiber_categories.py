@@ -1,7 +1,6 @@
-from types import SimpleNamespace
 from typing import cast
 
-from pyravelry.endpoints.base import Action, BaseEndpoint
+from pyravelry.endpoints.base import Action, BaseEndpoint, TypedNamespace
 from pyravelry.models import FiberCategoriesModel
 
 
@@ -17,7 +16,7 @@ class FiberCategoriesResource(BaseEndpoint):
     [Fiber Categories Ravelry API documentation](https://www.ravelry.com/api#/_fiber_categories)
     """
 
-    actions = SimpleNamespace(list=Action("/fiber_categories.json", FiberCategoriesModel))
+    actions = TypedNamespace(list=Action("/fiber_categories.json", FiberCategoriesModel))
 
     def list(self) -> FiberCategoriesModel:
         """

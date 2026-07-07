@@ -1,9 +1,8 @@
-from types import SimpleNamespace
 from typing import Optional, cast
 
 from pydantic import validate_call
 
-from pyravelry.endpoints.base import Action, BaseEndpoint
+from pyravelry.endpoints.base import Action, BaseEndpoint, TypedNamespace
 from pyravelry.models import YarnCompanySearchParams, YarnCompanySearchResponseModel
 
 
@@ -14,7 +13,7 @@ class YarnCompaniesResource(BaseEndpoint):
     [Yarn Companies Ravelry API documentation](https://www.ravelry.com/api#yarn_companies_search)
     """
 
-    actions = SimpleNamespace(query=Action("/yarn_companies/search.json", YarnCompanySearchResponseModel))
+    actions = TypedNamespace(query=Action("/yarn_companies/search.json", YarnCompanySearchResponseModel))
 
     @validate_call
     def query(

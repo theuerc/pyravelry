@@ -29,6 +29,7 @@ class TestRavelryClient:
             "current_user",
             "comments",
             "needles",
+            "yarns",
         ],
     )
     def test_attributes__with_context_manager(self, attribute: str) -> None:

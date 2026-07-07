@@ -19,7 +19,7 @@ class FiberCategoryModel(BaseRavelryModel):
     short_name: Optional[str] = Field(None, description="Abbreviated category name")
 
     # parent is listed in attributes but type is often an ID or a nested object
-    parent_id: Optional[int] = Field(None, alias="parent", description="Parent category ID")
+    parent_id: Optional["FiberCategoryModel"] = Field(None, alias="parent", description="Parent category ID")
 
     # Self-referential list for subcategories
     children: Optional[list["FiberCategoryModel"]] = Field(

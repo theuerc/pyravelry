@@ -3,12 +3,14 @@
 from . import base
 from .base import BaseRavelryModel
 from .colorfamily import ColorFamiliesModel, ColorFamilyModel
+from .colorway import ColorwayFullModel, ColorwayModel, ColorwaysModel
 from .comment import (
     CommentCreateModel,
     CommentExportModel,
     CommentFullModel,
     CommentHistoriesModel,
     CommentHistoryModel,
+    CommentListModel,
     CommentModel,
 )
 from .custom_models import paginator
@@ -33,6 +35,17 @@ from .needletype import NeedleTypeFullModel, NeedleTypeModel, NeedleTypesModel
 from .socialsite import SocialSiteModel
 from .user import UserFullModel, UserModel, UserPostModel, UserSmallModel
 from .usersite import UserSiteModel
+from .yarn import (
+    YarnFullModel,
+    YarnListListModel,
+    YarnListModel,
+    YarnModel,
+    YarnResponseComments,
+    YarnResponseSearch,
+    YarnResponseShow,
+    YarnResponseYarns,
+    YarnStashListModel,
+)
 from .yarnattributegroup import YarnAttributeGroupModel as YarnAttributeModel
 from .yarnattributegroup import YarnAttributeGroupsModel as YarnAttributesModel
 from .yarncompany import YarnCompaniesModel
@@ -42,11 +55,15 @@ __all__ = [
     "BaseRavelryModel",
     "ColorFamiliesModel",
     "ColorFamilyModel",
+    "ColorwayFullModel",
+    "ColorwayModel",
+    "ColorwaysModel",
     "CommentCreateModel",
     "CommentExportModel",
     "CommentFullModel",
     "CommentHistoriesModel",
     "CommentHistoryModel",
+    "CommentListModel",
     "CommentModel",
     "FiberAttributeModel",
     "FiberAttributesModel",
@@ -81,6 +98,15 @@ __all__ = [
     "YarnCompanyModel",
     "YarnCompanySearchParams",
     "YarnCompanySearchResponseModel",
+    "YarnFullModel",
+    "YarnListListModel",
+    "YarnListModel",
+    "YarnModel",
+    "YarnResponseComments",
+    "YarnResponseSearch",
+    "YarnResponseShow",
+    "YarnResponseYarns",
+    "YarnStashListModel",
     "YarnWeightModel",
     "YarnWeightsModel",
     "base",

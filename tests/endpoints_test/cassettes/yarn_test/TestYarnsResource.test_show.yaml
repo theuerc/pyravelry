@@ -1,0 +1,87 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - api.ravelry.com
+      User-Agent:
+      - python-httpx/0.28.1
+      authorization:
+      - Basic <REDACTED>
+    method: GET
+    uri: https://api.ravelry.com/yarns/100.json
+  response:
+    body:
+      string: "{\"yarn\": {\"discontinued\":true,\"gauge_divisor\":4,\"grams\":114,\"id\":100,\"machine_washable\":true,\"max_gauge\":36.0,\"min_gauge\":26.0,\"name\":\"Supersock
+        Merino\",\"permalink\":\"cherry-tree-hill-yarn-supersock-merino\",\"rating_average\":4.47,\"rating_count\":286,\"rating_total\":1278,\"texture\":\"plied,
+        high twist\",\"thread_size\":null,\"wpi\":null,\"yardage\":385,\"notes_html\":\"\\n<p>100%
+        merino wool</p>\\n\\n<p>Supersock Potluck is the same yarn as the Cherry Tree
+        Hill Supersock, just dyed in random, \u201Cpotluck\u201D colors that don\u2019t
+        meet the color standards for the regular line. They are sold to retailers
+        packaged in 6 packs of similar hues, but different dyelots.</p>\\n\\n<p>Sold
+        in 4oz./114g and 100g put-ups with different yardage. Please adjust yardage
+        and skein weight on individual stash entries. This is the same base yarn.</p>\\n\",\"min_needle_size\":{\"id\":1,\"us\":\"1
+        \",\"metric\":2.25,\"us_steel\":\"2\",\"crochet\":false,\"knitting\":true,\"hook\":\"B\",\"name\":\"US
+        1  - 2.25 mm\",\"pretty_metric\":\"2.25\"},\"max_needle_size\":{\"id\":3,\"us\":\"3
+        \",\"metric\":3.25,\"us_steel\":\"0\",\"crochet\":false,\"knitting\":true,\"hook\":\"D\",\"name\":\"US
+        3  - 3.25 mm\",\"pretty_metric\":\"3.25\"},\"min_hook_size\":null,\"max_hook_size\":null,\"personal_attributes\":{\"favorited\":false,\"bookmark_id\":null},\"yarn_company\":{\"id\":8,\"name\":\"Cherry
+        Tree Hill Yarn\",\"permalink\":\"cherry-tree-hill-yarn\",\"url\":\"\",\"yarns_count\":156},\"yarn_weight\":{\"crochet_gauge\":\"\",\"id\":5,\"knit_gauge\":\"28\",\"max_gauge\":null,\"min_gauge\":null,\"name\":\"Fingering\",\"ply\":\"4\",\"wpi\":\"14\"},\"yarn_fibers\":[{\"id\":18927,\"percentage\":100,\"fiber_type\":{\"animal_fiber\":true,\"id\":24,\"name\":\"Merino\",\"synthetic\":false,\"vegetable_fiber\":false},\"fiber_category\":{\"id\":22,\"name\":\"Merino\",\"permalink\":\"merino\",\"parent\":{\"id\":1,\"name\":\"Wool\",\"permalink\":\"wool\"}}}],\"yarn_attributes\":[{\"description\":\"yarn
+        dyed with more than one color\",\"id\":29,\"name\":\"Variegated\",\"permalink\":\"variegated\",\"yarn_attribute_group\":{\"id\":12,\"name\":\"Color\",\"permalink\":\"color\"}},{\"description\":\"yarn
+        has been treated and may be washed in a washing machine\",\"id\":1,\"name\":\"Superwash\",\"permalink\":\"superwash\",\"yarn_attribute_group\":{\"id\":8,\"name\":\"Care\",\"permalink\":\"care\"}},{\"description\":\"dyed
+        by hand\",\"id\":13,\"name\":\"Hand dyed\",\"permalink\":\"hand-dyed\",\"yarn_attribute_group\":{\"id\":11,\"name\":\"Dye\",\"permalink\":\"dye\"}},{\"description\":\"dyed
+        in a single hue with slight variation\",\"id\":26,\"name\":\"Semi-solid\",\"permalink\":\"semi-solid\",\"yarn_attribute_group\":{\"id\":12,\"name\":\"Color\",\"permalink\":\"color\"}},{\"description\":\"needs
+        to be wound into a ball before use\",\"id\":75,\"name\":\"Winding required\",\"permalink\":\"winding-required\",\"yarn_attribute_group\":{\"id\":18,\"name\":\"Put
+        up\",\"permalink\":\"put-up\"}},{\"description\":\"made up of 2 strands twisted
+        together\",\"id\":37,\"name\":\"2-ply\",\"permalink\":\"2-ply\",\"yarn_attribute_group\":{\"id\":15,\"name\":\"Ply\",\"permalink\":\"ply\"}}],\"yarn_provenance\":[],\"photos\":[{\"id\":183219,\"sort_order\":1,\"user_id\":839,\"x_offset\":-18,\"y_offset\":-11,\"square_url\":\"https://images4-g.ravelrycache.com/uploads/RowsRed/562150363/818062093_e50a3b71f9_z_square.jpg\",\"medium_url\":\"https://images4-f.ravelrycache.com/uploads/RowsRed/562150363/818062093_e50a3b71f9_z_medium.jpg\",\"thumbnail_url\":\"https://images4-g.ravelrycache.com/uploads/RowsRed/562150363/818062093_e50a3b71f9_z_thumbnail.jpg\",\"small_url\":\"https://images4-f.ravelrycache.com/uploads/RowsRed/562150363/818062093_e50a3b71f9_z_small.jpg\",\"flickr_url\":\"http://www.flickr.com/photos/56349036@N00/818062093\",\"shelved_url\":\"https://images4-f.ravelrycache.com/uploads/RowsRed/562150363/818062093_e50a3b71f9_z_shelved.jpg\",\"medium2_url\":\"https://images4-a.ravelrycache.com/uploads/RowsRed/562150363/818062093_e50a3b71f9_z_medium2.jpg\",\"small2_url\":\"https://images4-g.ravelrycache.com/uploads/RowsRed/562150363/818062093_e50a3b71f9_z_small2.jpg\",\"caption\":null,\"caption_html\":null,\"copyright_holder\":null,\"aspect_ratio\":1.3333333333333333},{\"id\":19458761,\"sort_order\":2,\"user_id\":2598,\"x_offset\":-52,\"y_offset\":3,\"square_url\":\"https://images4-g.ravelrycache.com/flickr/4/9/7/4974523195/4974523195_s.jpg\",\"medium_url\":\"https://images4-f.ravelrycache.com/flickr/4/9/7/4974523195/4974523195.jpg\",\"thumbnail_url\":\"https://images4-g.ravelrycache.com/flickr/4/9/7/4974523195/4974523195_t.jpg\",\"small_url\":\"https://images4-g.ravelrycache.com/flickr/4/9/7/4974523195/4974523195_m.jpg\",\"flickr_url\":\"http://www.flickr.com/photos/35852854@N00/4974523195\",\"shelved_url\":null,\"medium2_url\":\"https://images4-f.ravelrycache.com/flickr/4/9/7/4974523195/4974523195.jpg\",\"small2_url\":\"https://images4-g.ravelrycache.com/flickr/4/9/7/4974523195/4974523195_n.jpg\",\"caption\":null,\"caption_html\":null,\"copyright_holder\":null,\"aspect_ratio\":1.5},{\"id\":22127265,\"sort_order\":3,\"user_id\":51828,\"x_offset\":-24,\"y_offset\":-2,\"square_url\":\"https://images4-g.ravelrycache.com/uploads/Ritaknitting/51503751/Knitting_127_square.jpg\",\"medium_url\":\"https://images4-f.ravelrycache.com/uploads/Ritaknitting/51503751/Knitting_127_medium.jpg\",\"thumbnail_url\":\"https://images4-f.ravelrycache.com/uploads/Ritaknitting/51503751/Knitting_127_thumbnail.jpg\",\"small_url\":\"https://images4-f.ravelrycache.com/uploads/Ritaknitting/51503751/Knitting_127_small.jpg\",\"flickr_url\":null,\"shelved_url\":\"https://images4-f.ravelrycache.com/uploads/Ritaknitting/51503751/Knitting_127_shelved.jpg\",\"medium2_url\":\"https://images4-a.ravelrycache.com/uploads/Ritaknitting/51503751/Knitting_127_medium2.jpg\",\"small2_url\":\"https://images4-g.ravelrycache.com/uploads/Ritaknitting/51503751/Knitting_127_small2.jpg\",\"caption\":null,\"caption_html\":null,\"copyright_holder\":\"Ritaknitting\",\"aspect_ratio\":1.3333333333333333}]}}"
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,PUT,DELETE,PATCH
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 01 Jul 2026 02:31:29 GMT
+      ETag:
+      - W/"216993e9955a0b1fb64ec5feeb4cb985"
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-API:
+      - '1'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Handled-By:
+      - baa
+      X-Ruby:
+      - '2'
+      X-Runtime:
+      - '36'
+      X-Up-Location:
+      - https://api.ravelry.com/yarns/100.json
+      X-Up-Method:
+      - get
+      content-length:
+      - '5583'
+    status:
+      code: 200
+      message: OK
+version: 1

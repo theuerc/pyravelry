@@ -36,3 +36,23 @@ class BaseRavelryModel(BaseModel):
             pl.DataFrame: polars Dataframe with pyravelry content.
         """
         return pl.from_pandas(self.to_pandas())
+
+
+class BaseParentRavelryModel(BaseRavelryModel):
+    """Base Ravelry Results object class"""
+
+    def to_pandas(self) -> None:  # type: ignore[override]
+        """Throws error for models that can't use `to_pandas()`"""
+        raise NotImplementedError(
+            "to_pandas() is not implemented for this model because "
+            "this endpoint returns a composite structure. Please call .to_pandas() "
+            "directly on the submodels (e.g., self.[submodel].to_pandas()) instead."
+        )
+
+    def to_polars(self) -> None:  # type: ignore[override]
+        """Throws error for models that can't use `to_pandas()`"""
+        raise NotImplementedError(
+            "to_polars() is not implemented for this model because "
+            "this endpoint returns a composite structure. Please call .to_pandas() "
+            "directly on the submodels (e.g., self.[submodel].to_polars()) instead."
+        )
